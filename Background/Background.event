@@ -1,0 +1,95 @@
+SetConvoBackground(0x36, TitansImage, TitansTsa, TitansPalette)
+
+SetConvoBackground(0x38, PareteImage, PareteTsa, ParetePalette)
+
+SetConvoBackground(0x39, WorldMapImage, WorldMapTsa, WorldMapPalette)
+
+SetConvoBackground(0x3A, VentoImage, VentoTsa, VentoPalette)
+
+SetConvoBackground(0x3B, WindImage, WindTsa, WindPalette)
+
+SetConvoBackground(0x3C, NightRoomImage, NightRoomTsa, NightRoomPalette)
+
+SetConvoBackground(0x3D, IntShipImage, IntShipTsa, IntShipPalette)
+
+SetConvoBackground(0x3E, CrushImage, CrushTsa, CrushPalette)
+
+//1
+TitansImage:
+#incbin "1.bin"
+
+TitansTsa:
+#incbin "2.bin"
+
+TitansPalette:
+#incbin "3.bin"
+
+//2
+PareteImage:
+#incbin "Code/parete.bin"
+
+PareteTsa:
+#incbin "Code/parete2.bin"
+
+ParetePalette:
+#incbin "Code/parete3.bin"
+
+//3
+WorldMapImage:
+#incbin "Code/WorldMap1.bin"
+
+WorldMapTsa:
+#incbin "Code/WorldMap2.bin"
+
+WorldMapPalette:
+#incbin "Code/WorldMap3.bin"
+
+//4
+VentoImage:
+#incbin "Code/Vento1.bin"
+
+VentoTsa:
+#incbin "Code/Vento2.bin"
+
+VentoPalette:
+#incbin "Code/Vento3.bin"
+
+//5
+WindImage:
+#incbin "Code/Wind1.bin"
+
+WindTsa:
+#incbin "Code/Wind2.bin"
+
+WindPalette:
+#incbin "Code/Wind3.bin"
+
+//6
+NightRoomImage:
+#incbin "Code/NightRoom1.bin"
+
+NightRoomTsa:
+#incbin "Code/NightRoom2.bin"
+
+NightRoomPalette:
+#incbin "Code/NightRoom3.bin"
+
+//7
+IntShipImage:
+#incbin "Code/IntShip1.bin"
+
+IntShipTsa:
+#incbin "Code/IntShip2.bin"
+
+IntShipPalette:
+#incbin "Code/IntShip3.bin"
+
+//8
+CrushImage:
+#incbin "Code/Crush1.bin"
+
+CrushTsa:
+#incbin "Code/Crush2.bin"
+
+CrushPalette:
+#incbin "Code/Crush3.bin"

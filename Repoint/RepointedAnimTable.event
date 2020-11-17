@@ -1,0 +1,8 @@
+ALIGN 16
+ORG CURRENTOFFSET + 0x08
+NewAnimTable:
+ORG CURRENTOFFSET + 0x20 * 0x200
+PUSH
+ORG NewAnimTable
+#incbin "ClassAnimTable.bin"
+POP

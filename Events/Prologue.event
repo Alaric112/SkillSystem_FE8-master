@@ -1,0 +1,257 @@
+EventPointerTable(7, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+    TurnEventPlayer(0x0,Turn2,2) 
+   	TurnEventPlayer(0x0,Turn3,3)
+	TurnEventEnemy(0x0,TurnEnemy1,1)
+	TurnEventNPC(0x0,TurnNPC1,1,1)
+    
+	END_MAIN
+
+Turn2:
+CAMERA Kairs
+CURSOR_FLASHING(Kairs)
+STAL(45)
+REMOVE_CURSORS
+Text(PrologueTurn2)
+TUTORIALTEXTBOXSTART
+                     CenterTutorialTextBox
+					 TEXTSHOW(PrologueTutorialTalk)
+					 TEXTEND
+REMA					 			 
+ENDA
+
+Turn3:
+FADI(25)
+LOAD1 1 EnemyReinforce1
+ENUN
+FADU(25)
+CAMERA(Kairs)
+CURSOR_FLASHING(Kairs)
+STAL(25)
+REMOVE_CURSORS
+Text(PrologueTurn3)
+ENDA
+
+TurnEnemy1:
+
+EVBIT_MODIFY 4
+Text(PrologueTurnEnemy1)
+MOVE 120 DemonBoss [10, 3]
+ENUN
+ENDA
+
+TurnNPC1:
+
+EVBIT_MODIFY 4
+CAMERA Kairs
+CURSOR_FLASHING Kairs
+STAL(30)
+REMOVE_CURSORS
+Text(PrologueTurnNPC1)
+MOVE 120 Kairs [11, 1]
+MOVE 120 Kairs [11, 3]
+ENUN
+StartBattle 
+NormalDamage(0,14)
+MissedAttack(1,0)            
+CriticalHit(0,40)			
+EndAttack
+FIGHT Kairs DemonBoss SteelSword False
+AWAIT_KILL DemonBoss
+KILL DemonBoss
+REMOVEUNIT DemonBoss
+ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+	CharacterEventBothWays(0x9,NausicaaKairsTalk,Nausicaa,Kairs)
+	END_MAIN
+
+
+NausicaaKairsTalk:
+	MUSS(0x30)
+	Text(FirstTalk)
+	CUSA Kairs
+	CUSA Gadriel
+	CUSA Merchant
+	MURE 2
+	CAMERA [13,16]
+    CURSOR_FLASHING [14,17]
+    CURSOR_FLASHING	[14,18]
+	STAL 45
+	REMOVE_CURSORS
+	Text(Text5)
+	CAMERA(Nausicaa)
+    CURSOR Nausicaa
+	REMOVE_CURSORS
+	Text(Text6)
+	SetChapterObjectiveText(Escape, EscapeDesc)
+	NoFade
+	ENDA
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+    
+	UNIT 0x1 0x02 0x0 Level(1,Ally,False) [14,8] 0x0 0x0 0x0 0x1 [OsIgnis,Vulnerary] NoAI
+	UNIT
+
+EnemyUnits:
+
+	UNIT Demon 0x5b 0x0 Level(1,Enemy,0) [12,4] 0x0 0x0 0x0 0x0 [0xb1] NoAI
+    UNIT Demon Revenant 0x0 Level(1,Enemy,0) [4,5] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,0,0]
+    UNIT Demon Revenant 0x0 Level(2,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(1,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [0xb1] [0,3,0,0]
+	UNIT DemonBoss Bael 0x0 Level(2,Enemy,0) [9,6] 0x0 0x0 0x0 0x0 [PoisonClaw] [6,3,4,20]
+	
+	UNIT 
+
+EnemyReinforce1:
+
+	UNIT Demon Mogall 0x0 Level(1,Enemy,1) [5,17] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+    UNIT Demon 0x54 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [SteelSword] StaticAI
+	UNIT Demon 0x55 0x0 Level(3,Enemy,1) [9,16] 0x0 0x0 0x0 0x0 [LongBow] StaticAI
+	UNIT Demon 0x54 0x0 Level(6,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [ShortSpear] StaticAI
+	UNIT Demon 0x5b 0x0 Level(1,Enemy,1) [14,14] 0x0 0x0 0x0 0x0 [0xb1] [0,3,0,0]
+	UNIT Demon 0x5b 0x0 Level(2,Enemy,1) [7,10] 0x0 0x0 0x0 0x0 [0xb1] [0,3,0,0]
+	UNIT Demon 0x5b 0x0 Level(1,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT DemonBoss Bael 0x0 Level(2,Enemy,0) [12,11] 0x0 0x0 0x0 0x0 [FetidClaw] [0,3,4,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [0,11] 0x0 0x0 0x0 0x0 [RottenClaw] [0,12,0,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [11,17] 0x0 0x0 0x0 0x0 [RottenClaw] [0,12,0,0]
+	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [4,11] 0x0 0x0 0x0 0x0 [FetidClaw] [0,12,0,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [0,16] 0x2 0x0 0x0 0x0 [RottenClaw,Vulnerary] [0,3,4,0]
+	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [7,18] 0x2 0x0 0x0 0x0 [SteelSword] [0,3,4,0]
+	
+	UNIT 
+	
+
+gruppo1:
+
+    UNIT Kairs Paladin 0x0 Level(1,NPC,0) [10,1] 0x0 0x0 0x0 0x0 [SteelSword,SteelLance] [6,3,4,0]
+    UNIT Gadriel SwordCavalier 0x0 Level(1,NPC,0) [9,0] 0x0 0x0 0x0 0x0 [QuickBlade,IronSword] [6,3,4,0]
+    UNIT Merchant Convoy 0x0 Level(1,NPC,0) [10,0] 0x0 0x0 0x0 0x0 [] [6,3,4,0]
+	
+	UNIT
+
+
+	
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+    
+	MUSC(0x03)
+	FADI(50)
+	SetBackground(0x38)
+	FADU(20)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW Introduzione  
+	                    TEXTEND
+	REMA
+	FADI(20)
+	MUSCMID(0x16)
+	SetBackground(0x36)
+	FADU(15)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW Introduzione2  
+	                    TEXTEND	
+	REMA 
+	FADI(20)
+	MUSCMID(0x29)
+    SetBackground(0x39)
+    FADU(15)
+	CGTEXTSTART    
+						TEXTSHOW Introduzione3  
+	                    TEXTEND
+	REMA
+	CLEAN
+	FADI(15)
+	EVBIT_F 2
+    MUSCFAST(0x26D)
+    LOAD1 1 Units1
+    ENUN
+	FADU(15)
+	TEXTSTART
+	                   SetBackground(0x31)
+					   TEXTSHOW Text1
+					   TEXTEND
+	REMA
+	CALL $9EE2C4
+	FADI(15)
+	LOAD1 1 gruppo1
+	ENUN	
+    LOAD1 1 EnemyUnits
+    ENUN
+	MUSCMID(0x26E)
+	FADU(15)
+	CAMERA(Kairs)
+	CURSOR_FLASHING(Kairs)
+    STAL(30)
+    REMOVE_CURSORS
+	CURSOR_FLASHING(Merchant)
+    STAL(30)
+    REMOVE_CURSORS
+    SetBackground(0x1D)
+    Text(Text2)
+    CALL $9EE2C4
+    TEXTSTART
+                TEXTSHOW(Text3)
+                TEXTEND
+    REMA
+    CAMERA(Nausicaa)
+	CURSOR_FLASHING(Nausicaa)
+    STAL(30)
+	REMOVE_CURSORS
+    SetBackground(0x23)
+    Text(Text4)
+    CLEAN	 
+    ENDA
+
+EndingScene:
+	MNC2 0x01
+	NoFade
+	ENDA

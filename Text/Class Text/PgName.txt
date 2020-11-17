@@ -1,0 +1,22 @@
+## NausicaaName
+Nausica[aa][X]
+
+## NausicaaDesc
+Young princess of the[NL]
+Sorya valley[X]
+
+## KairsName
+Kairs[X]
+
+## KairsDesc
+An old paladin who travels[NL]
+for the lands of Askaria as a[NL]
+guardian of merchant caravans[X]
+
+## GadrielName
+Gadriel[X]
+
+## GadrielDesc
+Young guardian of merchant[NL] 
+caravans, follows the teachings[NL]
+of his mentor: the paladin Kairs[X]

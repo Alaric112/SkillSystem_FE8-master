@@ -1,0 +1,113 @@
+//#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+ALIGN 4
+AxeArmorClassCardData:
+#incbin "Dmp/AxeArmor.dmp"
+ALIGN 4
+AxeArmorClassCardPal:
+#incbin "Dmp/AxeArmor.png_pal.dmp"
+setCardEntry(AxeArmorClassCard, AxeArmorClassCardData, AxeArmorClassCardPal)
+
+ALIGN 4
+AxeCavalierClassCardData:
+#incbin "Dmp/AxeCavalier.dmp"
+ALIGN 4
+AxeCavalierClassCardPal:
+#incbin "Dmp/AxeCavalier.png_pal.dmp"
+setCardEntry(AxeCavalierClassCard, AxeCavalierClassCardData, AxeCavalierClassCardPal)
+
+ALIGN 4
+AxeWyvernriderClassCardData:
+#incbin "Dmp/AxeWyvernrider.dmp"
+ALIGN 4
+AxeWyvernriderClassCardPal:
+#incbin "Dmp/AxeWyvernrider.png_pal.dmp"
+setCardEntry(AxeWyvernriderClassCard, AxeWyvernriderClassCardData, AxeWyvernriderClassCardPal)
+
+ALIGN 4
+BowCavalierClassCardData:
+#incbin "Dmp/BowCavalier.dmp"
+ALIGN 4
+BowCavalierClassCardPal:
+#incbin "Dmp/BowCavalier.png_pal.dmp"
+setCardEntry(BowCavalierClassCard, BowCavalierClassCardData, BowCavalierClassCardPal)
+
+ALIGN 4
+BrawlerClassCardData:
+#incbin "Dmp/Brawler.dmp"
+ALIGN 4
+BrawlerClassCardPal:
+#incbin "Dmp/Brawler.png_pal.dmp"
+setCardEntry(BrawlerClassCard, BrawlerClassCardData, BrawlerClassCardPal)
+
+ALIGN 4
+DeserterClassCardData:
+#incbin "Dmp/Deserter.dmp"
+ALIGN 4
+DeserterClassCardPal:
+#incbin "Dmp/Deserter.png_pal.dmp"
+setCardEntry(DeserterClassCard, DeserterClassCardData, DeserterClassCardPal)
+
+ALIGN 4
+Druid_FClassCardData:
+#incbin "Dmp/Druid_F.dmp"
+ALIGN 4
+Druid_FClassCardPal:
+#incbin "Dmp/Druid_F.png_pal.dmp"
+setCardEntry(Druid_FClassCard, Druid_FClassCardData, Druid_FClassCardPal)
+
+ALIGN 4
+MarshallClassCardData:
+#incbin "Dmp/Marshall.dmp"
+ALIGN 4
+MarshallClassCardPal:
+#incbin "Dmp/Marshall.png_pal.dmp"
+setCardEntry(MarshallClassCard, MarshallClassCardData, MarshallClassCardPal)
+
+ALIGN 4
+HalberdierClassCardData:
+#incbin "Dmp/Halberdier.dmp"
+ALIGN 4
+HalberdierClassCardPal:
+#incbin "Dmp/Halberdier.png_pal.dmp"
+setCardEntry(HalberdierClassCard, HalberdierClassCardData, HalberdierClassCardPal)
+
+ALIGN 4
+Pirate_FClassCardData:
+#incbin "Dmp/Pirate_F.dmp"
+ALIGN 4
+Pirate_FClassCardPal:
+#incbin "Dmp/Pirate_F.png_pal.dmp"
+setCardEntry(Pirate_FClassCard, Pirate_FClassCardData, Pirate_FClassCardPal)
+
+ALIGN 4
+SwordArmorClassCardData:
+#incbin "Dmp/SwordArmor.dmp"
+ALIGN 4
+SwordArmorClassCardPal:
+#incbin "Dmp/SwordArmor.png_pal.dmp"
+setCardEntry(SwordArmorClassCard, SwordArmorClassCardData, SwordArmorClassCardPal)
+
+ALIGN 4
+SwordCavalierClassCardData:
+#incbin "Dmp/SwordCavalier.dmp"
+ALIGN 4
+SwordCavalierClassCardPal:
+#incbin "Dmp/SwordCavalier.png_pal.dmp"
+setCardEntry(SwordCavalierClassCard, SwordCavalierClassCardData, SwordCavalierClassCardPal)
+
+ALIGN 4
+ConvoyClassCardData:
+#incbin "Dmp/Convoy.dmp"
+ALIGN 4
+ConvoyClassCardPal:
+#incbin "Dmp/Convoy.png_pal.dmp"
+setCardEntry(ConvoyClassCard, ConvoyClassCardData, ConvoyClassCardPal)
+
+ALIGN 4
+CivilClassCardData:
+#incbin "Dmp/Civil.dmp"
+ALIGN 4
+CivilClassCardPal:
+#incbin "Dmp/Civil.png_pal.dmp"
+setCardEntry(CivilClassCard, CivilClassCardData, CivilClassCardPal)

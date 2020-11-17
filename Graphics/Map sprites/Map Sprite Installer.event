@@ -1,0 +1,111 @@
+ALIGN 4
+SwordCavalierMoving:
+#incext Png2Dmp "Png/SwordCavalierMoving.png" --lz77
+
+ALIGN 4
+SwordCavalierStanding:
+#incext Png2Dmp "Png/SwordCavalierStanding.png" --lz77
+
+ALIGN 4
+AxeCavalierMoving:
+#incext Png2Dmp "Png/AxeCavalierMoving.png" --lz77
+
+ALIGN 4
+AxeCavalierStanding:
+#incext Png2Dmp "Png/AxeCavalierStanding.png" --lz77
+
+ALIGN 4
+LanceCavalierMoving:
+#incext Png2Dmp "Png/LanceCavalierMoving.png" --lz77
+
+ALIGN 4
+LanceCavalierStanding:
+#incext Png2Dmp "Png/LanceCavalierStanding.png" --lz77
+
+ALIGN 4
+BowCavalierMoving:
+#incext Png2Dmp "Png/BowCavalierMoving.png" --lz77
+
+ALIGN 4
+BowCavalierStanding:
+#incext Png2Dmp "Png/BowCavalierStanding.png" --lz77
+
+ALIGN 4
+GreatKnightMoving:
+#incext Png2Dmp "Png/GreatKnightMoving.png" --lz77
+
+ALIGN 4
+GreatKnightStanding:
+#incext Png2Dmp "Png/GreatKnightStanding.png" --lz77
+
+ALIGN 4
+AxeArmorMoving:
+#incext Png2Dmp "Png/AxeArmorMoving.png" --lz77
+
+ALIGN 4
+AxeArmorStanding:
+#incext Png2Dmp "Png/AxeArmorStanding.png" --lz77
+
+ALIGN 4
+LanceArmorMoving:
+#incext Png2Dmp "Png/GreatKnightMoving.png" --lz77
+
+ALIGN 4
+LanceArmorStanding:
+#incext Png2Dmp "Png/LanceArmorStanding.png" --lz77
+
+ALIGN 4
+SwordArmorMoving:
+#incext Png2Dmp "Png/SwordArmorMoving.png" --lz77
+
+ALIGN 4
+SwordArmorStanding:
+#incext Png2Dmp "Png/SwordArmorStanding.png" --lz77
+
+ALIGN 4
+PriestMoving:
+#incext Png2Dmp "Png/PriestMoving.png" --lz77
+
+ALIGN 4
+PriestStanding:
+#incext Png2Dmp "Png/PriestStanding.png" --lz77
+
+ALIGN 4
+ClericMoving:
+#incext Png2Dmp "Png/ClericMoving.png" --lz77
+
+ALIGN 4
+ClericStanding:
+#incext Png2Dmp "Png/ClericStanding.png" --lz77
+
+ALIGN 4
+BrigandMoving:
+#incext Png2Dmp "Png/BrigandMoving.png" --lz77
+
+ALIGN 4
+BrigandStanding:
+#incext Png2Dmp "Png/BrigandStanding.png" --lz77
+
+ALIGN 4
+SoldierMoving:
+#incext Png2Dmp "Png/SoldierMoving.png" --lz77
+
+ALIGN 4
+SoldierStanding:
+#incext Png2Dmp "Png/SoldierStanding.png" --lz77
+
+ALIGN 4
+LanceLordMoving:
+#incext Png2Dmp "Png/LordMovingF.png" --lz77
+
+ALIGN 4
+LanceLordStanding:
+#incext Png2Dmp "Png/LordStandingF.png" --lz77
+
+ALIGN 4
+ConvoyMoving:
+#incext Png2Dmp "Png/ConvoyMoving.png" --lz77
+
+ALIGN 4
+ConvoyStanding:
+#incext Png2Dmp "Png/ConvoyStanding.png" --lz77

@@ -1,0 +1,20 @@
+#include "Map Sprites/Map Sprite Installer.event"
+
+#include"Animation/Master Animation Installer.event"
+
+#include "Battle Palettes/Palette Setup.event"
+
+#include "Item Icons/Installer.event"
+
+#include "256 colors Title background Installer/titlebackgroundinstaller.event"
+
+
+
+ALIGN 4
+GameTitle:
+#incbin "logo/Logo.dmp"
+
+PUSH
+ORG 0xC5830
+POIN GameTitle
+POP

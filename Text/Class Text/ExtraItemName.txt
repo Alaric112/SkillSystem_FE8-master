@@ -1,0 +1,36 @@
+
+## StrengthRingName
+[X]
+
+## StrengthRingDescription
+[X]
+
+## MagicRingName 
+[X]
+
+## MagicRingDescription
+[X]
+
+## SpeedRingName
+[X]
+
+## SpeedRingDescription
+[X]
+
+## GuardRingName
+[X]
+
+## GuardRingDescription
+[X]
+
+## LegRingName
+[X]
+
+## LegRingDescription
+[X]
+
+## RingName 
+Ring[X]
+
+## RingDescription
+a ring[X]

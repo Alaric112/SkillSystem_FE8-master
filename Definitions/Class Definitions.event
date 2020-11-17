@@ -1,0 +1,12 @@
+// Class Definitions 
+// Vanilla redefine
+#define LanceLord 0x2
+#define LanceCavalier 0x5
+#define LanceKnight 0x9
+//Extra 
+#define AxeCavalier 0x80
+#define SwordCavalier 0x81
+#define AxeKnight 0x82
+#define SwordKnight 0x83
+#define BowCavalier 0x84
+#define Convoy 0x85

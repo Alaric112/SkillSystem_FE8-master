@@ -1,0 +1,163 @@
+/*
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+*/
+
+
+//////////////Installed animations go here:
+
+//#define AnimTableEntry(index) "ORG ClassAnimTable + ((index-1) * 0x20)"
+//#define AnimTableEntry(index) "ORG NewClassAnimTable - 0x20 + (index * 0x20)
+
+
+//#include "Animation Installer.event"
+  
+#define SwordAnim(Animation) "BYTE 0x00 0x01 ; SHORT Animation"
+#define LanceAnim(Animation) "BYTE 0x01 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE 0x02 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE 0x06 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE 0x07 0x01 ; SHORT Animation"
+#define MagicAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation ; BYTE 0x06 0x01 ; SHORT Animation ; BYTE 0x07 0x01 ; SHORT Animation ; BYTE 0x09 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+#define EndAnim "WORD 0x0"
+
+#define ArcherFBowAnim 0x28
+#define ArcherFUnarmedAnim 0x29
+
+#define ArcherMBowAnim 0x27
+#define ArcherMUnarmedAnim 0x26
+
+#define ArmorLanceAnim 0x40
+#define ArmorUnarmedAnim 0x41
+#define ArmorSwordAnim 0xCA
+#define ArmorAxeAnim 0xCB
+#define ArmorBowAnim 0xCC
+#define ArmorHandAxeAnim 0xCD
+
+#define CavalierLanceAnim 0x35
+#define CavalierSwordAnim 0x34
+#define CavalierUnarmedAnim 0x36
+#define CavalierAxeAnim 0xCE
+#define CavalierHandAxeAnim 0xCF
+
+#define PriestStaffAnim 0x7F
+#define PriestUnarmedAnim 0x7E
+
+#define ClericStaffAnim 0x80
+#define ClericUnarmedAnim 0xC8
+
+#define MageFMagicAnim 0x6C
+
+#define WywernAxeAnim 0xD0
+#define WywernHandAxeAnim 0xD1
+
+#define LanceLordAnim 0x03
+#define LanceLordUnarmedAnim 0x04
+
+#define MageLordMagicAnim 0xDB
+
+#define PirateFAxeAnim 0xD2
+#define PirateFHandAxeAnim 0xD3
+#define PirateFUnarmedAnim 0xD4
+
+#define PirateMAxeAnim 0x9A
+#define PirateMHandAxeAnim 0x9B
+#define PirateMUnarmedAnim 0x9C
+
+#define SoldierLanceAnim 0x98
+#define SoldierUnarmedAnim 0x99
+
+#define MercenarySwordAnim 0x0B
+#define MercenaryAxeAnim 0xD5
+#define MercenaryHandAxeAnim 0xD6
+#define MercenaryUnarmedAnim 0x0C
+
+#define ScoutBowAnim 0xD7
+#define ScoutUnarmedAnim 0xD8
+
+#define ErucaAxeAnim 0xD9
+#define ErucaHandAxeAnim 0xDA
+
+#define SniperFBowAnim 0x2C
+#define SniperFUnarmedAnim 0x2D
+
+#define SniperMBowAnim 0x2A
+#define SniperMUnarmedAnim 0x2B
+
+
+// prossimo punto disponibili è 0xDB
+// Animation Pointer:
+
+ALIGN 4
+NausicaaAnims:
+LanceAnim(LanceLordAnim)
+UnarmedAnim(LanceLordUnarmedAnim)
+EndAnim
+
+ALIGN 4
+CavalierAnims:
+SwordAnim(CavalierSwordAnim)
+LanceAnim(CavalierLanceAnim)
+AxeAnim(CavalierAxeAnim)
+HandAxeAnim(CavalierHandAxeAnim)
+UnarmedAnim(CavalierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MercenaryAnims:
+SwordAnim(MercenarySwordAnim)
+AxeAnim(MercenaryAxeAnim)
+HandAxeAnim(MercenaryHandAxeAnim)
+UnarmedAnim(MercenaryUnarmedAnim)
+EndAnim
+
+ALIGN 4
+StockeAnims:
+DarkAnim(MageLordMagicAnim)
+UnarmedAnim(MageLordMagicAnim)
+EndAnim
+
+ALIGN 4
+ArmorKnightAnims:
+SwordAnim(ArmorSwordAnim)
+LanceAnim(ArmorLanceAnim)
+AxeAnim(ArmorAxeAnim)
+HandAxeAnim(ArmorHandAxeAnim)
+BowAnim(ArmorBowAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+ErucaAnims:
+AxeAnim(ErucaAxeAnim)
+HandAxeAnim(ErucaHandAxeAnim)
+UnarmedAnim(ErucaAxeAnim)
+EndAnim
+
+ALIGN 4
+PirateFAnims:
+AxeAnim(PirateFAxeAnim)
+HandAxeAnim(PirateFHandAxeAnim)
+UnarmedAnim(PirateFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+ScoutAnims:
+BowAnim(ScoutBowAnim)
+UnarmedAnim(ScoutUnarmedAnim)
+EndAnim
+
+//Bruh
+#include "Animation Installer.event"

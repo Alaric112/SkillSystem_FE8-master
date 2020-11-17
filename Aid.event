@@ -1,0 +1,27 @@
+//FE8 Mounted Aid Rework
+//By Tequila
+
+#ifndef _FE8_
+ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include EAStdlib.event
+#include "Extensions/Hack Installation.txt"
+
+#ifndef FreeSpace
+#define FreeSpace 0xB2A610
+ORG FreeSpace
+#endif
+
+PUSH
+
+
+ORG $189E4
+SHORT 0x0040 //lsl r0,1; checking if unit is promoted rather than female
+ORG $189EA
+SHORT 0xD009 //changed bne to beq
+ORG $18A12
+SHORT 0x1840 // change to add 
+
+
+POP

@@ -1,0 +1,7 @@
+#define LongBow 0x34
+#define OsIgnis 0x78 // Nausicaa Weapon
+#define FieryFang 0xB1
+#define SkillScroll 0xBC
+#define RingItem  0xBD
+#define QuickBlade 0xCE //Gadriel Weapon
+#define LeatherShield 0xBF

@@ -1,0 +1,12 @@
+// PG
+
+#define Nausicaa 0x01
+#define Kairs 0x02
+#define Salazar 0x03
+#define Gadriel 0x04
+
+
+//Enemy and NPC
+#define Merchant 0x6f
+#define Demon 0xaa
+#define DemonBoss 0xab

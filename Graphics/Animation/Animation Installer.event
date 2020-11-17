@@ -1,0 +1,64 @@
+#include "Event/ArcherFBow Installer.event"
+#include "Event/ArcherFUnarmed Installer.event"
+
+#include "Event/ArcherMBow Installer.event"
+#include "Event/ArcherMUnarmed Installer.event"
+
+#include "Event/ArmorSword Installer.event"
+#include "Event/ArmorLance Installer.event"
+#include "Event/ArmorAxe Installer.event"
+#include "Event/ArmorHandAxe Installer.event"
+#include "Event/ArmorUnarmed Installer.event"
+#include "Event/ArmorBow Installer.event"
+
+#include "Event/CavalierLance Installer.event"
+#include "Event/CavalierSword Installer.event"
+#include "Event/CavalierAxe Installer.event"
+#include "Event/CavalierHandAxe Installer.event"
+#include "Event/CavalierUnarmed Installer.event"
+
+#include "Event/Priest Installer.event"
+#include "Event/PriestUnarmed Installer.event"
+
+#include "Event/Cleric Installer.event"
+#include "Event/ClericUnarmed Installer.event"
+
+#include "Event/ErucaAxe Installer.event"
+#include "Event/ErucaHandAxe Installer.event"
+
+#include "Event/MercenarySword Installer.event"
+#include "Event/MercenaryAxe Installer.event"
+#include "Event/MercenaryHandAxe Installer.event"
+#include "Event/MercenaryUnarmed Installer.event"
+
+#include "Event/MageF Installer.event"
+
+//#include "Event/MageLord Installer.event"
+
+#include "Event/Magic Installer.event"
+
+#include "Event/PirateFAxe Installer.event"
+#include "Event/PirateFHandAxe Installer.event"
+#include "Event/PirateFUnarmed Installer.event"
+
+#include "Event/PirateMAxe Installer.event"
+#include "Event/PirateMHandAxe Installer.event"
+#include "Event/PirateMUnarmed Installer.event"
+
+#include "Event/ScoutBow Installer.event"
+#include "Event/ScoutUnarmed Installer.event"
+
+#include "Event/Soldier Installer.event"
+#include "Event/SoldierUnarmed Installer.event"
+
+#include "Event/SniperFBow Installer.event"
+#include "Event/SniperFUnarmed Installer.event"
+
+#include "Event/SniperMBow Installer.event"
+#include "Event/SniperMUnarmed Installer.event"
+
+#include "Event/WywernAxe Installer.event"
+#include "Event/WywernHandAxe Installer.event"
+
+#include "Event/LanceLord Installer.event"
+#include "Event/LanceLordUnarmed Installer.event"

@@ -1,0 +1,10 @@
+
+#include "ClassName.event"
+
+#include "PgName.txt"
+
+#include "EnemyName.event"
+
+#include "ItemName.event"
+
+#include "ExtraItemName.txt"

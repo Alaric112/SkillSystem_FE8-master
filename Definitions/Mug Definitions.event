@@ -1,0 +1,37 @@
+//For use with PortraitFormatter
+//#define setMugEntry(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY) "PUSH; ORG PortraitsTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; WORD 0x00000000; BYTE mouthX mouthY eyeX eyeY; WORD 0x01; POP"
+//#define setMugEntry(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, eyeControl) "PUSH; ORG PortraitsTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; WORD 0x00000000; BYTE mouthX mouthY eyeX eyeY; WORD eyeControl; POP"
+//#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+//#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+// Class Card
+
+#define AxeArmorClassCard 0xAD
+#define AxeCavalierClassCard 0xAE
+#define AxeWyvernriderClassCard 0xAF
+#define BowCavalierClassCard 0xB0
+#define BrawlerClassCard 0xB1
+#define DeserterClassCard 0xB2
+#define Druid_FClassCard 0xB3
+#define HalberdierClassCard 0xB4
+#define MarshallClassCard 0xB5
+#define Pirate_FClassCard 0xB6
+#define SwordArmorClassCard 0xB7
+#define SwordCavalierClassCard 0xB8
+#define ConvoyClassCard 0xB9
+#define CivilClassCard 0xBA
+
+/*
+#define MedicClassCard 0x10C
+#define FreeKnightClassCard 0x10D
+#define SwordSaintClassCard 0x10E
+#define TentClassCard 0x10F
+#define TransporterClassCard 0x110
+#define WarMonkClassCard 0x111
+#define WitchClassCard 0x112
+#define BarubaryClassCard 0x113
+#define EarthDragonClassCard 0x114
+#define DivineDragonClassCard 0x115
+#define MageDragonClassCard 0x116
+#define IceDragonClassCard 0x117
+*/

@@ -1,0 +1,61 @@
+#ifdef _FE8_
+	
+    #include "EAstdlib.event"
+    #include "Custom Definitions.event"
+
+    ORG FreeSpace
+	
+    #include "repointedTextTable.event"
+	
+    //Text first for Text ID definitions
+    #include "Text/Install Text Data.event"
+    MESSAGE Used text space ends at currentOffset
+    
+    #include "Repoint/backgroundrepoint.event"
+	#include "Repoint/expandportraittableinstaller.event"
+	#include "Repoint/ClassRepoint - Copia.event"
+    #include "Repoint/expandanimtableinstaller.event"
+    ALIGN 4 
+
+	//CSV tables
+    #include "Tables/Master Table Installer.event"
+    MESSAGE Used table space ends at currentOffset
+	
+  	//Graphics
+    #include "Graphics/Master Graphics Installer.event"
+	ALIGN 4
+	#include "Mugs/Mug Installer.event"
+    ALIGN 4  
+	#include "Background\Background.event"
+    ALIGN 4	
+	
+    //Engine Hacks
+    #include "Engine Hacks/_MasterHackInstaller.event"
+    MESSAGE Used hax space ends at currentOffset
+
+    //Events
+    #include "Events/Master Event Installer.event"
+
+    //Maps
+    #include "Maps/Master Map Installer.event"
+	
+	//Music
+	#include "Music/music installer.event"
+	
+    MESSAGE Used free space ends at currentOffset
+#else
+    ERROR You are not assembling FE8 events!
+#endif
+
+/*
+PUSH
+
+ORG $801842E
+callHack_r3(MyThirdHack)
+
+POP
+
+ALIGN 4
+MyThirdHack:
+*/
+

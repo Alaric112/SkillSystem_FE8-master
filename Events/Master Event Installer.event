@@ -1,0 +1,7 @@
+#include "Event Definitions/_Global Event Installer.event"
+
+#include "World Map/World Map Events Installer.event"
+
+{
+	#include "Prologue.event"
+}

@@ -1,0 +1,74 @@
+1
+Item Effect FE8_clean.GBA by FEBuilderGBA
+0x8AFBD8
+161
+16
+ItemWeaponEffectForm_INDEX.txt
+NULL
+
+Item ID
+0
+1
+NEHU
+NULL
+
+??
+1
+1
+NEHU
+NULL
+
+1 or 2
+2
+1
+NEHU
+NULL
+
+??
+3
+1
+NEHU
+NULL
+
+Battle Animation
+4
+2
+NEHU
+NULL
+
+??
+6
+2
+NEHU
+NULL
+
+Map Animation Effect
+8
+4
+NEHU
+NULL
+
+Damage Effect
+12
+1
+NEHU
+NULL
+
+Map Sprite Facing During Effect
+13
+1
+NEHU
+NULL
+
+Map Sprite Color When Hit
+14
+1
+NEHU
+NULL
+
+??
+15
+1
+NEHU
+NULL
+
