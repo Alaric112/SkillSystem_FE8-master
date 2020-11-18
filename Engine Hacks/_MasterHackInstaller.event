@@ -67,6 +67,13 @@ POP
   //Fixes
   #include "MyHack/_Master Hack Installer.event"
   
+  //MultyTileMarker
+  #include "MyHack/Multitilemark/MultiTileMarker_Install.event"
+  
+  //ContinueBattleBGM 
+  #include "MyHack/ContinueBattleBGM_20200919/ContinueBattleBGM_install.event"
+
+  
 ////////////////////////////////NORMAL SKILL THINGS
 
   //HP Bars (and effective weapon warning)

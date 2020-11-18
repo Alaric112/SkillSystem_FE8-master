@@ -1,6 +1,6 @@
 //#include "REDAs.event"
 
-//#include "Macros.event"
+#include "Macros.event"
 
 #include "AI.event"
 

@@ -30,3 +30,5 @@
 #include "Fixes/Link Arena/Installer.event"
 
 #include "Fixes/Event/Installer.event"
+
+#include "MusicPatch/MasterInstaller.event"

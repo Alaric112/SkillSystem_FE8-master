@@ -14,8 +14,13 @@ PointerList:
 
 TurnBasedEvents:
 
-    TurnEventPlayer(0x0,Turn2,2) 
-   	TurnEventPlayer(0x0,Turn3,3)
+    TurnEventPlayer(0x0,Turn2,2)
+    TurnEventPlayer(0x0,Turn3,3)
+	TurnEventPlayer(0x0,Turn4,4)
+	TurnEventPlayer(0x0,Turn6,6)
+	TurnEventPlayer(0x0,Turn8,8)
+	TurnEventPlayer(0x0,Turn9,9)
+	TurnEventPlayer(0x0,Turn10,10)
 	TurnEventEnemy(0x0,TurnEnemy1,1)
 	TurnEventNPC(0x0,TurnNPC1,1,1)
     
@@ -44,6 +49,46 @@ CURSOR_FLASHING(Kairs)
 STAL(25)
 REMOVE_CURSORS
 Text(PrologueTurn3)
+ENDA
+
+Turn4:
+
+SpawnReinforcements(Reinforcement1)
+CAMERA [10,15]
+CHECK_EVENTID 22
+BNE 1 0xC 0x0
+CURSOR_FLASHING [10,15]
+CURSOR_FLASHING [9,15]
+STAL(60)
+REMOVE_CURSORS
+CAMERA Kairs
+CURSOR_FLASHING Kairs
+STAL(30)
+REMOVE_CURSORS
+Text(PrologueTurn4)
+CAMERA [4,12]
+CURSOR_FLASHING [3,12]
+STAL(30)
+Text(PrologueTurn4x2)
+LABEL(1)
+
+ENDA
+
+Turn6:
+SpawnReinforcements(Reinforcement2)
+ENDA
+
+Turn8:
+SpawnReinforcements(Reinforcement3)
+
+ENDA
+
+Turn9:
+SpawnReinforcements(Reinforcement4)
+ENDA
+
+Turn10:
+SpawnReinforcements(Reinforcement5)
 ENDA
 
 TurnEnemy1:
@@ -162,6 +207,54 @@ EnemyReinforce1:
 	UNIT 
 	
 
+Reinforcement1:
+
+    UNIT Demon Revenant 0x0 Level(1,Enemy,1) [6,0] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(2,Enemy,1) [14,6] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(2,Enemy,1) [14,3] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	
+	UNIT
+
+
+Reinforcement2:
+
+	UNIT Demon 0x5b 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(2,Enemy,1) [14,3] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(4,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [0xb2] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(1,Enemy,1) [0,10] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+    
+	UNIT
+	
+	
+Reinforcement3:
+
+	UNIT Demon 0x5b 0x0 Level(2,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(3,Enemy,1) [14,3] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon 0x5b 0x0 Level(3,Enemy,1) [0,10] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	
+	UNIT
+	
+	
+Reinforcement4:
+
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Bael 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,0,0]
+
+    UNIT
+	
+Reinforcement5:
+
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Gargoyle 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT Demon Gargoyle 0x0 Level(8,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT DemonBoss Gargoyle 0x0 Level(9,Enemy,1) [12,0] 0x2 0x0 0x0 0x0 [Horseslayer,RedGem] [0,0,0,0]
+
+    UNIT
+
+	
 gruppo1:
 
     UNIT Kairs Paladin 0x0 Level(1,NPC,0) [10,1] 0x0 0x0 0x0 0x0 [SteelSword,SteelLance] [6,3,4,0]
@@ -252,6 +345,16 @@ BeginningScene:
     ENDA
 
 EndingScene:
+    MUSC(0x31)
+	DISA Merchant
+	SetBackground(0x1d)
+	Text(PrologueEndText2)
+	Text(PrologueEndText1)
+	FADI(25)
+	SetBackground(0x39)
+	FADU(25)
+	Text(PrologueEndText3)
+	FADI(25)
 	MNC2 0x01
 	NoFade
 	ENDA

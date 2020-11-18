@@ -1,0 +1,7 @@
+#include "Battle BGM/Installer.event"
+
+#include "Changing preparation BGM/Installer.event"
+
+#include "ContinueBattleBGM_20200919/ContinueBattleBGM_install.event"
+
+//#include ""  /* devo ancora decidere le musiche dei negozi */
