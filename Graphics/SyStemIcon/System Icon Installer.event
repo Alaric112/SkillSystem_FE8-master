@@ -1,0 +1,12 @@
+
+
+/*
+ALIGN 4
+SystemArrow:
+#incbin "Arrow.dmp"
+
+PUSH
+ORG 0xA03054
+POIN SystemArrow
+POP
+*/

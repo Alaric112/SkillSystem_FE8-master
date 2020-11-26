@@ -96,9 +96,9 @@ POP
 
   //Negative Stat Boosts
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
-
-  //Dragon Veins
-  #include "ExternalHacks/DragonVeins/DragonVeins.event"
+  
+  //Trap Rework (Dragon Veins & Heal Tiles)
+  #include "ExternalHacks/TrapRework/TrapRework.event"
   
   //Proper Range Getters
   #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
@@ -110,12 +110,8 @@ POP
   #include "ExternalHacks/Biorhythm/Biorhythm.event"
 
   //Modular Stat Screen
-  #ifndef USE_STRMAG_SPLIT
-	#include "Necessary/MSS/ModularStatScreen.event"
-  #else
-    #include "ExternalHacks/StrMagSplit/ModularStatScreen/ModularStatScreen.event"
-  #endif // USE_STRMAG_SPLIT
-  
+  #include "Necessary/ModularStatScreen/ModularStatScreen.event"
+
   // Strength/Magic Split
   #ifdef USE_STRMAG_SPLIT
   

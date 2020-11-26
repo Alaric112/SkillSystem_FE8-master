@@ -8,7 +8,9 @@
 
 #include "256 colors Title background Installer/titlebackgroundinstaller.event"
 
+#include "Tilesets/_Master Tileset Installer.event"
 
+#include "SyStemIcon/System Icon Installer.event"
 
 ALIGN 4
 GameTitle:

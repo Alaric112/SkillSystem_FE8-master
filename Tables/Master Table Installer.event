@@ -1,4 +1,4 @@
 
 #include "Table Installer.event"
 
-//#include "Extra/Effectiveness.event"
+#include "Extra/_Master Manual Table Installer.event"

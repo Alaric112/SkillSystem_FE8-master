@@ -67,29 +67,25 @@ POP
 #define DurabilityItemEnd "BYTE 0"
 #define DurabilityIcon(itemID,iconSheetID) "BYTE itemID iconSheetID"
 #define DurabilityIconEnd "SHORT 0"
-#define NameTableEntry(textID) "SHORT textID"
+
 
 ALIGN 4
 DurabilityBasedItemNameList: //used for item name
 DurabilityTextEntry(0xFFFF,True,SkillDescTable)
-DurabilityTextEntry(RingName,False,RingNameTable)
 DurabilityTextEnd
 
 ALIGN 4
 DurabilityBasedItemDescList: //used for item desc
 DurabilityTextEntry(0xFFFF,False,SkillDescTable)
-DurabilityTextEntry(RingDescription,False,RingDescriptionTable)
 DurabilityTextEnd
 
 ALIGN 4
 DurabilityItemList: //used for durability
 DurabilityItem(SkillScroll)
-DurabilityItem(RingItem)
 DurabilityItemEnd
 
 DurabilityBasedItemIconList: //used for icons
 DurabilityIcon(SkillScroll,5)
-DurabilityIcon(RingItem,6)
 DurabilityIconEnd
 
 /*
@@ -99,22 +95,4 @@ Y - Name
 Y - Desc
 Y - Icon
 */
-
-ALIGN 4
-RingNameTable:
-NameTableEntry(0x0)
-NameTableEntry(StrengthRingName)
-NameTableEntry(MagicRingName)
-NameTableEntry(SpeedRingName)
-NameTableEntry(GuardRingName)
-NameTableEntry(LegRingName)
-
-ALIGN 4
-RingDescriptionTable:
-NameTableEntry(0x0)
-NameTableEntry(StrengthRingDescription)
-NameTableEntry(MagicRingDescription)
-NameTableEntry(SpeedRingDescription)
-NameTableEntry(GuardRingDescription)
-NameTableEntry(LegRingDescription)
 

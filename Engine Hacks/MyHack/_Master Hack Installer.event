@@ -32,3 +32,13 @@
 #include "Fixes/Event/Installer.event"
 
 #include "MusicPatch/MasterInstaller.event"
+
+#include "EscapeArrive/EscapeMenu/EA.txt"
+
+#include "EscapeArrive/EVENTSCRIPT_SimpleEscape_20200305/ASM_SimpleEscape.event"
+
+#include "EVENTSCRIPT_give_exp 20191015/give_exp_Install.event"
+
+#include "EVENTSCRIPT_COND_GetStatus/Installer.event"
+
+#include "EVENTSCRIPT_change_bad_status/Installer.event"

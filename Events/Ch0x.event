@@ -1,0 +1,120 @@
+EventPointerTable(Ch1Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+
+	UNIT
+
+EnemyUnits:
+
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+
+//    FADU(30)
+	MUSC(0x27)
+	LOMA(0x07)
+    FADU(30)
+    FADI(30) 	
+	CAMERA[12,9]
+	LOAD1 1 Cutscene1
+	FADU(30)
+	LOAD1 2 Cutscene2
+	ENUN
+	MOVE_1STEP 30 charID 0
+	MOVE_1STEP 30 charID 1
+	TILECHANGE 0x0
+    MOVE 120 Nausicaa [x, y] 	
+	ENUN
+	SetBackground(0xE)
+	Text(Text1Ch0x)
+	REMA
+	CLEAR
+	LOAD1 2 Cutscene3
+	SetBackground(0xE)
+	Text(Text1Ch1x)
+	REMA
+	GIVE_MONEY Nausicaa
+	FADI(16)
+	CLEAN
+	CLEA
+	CLEN
+	CLEE
+	LOMA(0x1)
+	FADU(16)
+	MUSC(0x270)
+	LOAD1 1 Player1
+	SOLOTEXTBOXSTART
+	                 SET_VAL_B
+					 TEXTSHOW(Text3Ch0x)
+					 TEXTEND
+    REMA
+	LOAD1 1 Cutscene4
+	Text(Text4Ch0x)
+	FADI(16)
+	DISA Nashira
+	LOAD1 1 NPC1
+	
+	ENUN
+	
+	ENUN
+	
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 0x2
+	NoFade
+	ENDA

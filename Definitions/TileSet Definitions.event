@@ -1,0 +1,10 @@
+#define TilesetAnimation(speed, size, pointer) "BYTE speed 0; SHORT size; POIN pointer"
+#define AnimType2Installer(PaletteData,Interval,DataSize,PaletteNo) "WORD PaletteData|IsPointer; BYTE Interval DataSize PaletteNo 0x0"
+
+#include "Reference/Tileset Definitions.event"
+
+#define SoryaObjectSet 0xE9
+#define SoryaPalette 0xE8
+#define SoryaTileConfig 0xE7
+#define FieldsNightPalette 0xEB
+#define SoryaNightPalette 0xEC

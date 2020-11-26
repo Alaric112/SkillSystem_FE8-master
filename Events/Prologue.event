@@ -97,6 +97,9 @@ EVBIT_MODIFY 4
 Text(PrologueTurnEnemy1)
 MOVE 120 DemonBoss [10, 3]
 ENUN
+GiveEXP(0x01,0x64)
+GiveEXP(1,2,32)
+AddStatus(Nausicaa, 0x14, 1)
 ENDA
 
 TurnNPC1:
@@ -130,6 +133,7 @@ CharacterBasedEvents:
 NausicaaKairsTalk:
 	MUSS(0x30)
 	Text(FirstTalk)
+	GiveEXPcurrentUnit(10)
 	CUSA Kairs
 	CUSA Gadriel
 	CUSA Merchant
@@ -153,8 +157,19 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
+House(0x11,Secret,14,12)
+/*
+Escape(0x3,Retreat,13,9)
+Escape(0x3,Retreat,14,18)
+*/
 	END_MAIN
+
+Secret:
+GiveItem(AngelicRobe,-1)
+ENDA
+
+Retreat:
+ENDA
 
 Dunno1:
 
@@ -202,7 +217,7 @@ EnemyReinforce1:
 	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
 	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [4,11] 0x0 0x0 0x0 0x0 [FetidClaw] [0,12,0,0]
 	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [0,16] 0x2 0x0 0x0 0x0 [RottenClaw,Vulnerary] [0,3,4,0]
-	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [7,18] 0x2 0x0 0x0 0x0 [SteelSword] [0,3,4,0]
+	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [7,18] 0x0 0x0 0x0 0x0 [SteelSword] [0,3,4,0]
 	
 	UNIT 
 	
@@ -341,7 +356,9 @@ BeginningScene:
 	REMOVE_CURSORS
     SetBackground(0x23)
     Text(Text4)
-    CLEAN	 
+    CLEAN
+    //ENUT(LordMustEscapeLastFlag)
+    BadStatus(Kairs, 0x2)	
     ENDA
 
 EndingScene:

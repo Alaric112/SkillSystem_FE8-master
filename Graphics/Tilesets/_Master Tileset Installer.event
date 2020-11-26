@@ -1,0 +1,66 @@
+#include "Tile Anims/_Master Tile Anim Installer.event"
+
+ALIGN 4
+FieldsObjectSetData:
+#incbin "Dmp/NormalFields.dmp"
+
+ALIGN 4
+FieldsTileConfigData:
+#incbin "Dmp/NormalFields_comp.dmp"
+
+ALIGN 4
+SoryaObjectSetData:
+#incbin "Dmp/Sorya.dmp"
+
+ALIGN 4
+SoryaPaletteData:
+#incbin "Dmp/SoryaPalette.dmp"
+
+ALIGN 4
+SoryaTileConfigData:
+#incbin "Dmp/Sorya_comp.dmp"
+
+ALIGN 4
+DesertObjectSetData:
+#incbin "Dmp/Desert.dmp"
+
+ALIGN 4
+DesertPaletteData:
+#incbin "Dmp/DesertPallette.dmp"
+
+ALIGN 4
+DesertTileConfigData:
+#incbin "Dmp/Desert_comp.dmp"
+
+ALIGN 4
+FieldsNightPaletteData:
+#incbin "Dmp/NightFields.dmp"
+
+ALIGN 4
+SoryaNightPaletteData:
+#incbin "Dmp/SoryaNight.dmp"
+
+/*
+EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
+EventPointerTable(CastlePaletteSewer,CastlePaletteSewerData)
+EventPointerTable(SnowObjectSet,SnowObjectSetData)
+EventPointerTable(SnowPalette,SnowPaletteData)
+EventPointerTable(SnowTileConfig,SnowTileConfigData)
+EventPointerTable(SnowPaletteNight,SnowPaletteNightData)
+EventPointerTable(CaveObjectSet,CaveObjectSetData)
+EventPointerTable(CavePalette,CavePaletteData)
+EventPointerTable(CaveTileConfig,CaveTileConfigData)
+EventPointerTable(FrontierObjectSet,FrontierObjectSetData)
+EventPointerTable(FrontierPalette,FrontierPaletteData)
+EventPointerTable(FrontierTileConfig,FrontierTileConfigData)
+*/
+EventPointerTable(SoryaTileConfig,SoryaTileConfigData)
+EventPointerTable(SoryaObjectSet,SoryaObjectSetData)
+EventPointerTable(SoryaPalette,SoryaPaletteData)
+EventPointerTable(FieldsTileConfig,FieldsTileConfigData)
+EventPointerTable(FieldsObjectSet,FieldsObjectSetData)
+EventPointerTable(DesertTileConfig,DesertTileConfigData)
+EventPointerTable(DesertObjectSet,DesertObjectSetData)
+EventPointerTable(DesertPalette,DesertPaletteData)
+EventPointerTable(FieldsNightPalette,FieldsNightPaletteData)
+EventPointerTable(SoryaNightPalette,SoryaNightPaletteData)

@@ -1,0 +1,22 @@
+## NausicaaDeath
+[OpenMidRight][LoadNausicaa][OpenMidRight]
+Father...[.][ToggleMouthMove]... [ToggleMouthMove]Lena...[N]
+forgive me....[A][OpenMidRight][CloseEyes][X]
+
+## KairsDeathPrologue
+[OpenMidRight][LoadKairs][OpenMidRight]
+Giulia....Gadriel, Nausica[aa][AN]
+I failed....finish[N]
+the work for me too[AN]
+it's time for that[N]
+old man ...to close...his...eyes...[A][.]
+[OpenMidRight][CloseEyes][X]
+
+## GadrielDeathPrologue
+[OpenMidRight][LoadGadriel][OpenMidRight]
+Grandpa...you were right, I wasn't[N] 
+ready yet[AN], I'm a[N] failure[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+
+## MerchantDeathPrologue
+[OpenMidRight][LoadFace][0x5A][0x01][OpenMidRight]
+We are doomed...[.][CloseEyes][A][X]

@@ -1021,6 +1021,8 @@
 //By Sme
 #define AmischeID 255
 
+//Triangle Attack: Allows this unit to perform a triangle attack with 2 other units who have this skill.
+#define TriangleAttackID 255
 
 //Biorhythm Skills: Double or halve biorhythm effects.
 //By Sme
@@ -1034,10 +1036,8 @@
 #define NiceThighsID 50
 #define PersonalityID 109
 
-
 //Broken Skills
 #define Roll12ID 255
 #define TraceID 255
-#define TriangleAttackID 255
 
 

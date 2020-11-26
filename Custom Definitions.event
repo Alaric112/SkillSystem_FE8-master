@@ -61,6 +61,10 @@
 
 #include "Graphics/Item Icons/Icon Definitions.event"
 
+#include "Definitions/TileSet Definitions.event"
+
+#include "Definitions/PList Definitions.event"
+
 //#include "Definitions/StatBoost.event"
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
