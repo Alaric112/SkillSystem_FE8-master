@@ -255,3 +255,7 @@ Thank you so much elder[AN]
 [OpenMidRight]
 Not at all! little one[AN]
 please pay attention tomorrow[A][X]
+
+## Text5Ch0x
+When you have finished to prepare[N]
+go talk to Gilliam[A][X]

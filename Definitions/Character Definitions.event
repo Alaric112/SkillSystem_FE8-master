@@ -10,3 +10,7 @@
 #define Merchant 0x6f
 #define Demon 0xaa
 #define DemonBoss 0xab
+#define Mansel 0xC8
+#define Militia 0xC0
+#define Gilliam 0xC4
+#define Nashira 0xC3

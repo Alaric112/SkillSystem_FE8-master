@@ -48,6 +48,16 @@ Tutorial:
 Units1:
 
 	UNIT
+	
+Cutscene1: 
+
+	UNIT Mansel 0x7A 0x0 Level(3,NPC,1) [12,5] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,1) [12,12] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Merchant Soldier 0x0 Level(4,NPC,1) [13,12] 0x0 0x0 0x0 0x0 [0xb2] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(1,NPC,1) [11,6] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [13,6] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+    	
+	UNIT
 
 EnemyUnits:
 
@@ -106,12 +116,15 @@ BeginningScene:
 	FADI(16)
 	DISA Nashira
 	LOAD1 1 NPC1
-	
-	ENUN
-	
-	ENUN
-	
-	GotoPrepScreen
+	BadStatus(0x8, 0x2)
+	REMU(0x2)
+	REMU(0x4)
+	FADU(16)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW Text5Ch0x  
+	                  	TEXTEND	
+    REMA                     	
 	ENDA
 
 EndingScene:
