@@ -96,8 +96,10 @@
 #define SniperMBowAnim 0x2A
 #define SniperMUnarmedAnim 0x2B
 
+#define HuntressBowAnim 0xDB
+#define HuntressUnarmedAnim 0xDC
 
-// prossimo punto disponibili è 0xDB
+// prossimo punto disponibili è 0xDE
 // Animation Pointer:
 
 ALIGN 4
@@ -157,6 +159,12 @@ ALIGN 4
 ScoutAnims:
 BowAnim(ScoutBowAnim)
 UnarmedAnim(ScoutUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HuntressAnims:
+BowAnim(HuntressBowAnim)
+UnarmedAnim(HuntressUnarmedAnim)
 EndAnim
 
 //Bruh

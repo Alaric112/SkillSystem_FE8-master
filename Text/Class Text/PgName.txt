@@ -1,3 +1,6 @@
+## bruh
+[X]
+
 ## NausicaaName
 Nausica[aa][X]
 
@@ -20,3 +23,96 @@ Gadriel[X]
 Young guardian of merchant[NL] 
 caravans, follows the teachings[NL]
 of his mentor: the paladin Kairs[X]
+
+## LukasName
+Lukas[X]
+
+## LukasDesc
+A young soldier of the empire[N]
+of Granorg, loyal and faithful[N]
+towards the values of the cavalry[X]
+
+## DianaName 
+Diana[X]
+
+## DianaDesc
+Sorya huntress, a little lazy, but[N] 
+with an unmatched speed with the bow[X]
+
+## ColtName
+Colt[X]
+
+## ColtDesc
+A young thief who now[N]
+works for Sorya's guard[X]
+
+## RosieName
+Rosie[X]
+
+## RosieDesc
+A former pirate of the skies who[N]
+joined Sorya's guard to redeem himself[X]
+
+## CalliopeName
+Calliope[X]
+
+## CalliopeDesc
+Salem's young apprentice and[N]
+Nausica[aa]'s childhood friend[X]
+
+## YalaName
+Yala[X]
+
+## YalaDesc
+Young priestess of the light who[N] 
+decided to serve the people of Sorya[N] 
+and her princess[X]
+
+## SalemName
+Salem[X]
+
+## SalemDesc
+A wise young wanderer who has decided[N] 
+to stay service of the people of Sorya[X]
+
+## CatherinaName ^
+Catherina[X]
+
+## CatherinaDesc 
+Daughter of one of the great senators[N] 
+of Alistar she loves his country[N] 
+but not his father[X]
+
+## HarkenName
+Harken[X]
+
+## HarkenDesc
+A former gladiator of the wilds now he[N] 
+is the personal knight of lady Catherina[X]
+
+## RathName
+Rath[X]
+
+## RathDesc
+Knight of Sorya known as[N] 
+the archer of the storm[X]
+
+## ManfredName
+MAnfred[X]
+
+## ManfredDesc
+A courageous captain in Granorg's army.[N]
+He's better known as Obsidian.[X]
+
+## GilliamName
+Gilliam[X]
+
+## GilliamDesc
+Captain of the Soria guard faithful[N] 
+and helpful towards its king[X]
+
+## OldManName
+Old Man[X]
+
+## OldManDesc
+An Old Man[X]

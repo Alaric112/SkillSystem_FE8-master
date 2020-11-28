@@ -23,10 +23,36 @@ CharacterBasedEvents:
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
+	AFEV 0x0 Refresh 0x0
+	AREA 0x9 LenaEvent [0, 5] [29, 10]
 	END_MAIN
+	
+	
+Refresh:
+
+    ENDA	
+
+LenaEvent:
+
+    EVBIT_MODIFY 0x3
+    LOAD1 0x1 LenaDeploy
+	ENUN
+    SOLOTEXTBOXSTART
+	                 SCOORD 0xB [118, 73]
+					 TEXTSHOW(Text6Ch0x)
+					 TEXTEND
+    REMA
+	MOVEONTO 60 Lena Nausicaa
+	SetBackground(0x02)
+	Text(Text7Ch0x)
+	FADI 16
+	DISA Lena
+	FADU 16
+    ENDA
 
 LocationBasedEvents:
-
+    
+	LOCA 3 [20,15] 0x11
 	END_MAIN
 
 Dunno1:
@@ -47,18 +73,72 @@ Tutorial:
 
 Units1:
 
+	UNIT Nausicaa 0x0 0x0 Level(1,Ally,1) [9,0] 0x0 0x0 0x1 REDA9R4 [0] [0,0,0,0]
+
 	UNIT
 	
 Cutscene1: 
 
-	UNIT Mansel 0x7A 0x0 Level(3,NPC,1) [12,5] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
-	UNIT Militia Soldier 0x0 Level(2,NPC,1) [12,12] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
-	UNIT Merchant Soldier 0x0 Level(4,NPC,1) [13,12] 0x0 0x0 0x0 0x0 [0xb2] [0,0,0,0]
-	UNIT Gilliam General 0x0 Level(1,NPC,1) [11,6] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
-	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [13,6] 0x0 0x0 0x0 0x0 [0xb1] [0,0,0,0]
+	UNIT Mansel 0x7A 0x0 Level(3,NPC,1) [12,5] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,1) [12,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Merchant Soldier 0x0 Level(4,NPC,1) [13,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(1,NPC,1) [11,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [13,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
     	
 	UNIT
 
+Cutscene2:
+
+	UNIT Nausicaa 0x0 0x0 Level(1,Ally,1) [15,15] 0x0 0x0 0x1 REDA12R13 [0] [0,0,0,0]
+    
+	UNIT
+
+Cutscene3:
+
+	UNIT Kairs 0x0 0x0 Level(1,Ally,1) [14,15] 0x0 0x0 0x1 REDA11R7 [0] [0,0,0,0]
+    UNIT Gadriel 0x0 0x0 Level(1,Ally,1) [15,15] 0x0 0x0 0x1 REDA13R8 [0] [0,0,0,0]
+
+    UNIT
+
+Player:
+
+	UNIT Nausicaa 0x0 0x0 Level(1,Ally,1) [9,0] 0x0 0x0 0x1 REDA9R4 [0] [0,0,0,0]
+
+	UNIT
+
+Cutscene4:
+
+	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [10,0] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
+
+	UNIT
+
+LenaDeploy:
+
+	UNIT Lena 0x6E 0x0 Level(1,NPC,1) [27, 6] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+
+	UNIT
+
+NPC1:
+
+	UNIT Calliope MageF 0x0 Level(3,NPC,0) [23,6] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(4,NPC,0) [1,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronLance, SteelShield] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,NPC,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,NPC,1) [2,15] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,NPC,0) [6,13] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+	UNIT Merchant Convoy 0x0 Level(1,NPC,0) [24,15] 0x0 0x0 0x0 0x0 [0xA0, 0xA0] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,0) [20,5] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,0) [2,4] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,0) [6,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,0) [7,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT 0xFC 0x71 0x0 Level(1,NPC,1) [22,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x70 0x0 Level(1,NPC,1) [26,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [23,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xF4 0x6F 0x0 Level(1,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [4,22] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0x70 0x6D 0x0 Level(1,NPC,1) [6,23] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	
+    UNIT 
+	
 EnemyUnits:
 
 	UNIT
@@ -73,52 +153,55 @@ Traps2:
 
 BeginningScene:
 
-//    FADU(30)
 	MUSC(0x27)
 	LOMA(0x07)
-    FADU(30)
-    FADI(30) 	
-	CAMERA[12,9]
+	CAMERA_CENTERED [17,12] 	
 	LOAD1 1 Cutscene1
-	FADU(30)
-	LOAD1 2 Cutscene2
 	ENUN
-	MOVE_1STEP 30 charID 0
-	MOVE_1STEP 30 charID 1
+	FADU(30)
+	LOAD1 1 Cutscene2
+	ENUN
+	MOVE_1STEP 30 Militia 0
+	ENUN
+	MOVE_1STEP 30 Merchant 1
+	ENUN
 	TILECHANGE 0x0
-    MOVE 120 Nausicaa [x, y] 	
+    MOVE 120 Nausicaa [12, 7] 	
 	ENUN
 	SetBackground(0xE)
 	Text(Text1Ch0x)
 	REMA
-	CLEAR
-	LOAD1 2 Cutscene3
+	EndConvo
+	LOAD1 1 Cutscene3
+	ENUN
 	SetBackground(0xE)
-	Text(Text1Ch1x)
+	Text(Text2Ch0x)
 	REMA
-	GIVE_MONEY Nausicaa
+    GiveGold(1500)
 	FADI(16)
 	CLEAN
-	CLEA
-	CLEN
-	CLEE
+	CLEA 0x0
+    CLEE 0x0
+    CLEN 0x0
 	LOMA(0x1)
 	FADU(16)
 	MUSC(0x270)
-	LOAD1 1 Player1
+	LOAD2 0 Units1
+	ENUN
 	SOLOTEXTBOXSTART
-	                 SET_VAL_B
+	                 SCOORD 0xB [125, 43]
 					 TEXTSHOW(Text3Ch0x)
 					 TEXTEND
     REMA
 	LOAD1 1 Cutscene4
+	ENUN
 	Text(Text4Ch0x)
 	FADI(16)
 	DISA Nashira
 	LOAD1 1 NPC1
 	BadStatus(0x8, 0x2)
-	REMU(0x2)
-	REMU(0x4)
+	REMU(Kairs)
+	REMU(Gadriel)
 	FADU(16)
 	TUTORIALTEXTBOXSTART
 	                    CenterTutorialTextBox 

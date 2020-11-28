@@ -358,7 +358,6 @@ BeginningScene:
     Text(Text4)
     CLEAN
     //ENUT(LordMustEscapeLastFlag)
-    BadStatus(Kairs, 0x2)	
     ENDA
 
 EndingScene:

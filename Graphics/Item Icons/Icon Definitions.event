@@ -145,10 +145,10 @@
 #define NinissGraceIcon 	0x90
 #define ThorsIreIcon 		0x91
 #define SetsLitanyIcon 		0x92
-#define ShadowkillerIcon2 	0x93
-#define BrightLanceIcon2 	0x94
-#define FiendcleaverIcon2 	0x95
-#define BeaconBowIcon2 		0x96
+#define SteelShieldIcon 	0x93
+#define CrystalShieldIcon 	0x94
+#define LenaPendant      	0x95
+#define SkillRing    		0x96
 #define DurandalIcon 		0x97
 #define ArmadsIcon 			0x98
 #define AureolaIcon 		0x99
@@ -172,8 +172,8 @@
 #define SpiritDustIcon 		0xab
 #define RedNoteIcon 		0xac
 #define BaphometIcon        0xad
-#define RubySwordIcon       0xae
-#define SapphireLanceIcon   0xaf
+#define FireRingIcon        0xae
+#define WindRingIcon        0xaf
 #define SieglindeIcon 		0xb0
 #define AudhulmaIcon 		0xb1
 #define ShamshirIcon 		0xb2

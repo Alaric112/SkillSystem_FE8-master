@@ -109,3 +109,19 @@ ConvoyMoving:
 ALIGN 4
 ConvoyStanding:
 #incext Png2Dmp "Png/ConvoyStanding.png" --lz77
+
+ALIGN 4
+HuntressMoving:
+#incext Png2Dmp "Png/HuntressMoving.png" --lz77
+
+ALIGN 4
+HuntressStanding:
+#incext Png2Dmp "Png/HuntressStanding.png" --lz77
+
+ALIGN 4
+PirateMovingF:
+#incext Png2Dmp "Png/PirateMovingF.png" --lz77
+
+ALIGN 4
+PirateStandingF:
+#incext Png2Dmp "Png/PirateStandingF.png" --lz77

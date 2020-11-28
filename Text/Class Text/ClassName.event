@@ -54,4 +54,24 @@ Convoy[X]
 A simple convoy of merchants[N] 
 carrying various types of goods[X]
 
+## PirateFName
+Pirate[X]
 
+## PirateFDesc
+Tough brawlers who call the[N]
+sky or the sea their home. Equip:[Axe].[X]
+
+## BrawlerName
+Brawler[X]
+
+## BrawlerDesc
+Well-balanced professional soldiers[N]
+for-hire. Equip:[Axe].[X]
+
+## HuntressName
+Huntress[X]
+
+## HuntressDesc
+These hunters use their bow with[N] 
+great speed to hit even the fastest prey[N]
+Equip:[Bow][X]

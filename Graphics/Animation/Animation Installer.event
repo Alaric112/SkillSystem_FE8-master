@@ -62,3 +62,6 @@
 
 #include "Event/LanceLord Installer.event"
 #include "Event/LanceLordUnarmed Installer.event"
+
+#include "Event/HuntressBow Installer.event"
+#include "Event/HuntressUnarmed Installer.event"

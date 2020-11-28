@@ -9,3 +9,34 @@ QuickBlade[X]
 
 ## QuickBladeDesc ^
 Can strike consecutively. Only Gadriel[X]
+
+## IronDaggerName
+Iron Dagger[X]
+
+## IronDaggerDesc ^
+-2 Str, Def, Res to the enemy, Only Thief.[X]
+
+## SteelDaggerName
+Steel Dagger[X]
+
+## SteelDaggerDesc ^
+-1 Str, Skill and -3 Def to the enemy, Only Thief.[X]
+
+## SilverDaggerName
+Silver Dagger[X]
+
+## SilverDaggerDesc ^
+DUMMY[X]
+
+## SilencerName
+Silencer[X]
+
+## SilencerDesc ^
+Effective Vs mages, -5 mag to the enemy, only thief[X]
+
+## SteelShieldName ^
+Steel Shield[X]
+
+## SteelShieldDesc ^
+A heavy but very sturdy shield[N] 
+give the users: +4 Def, -1 Skl, Spd and Con[X]

@@ -3,6 +3,9 @@
 #define LanceLord 0x2
 #define LanceCavalier 0x5
 #define LanceKnight 0x9
+#define MageF 0x26
+//#define Cleric 0x4A
+
 //Extra 
 #define AxeCavalier 0x80
 #define SwordCavalier 0x81
@@ -10,3 +13,5 @@
 #define SwordKnight 0x83
 #define BowCavalier 0x84
 #define Convoy 0x85
+#define PirateF 0x86
+#define Huntress 0x87

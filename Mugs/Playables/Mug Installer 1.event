@@ -1,15 +1,15 @@
 
-Nausicaa_Mug:
+NausicaaMugData:
 #incext PortraitFormatter "Nausicaä.png"
-setMugEntry(0x2, Nausicaa_Mug, 2, 6, 3, 4)
+setMugEntry(NausicaaMug, NausicaaMugData, 2, 6, 3, 4)
 
-Kairs_Mug:
+KairsMugData:
 #incext PortraitFormatter "Kairs.png"
-setMugEntry(0x4, Kairs_Mug, 3, 4, 3, 2)
+setMugEntry(KairsMug, KairsMugData, 3, 4, 3, 2)
 
-Gadriel_Mug:
+GadrielMugData:
 #incext PortraitFormatter "Gadriel.png"
-setMugEntry(0x6, Gadriel_Mug, 3, 5, 3, 3)
+setMugEntry(GadrielMug, GadrielMugData, 3, 5, 3, 3)
 
 /*
 Gilliam_Mug:
@@ -17,41 +17,41 @@ Gilliam_Mug:
 setMugEntry(0x5, Gilliam_Mug, 2, 5, 3, 3)
 */
 
-Donovan_Mug:
+DonovanMugData:
 #incext PortraitFormatter "Donovan.png"
-setMugEntry(0x7, Donovan_Mug, 3, 5, 3, 3)
+setMugEntry(DonovanMug, DonovanMugData, 3, 5, 3, 3)
 
-Priscilla_Mug:
+PriscillaMugData:
 #incext PortraitFormatter "Priscilla.png"
-setMugEntry(0x8, Priscilla_Mug, 2, 6, 3, 4)
+setMugEntry(PriscillaMug, PriscillaMugData, 2, 6, 3, 4)
 
-Diana_Mug:
+DianaMugData:
 #incext PortraitFormatter "Diana.png"
-setMugEntry(0xA, Diana_Mug, 4, 5, 3, 3)
+setMugEntry(DianaMug, DianaMugData, 4, 5, 3, 3)
 
-Trak_Mug:
+TrakMugData:
 #incext PortraitFormatter "Trak.png"
-setMugEntry(0xB, Trak_Mug, 3, 5, 3, 3)
+setMugEntry(TrakMug, TrakMugData, 3, 5, 3, 3)
 
-Calliope_Mug:
+CalliopeMugData:
 #incext PortraitFormatter "Calliope.png"
-setMugEntry(0xc, Calliope_Mug, 3, 5, 3, 3)
+setMugEntry(CalliopeMug, CalliopeMugData, 3, 6, 3, 4)
 
-Stocke_Mug:
+StockeMugData:
 #incext PortraitFormatter "Stocke.png"
-setMugEntry(0xd, Stocke_Mug, 2, 6, 2, 4)
+setMugEntry(StockeMug, StockeMugData, 2, 6, 2, 4)
 
-Fernand_Mug:
+FernandMugData:
 #incext PortraitFormatter "Fernand.png"
-setMugEntry(0xe, Fernand_Mug, 3, 5, 3, 3)
+setMugEntry(FernandMug, FernandMugData, 3, 5, 3, 3)
 
-Kyle_Mug:
+KyleMugData:
 #incext PortraitFormatter "Kyle.png"
-setMugEntry(0xf, Kyle_Mug, 3, 5, 3, 3)
+setMugEntry(KyleMug, KyleMugData, 3, 5, 3, 3)
 
-Zakaria_Mug:
+ZakariaMugData:
 #incext PortraitFormatter "Zakaria.png"
-setMugEntry(0x11, Zakaria_Mug, 3, 5, 3, 3)
+setMugEntry(ZakariaMug, ZakariaMugData, 3, 5, 3, 3)
 
 /*
 Salem_Mug:
@@ -59,70 +59,70 @@ Salem_Mug:
 setMugEntry(0x13, Salem_Mug, 2, 5, 3, 3)
 */
 
-Sam_Mug:
+SamMugData:
 #incext PortraitFormatter "Sam.png"
-setMugEntry(0x12, Sam_Mug, 2, 6, 3, 4)
+setMugEntry(SamMug, SamMugData, 2, 6, 3, 4)
 
-Catherina_mug:
+CatherinaMugData:
 #incext PortraitFormatter "Catherina.png"
-setMugEntry(0x14, Catherina_mug, 4, 6, 4, 4)
+setMugEntry(CatherinaMug, CatherinaMugData, 4, 6, 4, 4)
 
-Harken_Mug:
+HarkenMugData:
 #incext PortraitFormatter "Harken.png"
-setMugEntry(0x15, Harken_Mug, 3, 4, 3, 2)
+setMugEntry(HarkenMug, HarkenMugData, 3, 4, 3, 2)
 
-Manfred_Mug:
+ManfredMugData:
 #incext PortraitFormatter "Manfred.png"
-setMugEntry(0x16, Manfred_Mug, 2, 5, 3, 2)
+setMugEntry(ManfredMug, ManfredMugData, 2, 5, 3, 2)
 
-Minerva_Mug:
+MinervaMugData:
 #incext PortraitFormatter "Minerva.png"
-setMugEntry(0x17, Minerva_Mug, 3, 5, 3, 3)
+setMugEntry(MinervaMug, MinervaMugData, 3, 5, 3, 3)
 
-Nashira_Mug:
+NashiraMugData:
 #incext PortraitFormatter "Nashira.png"
-setMugEntry(0x18, Nashira_Mug, 2, 6, 2, 4)
+setMugEntry(NashiraMug, NashiraMugData, 2, 6, 2, 4)
 
-Yala_Mug:
+YalaMugData:
 #incext PortraitFormatter "Yala.png"
-setMugEntry(0x19, Yala_Mug, 2, 6, 3, 4)
+setMugEntry(YalaMug, YalaMugData, 2, 6, 3, 4)
 
-Rosie_Mug:
+RosieMugData:
 #incext PortraitFormatter "Rosie.png"
-setMugEntry(0x1a, Rosie_Mug, 3, 5, 3, 3)
+setMugEntry(RosieMug, RosieMugData, 3, 5, 3, 3)
 
-Colt_Mug:
+ColtMugData:
 #incext PortraitFormatter "Colt.png"
-setMugEntry(0x1b, Colt_Mug, 3, 5, 3, 3)
+setMugEntry(ColtMug, ColtMugData, 3, 5, 3, 3)
 
-Lena_Mug:
+LenaMugData:
 #incext PortraitFormatter "Lena.png"
-setMugEntry(0x1c, Lena_Mug, 3, 7, 3, 5)
+setMugEntry(LenaMug, LenaMugData, 3, 7, 3, 5)
 
-Alaric_Mug:
+AlaricMugData:
 #incext PortraitFormatter "Alaric.png"
-setMugEntry(0xca, Alaric_Mug, 3, 6, 3, 4)
+setMugEntry(AlaricMug, AlaricMugData, 3, 6, 3, 4)
 
-Bart_Mug:
+BartMugData:
 #incext PortraitFormatter "Bart.png"
-setMugEntry(0x1d, Bart_Mug, 4, 4, 4, 2)
+setMugEntry(BartMug, BartMugData, 4, 4, 4, 2)
 
-Lukas_Mug:
+LukasMugData:
 #incext PortraitFormatter "Lukas.png"
-setMugEntry(0x1e, Lukas_Mug, 2, 6, 3, 3)
+setMugEntry(LukasMug, LukasMugData, 2, 6, 3, 3)
 
-Rath_Mug:
+RathMugData:
 #incext PortraitFormatter "Rath.png"
-setMugEntry(0x1c, Rath_Mug, 2, 5, 2, 3)
+setMugEntry(RathMug, RathMugData, 2, 5, 2, 3)
 
-Arthur_Mug:
+ArthurMugData:
 #incext PortraitFormatter "Arthur.png"
-setMugEntry(0x1d, Arthur_Mug, 2, 6, 3, 4)
+setMugEntry(ArthurMug, ArthurMugData, 2, 6, 3, 4)
 
-Nikolai_Mug:
+NikolaiMugData:
 #incext PortraitFormatter "Nikolai.png"
-setMugEntry(0x1e, Nikolai_Mug, 3, 6, 3, 4)
+setMugEntry(NikolaiMug, NikolaiMugData, 3, 6, 3, 4)
 
-Salazar_Mug:
+SalazarMugData:
 #incext PortraitFormatter "Salazar.png"
-setMugEntry(0x1f, Salazar_Mug, 3, 5, 3, 3)
+setMugEntry(SalazarMug, SalazarMugData, 3, 5, 3, 3)

@@ -5,3 +5,8 @@
 #define RingItem  0xBD
 #define QuickBlade 0xCE //Gadriel Weapon
 #define LeatherShield 0xBF
+#define SteelShield 0xD0
+#define IronDagger 0xD1
+#define SteelDagger 0xD2
+#define SilverDagger 0xD3
+#define Silencer 0xD4

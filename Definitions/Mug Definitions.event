@@ -4,6 +4,38 @@
 //#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
 //#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
 
+#define BlankMug 0x01
+#define NausicaaMug 0x02
+#define KairsMug 0x04
+#define GadrielMug 0x06
+#define DonovanMug 0x07
+#define PriscillaMug 0x08
+#define DianaMug 0x0A
+#define TrakMug 0x0B
+#define CalliopeMug 0x0C
+#define StockeMug 0x0D
+#define FernandMug 0x0E
+#define KyleMug 0x0F
+#define ZakariaMug 0x11
+#define SamMug 0x12
+#define CatherinaMug 0x14
+#define HarkenMug 0x15
+#define ManfredMug 0x16
+#define MinervaMug 0x17
+#define NashiraMug 0xC8
+#define YalaMug 0x19
+#define RosieMug 0x1A
+#define ColtMug 0x1B
+#define LenaMug 0xCF
+#define BartMug 0x1D
+#define LukasMug 0x1E
+#define RathMug 0x1F
+#define ArthurMug 0x20
+#define NikolaiMug 0x21 
+#define SalazarMug 0x22
+#define AlaricMug 0xCA
+
+
 // Class Card
 
 #define AxeArmorClassCard 0xAD

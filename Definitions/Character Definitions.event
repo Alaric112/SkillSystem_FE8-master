@@ -1,10 +1,26 @@
-// PG
+// Vanilla...
+#undef Mansel
+#undef Gilliam
 
+// PG
 #define Nausicaa 0x01
 #define Kairs 0x02
-#define Salazar 0x03
+#define Lukas 0x03
 #define Gadriel 0x04
-
+#define Donovan 0x05
+#define Priscilla 0x06
+#define Diana 0x08
+#define Colt 0x09
+#define Rosie 0x0A
+#define Calliope 0x0C
+#define Yala 0xD
+#define Arthur 0x13
+#define Zakaria 0x14
+#define Salem 0x17
+#define Catherina 0x19
+#define Harken 0x1A
+#define Rath 0x1B
+#define Manfred 0x1D
 
 //Enemy and NPC
 #define Merchant 0x6f
@@ -13,4 +29,6 @@
 #define Mansel 0xC8
 #define Militia 0xC0
 #define Gilliam 0xC4
+#define Lena 0xC2
 #define Nashira 0xC3
+#define OldMan 0xF4

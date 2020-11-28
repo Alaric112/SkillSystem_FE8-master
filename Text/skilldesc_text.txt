@@ -1239,3 +1239,8 @@ applied to the attacker.[X]
 Swarp: Allows unit to swap[N]
 positions with an ally in[N]
 Mag/2 range.[X]
+
+## SD_SavageMagic  ^
+SavageMagic: If your magic is superior to[N] 
+the opponent's physical defenses[N]
++2 damage and +10 critical.[X]

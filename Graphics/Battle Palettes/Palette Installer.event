@@ -12,3 +12,33 @@ GadrielSwordCavalier:
 DianaArcher:
 	#incbin "./_palettes/DianaArcher.lzpal" 
 
+DianaSniper:
+	#incbin "./_palettes/DianaSniper.lzpal" 
+
+LukasSoldier:
+	#incbin "./_palettes/LukasSoldier.lzpal" 
+
+ColtThief:
+	#incbin "./_palettes/ColtThief.lzpal" 
+
+RosiePirateF:
+	#incbin "./_palettes/RosiePirateF.lzpal" 
+
+CalliopeMage:
+	#incbin "./_palettes/CalliopeMage.lzpal" 
+
+YalaPriestess:
+	#incbin "./_palettes/YalaPriestess.lzpal" 
+
+CatherinaTrobaudor:
+	#incbin "./_palettes/CatherinaTrobaudor.lzpal" 
+
+HarkenGladiator:
+	#incbin "./_palettes/HarkenGladiator.lzpal" 
+
+RathBowCavalier:
+	#incbin "./_palettes/RathBowCavalier.lzpal" 
+
+NausicaaLanceLord:
+	#incbin "./_palettes/NausicaaLanceLord.lzpal" 
+

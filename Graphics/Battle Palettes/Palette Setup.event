@@ -13,5 +13,45 @@
 	setCBSP(0x55,0x04, 1, 0x81)
 
 // DianaArcher
-	setPalette(0x6D,DianaArcher)
-	setCBSP(0x6D,0x08, 1, 0x1A)
+	setPalette(0x01,DianaArcher)
+	setCBSP(0x01,Diana, 1, Huntress)
+
+// DianaSniper
+	setPalette(0x53,DianaSniper)
+	setCBSP(0x53,Diana, 3, 0x1C)
+
+// LukasSoldier
+	setPalette(0x6D,LukasSoldier)
+	setCBSP(0x6D,Lukas, 1, Soldier)
+
+// ColtThief
+	setPalette(0x5E,ColtThief)
+	setCBSP(0x5E,Colt, 1, Thief)
+
+// RosiePirateF
+	setPalette(0x1E,RosiePirateF)
+	setCBSP(0x1E,Rosie, 1, PirateF)
+
+// CalliopeMage
+	setPalette(0x2F,CalliopeMage)
+	setCBSP(0x2F,Calliope, 1, MageF)
+
+// YalaPriestess
+	setPalette(0x43,YalaPriestess)
+	setCBSP(0x43,Yala, 1, Cleric)
+
+// CatherinaTrobaudor
+	setPalette(0x62,CatherinaTrobaudor)
+	setCBSP(0x62,Catherina, 1, 0x4B)
+
+// HarkenGladiator
+	setPalette(0x13,HarkenGladiator)
+	setCBSP(0x13,Harken, 3, 0x11)
+
+// RathBowCavalier
+	setPalette(0x6E,RathBowCavalier)
+	setCBSP(0x6E,Rath, 1, BowCavalier)
+
+// NausicaaLanceLord
+	setPalette(0x02,NausicaaLanceLord)
+	setCBSP(0x02,Nausicaa, 1, 0x02)
