@@ -40,3 +40,10 @@ Steel Shield[X]
 ## SteelShieldDesc ^
 A heavy but very sturdy shield[N] 
 give the users: +4 Def, -1 Skl, Spd and Con[X]
+
+## RedBeerName 
+Red Beer[X]
+
+## RedBeerDesc
+A beer with a very[N] 
+strong smell, Strenght +1[X]

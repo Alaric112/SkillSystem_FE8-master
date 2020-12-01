@@ -251,6 +251,6 @@
 #define SwarpIcon           0xfa
 #define ResireIcon          0xfb
 #define EarthstoneIcon      0xfc
-#define DivinestoneIcon     0xfd
-#define MagestoneIcon       0xfe
+#define RedBeerIcon         0xfd
+#define TorchItemIcon       0xfe
 #define SkillScrollIcon     0xff

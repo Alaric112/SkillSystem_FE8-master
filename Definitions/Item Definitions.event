@@ -10,3 +10,4 @@
 #define SteelDagger 0xD2
 #define SilverDagger 0xD3
 #define Silencer 0xD4
+#define RedBeer 0xD5

@@ -73,12 +73,9 @@ BYTE 00 00
 ALIGN 4
 
 GeneralSkillList:
-/*
-BYTE 255 ProvokeID
+
 BYTE 255 NaturalCoverID
-BYTE 5 WaryFighterID
-BYTE 15 PaviseID
-*/
+
 BYTE 00 00
 ALIGN 4
 

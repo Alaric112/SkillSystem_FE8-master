@@ -18,21 +18,21 @@
 #define KyleMug 0x0F
 #define ZakariaMug 0x11
 #define SamMug 0x12
-#define CatherinaMug 0x14
-#define HarkenMug 0x15
+#define CatherinaMug 0x22
+#define HarkenMug 0x23
 #define ManfredMug 0x16
 #define MinervaMug 0x17
 #define NashiraMug 0xC8
-#define YalaMug 0x19
-#define RosieMug 0x1A
-#define ColtMug 0x1B
+#define YalaMug 0xC9
+#define RosieMug 0xCB
+#define ColtMug 0xCE
 #define LenaMug 0xCF
-#define BartMug 0x1D
-#define LukasMug 0x1E
+#define BartMug 0xD1
+#define LukasMug 0xCD
 #define RathMug 0x1F
 #define ArthurMug 0x20
 #define NikolaiMug 0x21 
-#define SalazarMug 0x22
+#define SalazarMug 0xE0
 #define AlaricMug 0xCA
 
 

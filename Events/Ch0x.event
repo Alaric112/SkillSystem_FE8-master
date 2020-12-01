@@ -18,20 +18,122 @@ TurnBasedEvents:
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
+CharacterEvent(0x00,NausicaaTalkGilliam,Nausicaa,Gilliam)
+CharacterEvent(0x0D,NausicaaTalkDiana,Nausicaa,Diana)
+CharacterEvent(0x00,NausicaaTalkColt,Nausicaa,Colt)
+CharacterEvent(0x00,NausicaaTalkRosie,Nausicaa,Rosie)
+CharacterEvent(0x0B,NausicaaTalkMerchant,Nausicaa,Merchant)
+CharacterEvent(0x0A,NausicaaTalkOldMan,Nausicaa,Calliope)
+//CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
+
+
 
 	END_MAIN
+
+NausicaaTalkOldMan:
+ 
+    CHECK_EVENTID 0xE
+    BEQ 0x9000 0xC 0x0
+    Text(Ch0xTalk7part1)
+    GOTO 0x9001
+    LABEL 0x9000
+    Text(Ch0xTalk7part2)
+    ENUT 0x14
+    LABEL 0x9001
+    EVBIT_T 0x7
+	ENDA
+
+NausicaaTalkMerchant:
+ 
+    Text(Ch0xTalk6)
+	GiveItem(0x5D, Nausicaa)
+    NoFade
+	ENDA
+
+NausicaaTalkRosie:
+
+    CHECK_EVENTID 0x12
+    BEQ 0x9002 0xC 0x0
+	CHECK_ITEM_ALL(RedBeer)
+	BEQ 0x9000 0xC 0x0
+	Text(Ch0xTalk5part1)
+	BadStatus(Diana, 0x0)
+	Text(Ch0xTalk5part2)
+	LoseItem(RedBeer)
+	AddStatus(Diana, 0x14, 0x1)
+	GiveEXP(Nausicaa, 100)
+	ENUT(0xF)
+	GOTO 0x9001
+    LABEL 0x9000
+    MUSC 0x32
+    LABEL 0x9001
+    LABEL 0x9002
+    CHECK_EVENTID 0x12
+    BNE 0x9003 0xC 0x0
+	Text(Ch0xTalk5part3)
+	ENUT(0x12)
+	LABEL 0x9003
+    NoFade
+	ENDA
+
+NausicaaTalkColt:
+ 
+    CHECK_EVENTID 0x14
+    BEQ 0x9000 0xC 0x0
+    CHECK_EVENTID 0x15
+    BEQ 0x9002 0xC 0x0
+	Text(Ch0xTalk4part1)
+	CUSA Colt
+	GiveEXP(Colt, 80)
+	ENUT 0x90
+	FADI(16)
+	REMU(Colt)
+	ENUT 0xE
+	GOTO 0x9001
+    LABEL 0x9000
+    LABEL 0x9002
+	Text(Ch0xTalk4part2)
+	ENUT(0x15)
+	LABEL 0x9001
+    NoFade
+	ENDA
+
+NausicaaTalkDiana:
+ 
+    Text(Ch0xTalk3)
+    NoFade
+	ENDA
+
+NausicaaTalkGilliam:
+ 
+    Text(Ch0xTalk2part1)
+	EVBIT_F 2
+	Text(Ch0xTalk2part2)
+    SVAL 0x7 0x1
+    BNE 1 0xC 0x7
+	Text(Ch0xTalk2part3)
+	ENUT(0x3)
+	GOTO 2
+	LABEL 1
+	Text(Ch0xTalk2part4)
+	LABEL 2
+	NoFade
+	ENDA
+   
+NausicaaTalkCalliope:
+ 
+    Text(Ch0xTalk1)
+	ENUT 0xA1
+    NoFade
+	ENDA
+ 
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
-	AFEV 0x0 Refresh 0x0
 	AREA 0x9 LenaEvent [0, 5] [29, 10]
 	END_MAIN
 	
-	
-Refresh:
-
-    ENDA	
-
 LenaEvent:
 
     EVBIT_MODIFY 0x3
@@ -42,9 +144,13 @@ LenaEvent:
 					 TEXTSHOW(Text6Ch0x)
 					 TEXTEND
     REMA
-	MOVEONTO 60 Lena Nausicaa
-	SetBackground(0x02)
+	MOVEONTO  120 Lena Nausicaa
+	ENUN
+	MOVE_1STEP 1 Lena 2
+	ENUN
+	SetBackground(0x02)	
 	Text(Text7Ch0x)
+	EndConvo
 	FADI 16
 	DISA Lena
 	FADU 16
@@ -52,8 +158,75 @@ LenaEvent:
 
 LocationBasedEvents:
     
-	LOCA 3 [20,15] 0x11
+	LOCA 3 [1,1] 0x11
+//	Armory(Ch0xArmory,15,23)
+//	Armory(Ch0xArmory,1,12)
+//	Vendor(Ch0xVendor,19,14)
+	House(0,TaverEvent,12,18)
+	House(0,Ch0xAmroryEvent,15,23)
+    House(0,Ch0xAmroryEvent,1,12)
+    House(0,Ch0xVendorEvent,19,14)
+
+
 	END_MAIN
+
+Ch0xAmroryEvent:
+    CLEAN
+    SVAL s2 Ch0xArmory|IsPointer
+    SVAL 0x3 0x0
+    ASMC MakeShopASMC
+	NoFade
+	ENDA 
+
+Ch0xVendorEvent:
+    CLEAN
+    SVAL s2 Ch0xVendor|IsPointer
+    SVAL 0x3 0x1
+    ASMC MakeShopASMC
+	NoFade
+	ENDA 
+	
+TaverEvent:
+  
+    EVBIT_MODIFY 4
+    CHECK_EVENTID 0x11
+	BNE 0x9000 0xC 0x0
+	SetBackground(0x9)
+	Text(Ch0xTavern1)
+	EVBIT_F 2
+	Text(Ch0xTavernDecision)
+	SVAL 0x7 0x1
+    BNE 0x9001 0xC 0x7
+	CHECK_MONEY 
+	SVAL 0x7 0x1F4
+    BLT 0x9003 0xC 0x7
+	Text(Ch0xTavern2)
+	SVAL 0x3 0x1F4
+    GIVETOSLOT3
+	ENUT 0x11
+	GiveItem(RedBeer, Nausicaa)
+	GOTO 0x9002
+    LABEL 0x9003
+    Text(Ch0xTavern3)
+    LABEL 0x9001
+    Text(Ch0xTavern4)
+    LABEL 0x9002
+    LABEL 0x9000
+    CLEAN	
+    NoFade
+    ENDA
+
+Ch0xArmory:
+
+	SHLI IronSword IronLance Javelin IronAxe Hatchet IronBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch0xVendor:
+
+	SHLI Fire Thunder Heal Mend Vulnerary 0x6E 0x70
+	BYTE 0x0 0x0
+	ALIGN 4
 
 Dunno1:
 
@@ -138,6 +311,18 @@ NPC1:
 	UNIT 0x70 0x6D 0x0 Level(1,NPC,1) [6,23] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	
     UNIT 
+
+Nausicaa2:
+
+ 	UNIT Nausicaa 0x0 0x0 Level(1,Ally,1) [7,12] 0x0 0x0 0x1 REDA9R5 [0] [0,0,0,0]
+   
+    UNIT
+	
+Yala1:
+
+ 	UNIT Yala Cleric 0x0 Level(1,Ally,1) [10,0] 0x0 0x0 0x1 REDA9R4 [Heal, Vulnerary] [0,0,0,0]
+   
+    UNIT	
 	
 EnemyUnits:
 
@@ -155,7 +340,7 @@ BeginningScene:
 
 	MUSC(0x27)
 	LOMA(0x07)
-	CAMERA_CENTERED [17,12] 	
+	CAMERA [17,12] 	
 	LOAD1 1 Cutscene1
 	ENUN
 	FADU(30)
@@ -207,10 +392,37 @@ BeginningScene:
 	                    CenterTutorialTextBox 
 	                    TEXTSHOW Text5Ch0x  
 	                  	TEXTEND	
-    REMA                     	
+    REMA
+    ASMC EnableFreeMovementASMC	
 	ENDA
 
 EndingScene:
-	MNC2 0x2
+
+    FADI 16
+    CUSA 0xC4
+    CUSA 0x8
+    CUSA 0x9
+    CUSA 0xA
+	REVEAL 0x2
+    REVEAL 0x4
+    REVEAL 0x9
+	CLEE 0x0
+    CLEN 0x0
+    FADU 16
+    EVBIT_T 0x9
+	LOAD2 1 Nausicaa2
+	ENUN
+	MUSC 0x30
+	SOLOTEXTBOXSTART
+	                 SCOORD 0xB [123, 5]
+					 TEXTSHOW(Ch0xEndText1)
+					 TEXTEND
+    REMA
+	EVBIT_F 0x9
+	LOAD1 1 Yala1
+	ENUN
+	Text(Ch0xEndText2)
+	FADI(16)
+    MNC2(0x02)	
 	NoFade
 	ENDA

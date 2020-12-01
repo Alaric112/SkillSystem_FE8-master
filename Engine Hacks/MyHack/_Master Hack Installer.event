@@ -42,3 +42,11 @@
 #include "EVENTSCRIPT_COND_GetStatus/Installer.event"
 
 #include "EVENTSCRIPT_change_bad_status/Installer.event"
+
+#include "EVENTSCRIPT_COND_ITEM/Installer.event"
+
+#include "MoreShops/MoreShops.event"
+
+#include "FreeMovement/FreeMovement.event"
+
+#include "FreeMovement/MakeShopASMC.lyn.event"

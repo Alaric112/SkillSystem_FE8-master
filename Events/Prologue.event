@@ -97,9 +97,9 @@ EVBIT_MODIFY 4
 Text(PrologueTurnEnemy1)
 MOVE 120 DemonBoss [10, 3]
 ENUN
-GiveEXP(0x01,0x64)
-GiveEXP(1,2,32)
-AddStatus(Nausicaa, 0x14, 1)
+//GiveEXP(0x01,0x64)
+//GiveEXP(1,2,32)
+//AddStatus(Nausicaa, 0x14, 1)
 ENDA
 
 TurnNPC1:
