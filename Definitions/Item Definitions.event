@@ -3,11 +3,11 @@
 #define FieryFang 0xB1
 #define SkillScroll 0xBC
 #define RingItem  0xBD
-#define QuickBlade 0xCE //Gadriel Weapon
+#define QuickBlade 0xD4 //Gadriel Weapon
 #define LeatherShield 0xBF
-#define SteelShield 0xD0
-#define IronDagger 0xD1
-#define SteelDagger 0xD2
-#define SilverDagger 0xD3
-#define Silencer 0xD4
-#define RedBeer 0xD5
+#define SteelShield 0xD6
+#define IronDagger 0xD7
+#define SteelDagger 0xD8
+#define SilverDagger 0xD9
+#define Silencer 0xDA
+#define RedBeer 0xDB

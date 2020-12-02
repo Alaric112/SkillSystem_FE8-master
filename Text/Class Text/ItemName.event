@@ -41,6 +41,13 @@ Steel Shield[X]
 A heavy but very sturdy shield[N] 
 give the users: +4 Def, -1 Skl, Spd and Con[X]
 
+## LeatherShieldName ^
+Leather Shield[X]
+
+## LeatherShieldDesc ^
+A Simple Leather Shield.[N]
+Gives the user +2 Def.[X]
+
 ## RedBeerName 
 Red Beer[X]
 

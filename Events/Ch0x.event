@@ -24,7 +24,7 @@ CharacterEvent(0x0D,NausicaaTalkDiana,Nausicaa,Diana)
 CharacterEvent(0x00,NausicaaTalkColt,Nausicaa,Colt)
 CharacterEvent(0x00,NausicaaTalkRosie,Nausicaa,Rosie)
 CharacterEvent(0x0B,NausicaaTalkMerchant,Nausicaa,Merchant)
-CharacterEvent(0x0A,NausicaaTalkOldMan,Nausicaa,Calliope)
+CharacterEvent(0x0A,NausicaaTalkOldMan,Nausicaa,OldMan)
 //CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
 
 
@@ -114,6 +114,7 @@ NausicaaTalkGilliam:
     BNE 1 0xC 0x7
 	Text(Ch0xTalk2part3)
 	ENUT(0x3)
+	CALL EndingScene
 	GOTO 2
 	LABEL 1
 	Text(Ch0xTalk2part4)

@@ -116,3 +116,10 @@ Old Man[X]
 
 ## OldManDesc
 An Old Man[X]
+
+## MilitianName
+Militian[X]
+
+## MilitianDesc
+Simple city guards[N]
+fighting for their homeland[X]

@@ -12,7 +12,7 @@
 #define PriscillaMug 0x08
 #define DianaMug 0x0A
 #define TrakMug 0x0B
-#define CalliopeMug 0x0C
+#define CalliopeMug 0x10
 #define StockeMug 0x0D
 #define FernandMug 0x0E
 #define KyleMug 0x0F

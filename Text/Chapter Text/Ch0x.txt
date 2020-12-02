@@ -407,7 +407,7 @@ finished preparing?[A][X]
 
 ## Ch0xTalk2part2
 [OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]
-(have I finished the preparations?)
+(Have I finished the preparations?)[N]
 [Yes][X]
 
 ## Ch0xTalk2part3

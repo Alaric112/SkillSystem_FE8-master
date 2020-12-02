@@ -24,8 +24,8 @@ voicegroup000:
   #incbin "FE8_NI_2.bin"
 
 //macro definitions for setting the song table
-//#undef SongTableOffset
-//#undef SongTable
+  #undef SongTableOffset
+//  #undef SongTable
   #define SongTableOffset  0x224470
   #define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
 #define BattleMusicGroup 0
