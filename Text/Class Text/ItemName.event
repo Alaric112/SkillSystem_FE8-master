@@ -38,7 +38,7 @@ Effective Vs mages, -5 mag to the enemy, only thief[X]
 Steel Shield[X]
 
 ## SteelShieldDesc ^
-A heavy but very sturdy shield[N] 
+A heavy but very sturdy shield[N]
 give the users: +4 Def, -1 Skl, Spd and Con[X]
 
 ## LeatherShieldName ^
@@ -52,5 +52,26 @@ Gives the user +2 Def.[X]
 Red Beer[X]
 
 ## RedBeerDesc
-A beer with a very[N] 
+A beer with a very[N]
 strong smell, Strenght +1[X]
+
+## HawkRingName
+Hawk Ring[X]
+
+## HawkRingDesc ^
+A ring that increases the[N]
+Skill of the wielders. +3 Skill[X]
+
+## FireRingName
+Fire RIng[X]
+
+## FireRingDesc ^
+A ring that emits the sighs of fire[N]
++2 Strenght[X]
+
+## WindRingName
+Wind Ring[X]
+
+## WindRingDesc
+A ring that emits the[N]
+rustling of the wind: +2 Spd[X]

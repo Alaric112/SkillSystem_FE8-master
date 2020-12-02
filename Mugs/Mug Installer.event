@@ -3,3 +3,5 @@
 #include "Playables/Mug Installer 1.event"
 
 #include "Generics/Master Class Card Installer.event"
+
+#include "Bosses/BossMug Installer.event"

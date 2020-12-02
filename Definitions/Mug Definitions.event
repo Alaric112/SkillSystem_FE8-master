@@ -35,6 +35,9 @@
 #define SalazarMug 0xE0
 #define AlaricMug 0xCA
 
+// Boss
+#define GervasoMug 0xD5
+#define DarioMug 0xD6
 
 // Class Card
 

@@ -1,0 +1,8 @@
+
+DarioMugData:
+#incext PortraitFormatter "Dario.png"
+setMugEntry(DarioMug, DarioMugData, 2, 5, 2, 3)
+
+GervasoMugData:
+#incext PortraitFormatter "Gervaso.png"
+setMugEntry(GervasoMug, GervasoMugData, 2, 5, 2, 3)

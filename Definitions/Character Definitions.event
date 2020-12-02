@@ -1,6 +1,7 @@
 // Vanilla...
 #undef Mansel
 #undef Gilliam
+#undef Bandit
 
 // PG
 #define Nausicaa 0x01
@@ -32,3 +33,7 @@
 #define Lena 0xC2
 #define Nashira 0xC3
 #define OldMan 0xF4
+#define Dario 0x68
+#define Gervaso 0x4e
+#define Bandit 0x65
+#define BanditBoss 0x66

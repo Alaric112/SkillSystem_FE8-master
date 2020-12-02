@@ -49,6 +49,17 @@ Units1:
 
 	UNIT
 
+Cutscene1:
+
+    UNIT Gilliam General 0x0 Level(3,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,Ally,1) [1,13] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [3,15] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+	UNIT Nausicaa 0x0 0x0 Level(2,Ally,0) [9,9] 0x0 0x0 0x1 REDA4R14 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Yala Cleric 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R13 [ShortBow, Vulnerary] [0,0,0,0]
+
+	UNIT
+
 EnemyUnits:
 
 	UNIT
@@ -62,6 +73,13 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+
+    LOMA(0x1)
+	CAMERA [2,14]
+	MUSC(0x270)
+	EVBIT_T 9
+	Load1 1 Cutscene1
+	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	GotoPrepScreen

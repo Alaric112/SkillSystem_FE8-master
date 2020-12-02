@@ -12,6 +12,8 @@
 
 #include "SyStemIcon/System Icon Installer.event"
 
+#include "Minimug/Minimug Installer.event"
+
 ALIGN 4
 GameTitle:
 #incbin "logo/Logo.dmp"

@@ -147,8 +147,8 @@
 #define SetsLitanyIcon 		0x92
 #define SteelShieldIcon 	0x93
 #define CrystalShieldIcon 	0x94
-#define LenaPendant      	0x95
-#define SkillRing    		0x96
+#define LenaPendantIcon     0x95
+#define SkillRingIcon       0x96
 #define DurandalIcon 		0x97
 #define ArmadsIcon 			0x98
 #define AureolaIcon 		0x99

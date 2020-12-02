@@ -27,6 +27,18 @@ ALIGN 4
 RedBeerBonuses:
 StatBonus(0,1,0,0,0,0,0,0,0,0)
 
+ALIGN 4
+FireRingBonuses:
+StatBonus(0,2,0,0,0,0,0,0,0,0)
+
+ALIGN 4
+WindRingBonuses:
+StatBonus(0,0,0,0,2,0,0,0,0,0)
+
+ALIGN 4
+SkillRingBonuses:
+StatBonus(0,0,0,3,0,0,0,0,0,0)
+
 /*
 ALIGN 4
 ShieldBonuses
