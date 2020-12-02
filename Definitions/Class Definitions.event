@@ -15,3 +15,4 @@
 #define Convoy 0x85
 #define PirateF 0x86
 #define Huntress 0x87
+#define Brawler 0x88

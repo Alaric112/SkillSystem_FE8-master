@@ -47,6 +47,15 @@ Tutorial:
 
 Units1:
 
+    UNIT Gilliam General 0x0 Level(3,Ally,0) [4,12] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,Ally,0) [1,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,Ally,1) [4,11] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [4,14] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+	UNIT Nausicaa 0x0 0x0 Level(2,Ally,0) [2,11] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Yala Cleric 0x0 Level(2,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+    UNIT Kairs Paladin 0x0 Level(3,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Gadriel SwordCavalier 0x0 Level(2,Ally,0) [1,12] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+
 	UNIT
 
 Cutscene1:
@@ -60,7 +69,49 @@ Cutscene1:
 
 	UNIT
 
+Cutscene2:
+
+    UNIT Kairs Paladin 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [Fire, PureWater] [0,0,0,0]
+	UNIT Gadriel SwordCavalier 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [ShortBow, Vulnerary] [0,0,0,0]
+
+	UNIT
+
+Cutscene3:
+
+    UNIT Dario Brawler 0x0 Level(3,Enemy,0) [19,12] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Gervaso Warrior 0x0 Level(2,Enemy,0) [20,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+
+	UNIT
+
+Cutscene4:
+
+    UNIT Bandit Brigand 0x0 Level(3,Enemy,0) [15,17] 0x0 0x0 0x1 REDA19R13 [Fire, PureWater] [0,0,0,0]
+
+	UNIT
+
 EnemyUnits:
+
+    UNIT Dario Brawler 0x0 Level(7,Enemy,0) [20,3] 0x0 0x0 0x0 0x0 [SteelAxe, Hammer, SkillRing] [0,3,4,0]
+	UNIT BanditBoss LanceCavalier 0x0 Level(4,Enemy,1) [20,13] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] [0,3,0,0]
+	UNIT BanditBoss Mercenary 0x0 Level(2,Enemy,1) [7,1] 0x0 0x0 0x0 0x0 [SteelSword, LeatherShield] [0,3,0,0]
+	UNIT Bandit Archer 0x0 Level(3,Enemy,1) [7,1] 0x0 0x0 0x0 0x0 [LongBow] [0,3,0,0]
+	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,20]
+	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,20]
+	UNIT Bandit Fighter 0x0 Level(2,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,20]
+	UNIT Bandit LanceCavalier 0x0 Level(2,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [IronLance] [0,12,0,0]
+    UNIT Bandit AxeCavalier 0x0 Level(3,Enemy,1) [9,5] 0x0 0x0 0x0 0x0 [Hatchet] [0,12,0,0]
+    UNIT Bandit Mage 0x0 Level(2,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [Thunder, PureWater] [3,4,0,0]
+    UNIT Bandit Mage 0x0 Level(3,Enemy,1) [13,17] 0x0 0x0 0x0 0x0 [Fire] [3,4,0,0]
+    UNIT Bandit Soldier 0x0 Level(2,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Javelin] [0,12,0,0]
+	UNIT Bandit Archer 0x0 Level(3,Enemy,1) [11,4] 0x0 0x0 0x0 0x0 [LongBow] [0,3,4,0]
+	UNIT Bandit Shaman 0x0 Level(2,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [Flux, Vulnerary] [0,3,0,0]
+    UNIT Bandit Soldier 0x0 Level(3,Enemy,1) [18,14] 0x0 0x0 0x0 0x0 [IronLance, Vulnerary] [0,3,0,0]
+    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [16,6] 0x2 0x0 0x0 0x0 [IronSword] [0,12,0,0]
+	UNIT Bandit Shaman 0x0 Level(3,Enemy,1) [19,2] 0x0 0x0 0x0 0x0 [Flux] [0,3,0,0]	
+    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
+    UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,4,0]
+    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [13,5] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
+    UNIT Bandit Archer 0x0 Level(2,Enemy,1) [4,5] 0x2 0x0 0x0 0x0 [IronBow] [0,12,0,0]
 
 	UNIT
 
@@ -78,14 +129,42 @@ BeginningScene:
 	CAMERA [2,14]
 	MUSC(0x270)
 	EVBIT_T 9
-	Load1 1 Cutscene1
+	LOAD1 1 Cutscene1
 	ENUN
+	EVBIT_F 9
+	Text(Text1Ch1)
+	LOAD2 1 Cutscene2
+	ENUN
+	Text(Text2Ch1)
+	FADI(16)
+	LOMA(0x2)
+	CAMERA [1,0]
+	MUSC(0x25)
+	CAMERA [18,11]
+	LOAD1 0 Cutscene3
+	ENUN
+	FADU(16)
+	LOAD1 0 Cutscene4
+	ENUN
+	Text(Text3Ch1)
+	FADI(16)
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	LOAD2 0x1 Units1
+	ENUN
+	FADU(16)
+	CAMERA Colt
+    CURSOR_FLASHING(Colt)
+    STAL(30)
+    REMOVE_CURSORS
+//	HouseEvent(Text4Ch1, 0x1B)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MNC2 next_chapter
+	MNC2 0x3
 	NoFade
 	ENDA

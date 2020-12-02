@@ -1,7 +1,4 @@
-/*
-## PrepareObjective
-Prepare[X]
-*/
+
 ## Ch1Name
 Ch. 1-1 Bandits[X]
 
@@ -28,7 +25,7 @@ now on the princess[N]
 is in our custody[AN]
 you don't have to...[A]
 [OpenFarRight]
-Forgive me Captain, but I have
+Forgive me Captain, but I have[N]
 decided to come too[AN]
 [OpenMidLeft]
 The battlefields aren't made[N] 
@@ -92,7 +89,7 @@ the crimes of the empire pay[AN]
 with their blood[AN]
 we don't have time[N]
 to lose with this peasants![AN]
-Dàrio![AN]
+Dario![AN]
 [OpenRight]
 Yes Boss[AN]
 [OpenFarRight]
@@ -116,7 +113,7 @@ understood?[AN]
 [OpenRight]
 To perfection[A][X]
 
-## Text3Ch1
+## Text4Ch1
 [OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x05][0x01][OpenMidRight][LoadFace][0xCE][0x01][OpenMidRight]
 Captain, I've been[N]
 scouting the area[AN]
@@ -201,17 +198,17 @@ always close to me or to Paladin Kairs[AN]
 [OpenFarLeft]Don't worry Gilliam[AN]
 come on let's go![A][X]
 
-## Text4Ch1
+## Text5Ch1
 [OpenMidRight][LoadFace][0xD6][0x01][OpenMidRight]
 These people seem wanting[N]
 to be serious...[AN]
 they should have run away...[AN]
 and instead they come to fight...[AN]
 I don't like this job[AN]
-but to defeat the Imperials[N] 
-it takes sacrifices[AN]
+but to defeat the Imperials...[N]
+it needs sacrifices[A][X]
 
-## Text5Ch1
+## Text6Ch1
 [OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft]
 Come on![AN]
 we can't allow these[N]

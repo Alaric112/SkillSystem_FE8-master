@@ -8,3 +8,6 @@
 {
 	#include "Ch0x.event"
 }
+{
+	#include "Ch1.event"
+}

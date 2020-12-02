@@ -125,3 +125,11 @@ PirateMovingF:
 ALIGN 4
 PirateStandingF:
 #incext Png2Dmp "Png/PirateStandingF.png" --lz77
+
+ALIGN 4
+BrawlerMoving:
+#incext Png2Dmp "Png/BrawlerMoving.png" --lz77
+
+ALIGN 4
+BrawlerStanding:
+#incext Png2Dmp "Png/BrawlerStanding.png" --lz77
