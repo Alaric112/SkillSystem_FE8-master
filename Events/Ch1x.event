@@ -19,15 +19,153 @@ TurnBasedEvents:
 ALIGN 32
 CharacterBasedEvents:
 
+CharacterEvent(0x0A,NausicaaTalkGadriel,Nausicaa,Gadriel)
+CharacterEvent(0x00,NausicaaTalkSalem,Nausicaa,Salem)
+CharacterEvent(0x0D,NausicaaTalkDiana,Nausicaa,Diana)
+CharacterEvent(0x0B,NausicaaTalkColt,Nausicaa,Colt)
+CharacterEvent(0x0D,NausicaaTalkRosie,Nausicaa,Rosie)
+CharacterEvent(0x0C,NausicaaTalkCalliope,Nausicaa,Calliope)
+CharacterEvent(0x0E,NausicaaTalkYala,Nausicaa,Yala)
+CharacterEvent(0x0A,NausicaaTalkKairs,Nausicaa,Kairs)
+
 	END_MAIN
+
+NausicaaTalkGadriel:
+ 
+CHECK_ALIVE 0x2
+BEQ 0x9000 0xC 0x0
+Text(TextTalk2part1Ch1x)
+ENUT 0x11
+GOTO 0x9001
+LABEL 0x9000
+Text(TextTalk2part1Ch1x)
+ENUT 0x13
+LABEL 0x9001
+EVBIT_T 0x7
+ENDA
+		
+NausicaaTalkSalem:
+ 
+    Text(TextTalk1part1Ch1x)
+	EVBIT_F 2
+	Text(TextTalk1part2Ch1x)
+    SVAL 0x7 0x1
+    BNE 1 0xC 0x7
+	Text(TextTalk1part3Ch1x)
+	ENUT(0x3)
+	CHECK_EVENTID 0xA1
+    BEQ 0x9002 0xC 0x0
+    Text(TextTalk1part4Ch1x)
+    GiveItem(Elixir, Nausicaa)
+    LABEL 0x9002
+	CALL EndingScene
+	GOTO 2
+	LABEL 1
+	Text(TextTalk1part5Ch1x)
+	LABEL 2
+	NoFade
+	ENDA
+   
+NausicaaTalkCalliope:
+ 
+    Text(Ch0xTalk1)
+	ENUT 0xA1
+    NoFade
+	ENDA
+
+NausicaaTalkDiana:
+CHECK_ALIVE 0xA
+BEQ 0x9000 0xC 0x0
+Text(TextTalk4Ch1x)
+ENUT 0x23
+GOTO 0x9001
+LABEL 0x9000
+LABEL 0x9001
+EVBIT_T 0x7
+ENDA
+
+NausicaaTalkColt:
+CHECK_EVENTID 0x90
+BEQ 0x9000 0xC 0x0
+Text(TextTalk3part1Ch1x)
+ENUT 0x21
+GOTO 0x9001
+LABEL 0x9000
+Text(TextTalk3part2Ch1x)
+LABEL 0x9001
+EVBIT_T 0x7
+ENDA
+
+NausicaaTalkRosie:
+CHECK_ALIVE 0xA
+BEQ 0x9000 0xC 0x0
+Text(TextTalk4Ch1x)
+ENUT 0x23
+GOTO 0x9001
+LABEL 0x9000
+LABEL 0x9001
+EVBIT_T 0x7
+ENDA
+
+NausicaaTalkKairs:
+CHECK_ALIVE 0x4
+BEQ 0x9000 0xC 0x0
+Text(TextTalk2part1Ch1x)
+ENUT 0x11
+GOTO 0x9001
+LABEL 0x9000
+Text(TextTalk2part1Ch1x)
+FADI 16
+CUSA 0x2
+REVEAL 0x2
+FADU 16
+LABEL 0x9001
+EVBIT_T 0x7
+ENDA
+
+NausicaaTalkYala:
+ 
+    Text(TextTalk5Ch1x)
+    NoFade
+	ENDA
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-
+	House(0,Ch1xAmroryEvent,15,23)
+    House(0,Ch1xAmroryEvent,1,12)
+    House(0,Ch1xVendorEvent,19,14)
 	END_MAIN
+
+Ch1xAmroryEvent:
+    CLEAN
+    SVAL s2 Ch1xArmory|IsPointer
+    SVAL 0x3 0x0
+    ASMC MakeShopASMC
+	NoFade
+	ENDA 
+
+Ch1xVendorEvent:
+    CLEAN
+    SVAL s2 Ch1xVendor|IsPointer
+    SVAL 0x3 0x1
+    ASMC MakeShopASMC
+	NoFade
+	ENDA 
+
+Ch1xArmory:
+
+	SHLI IronSword SteelSword IronLance SteelLance Javelin IronAxe SteelAxe Hatchet IronBow SteelBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch1xVendor:
+
+	SHLI Fire Thunder Wind Heal Mend Vulnerary 0x6D 0x6E 0x6F 0x70
+	BYTE 0x0 0x0
+	ALIGN 4
 
 Dunno1:
 
@@ -47,7 +185,66 @@ Tutorial:
 
 Units1:
 
+    UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [9,3] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+
 	UNIT
+
+CutScene1:
+
+    UNIT Mansel 0x7A 0x0 Level(3,NPC,1) [12,5] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,1) [12,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Merchant Soldier 0x0 Level(4,NPC,1) [13,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [13,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    	
+    UNIT
+
+CutScene2:
+
+    UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [10,12] 0x0 0x0 0x1 REDA12R13 [0] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(2,NPC,1) [16,15] 0x0 0x0 0x1 REDA13R13 [0] [0,0,0,0]
+    	
+    UNIT
+
+CutScene3:
+
+    UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [9,0] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
+    	
+    UNIT
+
+CutScene4:
+
+    UNIT Salem Sage 0x0 Level(3,Ally,1) [8,10] 0x0 0x0 0x1 REDA8R4 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Calliope Mage_F 0x0 Level(3,Ally,1) [9,10] 0x0 0x0 0x1 REDA9R4 [Fire, PureWater] [0,0,0,0]
+	
+    UNIT
+
+NPC1:
+
+    UNIT Diana 0x0 0x0 Level(3,NPC,1) [3,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Rosie 0x0 0x0 Level(3,NPC,1) [5,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Colt 0x0 0x0 Level(3,NPC,1) [1,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Yala 0x0 0x0 Level(3,NPC,1) [11,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,NPC,1) [15,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Gadriel 0x0 0x0 Level(3,NPC,1) [16,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Salem 0x0 0x0 Level(3,NPC,1) [24,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Calliope 0x0 0x0 Level(3,NPC,1) [22,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+
+    UNIT
+
+CutScene5:
+
+    UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [24,6] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
+    UNIT Salem Sage 0x0 Level(3,Ally,1) [25,5] 0x0 0x0 0x1 REDA8R4 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Calliope Mage_F 0x0 Level(3,Ally,1) [26,6] 0x0 0x0 0x1 REDA9R4 [Fire, PureWater] [0,0,0,0]
+	
+    UNIT
+
+CutScene6:
+
+    UNIT Kairs 0x0 0x0 Level(3,Ally,1) [17,10] 0x0 0x0 0x1 REDA24R7 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [16,9] 0x0 0x0 0x1 REDA23R6 [Fire, PureWater] [0,0,0,0]
+	
+    UNIT
 
 EnemyUnits:
 
@@ -62,12 +259,126 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+    
+	MUSC 0x27
+	LOMA 0x07
+	CAMERA [17,12]
+	FADI(16)
+	FADU(16)
+	CAMERA [8,12]
+	LOAD1 1 CutScene1
+	ENUN
+	FADU(16)
+	LOAD1 1 CutScene2
+	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+    MOVE_1STEP 30 Militia 0
+	ENUN
+	MOVE_1STEP 30 Merchant 1
+	ENUN
+	TILECHANGE 0x0
+    MOVE 120 Nausicaa [12, 7] 	
+	ENUN
+	MOVE 120 Gilliam [13 7] 	
+	ENUN
+	SetBackground(0xE)
+	Text(Text1Ch1x)
+	GiveGold(1000)
+	FADI(16)
+	CLEAN
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	LOMA(0x3)
+	REMU Kairs
+	REMU Gadriel
+	REMU Diana
+	REMU Colt
+	REMU Rosie 
+	REMU Yala
+	FADU(16)
+	MUSC(0x270)
+	LOAD1 1 CutScene3
+	ENUN	
+	LOAD1 1 CutScene4
+	ENUN
+	SetBackground(0xD)
+	Text(Text2Ch1x)
+	FADI(16)
+	CUSA Calliope
+	CUSA Salem
+	REMU Calliope
+	REMU Salem
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	LOAD2 1 Units1
+	ENUN
+	LOAD1 2 NPC1 
 	GotoPrepScreen
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW Text3Ch1x  
+	                  	TEXTEND	
+    REMA
+    ASMC EnableFreeMovementASMC	
 	ENDA
 
 EndingScene:
-	MNC2 next_chapter
+
+    MUSC(0x270)
+	FADI(16)
+	CUSA Calliope
+	CUSA Salem
+	CUSA Kairs
+	CUSA Gadriel
+	CUSA Diana
+	CUSA Rosie
+	CUSA Colt 
+	CUSA Yala
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	REVEAL Calliope
+	REVEAL Salem
+	LOAD2 1 CutScene5
+	ENUN
+	CAMERA [25,6]
+	FADU(16)
+	CHECK_EVENTID 0x11
+    BEQ 0x9000 0xC 0x0
+	LOAD1 2 CutScene6
+	ENUN
+	Text(TextTalk6Ch1x)
+	REVEAL Kairs
+	REVEAL Gadriel
+	LABEL 0x9000
+	CHECK_EVENTID 0x23
+    BEQ 0x9002 0xC 0x0
+	REVEAL Diana
+	REVEAL Rosie
+	LABEL 0x9002
+    CHECK_EVENTID 0xE
+    BEQ 0x9003 0xC 0x0
+	REVEAL Yala
+	LABEL 0x9003
+    CHECK_EVENTID 0x21
+    BEQ 0x9004 0xC 0x0
+	REVEAL Colt
+	LABEL 0x9004
+    FADI 16
+	LOMA 0x7
+	CAMERA [6,6]
+	LOAD1 1 CutScene1
+	ENUN
+	MOVE_1STEP 30 Militia 0
+	ENUN
+	MOVE_1STEP 30 Merchant 1
+	ENUN
+	TILECHANGE 0x0
+	CAMERA Mansel
+	FADU 16
+	MNC2 0x4
 	NoFade
 	ENDA

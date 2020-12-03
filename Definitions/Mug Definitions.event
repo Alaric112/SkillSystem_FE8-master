@@ -30,7 +30,7 @@
 #define BartMug 0xD1
 #define LukasMug 0xCD
 #define RathMug 0x1F
-#define ArthurMug 0x20
+#define ArthurMug 0xDC
 #define NikolaiMug 0x21 
 #define SalazarMug 0xE0
 #define AlaricMug 0xCA

@@ -8,6 +8,8 @@
 #define SkillRing 0xC0
 #define FireRIng 0xC1
 #define WindRing 0xC2
+#define Wind 0xC3
+#define ArcWind 0xC4
 #define SteelShield 0xD6
 #define IronDagger 0xD7
 #define SteelDagger 0xD8
