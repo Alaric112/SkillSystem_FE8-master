@@ -14,7 +14,27 @@ PointerList:
 
 TurnBasedEvents:
 
+    TurnEventPlayer(0x0,Turn1,1)
+
 	END_MAIN
+
+Turn1:
+
+    TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW Text3Ch1x  
+	                  	TEXTEND	
+    REMA
+    REMU Kairs
+	REMU Gadriel
+	REMU Diana
+	REMU Colt
+	REMU Rosie 
+	REMU Yala
+	LOAD1 2 NPC1
+	ENUN
+    ASMC EnableFreeMovementASMC	
+    ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -127,6 +147,7 @@ NausicaaTalkYala:
  
     Text(TextTalk5Ch1x)
     NoFade
+	ENUT 0xE
 	ENDA
 
 MiscBasedEvents:
@@ -220,14 +241,14 @@ CutScene4:
 
 NPC1:
 
-    UNIT Diana 0x0 0x0 Level(3,NPC,1) [3,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Rosie 0x0 0x0 Level(3,NPC,1) [5,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-	UNIT Colt 0x0 0x0 Level(3,NPC,1) [1,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Yala 0x0 0x0 Level(3,NPC,1) [11,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Kairs 0x0 0x0 Level(3,NPC,1) [15,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Gadriel 0x0 0x0 Level(3,NPC,1) [16,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Salem 0x0 0x0 Level(3,NPC,1) [24,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Calliope 0x0 0x0 Level(3,NPC,1) [22,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Diana 0x0 0x0 Level(3,Ally,1) [3,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Rosie 0x0 0x0 Level(3,Ally,1) [5,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Colt 0x0 0x0 Level(3,Ally,1) [1,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Yala 0x0 0x0 Level(3,Ally,1) [11,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,Ally,1) [15,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [16,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Salem 0x0 0x0 Level(3,Ally,1) [24,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Calliope 0x0 0x0 Level(3,Ally,1) [22,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 
     UNIT
 
@@ -291,12 +312,14 @@ BeginningScene:
 	CLEN 0x0
 	CLEE 0x0
 	LOMA(0x3)
+/*	
 	REMU Kairs
 	REMU Gadriel
 	REMU Diana
 	REMU Colt
 	REMU Rosie 
 	REMU Yala
+*/	
 	FADU(16)
 	MUSC(0x270)
 	LOAD1 1 CutScene3
@@ -314,15 +337,8 @@ BeginningScene:
 	CLEN 0x0
 	CLEE 0x0
 	LOAD2 1 Units1
-	ENUN
-	LOAD1 2 NPC1 
+	ENUN 
 	GotoPrepScreen
-	TUTORIALTEXTBOXSTART
-	                    CenterTutorialTextBox 
-	                    TEXTSHOW Text3Ch1x  
-	                  	TEXTEND	
-    REMA
-    ASMC EnableFreeMovementASMC	
 	ENDA
 
 EndingScene:
