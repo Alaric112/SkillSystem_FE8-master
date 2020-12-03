@@ -1,0 +1,5 @@
+
+#define Bolganone_index 0x48
+#define Thoron_index 0x49
+#define Wind_index 0x4A
+#define ArcWind_index 0x4B

@@ -14,20 +14,141 @@ PointerList:
 
 TurnBasedEvents:
 
+    TurnEventPlayer(0x0,Turn4,4)
+    TurnEventPlayer(0x0,Turn5,5)
 	END_MAIN
+
+Turn4:
+
+    CAMERA Dario
+    CURSOR_FLASHING Dario
+	STAL(30)
+	REMOVE_CURSORS
+	Text(TextTurn4Ch1)
+	LOAD1 0x1 Rinforzi1
+    ENDA
+
+Turn5:
+
+	LOAD1 0x1 Rinforzi2
+    ENDA
 
 ALIGN 32
 CharacterBasedEvents:
 
+CharacterEventBothWays(0x8, KairsTalkGadriel, Kairs, Gadriel)
+CharacterEventBothWays(0x9, NausicaaTalkGadriel, Nausicaa, Gadriel)
+CharacterEventBothWays(0x10, DianaTalkRosie, Diana, Rosie)
+CharacterEvent(0x11,NausicaaTalkColt,Nausicaa,Colt)
 	END_MAIN
+
+KairsTalkGadriel:
+
+MUSI
+Text(TextTalk1Ch1)
+GiveEXPcurrentUnit(15)
+MUNO
+ENDA
+
+NausicaaTalkGadriel:
+
+MUSI
+Text(TextTalk2Ch1)
+GiveEXPcurrentUnit(15)
+MUNO
+ENDA
+
+DianaTalkRosie:
+
+MUSI
+Text(TextTalk3Ch1)
+GiveEXPcurrentUnit(15)
+MUNO
+ENDA
+
+NausicaaTalkColt:
+
+MUSI
+Text(TextTalk4Ch1)
+GiveEXPcurrentUnit(15)
+MUNO
+ENDA
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
+	DefeatBoss(EndingScene)
 	END_MAIN
 
 LocationBasedEvents:
-
+Village(0x1A,Village1,2,2)
+Village(0xC,Village2,13,15)
+Village(0xB,Village3,14,4)
 	END_MAIN
+
+Village1:
+
+SetBackground(0x2)
+Text(TextVillage1Ch1)
+GiveItem(RedGem, 0xFFFF)
+EndConvo
+ENDA
+
+Village2:
+
+SetBackground(0x2)
+Text(TextVillage2Ch1)
+GiveItem(GoddessIcon, 0xFFFF)
+EndConvo
+ENDA
+
+Village3:
+SetBackground(0x2)
+CHECK_ACTIVE
+SVAL 0x7 0x1
+BEQ 0x1 0xC 0x7
+SVAL 0x7 0x4
+BEQ 0x2 0xC 0x7
+SVAL 0x7 0x9
+BEQ 0x2 0xC 0x7
+SVAL 0x7 0xA
+BEQ 0x3 0xC 0x7
+SVAL 0x7 0xC4
+BEQ 0x3 0xC 0x7
+SVAL 0x7 0x8
+BEQ 0x4 0xC 0x7
+SVAL 0x7 0xD
+BEQ 0x5 0xC 0x7
+SVAL 0x7 0x2
+BEQ 0x6 0xC 0x7
+LABEL 0x1
+Text(TextVillage3part1Ch1)
+GiveItem(SteelLance, 0xFFFF)
+GOTO 0x1000
+LABEL 0x2
+Text(TextVillage3part2Ch1)
+GiveItem(SteelSword, 0xFFFF)
+GOTO 0x1000
+LABEL 0x3
+Text(TextVillage3part3Ch1)
+GiveItem(SteelAxe, 0xFFFF)
+GOTO 0x1000
+LABEL 0x4
+Text(TextVillage3part4Ch1)
+GiveItem(SteelBow, Diana)
+GOTO 0x1000
+LABEL 0x5
+Text(TextVillage3part5Ch1)
+GiveItem(LeatherShield, Yala)
+GOTO 0x1000
+LABEL 0x6
+Text(TextVillage3part6Ch1)
+GiveItem(Vulnerary, Kairs)
+GiveEXP(Kairs, 25)
+ENUT(0x92)
+LABEL 0x1000
+EndConvo
+ENDA
+
 
 Dunno1:
 
@@ -95,23 +216,41 @@ EnemyUnits:
 	UNIT BanditBoss LanceCavalier 0x0 Level(4,Enemy,1) [20,13] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] [0,3,0,0]
 	UNIT BanditBoss Mercenary 0x0 Level(2,Enemy,1) [7,1] 0x0 0x0 0x0 0x0 [SteelSword, LeatherShield] [0,3,0,0]
 	UNIT Bandit Archer 0x0 Level(3,Enemy,1) [7,1] 0x0 0x0 0x0 0x0 [LongBow] [0,3,0,0]
-	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,20]
-	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,20]
-	UNIT Bandit Fighter 0x0 Level(2,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,20]
-	UNIT Bandit LanceCavalier 0x0 Level(2,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [IronLance] [0,12,0,0]
-    UNIT Bandit AxeCavalier 0x0 Level(3,Enemy,1) [9,5] 0x0 0x0 0x0 0x0 [Hatchet] [0,12,0,0]
-    UNIT Bandit Mage 0x0 Level(2,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [Thunder, PureWater] [3,4,0,0]
-    UNIT Bandit Mage 0x0 Level(3,Enemy,1) [13,17] 0x0 0x0 0x0 0x0 [Fire] [3,4,0,0]
-    UNIT Bandit Soldier 0x0 Level(2,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Javelin] [0,12,0,0]
+	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [HandAxe] StaticAI
+	UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandAxe] StaticAI
+	UNIT Bandit Fighter 0x0 Level(2,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [IronAxe] StaticAI
+	UNIT Bandit LanceCavalier 0x0 Level(2,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [IronLance] WaitOneTurnAI
+    UNIT Bandit AxeCavalier 0x0 Level(3,Enemy,1) [9,5] 0x0 0x0 0x0 0x0 [Hatchet] WaitOneTurnAI
+    UNIT Bandit Mage 0x0 Level(2,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [Thunder, PureWater] [0,3,4,0]
+    UNIT Bandit Mage 0x0 Level(3,Enemy,1) [13,17] 0x0 0x0 0x0 0x0 [Fire] [0,3,0,0]
+    UNIT Bandit Soldier 0x0 Level(2,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Javelin] WaitOneTurnAI
 	UNIT Bandit Archer 0x0 Level(3,Enemy,1) [11,4] 0x0 0x0 0x0 0x0 [LongBow] [0,3,4,0]
 	UNIT Bandit Shaman 0x0 Level(2,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [Flux, Vulnerary] [0,3,0,0]
     UNIT Bandit Soldier 0x0 Level(3,Enemy,1) [18,14] 0x0 0x0 0x0 0x0 [IronLance, Vulnerary] [0,3,0,0]
-    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [16,6] 0x2 0x0 0x0 0x0 [IronSword] [0,12,0,0]
+    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [16,6] 0x2 0x0 0x0 0x0 [IronSword] WaitOneTurnAI
 	UNIT Bandit Shaman 0x0 Level(3,Enemy,1) [19,2] 0x0 0x0 0x0 0x0 [Flux] [0,3,0,0]	
     UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
-    UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,4,0]
-    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [13,5] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
-    UNIT Bandit Archer 0x0 Level(2,Enemy,1) [4,5] 0x2 0x0 0x0 0x0 [IronBow] [0,12,0,0]
+    UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,0,0]
+    UNIT Bandit Mercenary 0x0 Level(3,Enemy,1) [13,5] 0x0 0x0 0x0 0x0 [IronSword] [0,3,0,0]
+    UNIT Bandit Archer 0x0 Level(2,Enemy,1) [4,5] 0x2 0x0 0x0 0x0 [IronBow] WaitOneTurnAI
+    UNIT Bandit AxeCavalier 0x0 Level(3,Enemy,1) [4,3] 0x0 0x0 0x0 0x0 [SteelAxe] [0,3,0,0]    
+	
+	UNIT
+
+Rinforzi1:
+
+    UNIT Bandit Brigand 0x0 Level(3,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [PoisonAxe] [0xC,4,0,0]
+    UNIT Bandit Brigand 0x0 Level(3,Enemy,1) [21,11] 0x0 0x0 0x0 0x0 [SteelAxe] [0xC,4,0,0]
+    UNIT Bandit SwordCavalier 0x0 Level(2,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [SteelSword] [0,0,4,0]    
+    UNIT Bandit SwordCavalier 0x0 Level(3,Enemy,1) [21,4] 0x0 0x0 0x0 0x0 [IronSword] [0,0,4,0]   
+	
+	UNIT
+
+Rinforzi2:
+
+    UNIT Bandit Brigand 0x0 Level(3,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [IronAxe] [6,4,0,0]
+    UNIT Bandit Fighter 0x0 Level(3,Enemy,1) [0,3] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+    UNIT Bandit Soldier 0x0 Level(2,Enemy,1) [18,18] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]    
 
 	UNIT
 
@@ -135,6 +274,7 @@ BeginningScene:
 	Text(Text1Ch1)
 	LOAD2 1 Cutscene2
 	ENUN
+	STAL(16)
 	Text(Text2Ch1)
 	FADI(16)
 	LOMA(0x2)

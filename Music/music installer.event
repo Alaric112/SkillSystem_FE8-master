@@ -55,8 +55,18 @@ SongTable(0x26E,song02,1)
 SongTable(0x26F,EdgeOfDawn,1)
 #include "songs/FE16EdgeofDawn.event"
 }
-
-
+{
+SongTable(0x270,Kakariko_Village,1)
+#include "songs/Kakariko Village.event"
+}
+{
+SongTable(0x271,Anxiety,1)
+#include "songs/Anxiety.event"
+}
+{
+SongTable(0x272,song0272,1)
+#include "songs/LufiaCharge.event"
+}
 //installation of ipatix's sound mixer. Essential if you want to use GS synths; also makes most music sound better by reducing background noise.
 
 PUSH

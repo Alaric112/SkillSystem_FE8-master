@@ -1,0 +1,1443 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    Kakariko_Village_grp  MusicVoices
+        #define    Kakariko_Village_pri  0
+        #define    Kakariko_Village_rev  0
+        #define    Kakariko_Village_key  0
+
+        // .rodata
+        // Kakariko_Village
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+Kakariko_Village_0:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   140/2
+        BYTE           VOICE   45
+        BYTE           PAN     c_v-45
+        BYTE           VOL     42
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE           N12     En3
+        BYTE   W48
+// 001   ----------------------------------------
+Kakariko_Village_0_1:
+        BYTE           N12     An1   v127
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Bn2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE           N12     An2
+        BYTE   W48
+        BYTE   PEND
+// 002   ----------------------------------------
+Kakariko_Village_0_2:
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE           N12     En3
+        BYTE   W48
+        BYTE   PEND
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_1
+// 004   ----------------------------------------
+Kakariko_Village_0_LOOP:
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE           N12     En3
+        BYTE   W48
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_1
+// 006   ----------------------------------------
+Kakariko_Village_0_6:
+        BYTE           N12     Fn1   v127
+        BYTE   W12
+        BYTE                   Cn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE           N12     An2
+        BYTE   W48
+        BYTE   PEND
+// 007   ----------------------------------------
+Kakariko_Village_0_7:
+        BYTE   W12
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   En1
+        BYTE   W12
+        BYTE                   Cn2
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE   PEND
+// 008   ----------------------------------------
+Kakariko_Village_0_8:
+        BYTE           N12     Dn2   v127
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   An3
+        BYTE           N12     Fn3
+        BYTE   W48
+        BYTE   PEND
+// 009   ----------------------------------------
+Kakariko_Village_0_9:
+        BYTE   W12
+        BYTE           N12     An2   v127
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   An3
+        BYTE           N12     Fn3
+        BYTE   W48
+        BYTE   PEND
+// 010   ----------------------------------------
+Kakariko_Village_0_10:
+        BYTE           N12     Gn1   v127
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Bn2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE           N12     Bn2
+        BYTE   W48
+        BYTE   PEND
+// 011   ----------------------------------------
+Kakariko_Village_0_11:
+        BYTE   W12
+        BYTE           N12     Dn2   v127
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Fn1
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+Kakariko_Village_0_12:
+        BYTE           N12     En1   v127
+        BYTE   W12
+        BYTE                   Bn1
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   Fs2
+        BYTE   W12
+        BYTE                   En3
+        BYTE           N12     Gn2
+        BYTE   W48
+        BYTE   PEND
+// 013   ----------------------------------------
+Kakariko_Village_0_13:
+        BYTE           N12     An1   v127
+        BYTE   W12
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   En3
+        BYTE           N12     Dn3
+        BYTE   W48
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_8
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_10
+// 016   ----------------------------------------
+Kakariko_Village_0_16:
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE           N12     Cn3
+        BYTE   W48
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Fn3
+        BYTE           N12     Dn3
+        BYTE   W48
+// 018   ----------------------------------------
+        BYTE                   Gs1
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE           N12     Cn3
+        BYTE   W48
+// 019   ----------------------------------------
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Gn1
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_2
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_8
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_10
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_16
+// 033   ----------------------------------------
+        BYTE   W12
+        BYTE           N12     Cn2   v127
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE           N12     An2
+        BYTE   W48
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_2
+// 035   ----------------------------------------
+Kakariko_Village_0_35:
+        BYTE   W12
+        BYTE           N12     Gn2   v127
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE           N12     En3
+        BYTE   W48
+        BYTE   PEND
+// 036   ----------------------------------------
+        BYTE                   Gs1
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE           N12     Cn3
+        BYTE   W48
+// 037   ----------------------------------------
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE           N12     Cn3
+        BYTE   W48
+// 038   ----------------------------------------
+        BYTE                   As1
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE           N12     As2
+        BYTE   W48
+// 039   ----------------------------------------
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE           N12     As2
+        BYTE   W48
+// 040   ----------------------------------------
+        BYTE                   Gn1
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE           N12     As2
+        BYTE   W48
+// 041   ----------------------------------------
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE           N12     As2
+        BYTE   W48
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_8
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_9
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_2
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_35
+// 046   ----------------------------------------
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE           N12     En3
+        BYTE   W48
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_0_35
+// 048   ----------------------------------------
+        BYTE           N12     As1   v127
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE           N12     As2
+        BYTE   W48
+// 049   ----------------------------------------
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE           N12     As2
+        BYTE   W48
+// 050   ----------------------------------------
+        BYTE                   Fn1
+        BYTE   W12
+        BYTE                   Cn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE           N12     Fn2
+        BYTE   W48
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Kakariko_Village_0_LOOP
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+Kakariko_Village_1:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   73
+        BYTE           VOL     63
+        BYTE           PAN     c_v+44
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     Gn3   v127
+        BYTE   W24
+// 004   ----------------------------------------
+Kakariko_Village_1_LOOP:
+        BYTE           N72     Cn4   v127
+        BYTE   W72
+        BYTE           N24     Bn3
+        BYTE   W24
+// 005   ----------------------------------------
+Kakariko_Village_1_5:
+        BYTE           N48     Cn4   v127
+        BYTE   W48
+        BYTE                   En4
+        BYTE   W48
+        BYTE   PEND
+// 006   ----------------------------------------
+        BYTE           TIE     An3
+        BYTE   W96
+// 007   ----------------------------------------
+Kakariko_Village_1_7:
+        BYTE   W48
+        BYTE           EOT     An3
+        BYTE   W24
+        BYTE           N24     An3   v127
+        BYTE   W24
+        BYTE   PEND
+// 008   ----------------------------------------
+Kakariko_Village_1_8:
+        BYTE           N72     Dn4   v127
+        BYTE   W72
+        BYTE           N24     Cs4
+        BYTE   W24
+        BYTE   PEND
+// 009   ----------------------------------------
+Kakariko_Village_1_9:
+        BYTE           N48     Dn4   v127
+        BYTE   W48
+        BYTE                   Fn4
+        BYTE   W48
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE           TIE     Bn3
+        BYTE   W96
+// 011   ----------------------------------------
+Kakariko_Village_1_11:
+        BYTE   W48
+        BYTE           EOT     Bn3
+        BYTE   W24
+        BYTE           N24     Bn3   v127
+        BYTE   W24
+        BYTE   PEND
+// 012   ----------------------------------------
+Kakariko_Village_1_12:
+        BYTE           N72     Gn4   v127
+        BYTE   W72
+        BYTE           N24     Dn4
+        BYTE   W24
+        BYTE   PEND
+// 013   ----------------------------------------
+Kakariko_Village_1_13:
+        BYTE           N72     Cs4   v127
+        BYTE   W72
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE                   En4
+        BYTE   W12
+        BYTE   PEND
+// 014   ----------------------------------------
+Kakariko_Village_1_14:
+        BYTE           N72     Fn4   v127
+        BYTE   W72
+        BYTE           N24     Cn4
+        BYTE   W24
+        BYTE   PEND
+// 015   ----------------------------------------
+Kakariko_Village_1_15:
+        BYTE           N72     Bn3   v127
+        BYTE   W72
+        BYTE           N12     Cn4
+        BYTE   W12
+        BYTE                   Dn4
+        BYTE   W12
+        BYTE   PEND
+// 016   ----------------------------------------
+Kakariko_Village_1_16:
+        BYTE           N12     En4   v127
+        BYTE   W12
+        BYTE                   Dn4
+        BYTE   W12
+        BYTE           N48     En4
+        BYTE   W48
+        BYTE           N24     Fn4
+        BYTE   W24
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE           N96     Dn4
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE           N12     Cn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE           N48     Cn4
+        BYTE   W48
+        BYTE           N24     Dn4
+        BYTE   W24
+// 019   ----------------------------------------
+        BYTE           N72     Bn3
+        BYTE   W72
+        BYTE           N24     Gn3
+        BYTE   W24
+// 020   ----------------------------------------
+        BYTE           N72     Cn4
+        BYTE   W72
+        BYTE           N24     Bn3
+        BYTE   W24
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_5
+// 022   ----------------------------------------
+        BYTE           TIE     An3   v127
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_9
+// 026   ----------------------------------------
+        BYTE           TIE     Bn3   v127
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_15
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_1_16
+// 033   ----------------------------------------
+        BYTE           N48     Dn4   v127
+        BYTE   W48
+        BYTE           N24     An3
+        BYTE   W24
+        BYTE                   Cn4
+        BYTE   W24
+// 034   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W48
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Kakariko_Village_1_LOOP
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.2) ******************//
+
+Kakariko_Village_2:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   68
+        BYTE           VOL     62
+        BYTE           PAN     c_v+44
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+Kakariko_Village_2_LOOP:
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     Cn3   v127
+        BYTE   W24
+// 036   ----------------------------------------
+        BYTE           N48
+        BYTE   W60
+        BYTE           N12     As2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+// 037   ----------------------------------------
+        BYTE           N48     Ds3
+        BYTE   W48
+        BYTE                   Fn3
+        BYTE   W48
+// 038   ----------------------------------------
+        BYTE           N96     Ds3
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE           N72     As2
+        BYTE   W72
+        BYTE           N24
+        BYTE   W24
+// 040   ----------------------------------------
+        BYTE           N48
+        BYTE   W60
+        BYTE           N12     An2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W12
+// 041   ----------------------------------------
+        BYTE           N48     Dn3
+        BYTE   W48
+        BYTE                   Ds3
+        BYTE   W48
+// 042   ----------------------------------------
+        BYTE           TIE     Dn3
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W72
+        BYTE           EOT
+        BYTE           N24     En3
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           N48
+        BYTE   W60
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Fs3
+        BYTE   W12
+// 045   ----------------------------------------
+        BYTE           N48     Gn3
+        BYTE   W48
+        BYTE                   An3
+        BYTE   W48
+// 046   ----------------------------------------
+        BYTE           N72     Gn3
+        BYTE   W72
+        BYTE           N12     Fs3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE   W12
+// 047   ----------------------------------------
+        BYTE           N96     Dn4
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W12
+        BYTE           N12     Fn4
+        BYTE   W12
+        BYTE                   Dn4
+        BYTE   W12
+        BYTE                   Cn4
+        BYTE   W12
+// 050   ----------------------------------------
+        BYTE           TIE     Dn4
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE           EOT
+        BYTE   GoTo
+         POIN2  Kakariko_Village_2_LOOP
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.3) ******************//
+
+Kakariko_Village_3:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   49
+        BYTE           PAN     c_v-45
+        BYTE           VOL     25
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+Kakariko_Village_3_LOOP:
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE           TIE     Gs2   v127
+        BYTE           TIE     Ds2
+        BYTE           TIE     Cn2
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE           EOT
+        BYTE           EOT     Ds2
+        BYTE                   Gs2
+        BYTE           TIE     Gn2
+        BYTE           TIE     Ds2
+        BYTE           TIE     As1
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE           EOT
+        BYTE           EOT     Ds2
+        BYTE                   Gn2
+        BYTE           TIE
+        BYTE           TIE     Dn2
+        BYTE           TIE     As1
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE           EOT
+        BYTE           EOT     Dn2
+        BYTE                   Gn2
+        BYTE           TIE     An2
+        BYTE           TIE     Fn2
+        BYTE           TIE     Dn2
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE           EOT
+        BYTE           EOT     Fn2
+        BYTE                   An2
+        BYTE           N96     Cn3
+        BYTE           TIE     Gn2
+        BYTE           TIE     En2
+        BYTE           TIE     Cn2
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE           N96     Cn3
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE           EOT     Cn2
+        BYTE                   En2
+        BYTE                   Gn2
+        BYTE           N96     Bn2
+        BYTE           TIE     Gn2
+        BYTE           TIE     Dn2
+        BYTE           TIE     Bn1
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE           N96     Bn2
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE           EOT     Bn1
+        BYTE                   Dn2
+        BYTE                   Gn2
+        BYTE           N96     Dn3
+        BYTE           TIE     As2
+        BYTE           TIE     Fn2
+        BYTE           TIE     Dn2
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE           N96     Dn3
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE           EOT     Dn2
+        BYTE                   Fn2
+        BYTE                   As2
+        BYTE           N96     Cn3
+        BYTE           N96     An2
+        BYTE           N96     Fn2
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE                   Bn3
+        BYTE           N96     Dn3
+        BYTE           N96     Bn2
+        BYTE           N96     Gn2
+        BYTE           N96     Fn2
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Kakariko_Village_3_LOOP
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.4) ******************//
+
+Kakariko_Village_4:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   13
+        BYTE           PAN     c_v+63
+        BYTE           VOL     24
+        BYTE   W48
+        BYTE           N12     Gn3   v127
+        BYTE           N12     En3
+        BYTE   W48
+// 001   ----------------------------------------
+Kakariko_Village_4_1:
+        BYTE   W12
+        BYTE           N12     En2   v127
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W48
+        BYTE   PEND
+// 002   ----------------------------------------
+Kakariko_Village_4_2:
+        BYTE   W48
+        BYTE           N12     Gn3   v127
+        BYTE           N12     En3
+        BYTE   W48
+        BYTE   PEND
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_1
+// 004   ----------------------------------------
+Kakariko_Village_4_LOOP:
+        BYTE   W48
+        BYTE           N12     Gn3   v127
+        BYTE           N12     En3
+        BYTE   W48
+// 005   ----------------------------------------
+Kakariko_Village_4_5:
+        BYTE   W48
+        BYTE           N12     An2   v127
+        BYTE   W48
+        BYTE   PEND
+// 006   ----------------------------------------
+Kakariko_Village_4_6:
+        BYTE   W48
+        BYTE           N12     Cn3   v127
+        BYTE           N12     An2
+        BYTE   W48
+        BYTE   PEND
+// 007   ----------------------------------------
+Kakariko_Village_4_7:
+        BYTE   W24
+        BYTE           N12     Fn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W36
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE   PEND
+// 008   ----------------------------------------
+Kakariko_Village_4_8:
+        BYTE   W48
+        BYTE           N12     An3   v127
+        BYTE           N12     Fn3
+        BYTE   W48
+        BYTE   PEND
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 010   ----------------------------------------
+Kakariko_Village_4_10:
+        BYTE   W48
+        BYTE           N12     Dn3   v127
+        BYTE           N12     Bn2
+        BYTE   W48
+        BYTE   PEND
+// 011   ----------------------------------------
+Kakariko_Village_4_11:
+        BYTE   W24
+        BYTE           N12     Fn2   v127
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W36
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+Kakariko_Village_4_12:
+        BYTE   W48
+        BYTE           N12     En3   v127
+        BYTE           N12     Gn2
+        BYTE   W48
+        BYTE   PEND
+// 013   ----------------------------------------
+Kakariko_Village_4_13:
+        BYTE   W48
+        BYTE           N12     En3   v127
+        BYTE           N12     Dn3
+        BYTE   W48
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_10
+// 016   ----------------------------------------
+Kakariko_Village_4_16:
+        BYTE   W48
+        BYTE           N12     En3   v127
+        BYTE           N12     Cn3
+        BYTE   W48
+        BYTE   PEND
+// 017   ----------------------------------------
+Kakariko_Village_4_17:
+        BYTE   W48
+        BYTE           N12     Fn3   v127
+        BYTE           N12     Dn3
+        BYTE   W48
+        BYTE   PEND
+// 018   ----------------------------------------
+Kakariko_Village_4_18:
+        BYTE   W48
+        BYTE           N12     Ds3   v127
+        BYTE           N12     Cn3
+        BYTE   W48
+        BYTE   PEND
+// 019   ----------------------------------------
+        BYTE   W24
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Gn1
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_5
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_10
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_16
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_17
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_18
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_18
+// 038   ----------------------------------------
+Kakariko_Village_4_38:
+        BYTE   W48
+        BYTE           N12     Ds3   v127
+        BYTE           N12     As2
+        BYTE   W48
+        BYTE   PEND
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_38
+// 040   ----------------------------------------
+Kakariko_Village_4_40:
+        BYTE   W48
+        BYTE           N12     Dn3   v127
+        BYTE           N12     As2
+        BYTE   W48
+        BYTE   PEND
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_40
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_8
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_2
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_40
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_4_40
+// 050   ----------------------------------------
+        BYTE   W48
+        BYTE           N12     An2   v127
+        BYTE           N12     Fn2
+        BYTE   W48
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Kakariko_Village_4_LOOP
+        BYTE   FINE
+
+//****************** Track 5 (Midi-Chn.5) ******************//
+
+Kakariko_Village_5:
+        BYTE   KEYSH   Kakariko_Village_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   127
+        BYTE           PAN     c_v-45
+        BYTE           VOL     30
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+Kakariko_Village_5_LOOP:
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+Kakariko_Village_5_37:
+        BYTE   W60
+        BYTE           N12     As4   v127
+        BYTE   W12
+        BYTE                   As4
+        BYTE   W12
+        BYTE                   As4
+        BYTE   W12
+        BYTE   PEND
+// 038   ----------------------------------------
+        BYTE                   As4
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 040   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 042   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 044   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 046   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 048   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  Kakariko_Village_5_37
+// 050   ----------------------------------------
+        BYTE           N12     As4   v127
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Kakariko_Village_5_LOOP
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+Kakariko_Village:
+        BYTE   6                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   Kakariko_Village_pri    // Priority
+        BYTE   Kakariko_Village_rev    // Reverb
+
+        POIN2   Kakariko_Village_grp   
+
+        POIN2   Kakariko_Village_0
+        POIN2   Kakariko_Village_1
+        POIN2   Kakariko_Village_2
+        POIN2   Kakariko_Village_3
+        POIN2   Kakariko_Village_4
+        POIN2   Kakariko_Village_5
+
+        

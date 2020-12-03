@@ -133,3 +133,12 @@ BrawlerMoving:
 ALIGN 4
 BrawlerStanding:
 #incext Png2Dmp "Png/BrawlerStanding.png" --lz77
+
+
+ALIGN 4
+DruidMovingF:
+#incext Png2Dmp "Png/DruidMovingF.png" --lz77
+
+ALIGN 4
+DruidStandingF:
+#incext Png2Dmp "Png/DruidStandingF.png" --lz77

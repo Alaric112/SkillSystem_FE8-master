@@ -20,3 +20,68 @@ ready yet[AN], I'm a[N] failure[.][ToggleMouthMove]...[.][ToggleMouthMove][A][Op
 ## MerchantDeathPrologue
 [OpenMidRight][LoadFace][0x5A][0x01][OpenMidRight]
 We are doomed...[.][CloseEyes][A][X]
+
+## GilliamDeathCh1
+[OpenMidRight][LoadFace][0x05][0x01][OpenMidRight]
+How...did I do it[N]
+to fail my king...[A]
+my...my princess...[AN]
+forgive me...[A]
+[OpenMidRight][CloseEyes][A][X]
+
+## DarioDeathCh1
+[OpenMidLeft][LoadFace][0xD6][0x01][OpenMidLeft]
+Defeated by a pack of[N] 
+angry peasants[AN]
+Captain...kill the imperial[N]
+dogs for me too[A][X]
+
+## GadrielDeath
+[OpenMidRight][LoadGadriel][OpenMidRight]
+Grandpa...you were right, I wasn't[N] 
+ready yet[AN], I'm a[N] failure[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+
+## KairsDeath
+[OpenMidRight][LoadKairs][OpenMidRight]
+Giulia....Gadriel, Nausica[aa][AN]
+I failed....finish[N]
+the work for me too[AN]
+it's time for that[N]
+old man ...to close...his...eyes...[A][.]
+[OpenMidRight][CloseEyes][X]
+
+## DianaDeath
+[OpenMidRight][LoadFace][0x0A][0x01][OpenMidRight]
+I-I feel...so...[N]
+weak...I no longer see...[AN]
+nothing...I'm so sleepy [N]
+I have to close a little...my eyes...[AN]
+[OpenMidRight][CloseEyes][A][X]
+
+## ColtDeath
+[OpenMidRight][LoadFace][0xCE][0x01][OpenMidRight]
+In the end...[AN]
+I received the death[N]
+that I deserved[AN]
+[OpenMidRight][CloseEyes][A][X]
+
+## RosieDeath
+[OpenMidRight][LoadFace][0xCB][0x01][OpenMidRight]
+Damn...[AN]
+I have not finished atoning[N]
+my sins...[AN]
+it seems like in the end...people[N]
+like me...[A]
+they only deserve oblivion......[A]
+[OpenMidRight][CloseEyes][A][X]
+
+## GilliamDeath
+[OpenMidRight][LoadFace][0x05][0x01][OpenMidRight]
+How...did I do it[N]
+to fail my king...[A]
+my...my princess...[AN]
+forgive me...[A]
+[OpenMidRight][CloseEyes][OpenMidRight][ClearFace][OpenMidLeft][LoadFace][0x4A][0x01][OpenMidLeft]
+Goodbye good knight[AN] 
+but nothing can stop the[N] 
+strength of the empire[A][X]

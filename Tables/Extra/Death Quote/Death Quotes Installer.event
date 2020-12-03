@@ -12,7 +12,10 @@ ChapterDeathQuote(Kairs,Prologue,GameOverFlag,KairsDeathPrologue)
 ChapterDeathQuote(Gadriel,Prologue,GameOverFlag,GadrielDeathPrologue)
 ChapterDeathQuote(0x6F,Prologue,GameOverFlag,MerchantDeathPrologue)
 
-// Ch1
+// Ch1 (Bandits!)
+ChapterDeathQuote(Gilliam,Ch2,GameOverFlag,GilliamDeathCh1)
+ChapterDeathQuote(Dario,Ch2,DefeatBossFlag,DarioDeathCh1)
+ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue)
 
 // Ch2
 
@@ -46,6 +49,15 @@ ChapterDeathQuote(0x6F,Prologue,GameOverFlag,MerchantDeathPrologue)
 
 // Always
 AlwaysDeathQuote(Nausicaa,GameOverFlag,NausicaaDeath)
+AlwaysDeathQuote(Gadriel,0x0,GadrielDeath)
+AlwaysDeathQuote(Diana,0x0,DianaDeath)
+AlwaysDeathQuote(Colt,0x0,ColtDeath)
+AlwaysDeathQuote(Rosie,0x0,RosieDeath)
+AlwaysDeathQuote(Nausicaa,0x0,KairsDeath)
+AlwaysDeathQuote(Nausicaa,0x0,KairsDeath)
+
+
+
 EndDeathQuote
 
 PUSH

@@ -71,6 +71,8 @@
 
 #include "Definitions/PList Definitions.event"
 
+#include "Definitions/Spell Animation.event"
+
 //#include "Definitions/StatBoost.event"
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
