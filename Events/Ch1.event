@@ -305,6 +305,41 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+
+
+    MUSC 0x31
+	SetBackground(0x1B)
+	Text(TextEnd1Ch1)
+	Text(TextEnd2Ch1)
+	CHECK_ALIVE 0x4
+    BEQ 0x9000 0xC 0x0
+    CHECK_ALIVE 0xA
+    BEQ 0x9000 0xC 0x0
+    CHECK_ALIVE 0x8
+    BEQ 0x9000 0xC 0x0
+    CHECK_ALIVE 0x9
+    BEQ 0x9002 0xC 0x0
+	Text(TextEnd3Ch1)
+	GOTO 0x9003
+    LABEL 0x9002
+	LABEL 0x9003
+    GOTO 0x9001
+    LABEL 0x9000
+	LABEL 0x9001
+    CHECK_EVENTID 0x1A
+    BEQ 0x9004 0xC 0x0
+    CHECK_EVENTID 0xB
+    BEQ 0x9004 0xC 0x0
+    CHECK_EVENTID 0xC
+    BEQ 0x9004 0xC 0x0
+	Text(TextEnd4Ch1)
+	GiveItem(WindRing, Nausicaa)
+	LABEL 0x9004
+	FADI(16)
+	LoseItem(SteelShield)
+	SendAllTransporter(Gilliam)
+	REMU Gilliam
+	DISA Gilliam
 	MNC2 0x3
 	NoFade
 	ENDA

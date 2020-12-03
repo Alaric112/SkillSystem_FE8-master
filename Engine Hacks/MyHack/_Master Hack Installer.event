@@ -45,6 +45,8 @@
 
 #include "EVENTSCRIPT_COND_ITEM/Installer.event"
 
+#include "EVENTSCRIPT_SendAllTransporter/Installer.event"
+
 #include "MoreShops/MoreShops.event"
 
 #include "FreeMovement/FreeMovement.event"
