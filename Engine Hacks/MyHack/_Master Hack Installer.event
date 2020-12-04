@@ -52,3 +52,5 @@
 #include "FreeMovement/FreeMovement.event"
 
 #include "FreeMovement/MakeShopASMC.lyn.event"
+
+#include "Battle Palette Rework/BattlePaletteReworkFE8.event"

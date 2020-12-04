@@ -267,6 +267,14 @@ CutScene6:
 	
     UNIT
 
+CutScene7:
+
+    UNIT Gilliam 0x0 0x0 Level(3,NPC,1) [4,10] 0x0 0x0 0x1 REDA6R4 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Dario Brawler 0x0 Level(3,Enemy,1) [3,10] 0x0 0x0 0x1 REDA7R5 [Fire, PureWater] [0,0,0,0]
+    UNIT Militia Soldier 0x0 Level(3,NPC,1) [2,10] 0x0 0x0 0x1 REDA8R4 [Wind, ArcWind, Heal] [0,0,0,0]
+	
+    UNIT
+
 EnemyUnits:
 
 	UNIT
@@ -395,6 +403,12 @@ EndingScene:
 	TILECHANGE 0x0
 	CAMERA Mansel
 	FADU 16
+	LOAD1 1 CutScene7
+	ENUN
+	SetBackground(0xE)
+	Text(TextEnd1Ch1x)
+	Text(TextEnd2Ch1x)
+	FADI(16)
 	MNC2 0x4
 	NoFade
 	ENDA

@@ -148,7 +148,7 @@ NausicaaKairsTalk:
     CURSOR Nausicaa
 	REMOVE_CURSORS
 	Text(Text6)
-	SetChapterObjectiveText(Escape, EscapeDesc)
+	SetChapterObjectiveText(Escape, EscapeConvoyDesc)
 	NoFade
 	ENDA
 
@@ -158,6 +158,8 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 House(0x11,Secret,14,12)
+LOCA 0x0 Retreat [13,10] 0x13
+LOCA 0x0 Retreat [14,18] 0x13
 /*
 Escape(0x3,Retreat,13,9)
 Escape(0x3,Retreat,14,18)
@@ -169,6 +171,7 @@ GiveItem(AngelicRobe,-1)
 ENDA
 
 Retreat:
+LastOneEscape(EscapeQuoteTable|IsPointer, Kairs, KairsRefuseEscape)
 ENDA
 
 Dunno1:

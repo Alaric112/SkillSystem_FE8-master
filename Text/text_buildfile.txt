@@ -104,4 +104,6 @@ a skill when used.[X]
 
 #include "Class Text/MasterName.event"
 
+#include "Extra/EscapeQuote.txt"
+
 #include "Chapter Text/MasterChapterInstaller.txt"

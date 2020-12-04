@@ -42,3 +42,30 @@ RathBowCavalier:
 NausicaaLanceLord:
 	#incbin "./_palettes/NausicaaLanceLord.lzpal" 
 
+AlistarFighter:
+	#incbin "./_palettes/AlistarFighter.lzpal" 
+
+AlistarArcher:
+	#incbin "./_palettes/AlistarArcher.lzpal" 
+
+AlistarCavalier:
+	#incbin "./_palettes/AlistarCavalier.lzpal" 
+
+AlistarMercenary:
+	#incbin "./_palettes/AlistarMercenary.lzpal" 
+
+AlistarSoldier:
+	#incbin "./_palettes/AlistarSoldier.lzpal" 
+
+AlistarMage:
+	#incbin "./_palettes/AlistarMage.lzpal" 
+
+AlistarBrigand:
+	#incbin "./_palettes/AlistarBrigand.lzpal" 
+
+AlistarShaman:
+	#incbin "./_palettes/AlistarShaman.lzpal" 
+
+DarioBrawler:
+	#incbin "./_palettes/DarioBrawler.lzpal" 
+

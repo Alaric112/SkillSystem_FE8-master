@@ -37,3 +37,9 @@
 #define Gervaso 0x4e
 #define Bandit 0x65
 #define BanditBoss 0x66
+
+
+//Bruh...
+#define Orson 0x100
+#define Valter 0x101
+#define Selena 0x102

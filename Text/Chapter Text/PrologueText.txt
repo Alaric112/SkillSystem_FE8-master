@@ -309,7 +309,7 @@ demons will soon arrive[A][X]
 ## Escape
 Escape!!![X]
 
-## EscapeDesc
+## EscapeConvoyDesc
 Escape with the convoy![X]
 
 ## PrologueTurnEnemy1

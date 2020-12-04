@@ -20,9 +20,9 @@ ALIGN 32
 CharacterBasedEvents:
 CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
 CharacterEvent(0x00,NausicaaTalkGilliam,Nausicaa,Gilliam)
-CharacterEvent(0x0D,NausicaaTalkDiana,Nausicaa,Diana)
+CharacterEvent(0x1D,NausicaaTalkDiana,Nausicaa,Diana)
 CharacterEvent(0x00,NausicaaTalkColt,Nausicaa,Colt)
-CharacterEvent(0x00,NausicaaTalkRosie,Nausicaa,Rosie)
+CharacterEvent(0x0F,NausicaaTalkRosie,Nausicaa,Rosie)
 CharacterEvent(0x0B,NausicaaTalkMerchant,Nausicaa,Merchant)
 CharacterEvent(0x0A,NausicaaTalkOldMan,Nausicaa,OldMan)
 //CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
@@ -45,14 +45,20 @@ NausicaaTalkOldMan:
 	ENDA
 
 NausicaaTalkMerchant:
- 
+    
+	CHECK_EVENTID 0x0B
+    BNE 0x9000 0xC 0x0
     Text(Ch0xTalk6)
 	GiveItem(0x5D, Nausicaa)
+	ENUT 0x0B
+	LABEL 0x9000
     NoFade
 	ENDA
 
 NausicaaTalkRosie:
-
+    
+	CHECK_EVENTID 0xF
+    BNE 0x1000 0xC 0x0
     CHECK_EVENTID 0x12
     BEQ 0x9002 0xC 0x0
 	CHECK_ITEM_ALL(RedBeer)
@@ -63,7 +69,11 @@ NausicaaTalkRosie:
 	LoseItem(RedBeer)
 	AddStatus(Diana, 0x14, 0x1)
 	GiveEXP(Nausicaa, 100)
+	SVAL s1 30
+	SET_HP(Nausicaa)
 	ENUT(0xF)
+	ENUF(0xD)
+    ENUF(0x1D)
 	GOTO 0x9001
     LABEL 0x9000
     MUSC 0x32
@@ -74,6 +84,8 @@ NausicaaTalkRosie:
 	Text(Ch0xTalk5part3)
 	ENUT(0x12)
 	LABEL 0x9003
+	MUSC 0x270
+	LABEL 0x1000
     NoFade
 	ENDA
 
@@ -101,7 +113,12 @@ NausicaaTalkColt:
 
 NausicaaTalkDiana:
  
+    CHECK_EVENTID 0x0D
+    BNE 0x9000 0xC 0x0
     Text(Ch0xTalk3)
+	ENUT(0xD)
+	ENUT(0x1D)
+	LABEL 0x9000
     NoFade
 	ENDA
 
@@ -124,8 +141,12 @@ NausicaaTalkGilliam:
    
 NausicaaTalkCalliope:
  
-    Text(Ch0xTalk1)
+    CHECK_EVENTID 0x0A
+    BNE 0x9000 0xC 0x0
+	Text(Ch0xTalk1)
 	ENUT 0xA1
+	ENUT 0x0A
+	LABEL 0x9000
     NoFade
 	ENDA
  
@@ -304,7 +325,7 @@ NPC1:
 	UNIT Militia Soldier 0x0 Level(2,NPC,0) [2,4] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,0) [6,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,0) [7,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT 0xFC 0x71 0x0 Level(1,NPC,1) [22,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x71 0x0 Level(1,NPC,1) [22,14] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0xFC 0x70 0x0 Level(1,NPC,1) [26,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [23,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0xF4 0x6F 0x0 Level(1,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
@@ -427,5 +448,6 @@ EndingScene:
 	FADI(16)
     MNC2(0x02)	
 	NoFade
-	ASMC DisableFreeMovementASMC	
+	ENUT 0x1D
+//	ASMC DisableFreeMovementASMC	
 	ENDA

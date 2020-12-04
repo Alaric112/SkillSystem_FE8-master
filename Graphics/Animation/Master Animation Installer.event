@@ -36,8 +36,8 @@
 #define ArcherFBowAnim 0x28
 #define ArcherFUnarmedAnim 0x29
 
-#define ArcherMBowAnim 0x27
-#define ArcherMUnarmedAnim 0x26
+#define ArcherMBowAnim 0x26
+#define ArcherMUnarmedAnim 0x27
 
 #define ArmorLanceAnim 0x40
 #define ArmorUnarmedAnim 0x41

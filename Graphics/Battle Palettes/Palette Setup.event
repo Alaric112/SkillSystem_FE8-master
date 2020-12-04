@@ -55,3 +55,39 @@
 // NausicaaLanceLord
 	setPalette(0x02,NausicaaLanceLord)
 	setCBSP(0x02,Nausicaa, 1, 0x02)
+
+// AlistarFighter
+	setPalette(0x6F,AlistarFighter)
+	setCBSP(0x6F,Bandit, 1, Fighter)
+
+// AlistarArcher
+	setPalette(0x70,AlistarArcher)
+	setCBSP(0x70,Bandit, 2, Archer)
+
+// AlistarCavalier
+	setPalette(0x71,AlistarCavalier)
+	setCBSP(0x71,Bandit, 3, LanceCavalier)
+
+// AlistarMercenary
+	setPalette(0x72,AlistarMercenary)
+	setCBSP(0x72,Bandit, 4, Mercenary)
+
+// AlistarSoldier
+	setPalette(0x73,AlistarSoldier)
+	setCBSP(0x73,Bandit, 5, Soldier)
+
+// AlistarMage
+	setPalette(0x74,AlistarMage)
+	setCBSP(0x74,Bandit, 6, Mage)
+
+// AlistarBrigand
+	setPalette(0x75,AlistarBrigand)
+	setCBSP(0x75,Bandit, 7, Brigand)
+
+// AlistarShaman
+	setPalette(0x76,AlistarShaman)
+	setCBSP(0x76,BanditBoss, 1, Shaman)
+
+// DarioBrawler
+	setPalette(0x77,DarioBrawler)
+	setCBSP(0x77,Dario, 1, Brawler)
