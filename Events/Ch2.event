@@ -13,22 +13,165 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+    TurnEventPlayer(0x0,Turn1,1)
+    TurnEventPlayer(0x0,Turn2,2)
+	TurnEventPlayer(0x0,Turn3,3)
+	TurnEventPlayer(0x0,Turn5,5)
+	TurnEventPlayer(0x0,Turn6,6)
+	TurnEventPlayer(0x0,Turn7,7)
+	TurnEventPlayer(0x0,Turn9,9)
+	TurnEventPlayer(0x0,Turn14,14)
 
 	END_MAIN
+
+Turn1:
+    
+	CAMERA [14,12]
+	CURSOR_FLASHING [14,2]
+	Text(Text2Ch2)
+	FADI(16)
+	CAMERA(Nausicaa)
+	SET_CURSOR(Nausicaa)
+	FADU(16)
+	NoFade
+	ENDA
+
+Turn2:
+    
+    SpawnReinforcements(EnemyReinforce1)
+	NoFade
+	ENDA
+
+Turn3:
+    
+    SpawnReinforcements(EnemyReinforce2)
+	NoFade
+	ENDA
+
+Turn5:
+    
+    SpawnReinforcements(EnemyReinforce3)
+	NoFade
+	ENDA
+
+Turn6:
+    
+    CHECK_ALIVE 0xC
+    BEQ 0x9000 0xC 0x0
+    Text(Text3Ch2)
+    GOTO 0x9001
+    LABEL 0x9000
+    Text(Text4Ch2)
+    LABEL 0x9001
+    EVBIT_T 0x7
+    ENDA
+
+Turn7:
+    
+    SpawnReinforcements(EnemyReinforce4)
+	WEATHER 0x6
+	FOGVISION 0x3
+	NoFade
+	ENDA
+
+Turn9:
+    
+    SpawnReinforcements(EnemyReinforce5)
+	NoFade
+	ENDA
+
+Turn14:
+    
+    SpawnReinforcements(EnemyReinforce6)
+	NoFade
+	ENDA
 
 ALIGN 32
 CharacterBasedEvents:
-
+    CharacterEventBothWays(0xA,RosieTalkColt,Rosie,Colt)
+    CharacterEventBothWays(0xB,DianaTalkCalliope,Diana,Calliope)
+    CharacterEventBothWays(0xC,GadrielTalkCalliope,Gadriel,Calliope)
 	END_MAIN
+
+RosieTalkColt:
+    
+	Text(TextTalk1Ch2)
+	GiveEXPcurrentUnit(15)
+	NoFade
+	ENDA
+
+DianaTalkCalliope:
+    
+	Text(TextTalk2Ch2)
+	GiveEXPcurrentUnit(15)
+	NoFade
+	ENDA
+
+GadrielTalkCalliope:
+    
+	Text(TextTalk3Ch2)
+	GiveEXPcurrentUnit(15)
+	NoFade
+	ENDA
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-
+House(flagID,Temple,14,2)
+House(0x18,Secret,11,1)
+LOCA 0x0 Retreat [0,11] 0x13
+LOCA 0x0 Retreat [1,11] 0x13
 	END_MAIN
 
+Temple:
+    
+	CHECK_EVENTID 0x8
+    BNE 0x9000 0xC 0x0
+    CHECK_ACTIVE
+    SVAL 0x7 0x17
+    BEQ 0x2 0xC 0x7
+    LABEL 0x2
+    SetBackground(0x2C)
+	Text(TextTalk4Ch2)
+    FADI 16
+	EndConvo
+	CLEAN
+    CAMERA [1,9]   
+    WM_REMOVETEXT
+    FADU 16
+	ENUT 0x8
+    WORD 0xB003B24 0xB013B24
+    Text(TextTalk5Ch2)
+    FADI 16
+    SetChapterObjectiveText(Escape, EscapeConvoyDesc)
+    FADU 16
+    TUTORIALTEXTBOXSTART
+    SVAL 0xB 0xFFFFFFFF
+    TEXTSHOW TextEnd1Ch2
+    TEXTEND
+    REMA
+    GOTO 0x9000
+    LABEL 0x9000
+    EVBIT_T 0x7
+    ENDA
+
+Secret: 
+    
+	GiveItem(Talisman, 0xFFFF)
+	NoFade
+	ENDA
+
+Retreat:
+
+    CHECK_EVENTID 0x08
+	BEQ 0x1 0xC 0x0
+    EscapeUnit(EscapeQuotes|IsPointer, Salem)
+    NoFade
+	LABEL 0x1
+	ENDA
+	
 Dunno1:
 
 	END_MAIN
@@ -47,9 +190,83 @@ Tutorial:
 
 Units1:
 
+    UNIT Salem General 0x0 Level(3,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,Ally,0) [1,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,Ally,1) [4,11] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [4,14] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+	UNIT Nausicaa 0x0 0x0 Level(2,Ally,0) [1,9] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Yala Cleric 0x0 Level(2,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+    UNIT Kairs Paladin 0x0 Level(3,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Gadriel SwordCavalier 0x0 Level(2,Ally,0) [1,12] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+
 	UNIT
 
 EnemyUnits:
+
+	UNIT DemonBoss Gargoyle 0x0 Level(7,Enemy,1) [18,1] 0x2 0x0 0x0 0x0 [SteelLance, CrystalShield] AttackInRangeAI
+    UNIT Demon Mogall 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [EvilEye] WaitOneTurnAI
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [EvilEye] WaitOneTurnAI
+	UNIT Demon 0x55 0x0 Level(3,Enemy,1) [9,7] 0x2 0x0 0x0 0x0 [LongBow, TorchItem] [0,3,4,0]
+	UNIT Demon 0x55 0x0 Level(3,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [LongBow] [0,3,4,0]
+	UNIT Demon Gargoyle 0x0 Level(2,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
+	UNIT Demon Gargoyle 0x0 Level(4,Enemy,1) [19,7] 0x2 0x0 0x0 0x0 [IronLance, RedBeer] [0,3,4,0]
+	UNIT Demon Revenant 0x0 Level(3,Enemy,1) [7,4] 0x0 0x0 0x0 0x0 [RottenClaw] StaticAI
+	UNIT Demon Revenant 0x0 Level(3,Enemy,1) [14,10] 0x0 0x0 0x0 0x0 [PoisonClaw] StaticAI
+	UNIT Demon Revenant 0x0 Level(3,Enemy,1) [13,4] 0x0 0x0 0x0 0x0 [PoisonClaw, Elixir] StaticAI
+	UNIT Demon Revenant 0x0 Level(3,Enemy,1) [8,10] 0x0 0x0 0x0 0x0 [PoisonClaw] StaticAI
+	UNIT Demon 0x54 0x0 Level(3,Enemy,1) [3,3] 0x0 0x0 0x0 0x0 [IronSword] StaticAI
+	UNIT Demon 0x54 0x0 Level(4,Enemy,1) [10,5] 0x0 0x0 0x0 0x0 [IronSword] StaticAI
+	UNIT Demon 0x54 0x0 Level(4,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [Javelin] StaticAI
+	UNIT Demon 0x54 0x0 Level(4,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [IronLance] StaticAI
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [11,4] 0x0 0x0 0x0 0x0 [EvilEye] [0,3,4,0]
+
+	UNIT
+
+EnemyReinforce1:
+
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [12,11] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,4,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [RottenClaw] [0,0,4,0]
+
+	UNIT
+
+EnemyReinforce2:
+
+	UNIT Demon 0x54 0x0 Level(3,Enemy,1) [18,11] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]
+	UNIT Demon 0x54 0x0 Level(3,Enemy,1) [19,10] 0x0 0x0 0x0 0x0 [HaevySpear] [0,0,4,0]
+
+	UNIT
+
+EnemyReinforce3:
+
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [18,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,4,0]
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,4,0]
+
+	UNIT
+
+EnemyReinforce4:
+
+	UNIT Demon 0x54 0x0 Level(2,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [IronSword] [0,3,4,0]
+	UNIT Demon 0x55 0x0 Level(2,Enemy,1) [0,11] 0x0 0x0 0x0 0x0 [SteelBow] [0,0,4,0]
+	UNIT Demon Revenant 0x0 Level(2,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [RottenClaw] [0,3,4,0]
+	UNIT Demon 0x5B 0x0 Level(2,Enemy,1) [3,11] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,4,0]
+	
+	UNIT
+
+EnemyReinforce5:
+
+	UNIT Demon Gargoyle 0x0 Level(2,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]
+	UNIT Demon Gargoyle 0x0 Level(2,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]
+	UNIT Demon Gargoyle 0x0 Level(3,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [Javelin] [0,0,4,0]
+
+	UNIT
+
+EnemyReinforce6:
+
+	UNIT DemonBoss 0x64 0x0 Level(5,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [ToxinLance] [0,0,4,0]
+	UNIT Demon Gargoyle 0x0 Level(4,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]
+	UNIT Demon Gargoyle 0x0 Level(4,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [IronLance] [0,0,4,0]
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [16,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,4,0]
+	UNIT Demon Mogall 0x0 Level(3,Enemy,1) [19,3] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,4,0]
 
 	UNIT
 
@@ -62,8 +279,15 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+    
+	MUSC(0x24)
+	SetBackground(0x1c)
+	Text(Text1Ch2)
+	FADI(16)
+	LOAD1 0x2 Units1
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	FADU(16)
 	GotoPrepScreen
 	ENDA
 
