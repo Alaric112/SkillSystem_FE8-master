@@ -16,3 +16,4 @@
 #define SilverDagger 0xD9
 #define Silencer 0xDA
 #define RedBeer 0xDB
+#define CrystalShield 0xDC
