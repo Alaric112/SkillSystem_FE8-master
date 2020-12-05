@@ -213,7 +213,7 @@ Temple:
     WORD 0xB003B24 0xB013B24
     Text(TextTalk5Ch2)
     FADI 16
-    SetChapterObjectiveText(Escape, EscapeConvoyDesc)
+    SetChapterObjectiveText(Escape, Escape)
     FADU 16
     TUTORIALTEXTBOXSTART
     SVAL 0xB 0xFFFFFFFF
@@ -359,6 +359,9 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+    SetBackground(0x1C)
+	Text(TextEnd2Ch2)
+	LoseItem(ArcWind)
 	MNC2 0x5
 	NoFade
 	ENDA
