@@ -10,8 +10,9 @@
 #define WindRing 0xC2
 #define Wind 0xC3
 #define ArcWind 0xC4
-#define LenaPendant 0xC5
-#define SteelLongBow 0xC6
+#define SteelLongBow 0xC5
+#define LenaPendant 0xC6
+#define BlossomStaff 0xC7
 #define SteelShield 0xD6
 #define IronDagger 0xD7
 #define SteelDagger 0xD8

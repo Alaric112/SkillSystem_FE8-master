@@ -5,9 +5,8 @@
 
 #include "EnemyName.event"
 
-#include "ItemName.event"
+#include "ItemName.txt"
 
 #include "ExtraItemName.txt"
 
 #include "DeathQuote.txt"
-

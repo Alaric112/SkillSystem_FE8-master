@@ -54,3 +54,6 @@
 #include "FreeMovement/MakeShopASMC.lyn.event"
 
 #include "Battle Palette Rework/BattlePaletteReworkFE8.event"
+
+#include "Staff/MasterInstaller.event"
+

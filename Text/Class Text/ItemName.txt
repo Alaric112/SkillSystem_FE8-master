@@ -99,7 +99,7 @@ small magic shots[X]
 ## SteelLongBowName ^
 Steel LongBow[X]
 
-## Steel LongBowDesc
+## SteelLongBowDesc
 Extend long range[X]
 
 ## LenaPendantName ^
