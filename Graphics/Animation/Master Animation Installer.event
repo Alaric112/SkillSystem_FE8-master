@@ -33,6 +33,11 @@
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0"
 
+#define GladiatorSwordAnim 0x0D
+#define GladiatorAxeAnim 0x0E
+#define GladiatorHandAxeAnim 0x0F
+#define GladiatorUnarmedAnim 0x10
+
 #define ArcherFBowAnim 0x28
 #define ArcherFUnarmedAnim 0x29
 
@@ -99,7 +104,14 @@
 #define HuntressBowAnim 0xDB
 #define HuntressUnarmedAnim 0xDC
 
-// prossimo punto disponibili è 0xDE
+#define MarshallSwordAnim 0xDD
+#define MarshallLanceAnim 0xDE
+#define MarshallAxeAnim 0xDF
+#define MarshallHandAxeAnim 0xE0
+#define MarshallBowAnim 0xE1
+#define MarshallUnarmedAnim 0xE2
+
+// prossimo punto disponibile è 0xE3
 // Animation Pointer:
 
 ALIGN 4
@@ -165,6 +177,23 @@ ALIGN 4
 HuntressAnims:
 BowAnim(HuntressBowAnim)
 UnarmedAnim(HuntressUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MarshallAnims:
+SwordAnim(MarshallSwordAnim)
+LanceAnim(MarshallLanceAnim)
+AxeAnim(MarshallAxeAnim)
+HandAxeAnim(MarshallHandAxeAnim)
+BowAnim(MarshallBowAnim)
+UnarmedAnim(MarshallUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WyvernRiderAnims:
+AxeAnim(WywernAxeAnim)
+HandAxe(WywernHandAxeAnim)
+UnarmedAnim(0x5B)
 EndAnim
 
 //Bruh

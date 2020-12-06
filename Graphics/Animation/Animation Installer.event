@@ -31,6 +31,11 @@
 #include "Event/MercenaryHandAxe Installer.event"
 #include "Event/MercenaryUnarmed Installer.event"
 
+#include "Event/GladiatorSword Installer.event"
+#include "Event/GladiatorAxe Installer.event"
+#include "Event/GladiatorHandAxe Installer.event"
+#include "Event/GladiatorUnarmed Installer.event"
+
 #include "Event/MageF Installer.event"
 
 //#include "Event/MageLord Installer.event"
@@ -65,3 +70,10 @@
 
 #include "Event/HuntressBow Installer.event"
 #include "Event/HuntressUnarmed Installer.event"
+
+#include "Event/MarshallSword Installer.event"
+#include "Event/MarshallAxe Installer.event"
+#include "Event/MarshallHandAxe Installer.event"
+#include "Event/MarshallLance Installer.event"
+#include "Event/MarshallBow Installer.event"
+#include "Event/MarshallUnarmed Installer.event"
