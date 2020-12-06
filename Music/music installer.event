@@ -67,6 +67,14 @@ SongTable(0x271,Anxiety,1)
 SongTable(0x272,song0272,1)
 #include "songs/LufiaCharge.event"
 }
+{
+SongTable(0x277,song0277,1)
+#include "songs/TroubleFE7.event"
+}
+{
+SongTable(0x278,song0278,1)
+#include "songs/RequiemFE7.event"
+}
 //installation of ipatix's sound mixer. Essential if you want to use GS synths; also makes most music sound better by reducing background noise.
 
 PUSH
