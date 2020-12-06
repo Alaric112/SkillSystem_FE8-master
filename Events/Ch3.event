@@ -426,7 +426,8 @@ BeginningScene:
 EndingScene:
     MUSC(0x32)
 	SetBackground(0x20)
-	
+	Text(TextEnd1Ch3)
+	Text(TextEnd2Ch3)
 	MNC2 0x6
 	NoFade
 	ENDA

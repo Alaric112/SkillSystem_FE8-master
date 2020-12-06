@@ -85,3 +85,47 @@ forgive me...[A]
 Goodbye good knight[AN] 
 but nothing can stop the[N] 
 strength of the empire[A][X]
+
+## YalaDeath
+[OpenMidRight][LoadFace][0xC9][0x01][OpenMidRight]
+My life is...irrelevant[N]
+to my lady's ... [A]
+[OpenMidRight][CloseEyes][X]
+
+## CalliopeDeath
+[OpenMidRight][LoadFace][0x10][0x01][OpenMidRight]
+I...I don't want to die...[N]
+I'm too young...[AN]
+forgive me...but I better[N]
+withdraw[A]
+[OpenMidRight][CloseEyes][X]
+
+## SalemDeath
+[OpenMidRight][LoadFace][0x20][0x01][OpenMidRight]
+I'm sorry ... it seems to[N]
+have sinned arrogance[AN]...
+[OpenMidRight][CloseEyes][X]
+
+## LukasDeathCh3
+[OpenMidRight][LoadFace][0xD2][0x01][OpenMidRight]
+I can't fall now...I have[N]
+to withdraw...[A][X]
+
+## LukasDeath
+[OpenMidRight][LoadFace][0xD2][0x01][OpenMidRight]
+I...couldn't do anything...[AN]
+I have failed, captain...[N]
+I have all failed...[A]
+[OpenMidRight][CloseEyes][X]
+
+## CatherinaDeath
+[OpenMidRight][LoadFace][0x22][0x01][OpenMidRight]
+No...Alistar, can't[N]
+fall now...[A]
+[OpenMidRight][CloseEyes][X]
+
+## HarkenDeath
+[ToggleSmile][OpenMidRight][LoadFace][0x23][0x01][OpenMidRight]
+Glory...to the republic...[N]
+glory to Lady Catherine...[A]
+[OpenMidRight][CloseEyes][X]

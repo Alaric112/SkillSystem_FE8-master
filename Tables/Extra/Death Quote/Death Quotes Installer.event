@@ -17,9 +17,12 @@ ChapterDeathQuote(Gilliam,Ch2,GameOverFlag,GilliamDeathCh1)
 ChapterDeathQuote(Dario,Ch2,DefeatBossFlag,DarioDeathCh1)
 ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue)
 
-// Ch2
+// Ch2 (Expeditions)
+ChapterDeathQuote(Salem,Ch4,GameOverFlag,SalemDeath)
 
-// Ch3
+// Ch3 (In the Darkness)
+ChapterDeathQuote(Harken, Ch5x, GameOverFlag, HarkenDeath)
+ChapterDeathQuote(Lukas, Ch5x, 0x0, LukasDeathCh3)
 
 // Ch4
 
@@ -28,7 +31,6 @@ ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue)
 // Ch6
 
 // Ch7
-
 
 // Ch8
 
@@ -44,17 +46,19 @@ ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue)
 
 // Ch14
 
-
 // Ch15
 
 // Always
 AlwaysDeathQuote(Nausicaa,GameOverFlag,NausicaaDeath)
+AlwaysDeathQuote(Catherina,GameOverFlag, CatherinaDeath)
 AlwaysDeathQuote(Gadriel,0x0,GadrielDeath)
 AlwaysDeathQuote(Diana,0x0,DianaDeath)
 AlwaysDeathQuote(Colt,0x0,ColtDeath)
 AlwaysDeathQuote(Rosie,0x0,RosieDeath)
-AlwaysDeathQuote(Nausicaa,0x0,KairsDeath)
-AlwaysDeathQuote(Nausicaa,0x0,KairsDeath)
+AlwaysDeathQuote(Kairs,0x0,KairsDeath)
+AlwaysDeathQuote(Yala,0x0,YalaDeath)
+AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
+AlwaysDeathQuote(Harken, 0x0, HarkenDeath)
 
 
 
