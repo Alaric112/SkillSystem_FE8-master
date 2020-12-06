@@ -75,3 +75,15 @@ Huntress[X]
 These hunters use their bow with[N] 
 great speed to hit even the fastest prey[N]
 Equip:[Bow][X]
+
+## AxeWyvernRiderDesc
+High-flying knights vulnerable only to[N]
+bows and magic. Equip: [Axe].[X]
+
+## MarshallName
+Marshall[X]
+
+## MarshallDesc ^
+A real living fortress, their tower[N]
+shields protect them from any[N]
+type of arrow. Equip:[Sword][Lance][Axe][Bow][X]

@@ -424,6 +424,9 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+    MUSC(0x32)
+	SetBackground(0x20)
+	
 	MNC2 0x6
 	NoFade
 	ENDA

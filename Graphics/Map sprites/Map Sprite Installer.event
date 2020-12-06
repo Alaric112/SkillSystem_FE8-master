@@ -142,3 +142,19 @@ DruidMovingF:
 ALIGN 4
 DruidStandingF:
 #incext Png2Dmp "Png/DruidStandingF.png" --lz77
+
+ALIGN 4
+AxeWyvernRiderMoving:
+#incext Png2Dmp "Png/AxeWyMoving.png" --lz77
+
+ALIGN 4
+AxeWyvernRiderStanding:
+#incext Png2Dmp "Png/AxeWyStanding.png" --lz77
+
+ALIGN 4
+MarshallMoving:
+#incext Png2Dmp "Png/MarshallMoving.png" --lz77
+
+ALIGN 4
+MarshallStanding:
+#incext Png2Dmp "Png/MarshallStanding.png" --lz77

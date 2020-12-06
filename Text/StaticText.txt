@@ -1,0 +1,7 @@
+
+# 0x02C7 GladiatorName
+Gladiator[X]
+
+# 0x0313 GladiatorDesc
+Seasoned veterans with remarkable[N]
+Equip: [Sword],[Axe][X]

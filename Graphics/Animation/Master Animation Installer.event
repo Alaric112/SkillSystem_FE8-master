@@ -190,9 +190,9 @@ UnarmedAnim(MarshallUnarmedAnim)
 EndAnim
 
 ALIGN 4
-WyvernRiderAnims:
+AxeWyvernRiderAnims:
 AxeAnim(WywernAxeAnim)
-HandAxe(WywernHandAxeAnim)
+HandAxeAnim(WywernHandAxeAnim)
 UnarmedAnim(0x5B)
 EndAnim
 
