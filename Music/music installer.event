@@ -68,6 +68,14 @@ SongTable(0x272,song0272,1)
 #include "songs/LufiaCharge.event"
 }
 {
+SongTable(0x274,PokemonMysteryDungeonRescueTeam,1)
+#include "songs/Pokemon Mystery Dungeon Rescue Team - Friend Area Swamp.event"
+}
+{
+SongTable(0x275,FE7InescapableFate,1)
+#include "songs/FE7 - Inescapable Fate.event"
+}
+{
 SongTable(0x277,song0277,1)
 #include "songs/TroubleFE7.event"
 }

@@ -37,6 +37,11 @@
 #define Gervaso 0x4e
 #define Bandit 0x65
 #define BanditBoss 0x66
+#define Eruca 0x6C
+#define Imperial 0x7F
+#define ImperialBoss 0x80
+#define Imperial2 0x81
+#define Imperial3 0x82
 
 
 //Bruh...
