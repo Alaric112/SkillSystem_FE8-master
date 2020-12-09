@@ -126,7 +126,7 @@ ENDA
 
 Village1:
 
-GiveItem(AxeReaver, 0xFFFF)
+GiveItem(Axereaver, 0xFFFF)
 ENDA
 
 Dunno1:
