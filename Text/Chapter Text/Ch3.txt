@@ -1,6 +1,9 @@
 ## Ch3Name
 In the Darkness[X]
 
+## ObjectiveCh3 ^
+Arrive with Salem[X]
+
 ## Text1Ch3
 [OpenMidLeft][LoadFace][0x02][0x1][OpenRight][LoadFace][0x20][0x01][OpenFarRight][LoadFace][0x10][0x01][OpenMidLeft]
 Finally back[N]

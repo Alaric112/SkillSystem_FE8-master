@@ -6,3 +6,19 @@ setMugEntry(DarioMug, DarioMugData, 2, 5, 2, 3)
 GervasoMugData:
 #incext PortraitFormatter "Gervaso.png"
 setMugEntry(GervasoMug, GervasoMugData, 2, 5, 2, 3)
+
+SlayderMugData:
+#incext PortraitFormatter "Slayder.png"
+setMugEntry(SlayderMug, SlayderMugData, 3, 6, 3, 4)
+
+ErucaMugData:
+#incext PortraitFormatter "Eruca.png"
+setMugEntry(ErucaMug, ErucaMugData, 3, 6, 3, 4)
+
+ZechielMugData:
+#incext PortraitFormatter "Zechiel.png"
+setMugEntry(ZechielMug, ZechielMugData, 3, 5, 3, 3)
+
+CommanderMugData:
+#incext PortraitFormatter "Commander.png"
+setMugEntry(CommanderMug, CommanderMugData, 2, 5, 3, 3)

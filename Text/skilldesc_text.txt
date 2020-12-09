@@ -1241,6 +1241,11 @@ positions with an ally in[N]
 Mag/2 range.[X]
 
 ## SD_SavageMagic  ^
-SavageMagic: If your magic is superior to[N] 
+SavageMagic: If your magic is superior to[N]
 the opponent's physical defenses[N]
 +2 damage and +10 critical.[X]
+
+## SD_WindStrike  ^
+WindStrike: when you attack a badly[N]
+wounded enemy (HP <50%) you get a[N]
+bonus: + 3Atk, +10 Hit and Crit and + 2AS[X]

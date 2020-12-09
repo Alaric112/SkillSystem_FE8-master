@@ -1,6 +1,6 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Nausicaà,FieryBloodID
+Nausicaà,WindStrikeID
 Kairs,BattleVeteranID
 Lukas,ChivalryID
 Gadriel,KnightAspirantID
@@ -26,7 +26,7 @@ Saleh,SpurMagID
 Ewan,CelerityID
 L'Arachel,IntimidateID
 Dozla,PivotID
-0,0x0
+Rath,WindStrikeID
 Rennac,SpurSpdID
 Duessel,RepositionID
 Myrrh,DragonsBloodID

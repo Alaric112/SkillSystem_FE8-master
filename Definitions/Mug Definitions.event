@@ -38,6 +38,10 @@
 // Boss
 #define GervasoMug 0xD5
 #define DarioMug 0xD6
+#define CommanderMug 0xD7
+#define ZechielMug 0xDA
+#define ErucaMug 0x4A
+#define SlayderMug 0x42
 
 // Class Card
 

@@ -158,3 +158,11 @@ MarshallMoving:
 ALIGN 4
 MarshallStanding:
 #incext Png2Dmp "Png/MarshallStanding.png" --lz77
+
+ALIGN 4
+ErucaMoving:
+#incext Png2Dmp "Png/ErucaMoving.png" --lz77
+
+ALIGN 4
+ErucaStanding:
+#incext Png2Dmp "Png/ErucaStanding.png" --lz77

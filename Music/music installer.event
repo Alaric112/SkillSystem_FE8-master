@@ -76,6 +76,10 @@ SongTable(0x275,FE7InescapableFate,1)
 #include "songs/FE7 - Inescapable Fate.event"
 }
 {
+SongTable(0x276,FE4AllyAttack,1)
+#include "songs/FE4 - Ally Attack.event"
+}
+{
 SongTable(0x277,song0277,1)
 #include "songs/TroubleFE7.event"
 }

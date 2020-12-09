@@ -192,8 +192,8 @@ Cutscene1:
 
 Cutscene2:
 
-    UNIT Kairs Paladin 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [Fire, PureWater] [0,0,0,0]
-	UNIT Gadriel SwordCavalier 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [ShortBow, Vulnerary] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [] [0,0,0,0]
+	UNIT Gadriel 0x0 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [] [0,0,0,0]
 
 	UNIT
 

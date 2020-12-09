@@ -123,3 +123,10 @@ Militian[X]
 ## MilitianDesc
 Simple city guards[N]
 fighting for their homeland[X]
+
+## ErucaName
+Eruca[X]
+
+## ErucaDesc
+Firstborn to the Imperial[N]
+throne of Granorg.[X]

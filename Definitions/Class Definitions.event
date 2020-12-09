@@ -16,3 +16,6 @@
 #define PirateF 0x86
 #define Huntress 0x87
 #define Brawler 0x88
+#define AxeWyvernRider 0x89
+#define Marshall 0x8A
+#define ErucaLord 0x8B

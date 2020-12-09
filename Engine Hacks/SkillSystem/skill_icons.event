@@ -908,5 +908,8 @@ ORG SkillIcon(TriangleAttackID)
 ORG SkillIcon(SavageMagicID)
 #incbin "SkillIcons/SavageMagic.dmp"
 
+ORG SkillIcon(WindStrikeID)
+#incbin "SkillIcons/WindStrike.dmp"
+
 ORG SkillIcons+0x8000
 

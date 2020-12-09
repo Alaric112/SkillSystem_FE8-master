@@ -5,3 +5,10 @@ Gladiator[X]
 # 0x0313 GladiatorDesc
 Seasoned veterans with remarkable[N]
 Equip: [Sword],[Axe][X]
+
+# 0x024D ImperialName
+Imperial[X]
+
+# 0x02A9 ImperialDesc
+The army of the Granorg Empire, the[N]
+largest nation on the entire continent.[X]

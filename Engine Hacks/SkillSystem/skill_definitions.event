@@ -1027,11 +1027,11 @@
 //Biorhythm Skills: Double or halve biorhythm effects.
 //By Sme
 #define TempestID 255 //Requires Biorhythm
-#define SerenityID 249 //Requires Biorhythm
+#define SerenityID 255 //Requires Biorhythm
 
 //My skill baby!
 #define SavageMagicID 248
-
+#define WindStrikeID 249
 
 //Display-Only Skills
 
