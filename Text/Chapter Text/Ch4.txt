@@ -1,5 +1,8 @@
 ## Ch4Name
-Flames of War[X]
+Ch. 1-4 Flames of War[X]
+
+## ObjectiveCh4
+Escape!!![X]
 
 ## Text1Ch4
 [OpenMidLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x23][0x01][OpenFarRight][LoadFace][0x22][0x01][OpenMidLeft]
@@ -201,6 +204,10 @@ I Eruca, first daughter of the empire[N]
 of Granorg I accept your challenge![A][X]
 
 ## Text10Ch4
+[OpenMidRight][LoadFace][0x53][0x01][OpenMidRight]
+Nausica[aa].....[A][OpenMidRight][CloseEyes][X]
+
+## Text11Ch4
 [OpenMidLeft][LoadFace][0x4A][0x01][OpenMidLeft]
 Pathetic...like all[N]
 the others....[AN]
@@ -213,7 +220,7 @@ my work isn't finished...[AN]
 anyone who opposes the empire[N]
 must be eliminated[A][X]
 
-## Text11Ch4
+## Text12Ch4
 [OpenMidLeft][LoadFace][0x05][0x01][OpenRight][LoadFace][0x04][0x01][OpenFarRight][LoadFace][0x02][0x01][OpenMidLeft][CloseEyes]
 ... ... ...[AN]
 [OpenFarRight]
@@ -236,9 +243,8 @@ go! I'll cover your escape![AN]
 [OpenRight]Nausica[aa]...come...[N]
 we have time[AN][OpenRight][ClearFace][OpenFarRight][ClearFace][X]
 
-## Text12Ch4
+## Text13Ch4
 [OpenMidLeft][LoadFace][0xCE][0x01][OpenMidRight][LoadFace][0x05][0x01][OpenMidLeft]
-Capitano! finalmente
 Captain! I finally found you! the left[N]
 side of the castle has fallen![AN]
 [OpenMidRight]
@@ -265,7 +271,7 @@ at any cost, do it for me Colt[AN]
 but captain...[N]
 [OpenMidRight]go now! It's an order![A][X]
 
-## Text13Ch4
+## Text14Ch4
 [OpenMidLeft][LoadFace][0xCE][0x01][OpenRight][LoadFace][0x04][0x01][OpenFarRight][LoadFace][0x02][0x01][OpenFarRight]
 Colt![AN]
 [OpenMidLeft]
@@ -273,12 +279,12 @@ I have orders from Captain Gilliam[AN]
 I have to protect you at any cost[AN]
 my skills are at your service[A][X]
 
-## Text14Ch4
+## Text15Ch4
 [OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0x20][0x01][OpenMidRight]
 Princess![AN]
 I found a hypothesis[N]
-of the solution![AN][
-OpenFarLeft]
+of the solution![AN]
+[OpenFarLeft]
 Salem? thanks to the Goddess[N]
 you are safe[AN]
 what you mean? we have to[N]
@@ -297,7 +303,7 @@ you go, now![AN]
 Please Salem, not you too[AN]
 [OpenLeft]Nausica[aa]...come soon[A][X]
 
-## Text15Ch4
+## Text16Ch4
 [OpenFarLeft][LoadFace][0x04][0x01][OpenLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x23][0x01][OpenFarRight][LoadFace][0x22][0x01][OpenFarRight]
 Nausica[aa], the imperials[N]
 are everywhere[AN]
@@ -326,3 +332,298 @@ now I have to save mine friends,[N]
 I made a promise to Lena[AN]
 and I have to respect it[AN]
 come on let's go![A][X]
+
+## TextMid1Ch4
+[OpenMidLeft][LoadFace][0xD9][0x01][OpenMidRight][LoadFace][0xD8][0x01][OpenMidLeft]
+Captain![AN]
+the city is lost![AN]
+even the castle![AN]
+I believe we are the[N]
+last left to fight[AN]
+[OpenMidRight]... ... ...[AN]
+May the will of the wind[N]
+guide our actions[AN]
+we will not give up here![AN]
+we will fight to the end, as[N]
+true knights of Sorya![AN]
+[OpenMidLeft]Yes, Sir![N]
+for Sorya![A][X]
+
+## TextMid2Ch4
+[OpenMidLeft][LoadFace][0x25][0x01][OpenMidRight][LoadFace][0xD2][0x01][OpenMidRight]
+Captain Manfred?[AN]
+Captain!!![AN]
+[OpenMidLeft]
+My eyes deceive[N]
+me, or...[AN]
+By divine grace![AN]
+Lukas, it's really you![AN]
+[OpenMidRight]
+Yes captain![AN]
+Captain you have to stop[N]
+immediately the attack![AN]
+[OpenMidLeft]
+Lukas, these are those[N]
+who helped Alistar[AN]
+to bring down the Jaggernaut![AN]
+they told me all the crew[N]
+of the ship was dead![AN]
+O divine grace you have survived...[AN]
+[OpenMidRight]
+Captain, these people[N]
+saved my life[AN]
+it wasn't them to shoot[N]
+down the ship[AN]
+they don't have any[N]
+the means![AN]
+please believe me![AN]
+there was a misunderstanding![AN]
+they are not allied with Alistar![AN]
+[OpenMidLeft]
+I...I don't know what to[N]
+tell you boy...[AN]
+General Zachiel and[N]
+Princess Eruca...[AN]
+[OpenMidRight]
+No captain![AN]
+please believe me![AN]
+[OpenMidLeft]
+Lukas...you always are[N]
+been a noble at heart[AN]
+I have no reason not to[N]
+believe you[AN]
+We have to find immediately[N]
+the general and princess Eruca[AN]
+[OpenMidRight]
+Thank you, captain[AN][X]
+
+## TextMid3Ch4
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft]
+The main routes are[N]
+blocked[AN]
+but we can open a passage[N]
+through the est alleys[AN]
+to the right of the main square[A][X]
+
+## TextMid4Ch4
+[OpenMidLeft][LoadFace][0x4A][0x01][OpenMidLeft]
+One by one ... all will fall for[N]
+the strength of the empire! [A][X]
+
+## TextMid5Ch4
+[OpenMidLeft][LoadFace][0xD8][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+Princess?[AN]
+What are you doing here?[N]
+it's too dangerous![AN]
+[OpenMidRight]
+I'm going towards[N]
+the mountains of Satoru[AN]
+[OpenMidLeft]
+Is the king with you?[AN]
+[OpenMidRight]
+No...[AN]
+[OpenMidLeft]
+Then the wind now[N]
+blows for you[AN]
+Let me defend you[AN]
+My bow is at your service[A][X]
+
+## TextEnd1Ch4
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft][CloseEyes]
+... ... ...[AN]
+[OpenEyes]
+no ... I can't give up[A][X]
+
+## TextEnd2Ch4
+AH! AH! AH! AH! AH![AN]
+look what prey I found![A][X]
+
+## TextEnd3Ch4
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x42][0x01][OpenMidRight]
+Look, what I found![AN]
+A small and delicate flower![AN]
+it will be a pleasure to tear it[N]
+from its roots![A][X]
+
+## TextEnd4Ch4
+[OpenMidLeft][LoadFace][0x42][0x01][OpenMidRight][LoadFace][0x04][0x01][OpenMidRight][CloseEyes]
+Damn...[AN]
+[OpenMidLeft]
+Puah Ah ah ah ah ah ah ah[AN]
+Nice shot for a grandpa![AN]
+but nothing can stop a[N]
+general of the empire![AN]
+least of all me![AN]
+I the great Slayder![AN]
+you know what my name is[N]
+of battle?[AN]
+enemies call me there bloody[N]
+stone, now you'll find out![A][X]
+
+## TextEnd5Ch4
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft]
+Noooo![A][X]
+
+## TextEnd6Ch4
+[OpenMidLeft][LoadFace][0x42][0x01][OpenMidLeft]
+W-What the hell was that![A][X]
+
+## TextEnd7Ch4
+[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadFace][0xDA][0x01][OpenMidRight][LoadFace][0x42][0x01][OpenMidRight]
+princess Eruca!?![AN]
+and general Zechiel!?![AN]
+What are you doing here?[AN] 
+Me and minemen we were[N]
+dealing with these rats...[A][X]
+
+## TextEnd8Ch4
+[OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0x10][0x01][OpenFarRight]
+Nausica[aa]!!![AN]
+are you hurt?[AN]
+[OpenRight][CloseEyes]
+No...the stone...[N]
+is illuminated for a moment...[AN]
+[OpenEyes]
+Damn we are surrounded![A][X]
+
+## TextEnd9Ch4
+[OpenMidLeft][LoadFace][0x4A][0x01][OpenMidLeft]
+Nausica[aa]...?[A][X]
+
+## TextEnd10Ch4
+[OpenMidRight][LoadFace][0xCE][0x01][OpenMidRight]
+The last will of the[N]
+captain Gilliam[AN]
+was to trust you Nausica[aa]...[AN]
+I'm ready to fight![AN]
+cost that cost![A][X]
+
+## TextEnd11Ch4
+[OpenRight][LoadFace][0xCB][0x01][OpenFarRight][LoadFace][0x0A][0x01][OpenRight][OpenRight][ToggleSmile]
+Ha ha looks like it will be[N]
+this is our end![AN]
+then we will bring them[N]
+with us in hell![AN]
+my axe is with[N]
+you girl![AN]
+[OpenFarRight]
+*G-Gulp* My legs[N]
+are shaking...[AN]
+but I can't pull myself[N]
+back...[AN]
+I don't want this[N]
+to be my end...[A][X]
+
+## TextEnd12Ch4
+[OpenMidRight][LoadFace][0xC9][0x01][OpenMidRight]
+Princess, run away[AN]
+we will cover your escape![AN]
+[CloseEyes]
+this is fate of us priestesses![AN]
+[OpenEyes]
+I accepted it with open arms[N]
+if you will be saved[A][X]
+
+## TextEnd13Ch4
+[OpenMidRight][LoadFace][0xD8][0x01][OpenMidRight]
+The wind still blows to[N]
+your advantage Milady[AN]
+go, as long as you have[N]
+this possibility![A][X]
+
+## TextEnd14Ch4
+[OpenMidRight][LoadFace][0x06][0x01][OpenMidRight]
+Nausica[aa]...I...whatever[N]
+be my end[AN]
+know that my sword will be[N]
+always by your side![AN]
+at the cost of my own life[N]
+I will protect you, I swear![A][X]
+
+## TextEnd15Ch4
+[OpenMidLeft][LoadFace][0x42][0x01][OpenMidLeft]
+What a bunch of pathetics[N]
+rats! you will all die![A][X]
+
+## TextEnd16Ch4
+[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadFace][0xDA][0x01][OpenFarLeft]
+Turn down immediately[N]
+the weapons general Slayder[AN]
+you are not in command of[N]
+this operation![AN]
+[OpenMidRight][LoadFace][0x42][0x01]
+[OpenMidRight]
+W-What?!?[AN]
+You cannot think of coming[N]
+so point blank[AN]
+and to blow my prey![AN]
+[OpenLeft]
+General ... maybe you are[N]
+dumber than I thought[AN]
+these are orders of the princess[N]
+of the empire[AN]
+or you want to face the[N]
+Imperial guard?[AN]
+[OpenMidRight]
+Grrr...[AN]
+okay, I'll leave it to[N]
+you these rats[A][OpenMidRight][ClearFace][X]
+
+## TextEnd17Ch4
+[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadFace][0xDA][0x01][OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0x04][0x01][OpenFarLeft]
+Nausica[aa]...you must be the[N]
+princess of these campaigns[AN]
+[OpenRight]
+How do you do...[AN]
+[OpenFarLeft]
+Oh, I'm sorry it is[N]
+I have to tell you[AN]
+but you became the queen[N]
+now, your father...[AN]
+died by my hand[AN]
+unfortunately he was a fool that[N]
+has decided not to give up[AN]
+[OpenRight]
+You!!! you killed him...[AN]
+[OpenFarLeft]
+Would you like to take revenge?[AN]
+I love duels! I hope that you[N]
+your father is better[AN]
+it didn't last long[AN]
+... ... ...[AN]
+I have many doubts...[N]
+that you can do it...[AN]
+you are probably thinking[N]
+that I am an evil person?[AN]
+well I'm not[AN]
+I offer you, as I also did[N]
+to your father[AN]
+the chance to give up[AN]
+if you do, your life
+and all those close to you[AN]
+will be safe[AN]
+I swear it in the name[N]
+of the empire of Granorg[AN]
+[OpenFarRight]
+Nausica[aa]...whatever[N]
+is your choice...[AN]
+I'll be by your side until[N]
+the end[AN][OpenRight]I...I..[AN]
+[CloseEyes]
+... ... ...[N]
+... ... ...[N]
+... ... ...[N][X]
+
+
+## GrazieGiocatore
+Hi, thank you very much for[N]
+making it to the end of the demo[AN]
+I hope you had enjoy play the demo[AN]
+if you liked it, but especially if[AN]
+you did NOT like it, I[N]
+invite you to write me[AN]
+in my FEU topic where you downloaded[AN]
+please give me all your feedback[N]
+positive and negative[AN]
+Again, thank you so much[N]
+for playing[A][X]

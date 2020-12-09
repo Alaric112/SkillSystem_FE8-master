@@ -87,6 +87,10 @@ SongTable(0x277,song0277,1)
 SongTable(0x278,song0278,1)
 #include "songs/RequiemFE7.event"
 }
+{
+SongTable(0x27A,HardTime,1)
+#include "songs/HardTime.event"
+}
 //installation of ipatix's sound mixer. Essential if you want to use GS synths; also makes most music sound better by reducing background noise.
 
 PUSH

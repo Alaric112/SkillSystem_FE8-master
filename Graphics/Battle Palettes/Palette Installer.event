@@ -69,3 +69,9 @@ AlistarShaman:
 DarioBrawler:
 	#incbin "./_palettes/DarioBrawler.lzpal" 
 
+ImperialArmor:
+	#incbin "./_palettes/ImperialArmor.lzpal" 
+
+ImperialMage:
+	#incbin "./_palettes/ImperialMage.lzpal" 
+

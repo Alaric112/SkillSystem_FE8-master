@@ -91,3 +91,11 @@
 // DarioBrawler
 	setPalette(0x77,DarioBrawler)
 	setCBSP(0x77,Dario, 1, Brawler)
+
+// ImperialArmor
+	setPalette(0x78,ImperialArmor)
+	setCBSP(0x78,Imperial, 1, LanceKnight)
+
+// ImperialMage
+	setPalette(0x79,ImperialMage)
+	setCBSP(0x79,Imperial, 1, Mage)

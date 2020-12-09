@@ -61,7 +61,8 @@ BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
 ArmorPaletteList:
-
+PaletteAssociationEntry(Imperial, $78)
+PaletteAssociationEntry(ImperialBoss, $78)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -154,6 +155,7 @@ MagePaletteList:
 PaletteAssociationEntry(Bandit, $74)
 PaletteAssociationEntry(BanditBoss, $74)
 PaletteAssociationEntry(Ewan, $30)
+PaletteAssociationEntry(Imperial, $79)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -163,6 +165,7 @@ PaletteAssociationEntry(Artur, $48)
 PaletteAssociationEntry(Ewan, $49)
 PaletteAssociationEntry(Moulder, $4B)
 PaletteAssociationEntry(Saleh, $4C)
+PaletteAssociationEntry(SalemNPC, $4C)
 PaletteAssociationEntry(Pablo, $6B)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4

@@ -24,7 +24,9 @@ ChapterDeathQuote(Salem,Ch4,GameOverFlag,SalemDeath)
 ChapterDeathQuote(Harken, Ch5x, GameOverFlag, HarkenDeath)
 ChapterDeathQuote(Lukas, Ch5x, 0x0, LukasDeathCh3)
 
-// Ch4
+// Ch4 (Flames of War)
+ChapterDeathQuote(Gilliam, 0x6, 0x0, GilliamDeath)
+ChapterDeathQuote(SalemNPC, 0x6, 0x0, SalemDeathNPC)
 
 // Ch5
 

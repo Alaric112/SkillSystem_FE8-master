@@ -1,4 +1,8 @@
+//Vanilla....
+#define ArmorSlayer 0x0E
+#define HorseSlayer 0x1B
 #define LongBow 0x34
+#define HoplonGuard 0x7C
 #define OsIgnis 0x78 // Nausicaa Weapon
 #define FieryFang 0xB1
 #define SkillScroll 0xBC
@@ -6,7 +10,7 @@
 #define QuickBlade 0xD4 //Gadriel Weapon
 #define LeatherShield 0xBF
 #define SkillRing 0xC0
-#define FireRIng 0xC1
+#define FireRing 0xC1
 #define WindRing 0xC2
 #define Wind 0xC3
 #define ArcWind 0xC4

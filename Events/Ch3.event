@@ -76,8 +76,16 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
+LOCA 0x0 Retreat [0,20] 0x13
+LOCA 0x0 Retreat [1,20] 0x13
+LOCA 0x0 Retreat [2,20] 0x13
+LOCA 0x0 Retreat [3,20] 0x13
 	END_MAIN
+
+Retreat:
+//EveryoneEscape(EscapeQuoteTable|IsPointer)
+EveryoneEscape(0)
+ENDA
 
 Dunno1:
 

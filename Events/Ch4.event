@@ -1,4 +1,4 @@
-EventPointerTable(EventPointer, PointerList)
+EventPointerTable(Ch5Event, PointerList)
 
 PointerList:
 	POIN TurnBasedEvents
@@ -13,21 +13,121 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0x0,Turn1Event,1)
+TurnEventPlayer(0x0,Turn2Event,2)
+TurnEventPlayer(0x0,Turn3Event,3)
+TurnEventPlayer(0x0,Turn5Event,5)
+TurnEventPlayer(0x0,Turn6Event,6,7)
+TurnEventPlayer(0x0,Turn9Event,9,11)
 
 	END_MAIN
+
+Turn1Event:
+FADI(16)
+CAMERA(Rath)
+FADU(16)
+CURSOR_FLASHING Rath
+STAL 75
+REMOVE_CURSORS
+Text(TextMid1Ch4)
+CHECK_ALIVE Lukas
+BEQ 0x1 0xC 0x0
+EVBIT_F 9
+LOAD2 1 Lukas1
+ENUN
+CAMERA Lukas 
+CURSOR_FLASHING Lukas
+STAL 30
+REMOVE_CURSORS
+Text(TextMid2Ch4)
+LABEL 0x1
+FADI(16)
+REMU Lukas
+DISA Manfred
+FADU(16)
+CAMERA [29,31]
+Text(TextMid3Ch4)
+CURSOR_FLASHING [30,29]
+CURSOR_FLASHING [30,30]
+CURSOR_FLASHING [30,31]
+CURSOR_FLASHING [30,32]
+CURSOR_FLASHING [29,32]
+STAL(120)
+REMOVE_CURSORS
+REMOVE_CURSORS
+REMOVE_CURSORS
+REMOVE_CURSORS
+REMOVE_CURSORS
+SpawnReinforcements(EnemyReinforce1)
+CAMERA Nausicaa
+CURSOR_FLASHING Nausicaa
+REMOVE_CURSORS
+NoFade
+ENDA
+
+Turn2Event:
+SpawnReinforcements(EnemyReinforce4)
+ENDA
+
+Turn3Event:
+SpawnReinforcements(EnemyReinforce2)
+ENUN
+SpawnReinforcements(EnemyReinforce3)
+ENUN
+ENDA
+
+Turn5Event:
+SpawnReinforcements(EnemyReinforce5)
+CAMERA Eruca
+CURSOR_FLASHING Eruca
+STAL 30
+REMOVE_CURSORS 
+Text(TextMid4Ch4)
+ENDA
+
+Turn6Event:
+SpawnReinforcements(EnemyReinforce6)
+ENDA
+
+Turn9Event:
+SpawnReinforcements(EnemyReinforce7)
+ENDA
 
 ALIGN 32
 CharacterBasedEvents:
-
+CharacterEvent(0xA,NausicaaTalkRath,Nausicaa,Rath)
 	END_MAIN
+
+NausicaaTalkRath:
+MUSC(0x30)
+Text(TextMid5Ch4)
+CUSA Rath
+ENDA
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-
+LOCA 0x0 Retreat [30,29] 0x13
+LOCA 0x0 Retreat [30,30] 0x13
+LOCA 0x0 Retreat [30,31] 0x13
+LOCA 0x0 Retreat [30,32] 0x13
+LOCA 0x0 Retreat [29,32] 0x13
+	Chest(WindSword,25,9)
+	Chest(RedGem,29,12)
+Village(0x1A,Village1,21,26)
 	END_MAIN
+
+Retreat:
+//EveryoneEscape(EscapeQuoteTable|IsPointer)
+EveryoneEscape(0)
+ENDA 
+
+Village1:
+
+GiveItem(AxeReaver, 0xFFFF)
+ENDA
 
 Dunno1:
 
@@ -46,6 +146,17 @@ Tutorial:
 	END_MAIN
 
 Units1:
+	
+	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [14,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [13,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Kairs 0x0 0x0 Level(2,Ally,1) [11,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Diana 0x0 0x0 Level(4,Ally,1) [12,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+ 	UNIT Rosie 0x0 0x0 Level(3,Ally,1) [13,10] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Yala 0x0 0x0 Level(2,Ally,1) [10,10] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [11,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Catherina 0x0 0x0 Level(4,Ally,1) [14,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Harken 0x0 0x0 Level(4,Ally,1) [12,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Harken 0x0 0x0 Level(4,Ally,1) [10,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 
 	UNIT
 
@@ -100,8 +211,99 @@ CutScene6:
 
 CutScene7: 
 
-	UNIT Eruca Marshall 0x0 Level(3,Ally,1) [12,5] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
+	UNIT Eruca ErucaLord 0x0 Level(5,Enemy,0) [6,14] 0x0 0x0 0x1 REDA12R7 [Tomahawk] [0,0,0,0]
+	UNIT Imperial WyvernLord 0x0 Level(3,Enemy,1) [6,13] 0x0 0x0 0x1 REDA11R8 [SteelLance] [0,0,0,0]
+	UNIT Imperial WyvernLord 0x0 Level(2,Enemy,1) [5,14] 0x0 0x0 0x1 REDA13R8 [SteelLance] [0,0,0,0]
 	
+	UNIT
+
+CutScene8: 
+
+	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [2,0] 0x0 0x0 0x1 REDA4R3 [0] [0,0,0,0]
+	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [1,0] 0x0 0x0 0x1 REDA3R3 [SteelSword] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(5,NPC,0) [1,0] 0x0 0x0 0x1 REDA4R2 [ShortSpear, SteelShield] [0,0,0,0]
+	
+	UNIT
+
+CutScene9: 
+
+	UNIT Colt 0x0 0x0 Level(3,Ally,1) [3,0] 0x0 0x0 0x1 REDA3R2 [SteelSword] [0,0,0,0]
+	
+	UNIT
+
+CutScene10: 
+
+	UNIT Salem 0x0 0x0 Level(3,NPC,1) [10,0] 0x0 0x0 0x1 REDA9R4 [SteelSword] [0,0,0,0]
+	
+	UNIT
+
+CutScene11: 
+
+	UNIT Yala 0x0 0x0 Level(2,Ally,1) [14,11] 0x0 0x0 0x1 REDA11R9 [0] [0,0,0,0]
+	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [17,8] 0x0 0x0 0x1 REDA10R8 [0] [0,0,0,0]
+	UNIT Catherina 0x0 0x0 Level(4,Ally,1) [12,11] 0x0 0x0 0x1 REDA9R7 [0] [0,0,0,0]
+	UNIT Harken 0x0 0x0 Level(4,Ally,1) [11,12] 0x0 0x0 0x1 REDA8R8 [0] [0,0,0,0]
+	UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [8,14] 0x0 0x0 0x1 REDA9R9 [0] [0,0,0,0]
+	
+	UNIT
+	
+CutScene12: 
+
+	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [27,30] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	
+	UNIT
+
+CutScene13: 
+
+	UNIT Slayder 0x23 0x0 Level(3,Enemy,1) [30,32] 0x0 0x0 0x1 REDA29R31 [SilverLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [15,31] 0x0 0x0 0x1 REDA22R31 [IronLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [28,20] 0x0 0x0 0x1 REDA28R27 [IronLance] [0,0,0,0]
+	
+	UNIT
+
+CutScene14: 
+
+	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [30,302] 0x0 0x0 0x1 REDA30R31 [SteelSword] [0,0,0,0]
+	
+	UNIT
+
+CutScene15: 
+
+	UNIT Eruca ErucaLord 0x0 Level(3,Enemy,1) [25,24] 0x0 0x0 0x1 REDA29R31 [SilverLance] [0,0,0,0]
+	UNIT Zechiel 0x23 0x0 Level(4,Enemy,1) [19,26] 0x0 0x0 0x1 REDA24R30 [IronLance] [0,0,0,0]
+	UNIT Manfred WyvernRider 0x0 Level(4,Enemy,1) [25,24] 0x0 0x0 0x1 REDA26R29 [IronLance] [0,0,0,0]
+	
+	UNIT
+
+CutScene16: 
+
+	UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [30,32] 0x0 0x0 0x1 REDA26R30 [0] [0,0,0,0]
+	UNIT Diana 0x0 0x0 Level(4,Ally,1) [29,32] 0x0 0x0 0x1 REDA27R32 [0] [0,0,0,0]
+ 	UNIT Rosie 0x0 0x0 Level(3,Ally,1) [30,32] 0x0 0x0 0x1 REDA25R32 [0] [0,0,0,0]
+	UNIT Yala 0x0 0x0 Level(2,Ally,1) [30,32] 0x0 0x0 0x1 REDA29R31 [0] [0,0,0,0]
+	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [30,32] 0x0 0x0 0x1 REDA27R31 [0] [0,0,0,0]
+	UNIT Colt 0x0 0x0 Level(4,Ally,1) [30,32] 0x0 0x0 0x1 REDA28R30 [0] [0,0,0,0]
+	UNIT Rath 0x0 0x0 Level(4,Ally,1) [29,32] 0x0 0x0 0x1 REDA29R29 [0] [0,0,0,0]
+	
+	UNIT
+
+Alleati1: 
+
+	UNIT Rath BowCavalier 0x0 Level(8,NPC,0) [12,18] 0x0 0x0 0x0 0x0 [KillerBow, Vulnerary] [0xC,0x3,0,0]
+	UNIT Militia Myrmidon 0x0 Level(2,NPC,1) [12,19] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
+	UNIT Militia Myrmidon 0x0 Level(2,NPC,1) [5,13] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
+	UNIT Militia Fighter 0x0 Level(2,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,4,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,1) [13,19] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,1) [6,14] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
+	UNIT Gilliam General 0x0 Level(5,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] StaticAI
+    UNIT SalemNPC Sage 0x0 Level(3,NPC,1) [9,5] 0x0 0x0 0x0 0x0 [ArcWind, LeatherShield] [0xc,3,4,0]
+
+	UNIT
+
+Lukas1: 
+
+	UNIT Lukas 0x0 0x0 Level(1,Ally,0) [8,24] 0x0 0x0 0x1 REDA4R24 [0] [0,0,0,0]
+
 	UNIT
 
 EnemyUnits:
@@ -148,6 +350,61 @@ EnemyUnits:
  	
 	UNIT
 
+EnemyReinforce1: 
+
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [0,6] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	
+	UNIT
+
+EnemyReinforce2: 
+
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA24R6 [IronLance] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA23R6 [HandAxe] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA24R7 [PoisonAxe] [0,0,0,0]
+	
+	UNIT
+
+EnemyReinforce3: 
+	
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [4,0] 0x0 0x0 0x0 0x0 [HeavySpear] [0,0,0,0]
+
+	UNIT
+
+EnemyReinforce4: 
+	
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT
+
+EnemyReinforce5: 
+	
+	UNIT Eruca ErucaLord 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [Tomahawk, HoplonGuard] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
+	
+	UNIT
+
+EnemyReinforce6:
+	
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,16] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	
+	UNIT
+
+EnemyReinforce7:
+	
+	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [0,22] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
+	UNIT Imperial WyvernLord 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,15] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [19,32] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
+	
+	UNIT
+
 Traps1:
 	ENDTRAP
 	ALIGN 4
@@ -167,10 +424,10 @@ BeginningScene:
 	CAMERA [25,5]
 	FADU(16)
 	Text(Text1Ch4)
-	CAMERA [22][22]
-	CAMERA [9][25]
+	CAMERA [22,22]
+	CAMERA [9,25]
 	Text(Text2Ch4)
-	CAEMRA (Nausicaa)
+	CAMERA (Nausicaa)
 	CURSOR_FLASHING(Nausicaa)
     STAL(30)
     REMOVE_CURSORS
@@ -245,17 +502,171 @@ BeginningScene:
 	EVBIT_F 2
 	SetBackground(0xE)
 	Text(Text8Ch4)
-	FADU(16)
+	FADI(16)
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
 	LOAD1 1 CutScene6
 	ENUN
-	
+	CAMERA(Mansel)
+	FADU(16)
+    LOAD1 1 CutScene7
+	CAMERA Eruca
+	CURSOR_FLASHING Eruca
+	STAL 45
+	REMOVE_CURSORS
+	Text(Text9Ch4)
+    StartBattle
+	NormalDamage(0,14)
+    MissedAttack(1,0)
+    CriticalHit(0,99)
+    EndAttack
+	FIGHT Eruca Mansel Tomahawk False
+	Text(Text10Ch4)
+	KILL Mansel
+	SOUN (0xD6)
+	AWAIT_KILL Mansel	
+    Text(Text11Ch4)
+	FADI(16)
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	LOMA 0x6
+	CAMERA [3,0]
+	FADU(16)
+	LOAD1 1 CutScene8
+	ENUN
+	EVBIT_F 2
+	Text(Text12Ch4)
+	MOVE 60 Nausicaa [8,6]	
+ 	MOVE 60 Kairs [9,7]	
+    ENUN
+	CHECK_ALIVE Colt
+	BEQ 0x1 0xC 0x0
+	LOAD2 1 CutScene9
+	ENUN
+	Text(Text13Ch4)
+	MOVE 60 Colt [8,4]
+	REVEAL Colt
+	Text(Text14Ch4)
+	LABEL 0x1
+	LOAD1 1 CutScene10
+	ENUN
+	Text(Text15Ch4)
+	LOAD1 1 CutScene11
+	ENUN
+	Text(Text16Ch4)
+	FADI(16)
+	CLEA 0x0
+	CLEN 0x0
+	LOAD1 1 EnemyUnits
+	LOAD1 1 Alleati1
+	FADU(16)
+	REMU Lukas
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MNC2 next_chapter
-	NoFade
+    MUSC(0x27A)
+	WEATHER 0x5
+	FADI(16)
+	CHECK_ALIVE Rath
+	BEQ 0x1 0xC 0x0
+	CUSA Rath
+	LABEL 0x1
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	CAMERA[29,31]
+	LOAD1 1 CutScene12
+	ENUN
+	FADU(16)
+	CAMERA Nausicaa
+	CURSOR_FLASHING Nausicaa
+	STAL 30
+	REMOVE_CURSORS
+	Text(TextEnd1Ch4)
+	MOVE 60 Nausicaa [28, 30]
+	SOLOTEXTBOXSTART
+	                 SCOORD 0xB [185, 196]
+					 TEXTSHOW(TextEnd2Ch4)
+					 TEXTEND
+    REMA
+	LOAD1 1 CutScene13
+	ENUN
+	CAMERA Slayder
+	CURSOR_FLASHING Slayder
+	STAL 30
+	REMOVE_CURSORS
+	Text(TextEnd3Ch4)
+	SVAL s1 60
+	SET_HP Kairs
+	LOAD2 1 CutScene14
+	ENUN
+	StartBattle 
+    MissedAttack(0,12)
+    NormalDamage(1,16)
+    MissedAttack(1,0)	
+	EndAttack
+	FIGHT Kairs Slayder SteelSword False
+	Text(TextEnd4Ch4)
+	Text(TextEnd5Ch4)
+	GLOWINGCROSS(Nausicaa)
+	STAL 60
+	EARTHQUAKE 0x1 0x1
+	MOVE 60 Slayder [25,31]
+	STAL 25
+	GLOWINGCROSS_END
+	EARTHQUAKE_END
+	Text(TextEnd6Ch4)
+	LOAD1 1 CutScene15
+	ENUN
+	Text(TextEnd7Ch4)
+	LOAD2 1 CutScene16
+	ENUN
+	Text(TextEnd8Ch4)
+	Text(TextEnd9Ch4)
+	CHECK_ALIVE Colt
+	BEQ 0x1000 0xC 0x0
+	Text(TextEnd10Ch4)
+	LABEL 0x1000
+	CHECK_ALIVE Rosie
+	BEQ 0x1001 0xC 0x0
+	CHECK_ALIVE Diana
+	BEQ 0x1001 0xC 0x0
+	Text(TextEnd11Ch4)
+	LABEL 0x1001
+	CHECK_ALIVE Yala
+	BEQ 0x1002 0xC 0x0
+	Text(TextEnd12Ch4)
+	LABEL 0x1002
+	CHECK_ALIVE Rath
+	BEQ 0x1003 0xC 0x0
+	Text(TextEnd13Ch4)
+	LABEL 0x1003
+	CHECK_ALIVE Gadriel
+	BEQ 0x1004 0xC 0x0
+	Text(TextEnd14Ch4)
+	LABEL 0x1004
+	Text(TextEnd15Ch4)
+	Text(TextEnd16Ch4)
+	FADI(16)
+	DISA Slayder
+	FADU(16)
+	Text(TextEnd17Ch4)
+	FAWI(16)
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	MUSC (0x26D)
+	SetBackground(0x3B)
+	FAWU(16)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW GrazieGiocatore  
+	                    TEXTEND
+	REMA
+	MNTS 0x0
+//	MNC2 0x7	
+//	NoFade
 	ENDA

@@ -136,3 +136,6 @@ Convoy,VillagerPaletteList|IsPointer
 Pirate F,PirateFPaletteList|IsPointer
 Huntress,HuntressPaletteList|IsPointer
 Brawler,MercPaletteList|IsPointer
+WyvernRiderAxe,VillagerPaletteList|IsPointer
+Marshall,VillagerPaletteList|IsPointer
+ErucaLord,VillagerPaletteList|IsPointer

@@ -1,0 +1,4 @@
+
+MercenaryMugData:
+#incext PortraitFormatter "Mercenary.png"
+setMugEntry(MercenaryMug, MercenaryMugData, 3, 6, 3, 4)

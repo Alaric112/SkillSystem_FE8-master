@@ -12,3 +12,6 @@ Imperial[X]
 # 0x02A9 ImperialDesc
 The army of the Granorg Empire, the[N]
 largest nation on the entire continent.[X]
+
+# 0x04EE LuckStatScreenInfo ^
+Luck[X]
