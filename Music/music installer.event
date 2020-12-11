@@ -549,8 +549,6 @@ GSSquareMacro(0x20,0xf0,0x20,0x80)
 //SampleHeader macro for .sb samples converted from .wav
 #define SampleHeader(IsSampleLooped,SamplePitchAdjustment,SampleLoopPoint,SampleLength) "BYTE $00 $00 $00 IsSampleLooped*0x40; WORD SamplePitchAdjustment; WORD SampleLoopPoint; WORD SampleLength"
 
-
-
 #else
 ERROR You are not assembling FE8 events!
 #endif

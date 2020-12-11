@@ -1,12 +1,19 @@
 
 
-/*
 ALIGN 4
 SystemArrow:
 #incbin "Arrow.dmp"
 
 PUSH
-ORG 0xA03054
+ORG 0x32E98
 POIN SystemArrow
 POP
-*/
+
+ALIGN 4
+SystemArrowPalette:
+#incbin "Arrow_pal.dmp"
+
+PUSH
+ORG 0x32EA0
+POIN SystemArrowPalette
+POP

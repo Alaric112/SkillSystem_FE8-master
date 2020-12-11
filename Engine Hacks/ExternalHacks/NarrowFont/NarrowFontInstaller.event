@@ -8,12 +8,12 @@
 
 #ifdef _FE8_
 
-	
+/*	
 	#ifndef Free_Space
 		#define Free_Space 0xBABD00 //Switch to any unused address
 		ORG Free_Space
 	#endif
-	
+*/	
 	#include EAstdlib.event
 	#include "Extensions/Hack Installation.txt"
 
@@ -26,6 +26,8 @@
 
 	ALIGN 4
 
+MESSAGE inside Narrow font at currentOffset
+
 	#define mGlyphEntry(mGlyphEntry,mGlyphLoc) "PUSH; ORG menuGlyphTable+mGlyphEntry*0x04; POIN mGlyphLoc; POP"
 	#define tGlyphEntry(tGlyphEntry,tGlyphLoc) "PUSH; ORG tGlyphTable+tGlyphEntry*0x04; POIN tGlyphLoc; POP"
 
@@ -34,7 +36,8 @@
 	#include "MenuLowercase/LowercaseMenu.txt"
 	#include "MenuUppercase/UppercaseMenu.txt"	
 		
-		
+	
+	
 		
 #else
 	ERROR "Set EA to FE8 events!"

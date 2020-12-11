@@ -28,6 +28,8 @@
     ALIGN 4  
 	#include "Background\Background.event"
     ALIGN 4	
+	MESSAGE Used free space ends at currentOffset
+
 	
     //Engine Hacks
     #include "Engine Hacks/_MasterHackInstaller.event"
@@ -35,27 +37,23 @@
 
     //Events
     #include "Events/Master Event Installer.event"
+    MESSAGE Used free space ends at currentOffset
 
     //Maps
     #include "Maps/Master Map Installer.event"
+    MESSAGE Used free space ends at currentOffset
 	
 	//Music
 	#include "Music/music installer.event"
+    MESSAGE Used free space ends at currentOffset
+
+    // CRC Correction
+    ALIGN 16
+    WORD 0 0 0 0
 	
     MESSAGE Used free space ends at currentOffset
 #else
     ERROR You are not assembling FE8 events!
 #endif
 
-/*
-PUSH
-
-ORG $801842E
-callHack_r3(MyThirdHack)
-
-POP
-
-ALIGN 4
-MyThirdHack:
-*/
 

@@ -1035,8 +1035,8 @@
 
 //Display-Only Skills
 
-#define CunningID 255
-#define NiceThighsID 50
+#define CunningID 50
+#define NiceThighsID 255
 #define PersonalityID 109
 
 //Broken Skills

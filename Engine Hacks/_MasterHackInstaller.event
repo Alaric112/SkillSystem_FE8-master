@@ -25,6 +25,9 @@ PUSH
   #endif
 POP
 
+    MESSAGE Used free space ends at currentOffset
+
+
 ////////////////////////////////FREE SPACE WITHIN BL RANGE
 
 PUSH
@@ -57,6 +60,9 @@ ORG FreeSpaceBLRange //defined in custom definitions
 #undef inBLRange
 POP
 
+    MESSAGE Used free space ends at currentOffset
+
+
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
 //////// MY ADD 
@@ -73,6 +79,7 @@ POP
   //ContinueBattleBGM 
   #include "MyHack/ContinueBattleBGM_20200919/ContinueBattleBGM_install.event"
 
+    MESSAGE Used free space ends at currentOffset
   
 ////////////////////////////////NORMAL SKILL THINGS
 
@@ -118,7 +125,10 @@ POP
 	#include "ExternalHacks/StrMagSplit/_MasterAsmInstaller.event"
 	
   #endif // USE_STRMAG_SPLIT
-  
+ 
+    MESSAGE Str/ mag split offset currentOffset
+
+ 
   //Anima Triangle
   #include "ExternalHacks/AnimaTriangle/AnimaTriangle.event"
   
@@ -136,6 +146,9 @@ POP
   
   //Escape-Arrive
   #include "ExternalHacks/EscapeArrive/EscapeArrive.event"
+
+    MESSAGE Escape arrive offset currentOffset
+
   
   //Debuffs
   #include "Necessary/SuspendDebuffs/Debuffs.event"
@@ -187,19 +200,31 @@ POP
   //Status-Inflicting Weapons
   ALIGN 4
   #include "ExternalHacks/StatusWeapons/StatusWeapons.event"
-  
-  //Narrow Fonts by Scraiza
+ 
+    MESSAGE Status weapon currentOffset
+
+ 
+  //Narrow Fonts by Scraiza (The problem)
   ALIGN 4
   #include "ExternalHacks/NarrowFont/NarrowFontInstaller.event"
-  
+ 
+    MESSAGE Narrow font offset currentOffset
+
+ 
   //Item Effect Revamp by Teraspark
   #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
-  
+ 
+    MESSAGE Effect Revamp currentOffset
+
+ 
   //Durability-Based Items, for Skill Scrolls
   #include "Necessary/DurabilityBasedItems/DurabilityBasedItems.event"
 
   ALIGN 4
   #include "SkillSystem/SkillSystemInstaller.event"
+
+    MESSAGE Skill System currentOffset
+
 
   ALIGN 4
   #include "QualityOfLife/DisplayWRankOnLevelUp/DisplayWRankOnLevelUp.event"
@@ -209,7 +234,10 @@ POP
   
   ALIGN 4
   #include "Necessary/StatGetters/_InstallStatGetters.event"
-  
+ 
+    MESSAGE Prova prova currentOffset
+
+ 
   //Growth Getters
   #ifndef USE_STRMAG_SPLIT
     #include "Necessary/GrowthGetters/GrowthGetters.event"
@@ -248,5 +276,6 @@ POP
     MESSAGE "Using Legacy Suspend Expansion"
 
     #include "Necessary/SuspendDebuffs/SuspendExpansion.event"
+
 
   #endif // USE_SAVE_EXPANSION
