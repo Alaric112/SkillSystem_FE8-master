@@ -454,6 +454,7 @@ BeginningScene:
 	LOAD2 1 CutScene4
     ENUN
 	StartBattle
+	SetScriptedBattle(99,12,15,64,8,0)
     CriticalHit(0,60)			
 	EndAttack
 	FIGHT Nausicaa Imperial OsIgnis False
@@ -465,7 +466,8 @@ BeginningScene:
 	Text(Text5Ch4)
 	LOAD2 1 CutScene5
 	ENUN
-	StartBattle 
+	StartBattle
+	SetScriptedBattle(100,16,10,44,7,0)	
     CriticalHit(0,60)			
 	EndAttack
 	FIGHT Kairs Imperial2 SteelSword False
@@ -617,7 +619,8 @@ EndingScene:
 	SET_HP Kairs
 	LOAD2 1 CutScene14
 	ENUN
-	StartBattle 
+	StartBattle
+	SetScriptedBattle(88,16,8,77,8,0)		
     MissedAttack(0,12)
     NormalDamage(1,16)
     MissedAttack(1,0)	

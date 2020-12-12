@@ -110,13 +110,15 @@ CURSOR_FLASHING Kairs
 STAL(30)
 REMOVE_CURSORS
 Text(PrologueTurnNPC1)
-MOVE 120 Kairs [11, 1]
-MOVE 120 Kairs [11, 3]
+MOVE 60 Kairs [11, 1]
 ENUN
-StartBattle 
+MOVE 60 Kairs [11, 3]
+ENUN
+StartBattle
+SetScriptedBattle(100,14,9,54,10,0)
 NormalDamage(0,14)
-MissedAttack(1,0)            
-CriticalHit(0,40)			
+MissedAttack(1,0)
+CriticalHit(0,40)
 EndAttack
 FIGHT Kairs DemonBoss SteelSword False
 AWAIT_KILL DemonBoss
