@@ -57,3 +57,4 @@
 
 #include "Staff/MasterInstaller.event"
 
+#include "ScriptedBattleNumbers/ScriptedBattles.event"

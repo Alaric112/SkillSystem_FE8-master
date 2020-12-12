@@ -269,9 +269,9 @@ CutScene6:
 
 CutScene7:
 
-    UNIT Gilliam 0x0 0x0 Level(3,NPC,1) [4,10] 0x0 0x0 0x1 REDA6R4 [Wind, ArcWind, Heal] [0,0,0,0]
-    UNIT Dario Brawler 0x0 Level(3,Enemy,1) [3,10] 0x0 0x0 0x1 REDA7R5 [Fire, PureWater] [0,0,0,0]
-    UNIT Militia Soldier 0x0 Level(3,NPC,1) [2,10] 0x0 0x0 0x1 REDA8R4 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Gilliam 0x0 0x0 Level(3,NPC,1) [5,14] 0x0 0x0 0x1 REDA11R7 [Wind, ArcWind, Heal] [0,0,0,0]
+    UNIT Dario Brawler 0x0 Level(3,Enemy,1) [5,14] 0x0 0x0 0x1 REDA12R7 [Fire, PureWater] [0,0,0,0]
+    UNIT Militia Soldier 0x0 Level(3,NPC,1) [5,14] 0x0 0x0 0x1 REDA13R7 [Wind, ArcWind, Heal] [0,0,0,0]
 	
     UNIT
 
@@ -392,6 +392,9 @@ EndingScene:
 	REVEAL Colt
 	LABEL 0x9004
     FADI 16
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
 	LOMA 0x7
 	CAMERA [6,6]
 	LOAD1 1 CutScene1

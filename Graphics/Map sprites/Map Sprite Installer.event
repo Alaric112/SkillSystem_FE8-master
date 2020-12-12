@@ -48,7 +48,7 @@ AxeArmorStanding:
 
 ALIGN 4
 LanceArmorMoving:
-#incext Png2Dmp "Png/GreatKnightMoving.png" --lz77
+#incext Png2Dmp "Png/LanceArmorMoving.png" --lz77
 
 ALIGN 4
 LanceArmorStanding:

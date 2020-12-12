@@ -6,7 +6,7 @@
 
 #include "Death Quote/Death Quotes Installer.event"
 
-//#include "Force Deploy/Force Deployer.event"
+#include "Force Deploy/Force Deployer.event"
 
 //#include "Promotion Items/Promotion Item Editor.event"
 

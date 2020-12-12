@@ -201,7 +201,7 @@ from this road we can reach[N]
 the desert more easily[A][X]
 
 ## TextTalk1part4Ch1x
-[OpenMidLeft][LoadFace][0x02][OpenMidRight][LoadFace][0x20][OpenMidRight]
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x20][0x01][OpenMidRight]
 Ah, before I forget[AN]
 I tried to distill the herbs[N]
 medicines you found[AN]

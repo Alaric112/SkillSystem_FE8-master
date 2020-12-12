@@ -13,5 +13,9 @@ Imperial[X]
 The army of the Granorg Empire, the[N]
 largest nation on the entire continent.[X]
 
+# 0x0441 ShortBowDesc
+Cannot crit[X]
+
 # 0x04EE LuckStatScreenInfo ^
 Luck[X]
+

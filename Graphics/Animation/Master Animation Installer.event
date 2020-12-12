@@ -63,6 +63,8 @@
 #define ClericStaffAnim 0x80
 #define ClericUnarmedAnim 0xC8
 
+#define ThiefSwordAnim 0x89
+
 #define MageFMagicAnim 0x6C
 
 #define WywernAxeAnim 0xD0

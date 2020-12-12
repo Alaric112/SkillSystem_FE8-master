@@ -98,7 +98,7 @@ Knight of Sorya known as[N]
 the archer of the storm[X]
 
 ## ManfredName
-MAnfred[X]
+Manfred[X]
 
 ## ManfredDesc
 A courageous captain in Granorg's army.[N]

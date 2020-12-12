@@ -14,9 +14,25 @@ PointerList:
 
 TurnBasedEvents:
 
+    TurnEventPlayer(0x0,Turn1,1)
     TurnEventPlayer(0x0,Turn4,4)
     TurnEventPlayer(0x0,Turn5,5)
 	END_MAIN
+
+Turn1:
+
+    CAMERA Dario
+    CURSOR_FLASHING Dario
+	STAL(30)
+	REMOVE_CURSORS
+	Text(Text5Ch1)
+	FADI(16)
+    CAMERA Nausicaa
+    CURSOR_FLASHING Nausicaa
+	STAL(30)
+	REMOVE_CURSORS
+    Text(Text6Ch1)
+    ENDA
 
 Turn4:
 
@@ -192,8 +208,8 @@ Cutscene1:
 
 Cutscene2:
 
-    UNIT Kairs 0x0 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [] [0,0,0,0]
-	UNIT Gadriel 0x0 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [SteelSword] [0,0,0,0]
+	UNIT Gadriel 0x0 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [IronSword] [0,0,0,0]
 
 	UNIT
 
@@ -272,15 +288,17 @@ BeginningScene:
 	ENUN
 	EVBIT_F 9
 	Text(Text1Ch1)
-	LOAD2 1 Cutscene2
+	EndConvo
+	LOAD1 1 Cutscene2
 	ENUN
 	STAL(16)
 	Text(Text2Ch1)
+	EVBIT_F 2
 	FADI(16)
 	LOMA(0x2)
 	CAMERA [1,0]
 	MUSC(0x25)
-	CAMERA [18,11]
+	CAMERA_CENTERED [18,11]
 	LOAD1 0 Cutscene3
 	ENUN
 	FADU(16)
@@ -300,6 +318,9 @@ BeginningScene:
     CURSOR_FLASHING(Colt)
     STAL(30)
     REMOVE_CURSORS
+	SetBackground(0x1B)
+	Text(Text4Ch1)
+	EndConvo
 //	HouseEvent(Text4Ch1, 0x1B)
 	GotoPrepScreen
 	ENDA

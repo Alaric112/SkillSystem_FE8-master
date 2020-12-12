@@ -2,8 +2,8 @@
 #define EndForceDeploy "SHORT 0xFFFF 0x00"
 
 ForceDeployList:
-ForceDeployEntry(Sanders,0xFF)
-ForceDeployEntry(Donnalen,0xFF)
+ForceDeployEntry(Nausicaa,0xFF)
+ForceDeployEntry(Salem,0x04)
 EndForceDeploy
 
 PUSH

@@ -71,6 +71,8 @@
 #include "Event/HuntressBow Installer.event"
 #include "Event/HuntressUnarmed Installer.event"
 
+#include "Event/ThiefSword Installer.event"
+
 #include "Event/MarshallSword Installer.event"
 #include "Event/MarshallAxe Installer.event"
 #include "Event/MarshallHandAxe Installer.event"

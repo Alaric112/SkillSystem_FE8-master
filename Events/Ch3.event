@@ -68,6 +68,8 @@ NausicaaHarkenTalk:
 	CURSOR_FLASHING [3, 20]
 	STAL 60
 	REMOVE_CURSORS
+	CAMERA Nausicaa
+	SetChapterObjectiveText(Escape, Escape)
 	NoFade
 	ENDA
 
@@ -138,7 +140,7 @@ CutScene3:
 
 	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [15,15] 0x0 0x0 0x1 REDA12R13 [0] [0,0,0,0]
 	UNIT Salem 0x0 0x0 Level(2,Ally,1) [15,15] 0x0 0x0 0x1 REDA13R13 [0] [0,0,0,0]
-	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [15,15] 0x0 0x0 0x1 REDA12R12 [0] [0,0,0,0]
+	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [15,15] 0x0 0x0 0x1 REDA12R14 [0] [0,0,0,0]
     
 	UNIT 
 
@@ -284,6 +286,7 @@ Traps2:
 BeginningScene:
     LOMA(0x1)
 	MUSC(0x5)
+	FADU(16)
 	EVBIT_T 9
 	LOAD2 1 CutScene1
 	ENUN
@@ -304,10 +307,11 @@ BeginningScene:
 	LOMA 0x7
 	LOAD1 1 CutScene2
 	ENUN
-	EVBIT_F 9
+	FADU(16)
+	EVBIT_T 9
 	LOAD2 1 CutScene3
 	ENUN
-	EVBIT_T 9
+	EVBIT_F 9
 	CAMERA(Nausicaa)
 	MOVE_1STEP 30 Militia 0
 	ENUN
@@ -345,7 +349,7 @@ BeginningScene:
 	Text(Text7Ch3)
 	EndConvo
 	EARTHQUAKE 0x0 0x1
-	STAL 0x120
+	STAL 0x60
 	EARTHQUAKE_END
 	Text(Text8Ch3)
 	FADI(16)
@@ -378,6 +382,7 @@ BeginningScene:
 	LOAD2 1 Cutscene7
 	ENUN
 	Text(Text11Ch3)
+	REVEAL Kairs
 	CHECK_ALIVE Gadriel
 	BEQ 0x9000 0xC 0x0
 	Text(Text12Ch3)
@@ -416,8 +421,6 @@ BeginningScene:
 	Text(Text16Ch3)
 	EndConvo
 	LOAD1 1 LukasSpawn1
-	ENUN
-	LOAD1 0x1 EnemyUnits
 	ENUN
 	MUSC 0x30
 	SetBackground(0x23)

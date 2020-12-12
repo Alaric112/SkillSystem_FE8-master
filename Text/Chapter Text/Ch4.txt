@@ -213,7 +213,7 @@ Pathetic...like all[N]
 the others....[AN]
 how did they break down[N]
 the Jaggernaut...[AN]
-Nausica[aa]...who will this be
+Nausica[aa]...who will this be[N]
 person...probably the daughter[AN]
 ... ... ...[AN]
 my work isn't finished...[AN]
@@ -611,9 +611,16 @@ I'll be by your side until[N]
 the end[AN][OpenRight]I...I..[AN]
 [CloseEyes]
 ... ... ...[N]
-... ... ...[N]
-... ... ...[N][X]
+... ... ...[AN]
+... ... ...[A][X]
 
+## TextCasaCh4
+They overwhelmed us...[AN]
+we have no hope...[AN]
+my wound is mortal...[AN]
+please, take my spear...[AN]
+maybe it will save you against the[N]
+wyvern knights armed with axe...[A][X]
 
 ## GrazieGiocatore
 Hi, thank you very much for[N]

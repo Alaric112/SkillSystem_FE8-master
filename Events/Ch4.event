@@ -24,10 +24,10 @@ TurnEventPlayer(0x0,Turn9Event,9,11)
 
 Turn1Event:
 FADI(16)
-CAMERA(Rath)
+CAMERA_CENTERED(Rath)
 FADU(16)
 CURSOR_FLASHING Rath
-STAL 75
+STAL 30
 REMOVE_CURSORS
 Text(TextMid1Ch4)
 CHECK_ALIVE Lukas
@@ -35,7 +35,7 @@ BEQ 0x1 0xC 0x0
 EVBIT_F 9
 LOAD2 1 Lukas1
 ENUN
-CAMERA Lukas 
+CAMERA_CENTERED Lukas 
 CURSOR_FLASHING Lukas
 STAL 30
 REMOVE_CURSORS
@@ -126,7 +126,10 @@ ENDA
 
 Village1:
 
+SetBackground(0x1)
+Text(TextCasaCh4)
 GiveItem(Axereaver, 0xFFFF)
+EndConvo
 ENDA
 
 Dunno1:
@@ -147,7 +150,7 @@ Tutorial:
 
 Units1:
 	
-	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [14,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [12,10] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [13,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Kairs 0x0 0x0 Level(2,Ally,1) [11,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Diana 0x0 0x0 Level(4,Ally,1) [12,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
@@ -156,7 +159,7 @@ Units1:
 	UNIT Calliope 0x0 0x0 Level(4,Ally,1) [11,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Catherina 0x0 0x0 Level(4,Ally,1) [14,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Harken 0x0 0x0 Level(4,Ally,1) [12,12] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-	UNIT Harken 0x0 0x0 Level(4,Ally,1) [10,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Colt 0x0 0x0 Level(4,Ally,1) [10,9] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 
 	UNIT
 
@@ -186,8 +189,8 @@ CutScene2:
 
 CutScene3: 
 
-	UNIT Mansel Marshall 0x0 Level(3,NPC,0) [12,7] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
-	UNIT Gilliam General 0x0 Level(5,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] [0,0,0,0]
+	UNIT Mansel Marshall 0x0 Level(3,NPC,1) [12,7] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
+	UNIT Gilliam General 0x0 Level(5,NPC,1) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] [0,0,0,0]
 	
 	UNIT
 
@@ -205,7 +208,7 @@ CutScene5:
 
 CutScene6: 
 
-	UNIT Mansel Marshall 0x0 Level(3,Ally,1) [12,5] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
+	UNIT Mansel Marshall 0x0 Level(3,NPC,1) [12,5] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
 	
 	UNIT
 
@@ -295,8 +298,8 @@ Alleati1:
 	UNIT Militia Fighter 0x0 Level(2,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,4,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,1) [13,19] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,1) [6,14] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
-	UNIT Gilliam General 0x0 Level(5,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] StaticAI
-    UNIT SalemNPC Sage 0x0 Level(3,NPC,1) [9,5] 0x0 0x0 0x0 0x0 [ArcWind, LeatherShield] [0xc,3,4,0]
+	UNIT Gilliam General 0x0 Level(5,NPC,0) [4,2] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] StaticAI
+    UNIT SalemNPC Sage 0x0 Level(3,NPC,0) [9,5] 0x0 0x0 0x0 0x0 [ArcWind, LeatherShield] [0xc,3,4,0]
 
 	UNIT
 
@@ -417,17 +420,17 @@ BeginningScene:
     FADI(16)
 	MUSC 0x25
 	WEATHER 0x5
-	LOAD1 2 CutScene1
+	LOAD2 1 CutScene1
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	CAMERA [25,5]
+	CAMERA_CENTERED [25,5]
 	FADU(16)
 	Text(Text1Ch4)
-	CAMERA [22,22]
-	CAMERA [9,25]
+	CAMERA_CENTERED [22,22]
+	CAMERA_CENTERED [9,25]
 	Text(Text2Ch4)
-	CAMERA (Nausicaa)
+	CAMERA_CENTERED (Nausicaa)
 	CURSOR_FLASHING(Nausicaa)
     STAL(30)
     REMOVE_CURSORS
@@ -442,7 +445,7 @@ BeginningScene:
 	ENUN
 	LOAD1 1 CutScene3
 	ENUN
-	CAMERA [14,10]
+	CAMERA [15,14]
 	FADU(16)
 	EVBIT_F 2
 	SetBackground(0x2B)
@@ -450,7 +453,7 @@ BeginningScene:
 	EndConvo
 	LOAD2 1 CutScene4
     ENUN
-	StartBattle 
+	StartBattle
     CriticalHit(0,60)			
 	EndAttack
 	FIGHT Nausicaa Imperial OsIgnis False
@@ -460,7 +463,7 @@ BeginningScene:
 	MOVE 60 Imperial2 [14, 13]
 	ENUN
 	Text(Text5Ch4)
-	LOAD1 2 CutScene5
+	LOAD2 1 CutScene5
 	ENUN
 	StartBattle 
     CriticalHit(0,60)			
@@ -470,12 +473,13 @@ BeginningScene:
 	SOUN (0xD6)
 	AWAIT_KILL Imperial2
     Text(Text6Ch4)
-    CAMERA(Mansel)
+    CAMERA_CENTERED(Mansel)
     CURSOR_FLASHING(Mansel)
     STAL(30)
     REMOVE_CURSORS
 	Text(Text7Ch4)
     StartBattle
+	SetScriptedBattle(45,3,0,100,22,8)
     MissedAttack(0,0)
     CriticalHit(1,99)
     EndAttack
@@ -491,7 +495,7 @@ BeginningScene:
     EndAttack
 	MOVE 60 ImperialBoss [13,7]
 	ENUN
-	FIGHT ImperialBoss Mansel IronAxe False
+	FIGHT ImperialBoss Gilliam IronAxe False
 	KILL ImperialBoss
 	SOUN (0xD6)
 	AWAIT_KILL ImperialBoss
@@ -502,21 +506,24 @@ BeginningScene:
 	EVBIT_F 2
 	SetBackground(0xE)
 	Text(Text8Ch4)
+	EndConvo
 	FADI(16)
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
 	LOAD1 1 CutScene6
 	ENUN
-	CAMERA(Mansel)
+	CAMERA_CENTERED(Mansel)
 	FADU(16)
     LOAD1 1 CutScene7
+	ENUN
 	CAMERA Eruca
 	CURSOR_FLASHING Eruca
 	STAL 45
 	REMOVE_CURSORS
 	Text(Text9Ch4)
     StartBattle
+    SetScriptedBattle(100,14,20,90,20,0)
 	NormalDamage(0,14)
     MissedAttack(1,0)
     CriticalHit(0,99)
@@ -553,17 +560,24 @@ BeginningScene:
 	LOAD1 1 CutScene10
 	ENUN
 	Text(Text15Ch4)
-	LOAD1 1 CutScene11
+	EndConvo
+	LOAD2 1 CutScene11
 	ENUN
 	Text(Text16Ch4)
 	FADI(16)
+	CUSA Colt
 	CLEA 0x0
 	CLEN 0x0
+	CLEE 0x0
+	CLEAN
 	LOAD1 1 EnemyUnits
+	ENUN
 	LOAD1 1 Alleati1
+	ENUN
 	FADU(16)
 	REMU Lukas
 	GotoPrepScreen
+	NoFade
 	ENDA
 
 EndingScene:

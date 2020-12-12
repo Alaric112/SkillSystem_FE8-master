@@ -1,7 +1,7 @@
 INLINE PaletteAssociationTable,Palette Association List Pointer
 0x00 (No one/Not referenced),0x0
 Ephraim Lord,EmptyPaletteList|IsPointer
-Eirika Lord,EmptyPaletteList|IsPointer
+Eirika Lord,LanceLordPaletteList|IsPointer
 Ephraim Great Lord,EmptyPaletteList|IsPointer
 Eirika Great Lord,EmptyPaletteList|IsPointer
 Cavalier,CavalierPaletteList|IsPointer
@@ -37,7 +37,7 @@ Wyvern Lord (F),WyvLordPaletteList|IsPointer
 Wyvern Knight,WyvKnightPaletteList|IsPointer
 Wyvern Knight (F),WyvKnightPaletteList|IsPointer
 Mage,MagePaletteList|IsPointer
-Mage (F),MagePaletteList|IsPointer
+Mage (F),MageFPaletteList|IsPointer
 Sage,SagePaletteList|IsPointer
 Sage (F),SagePaletteList|IsPointer
 Mage Knight,MageKnightPaletteList|IsPointer

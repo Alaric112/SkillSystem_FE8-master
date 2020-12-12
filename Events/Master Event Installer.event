@@ -5,8 +5,6 @@
 
 #include "World Map/World Map Events Installer.event"
 
-    MESSAGE Used free space ends at currentOffset
-
 
 {
 	#include "Prologue.event"

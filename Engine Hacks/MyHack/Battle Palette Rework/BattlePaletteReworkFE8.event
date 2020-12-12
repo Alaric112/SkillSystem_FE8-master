@@ -408,5 +408,10 @@ PaletteAssociationEntry(Calliope, $2F)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
+LanceLordPaletteList:
+PaletteAssociationEntry(Nausicaa, $2)
+BYTE $00 $00 $00 $00 $00 $00 $00 $00
+ALIGN 4
+
 BYTE $FF $FF $FF $FF $FF $FF $FF $FF
 ALIGN 4
