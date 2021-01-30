@@ -8,3 +8,6 @@
 #define SoryaTileConfig 0xE7
 #define FieldsNightPalette 0xEB
 #define SoryaNightPalette 0xEC
+#define SnowCityObjectSet 0xDF
+#define SnowCityPalette 0xDE
+#define SnowCityTileConfig 0xDD

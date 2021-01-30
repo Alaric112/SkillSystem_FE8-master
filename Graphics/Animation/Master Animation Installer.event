@@ -73,7 +73,7 @@
 #define LanceLordAnim 0x03
 #define LanceLordUnarmedAnim 0x04
 
-#define MageLordMagicAnim 0xDB
+#define MageLordMagicAnim 0x2
 
 #define PirateFAxeAnim 0xD2
 #define PirateFHandAxeAnim 0xD3
@@ -113,7 +113,13 @@
 #define MarshallBowAnim 0xE1
 #define MarshallUnarmedAnim 0xE2
 
-// prossimo punto disponibile è 0xE3
+#define DeserterLanceAnim 0xE3
+#define DeserterUnarmedAnim 0xE4
+
+#define F_ThiefSwordAnim 0xE5
+#define F_ThiefUnarmedAnim 0xE6
+
+// prossimo punto disponibile è 0xE7
 // Animation Pointer:
 
 ALIGN 4
@@ -196,6 +202,18 @@ AxeWyvernRiderAnims:
 AxeAnim(WywernAxeAnim)
 HandAxeAnim(WywernHandAxeAnim)
 UnarmedAnim(0x5B)
+EndAnim
+
+ALIGN 4
+DeserterAnims:
+LanceAnim(DeserterLanceAnim)
+UnarmedAnim(DeserterUnarmedAnim)
+EndAnim
+
+ALIGN 4
+F_ThiefAnims:
+SwordAnim(F_ThiefSwordAnim)
+UnarmedAnim(F_ThiefUnarmedAnim)
 EndAnim
 
 //Bruh

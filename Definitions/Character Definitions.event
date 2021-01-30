@@ -2,6 +2,7 @@
 #undef Mansel
 #undef Gilliam
 #undef Bandit
+#undef Bazba
 
 // PG
 #define Nausicaa 0x01
@@ -13,17 +14,26 @@
 #define Diana 0x08
 #define Colt 0x09
 #define Rosie 0x0A
+#define Trak 0x0B
 #define Calliope 0x0C
 #define Yala 0xD
+#define Stocke 0x0F
+#define Fernand 0x10
+// #define Kyle 0x11 Vanilla, lol
 #define Arthur 0x13
 #define Zakaria 0x14
 #define Salem 0x17
 #define Catherina 0x19
 #define Harken 0x1A
 #define Rath 0x1B
+#define Lunia 0x1C
 #define Manfred 0x1D
+#define Sam 0x1F
+#define Bazba 0x25
+#define Salazar 0x2E
 
 //Enemy and NPC
+#define Jaram 0x47
 #define Merchant 0x6f
 #define Demon 0xaa
 #define DemonBoss 0xab
@@ -40,12 +50,31 @@
 #define Eruca 0x6C
 #define Slayder 0x6E
 #define Zechiel 0x58
+#define Bandit2 0x72
+#define MercenaryBoss 0x75
 #define Imperial 0x7F
 #define ImperialBoss 0x80
 #define Imperial2 0x81
 #define Imperial3 0x82
 #define SalemNPC 0xD2
 
+
+// Palette 
+
+#define SamMagePalette 0x30
+#define DonovanPriestPalette 0x45
+#define LuniaThiefPalette 0x46
+#define FernandCavalierPalette 0x57
+#define KyleCavalierPalette 0x56
+#define SalazarPalette 0x7A
+#define BazbaAxeArmorPalette 0x7B
+#define TrakArcherPalette 0x7C
+#define MilitiaSoldierPalette 0x7D
+#define MilitiaMercenaryPalette 0x7E
+#define AlistarDeserterPalette 0x7F
+#define ImperialCavalierPalette 0x80
+#define AlistarMyrmidonPalette 0x81
+#define JaramPalette 0x82
 
 //Bruh...
 #define Orson 0x100

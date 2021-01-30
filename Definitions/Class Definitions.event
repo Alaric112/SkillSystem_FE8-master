@@ -1,5 +1,6 @@
 // Class Definitions 
 // Vanilla redefine
+#define MageLord 0x1
 #define LanceLord 0x2
 #define LanceCavalier 0x5
 #define LanceKnight 0x9
@@ -19,3 +20,5 @@
 #define AxeWyvernRider 0x89
 #define Marshall 0x8A
 #define ErucaLord 0x8B
+#define Deserter 0x8C
+#define Thief_F 0x8D

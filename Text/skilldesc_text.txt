@@ -1249,3 +1249,7 @@ the opponent's physical defenses[N]
 WindStrike: when you attack a badly[N]
 wounded enemy (HP <50%) you get a[N]
 bonus: + 3Atk, +10 Hit and Crit and + 2AS[X]
+
+## SD_ForLady  ^
+ForLady: Near an allied female unit,[N]
+the character gains +2 Atk and 15 Hit[X]

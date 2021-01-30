@@ -166,3 +166,27 @@ ErucaMoving:
 ALIGN 4
 ErucaStanding:
 #incext Png2Dmp "Png/ErucaStanding.png" --lz77
+
+ALIGN 4
+MageLordMoving:
+#incext Png2Dmp "Png/MageLordMoving.png" --lz77
+
+ALIGN 4
+MageLordStanding:
+#incext Png2Dmp "Png/MageLordStanding.png" --lz77
+
+ALIGN 4
+DeserterMoving:
+#incext Png2Dmp "Png/DeserterMoving.png" --lz77
+
+ALIGN 4
+DeserterStanding:
+#incext Png2Dmp "Png/DeserterStanding.png" --lz77
+
+ALIGN 4
+ThiefMovingF:
+#incext Png2Dmp "Png/ThiefMovingF.png" --lz77
+
+ALIGN 4
+ThiefStandingF:
+#incext Png2Dmp "Png/ThiefStandingF.png" --lz77

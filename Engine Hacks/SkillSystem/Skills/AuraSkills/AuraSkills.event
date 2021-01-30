@@ -15,6 +15,14 @@ SHORT $4718 $46C0
 #include "SpurSkills/SpurSkills.event"
 
 ALIGN 4
+ForLady:
+//#incbin "ForLady/ForLady by Snakey1.dmp"
+#incbin "ForLady/ForLady.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD ForLadyID
+
+ALIGN 4
 Demoiselle:
 #incbin "Demoiselle/Demoiselle.dmp"
 POIN AuraSkillCheck

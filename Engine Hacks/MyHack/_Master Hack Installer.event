@@ -47,6 +47,8 @@
 
 #include "EVENTSCRIPT_SendAllTransporter/Installer.event"
 
+#include "EVENTSCRIPT_ChangeEdition/Installer.event"
+
 #include "MoreShops/MoreShops.event"
 
 #include "FreeMovement/FreeMovement.event"
@@ -60,3 +62,7 @@
 #include "ScriptedBattleNumbers/ScriptedBattles.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event"
+
+#include "RW Cloud Fix/Cloud_Fix_EA.event"
+
+#include "HpBars/HpBars.event"

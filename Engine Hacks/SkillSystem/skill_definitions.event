@@ -56,9 +56,9 @@
 //Author Unknown (Initial Commit)
 #define FocusID 92
 
-//Gentilhomme: Female allies within 2 tiles receive -2 damage.
+//Gentilhomme: Female allies within 2 tiles receive -2 damage.   ID (52)
 //Author Unknown (Initial Commit)
-#define GentilhommeID 52 
+#define GentilhommeID 255
 
 //Hex: -15 avoid to all adjacent enemies.
 //By Snakey1
@@ -1032,6 +1032,7 @@
 //My skill baby!
 #define SavageMagicID 248
 #define WindStrikeID 249
+#define ForLadyID 52
 
 //Display-Only Skills
 

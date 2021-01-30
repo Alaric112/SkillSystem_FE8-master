@@ -115,3 +115,9 @@ Blossom[X]
 ## BlossomDesc
 heals the wounds of allies[N]
 even at short distances[X]
+
+## CrimsonName
+Crimson Shot[X]
+
+## CrimsonDesc
++2 Def and Res[X]

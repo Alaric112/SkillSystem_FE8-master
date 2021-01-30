@@ -4,7 +4,7 @@ Nausicaa,1,25
 Kairs,2,10
 Lukas,1,10
 Gadriel,1,25
-Moulder,3,40
+Donovan,7,40
 Vanessa,2,25
 Ross,0,5
 Neimi,2,15
@@ -14,7 +14,7 @@ Innes,1,10
 Lute,5,55
 Yala,3,60
 Cormag,0,5
-Ephraim,0,15
+Stocke,0,50
 Forde,1,10
 Kyle,0,10
 Amelia,2,25
@@ -30,7 +30,7 @@ Rath,2,10
 Rennac,3,35
 Duessel,0,5
 Myrrh,2,85
-Knoll,10,50
+Knoll,2,40
 Joshua,0,20
 Syrene,4,20
 Tana,2,15
@@ -70,7 +70,7 @@ Valter (Ch 15),2,5
 Selena (Ch 10B +ACY- 13B),10,40
 Valter (Prologue),2,5
 Breguet (Ch 1),0,5
-Bone (Ch 2),0,5
+Jaram (Ch 2),0,5
 Bazba (Ch 3),1,10
 Entombed (Ch 4),1,5
 Saar (Ch 5),1,5
@@ -113,10 +113,10 @@ Orson (Ch 16),3,5
 0,0,0
 0,0,0
 0,0,0
+Bandit,2,0
 0,0,0
 0,0,0
-0,0,0
-0,0,0
+Mercenary (C10A),4,10
 0,0,0
 0,0,0
 0,0,0

@@ -4,19 +4,19 @@ Nausicaà,FieryBloodID
 Kairs,BattleVeteranID
 Lukas,ChivalryID
 Gadriel,KnightAspirantID
-Moulder,RallyResID
+Donovan,LiveToServeID
 Vanessa,SpurSpdID
 Ross,ParagonID
 Diana,AdeptID
 Colt,PassID
 Rosie,PuissanceID
-Innes,BowRangeUpID
+Trak,OpportunistID
 Calliope,SavageMagicID
 Natasha,SpurResID
 Cormag,RallyStrID
-Ephraim,InspirationID
-Forde,SpurSpdID
-Kyle,SpurStrID
+Ephraim,CharismaID
+Fernand,ForLadyID
+Kyle,OddRhythmID
 Amelia,ParagonID
 Artur,FocusID
 Gerik,BondID
@@ -27,10 +27,10 @@ Ewan,CelerityID
 Catherina ,LilysPoiseID
 Harken,PivotID
 Rath,WindStrikeID
-Rennac,SpurSpdID
+Lunia,AcrobatID
 Duessel,RepositionID
 Myrrh,DragonsBloodID
-Knoll,VoiceOfPeaceID
+Sam,NihilID
 Joshua,GambleID
 Syrene,TantivyID
 Tana,LilysPoiseID
@@ -45,7 +45,7 @@ Fado,0x0
 Ismaire,0x0
 Hayden,0x0
 0,0x0
-0,0x0
+Salazar,InspirationID
 0,0x0
 0,0x0
 0,0x0
@@ -70,7 +70,7 @@ Valter (Ch 15),0x0
 Selena (Ch 10B & 13B),0x0
 Valter (Prologue),0x0
 Breguet (Ch 1),CounterMagicID
-Bone (Ch 2),AxefaireID
+Jaram (Ch 8),SlowBurnID
 Bazba (Ch 3),SwordbreakerID
 Entombed (Ch 4),0x0
 Saar (Ch 5),AxebreakerID

@@ -283,7 +283,7 @@ ALIGN 4
 Vigilance:
 #incbin "Vigilance/Vigilance.dmp"
 POIN SkillTester
-WORD PrescienceID
+WORD VigilanceID
 
 ALIGN 4
 WindDisciple:
@@ -358,3 +358,7 @@ QuickRiposte:
 POIN SkillTester
 WORD QuickRiposteID
 
+#ifdef MODULAR_PRE_BATTLE_SKILLS
+	ALIGN 4
+	#include "ModularPreBattleSkills/ModularPreBattleSkill.event"
+#endif //MODULAR_PRE_BATTLE_SKILLS

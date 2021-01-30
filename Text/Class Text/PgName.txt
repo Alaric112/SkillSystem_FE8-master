@@ -111,6 +111,73 @@ Gilliam[X]
 Captain of the Soria guard faithful[N] 
 and helpful towards its king[X]
 
+## SalazarName
+Salazar[X]
+
+## SalazarDesc
+Young captain of the prince Stocke's[N]
+guards, extremely tenacious and loyal[X]
+
+## FernandName
+Fernand[X]
+
+## FernandDesc
+knight of noble birth, always try to[N]
+conquering the hearts of the young girls[X]
+
+## KyleName
+Kyle[X]
+
+## KyleDesc
+Wandering knight who is now in the[N]
+service of the guard of Prince Stocke[N]
+thanks to his great abilities[X]
+
+## DonovanName
+Donovan[X]
+
+## DonovanDesc
+An emissary of the order of light[N]
+who always helps the poorest[X]
+
+## SamName
+Sam[X]
+
+## SamDesc
+Young boy with great magical[N]
+potential, he always wants to help[N]
+others with his magic[X]
+
+## LuniaName
+Lunia[X]
+
+## LuniaDesc
+A thief from the freezing northern[N]
+lands, she would give her life[N]
+to protect her son[X]
+
+## TrakName
+Trak[X]
+
+## BazbaName
+Bazba[X]
+
+## BazbaDesc
+Captain of an imperial brigade[N]
+in defense of the white hills,[N]
+also known as "the iron hound"[X]
+
+## TrakDesc
+A man who does not feel any emotion,[N]
+only respects orders[X]
+
+## StockeName
+Stocke[X]
+
+## StockeDesc
+The young prince of the Granorgs empire,[N]
+he loves the study of magic[X]
+
 ## OldManName
 Old Man[X]
 
@@ -130,3 +197,10 @@ Eruca[X]
 ## ErucaDesc
 Firstborn to the Imperial[N]
 throne of Granorg.[X]
+
+## JaramName
+Jaram[X]
+
+## JaramDesc
+An eccentric man, at the head[N]
+of some bandits of the frozen lands[X]

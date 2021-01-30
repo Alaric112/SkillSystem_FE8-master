@@ -105,7 +105,7 @@ Village1:
 
 SetBackground(0x2)
 Text(TextVillage1Ch1)
-GiveItem(RedGem, 0xFFFF)
+GiveItem(Elixir, 0xFFFF)
 EndConvo
 ENDA
 
@@ -113,7 +113,7 @@ Village2:
 
 SetBackground(0x2)
 Text(TextVillage2Ch1)
-GiveItem(GoddessIcon, 0xFFFF)
+GiveItem(Javelin, 0xFFFF)
 EndConvo
 ENDA
 

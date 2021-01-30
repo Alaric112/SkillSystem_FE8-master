@@ -18,3 +18,13 @@ Bandit[X]
 ## BanditDesc
 One of the bandits who[N]
 terrifies Sorya's lands[X]
+
+## Bandit2Desc
+Ruthless unscrupulous bandits[X]
+
+## MercenaryName
+Mercenary[X]
+
+## MercenaryDesc
+Mercenaries hired by[N]
+the senators of Alistar[X]

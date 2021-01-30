@@ -363,6 +363,7 @@ BeginningScene:
     Text(Text4)
     CLEAN
     //ENUT(LordMustEscapeLastFlag)
+	
     ENDA
 
 EndingScene:

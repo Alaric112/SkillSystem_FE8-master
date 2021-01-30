@@ -3,8 +3,23 @@
 
 ALIGN 4
 
+FernandCavalier:
+	#incbin "./_palettes/FernandCavalier.lzpal" 
+
+KyleCavalier:
+	#incbin "./_palettes/KyleCavalier.lzpal" 
+
+SamMage:
+	#incbin "./_palettes/SamMage.lzpal" 
+
 KairsPaladin:
 	#incbin "./_palettes/KairsPaladin.lzpal" 
+
+DonovanPriest:
+	#incbin "./_palettes/DonovanPriest.lzpal" 
+
+LuniaThief:
+	#incbin "./_palettes/LuniaThief.lzpal" 
 
 GadrielSwordCavalier:
 	#incbin "./_palettes/GadrielSwordCavalier.lzpal" 
@@ -74,4 +89,28 @@ ImperialArmor:
 
 ImperialMage:
 	#incbin "./_palettes/ImperialMage.lzpal" 
+
+SalazarSwordKnight:
+	#incbin "./_palettes/SalazarSwordKnight.lzpal" 
+
+BazbaAxeKnight:
+	#incbin "./_palettes/BazbaAxeKnight.lzpal" 
+
+TrakArcher:
+	#incbin "./_palettes/TrakArcher.lzpal" 
+
+MilitiaSoldier:
+	#incbin "./_palettes/MilitiaSoldier.lzpal" 
+
+MilitiaMercenary:
+	#incbin "./_palettes/MilitiaMercenary.lzpal" 
+
+AlistarDeserter:
+	#incbin "./_palettes/AlistarDeserter.lzpal" 
+
+ImperialCavalier:
+	#incbin "./_palettes/ImperialCavalier.lzpal" 
+
+AlistarMyrmidon:
+	#incbin "./_palettes/AlistarMyrmidon.lzpal" 
 

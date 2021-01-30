@@ -18,4 +18,3 @@ Cannot crit[X]
 
 # 0x04EE LuckStatScreenInfo ^
 Luck[X]
-

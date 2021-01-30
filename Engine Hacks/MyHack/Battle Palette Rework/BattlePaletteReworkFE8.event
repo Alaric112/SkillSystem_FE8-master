@@ -50,6 +50,9 @@ CavalierPaletteList:
 PaletteAssociationEntry(Gadriel, $55)
 PaletteAssociationEntry(Bandit, $71)
 PaletteAssociationEntry(BanditBoss, $71)
+PaletteAssociationEntry(Fernand, FernandCavalierPalette)
+PaletteAssociationEntry(Kyle, KyleCavalierPalette)
+PaletteAssociationEntry(Imperial, ImperialCavalierPalette)
 
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
@@ -63,6 +66,9 @@ ALIGN 4
 ArmorPaletteList:
 PaletteAssociationEntry(Imperial, $78)
 PaletteAssociationEntry(ImperialBoss, $78)
+PaletteAssociationEntry(Salazar, SalazarPalette)
+PaletteAssociationEntry(Bazba, BazbaAxeArmorPalette)
+
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -81,7 +87,9 @@ MercPaletteList:
 PaletteAssociationEntry(Bandit, $72)
 PaletteAssociationEntry(BanditBoss, $72)
 PaletteAssociationEntry(Dario, $77)
-
+PaletteAssociationEntry(Bandit2, $72)
+PaletteAssociationEntry(MercenaryBoss, $72)
+PaletteAssociationEntry(Militia, MilitiaMercenaryPalette)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -94,6 +102,8 @@ ALIGN 4
 MyrmPaletteList:
 PaletteAssociationEntry(Joshua, $38)
 PaletteAssociationEntry(Marisa, $39)
+PaletteAssociationEntry(Bandit2, AlistarMyrmidonPalette)
+
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -114,7 +124,9 @@ ALIGN 4
 
 ArcherPaletteList:
 PaletteAssociationEntry(Bandit, $70)
+PaletteAssociationEntry(Bandit2, $70)
 PaletteAssociationEntry(BanditBoss, $70)
+PaletteAssociationEntry(Trak, TrakArcherPalette)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -153,8 +165,9 @@ ALIGN 4
 
 MagePaletteList:
 PaletteAssociationEntry(Bandit, $74)
+PaletteAssociationEntry(Bandit2, $74)
 PaletteAssociationEntry(BanditBoss, $74)
-PaletteAssociationEntry(Ewan, $30)
+PaletteAssociationEntry(Sam, SamMagePalette)
 PaletteAssociationEntry(Imperial, $79)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
@@ -188,6 +201,7 @@ ALIGN 4
 
 ShamanPaletteList:
 PaletteAssociationEntry(Bandit, $76)
+PaletteAssociationEntry(Bandit2, $76)
 PaletteAssociationEntry(BanditBoss, $76)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
@@ -228,6 +242,9 @@ ALIGN 4
 AxeFighterPaletteList:
 PaletteAssociationEntry(Bandit, $6F)
 PaletteAssociationEntry(BanditBoss, $6F)
+PaletteAssociationEntry(Bandit2, $6F)
+PaletteAssociationEntry(MercenaryBoss, $6F)
+PaletteAssociationEntry(Jaram, JaramPalette)
 
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
@@ -263,7 +280,7 @@ BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
 PriestPaletteList:
-PaletteAssociationEntry(Moulder, $45)
+PaletteAssociationEntry(Donovan, DonovanPriestPalette)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -309,6 +326,8 @@ SoldierPaletteList:
 PaletteAssociationEntry(Lukas, $6D)
 PaletteAssociationEntry(Bandit, $73)
 PaletteAssociationEntry(BanditBoss, $73)
+PaletteAssociationEntry(Militia, MilitiaSoldierPalette)
+
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
@@ -405,11 +424,23 @@ ALIGN 4
 
 MageFPaletteList:
 PaletteAssociationEntry(Calliope, $2F)
+PaletteAssociationEntry(Sam, SamMagePalette)
+
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
 LanceLordPaletteList:
 PaletteAssociationEntry(Nausicaa, $2)
+BYTE $00 $00 $00 $00 $00 $00 $00 $00
+ALIGN 4
+
+DeserterPaletteList:
+PaletteAssociationEntry(Bandit2, AlistarDeserterPalette)
+BYTE $00 $00 $00 $00 $00 $00 $00 $00
+ALIGN 4
+
+Thief_fPaletteList:
+PaletteAssociationEntry(Lunia, LuniaThiefPalette)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 

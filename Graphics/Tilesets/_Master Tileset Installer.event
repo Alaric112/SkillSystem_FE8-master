@@ -34,11 +34,23 @@ DesertTileConfigData:
 
 ALIGN 4
 FieldsNightPaletteData:
-#incbin "Dmp/NightFields.dmp"
+#incbin "Dmp/NightFieldsPalette.dmp"
 
 ALIGN 4
 SoryaNightPaletteData:
-#incbin "Dmp/SoryaNight.dmp"
+#incbin "Dmp/SoryaNightPalette.dmp"
+
+ALIGN 4
+SnowCityObjectSetData:
+#incbin "Dmp/SnowCity.dmp"
+
+ALIGN 4
+SnowCityPaletteData:
+#incbin "Dmp/SnowCityPalette.dmp"
+
+ALIGN 4
+SnowCityTileConfigData:
+#incbin "Dmp/SnowCity_comp.dmp"
 
 /*
 EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
@@ -64,3 +76,6 @@ EventPointerTable(DesertObjectSet,DesertObjectSetData)
 EventPointerTable(DesertPalette,DesertPaletteData)
 EventPointerTable(FieldsNightPalette,FieldsNightPaletteData)
 EventPointerTable(SoryaNightPalette,SoryaNightPaletteData)
+EventPointerTable(SnowCityObjectSet,SnowCityObjectSetData)
+EventPointerTable(SnowCityPalette,SnowCityPaletteData)
+EventPointerTable(SnowCityTileConfig,SnowCityTileConfigData)

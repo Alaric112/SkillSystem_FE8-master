@@ -27,21 +27,21 @@ Mounted knights with swift movement.[N]
 Equip: [Bow][X]
 
 ## LanceArmorName ^
-Lance Armor Knight[X]
+Lance Knight[X]
 
 ## LanceArmorDesc
 Heavily armored knights with poor[N]
 movement. Equip: [Lance][Bow][X]
 
 ## AxeArmorName ^
-Axe Armor Knight[X]
+Axe Knight[X]
 
 ## AxeArmorDesc
 Heavily armored knights with poor[N]
 movement. Equip: [Axe][Bow][X]
 
 ## SwordArmorName ^
-Sword Armor Knight[X]
+Sword Knight[X]
 
 ## SwordArmorDesc
 Heavily armored knights with poor[N]
@@ -95,5 +95,17 @@ Gret Lord[X]
 Noble heirs to a ruling house.[N]
 They possess great potential.[X]
 
+## DeserterName
+Deserter[X]
 
+## DeserterDesc
+Skilled regular soldiers using lances[N]
+Equip:[Lance][X]
+
+## ThiefName
+Thief[X]
+
+## ThiefDesc
+Multitalented knaves with an eye for[N]
+riches. Equip:[Sword]+dagger[X]
 

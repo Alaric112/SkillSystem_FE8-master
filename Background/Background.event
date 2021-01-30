@@ -14,6 +14,13 @@ SetConvoBackground(0x3D, IntShipImage, IntShipTsa, IntShipPalette)
 
 SetConvoBackground(0x3E, CrushImage, CrushTsa, CrushPalette)
 
+SetConvoBackground(0x3F, SnowMountainImage, SnowMountainTsa, SnowMountainPalette)
+
+SetConvoBackground(0x40, SnowCityImage, SnowCityTsa, SnowCityImagePalette)
+
+SetConvoBackground(0x41, ProfeziaImage, ProfeziaTsa, ProfeziaImagePalette)
+
+
 //1
 TitansImage:
 #incbin "1.bin"
@@ -93,3 +100,33 @@ CrushTsa:
 
 CrushPalette:
 #incbin "Code/Crush3.bin"
+
+//9 
+SnowMountainImage:
+#incbin "Code/SnowMountain1.bin"
+
+SnowMountainTsa:
+#incbin "Code/SnowMountain2.bin"
+
+SnowMountainPalette:
+#incbin "Code/SnowMountain3.bin"
+
+//10
+SnowCityImage:
+#incbin "Code/CitySnow1.bin"
+
+SnowCityTsa:
+#incbin "Code/CitySnow2.bin"
+
+SnowCityImagePalette:
+#incbin "Code/CitySnow3.bin"
+
+//11
+ProfeziaImage:
+#incbin "Code/Profezia1.bin"
+
+ProfeziaTsa:
+#incbin "Code/Profezia2.bin"
+
+ProfeziaImagePalette:
+#incbin "Code/Profezia3.bin"

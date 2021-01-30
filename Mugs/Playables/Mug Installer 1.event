@@ -126,3 +126,11 @@ setMugEntry(NikolaiMug, NikolaiMugData, 3, 6, 3, 4)
 SalazarMugData:
 #incext PortraitFormatter "Salazar.png"
 setMugEntry(SalazarMug, SalazarMugData, 3, 5, 3, 3)
+
+BazbaMugData:
+#incext PortraitFormatter "Bazba.png"
+setMugEntry(BazbaMug, BazbaMugData, 2, 5, 2, 3)
+
+LuniaMugData:
+#incext PortraitFormatter "Lunia.png"
+setMugEntry(LuniaMug, LuniaMugData, 4, 6, 3, 4)

@@ -4,9 +4,29 @@
 #include "Palette Definitions.txt"
 #include "Palette Installer.event"
 
+// FernandCavalier
+	setPalette(FernandCavalierPalette,FernandCavalier)
+	setCBSP(FernandCavalierPalette,Fernand, 1, LanceCavalier)
+
+// KyleCavalier
+	setPalette(KyleCavalierPalette,KyleCavalier)
+	setCBSP(KyleCavalierPalette,Kyle, 1, AxeCavalier)
+
+// SamMage
+	setPalette(SamMagePalette,SamMage)
+	setCBSP(SamMagePalette,Sam, 1, Mage)
+
 // KairsPaladin
 	setPalette(0x3C,KairsPaladin)
 	setCBSP(0x3C,0x02, 3, 0x07)
+
+// DonovanPriest
+	setPalette(DonovanPriestPalette,DonovanPriest)
+	setCBSP(DonovanPriestPalette,Donovan, 1, Priest)
+
+// LuniaThief
+	setPalette(LuniaThiefPalette,LuniaThief)
+	setCBSP(LuniaThiefPalette,Lunia, 1, Thief_F)
 
 // GadrielSwordCavalier
 	setPalette(0x55,GadrielSwordCavalier)
@@ -99,3 +119,35 @@
 // ImperialMage
 	setPalette(0x79,ImperialMage)
 	setCBSP(0x79,Imperial, 1, Mage)
+
+// SalazarSwordKnight
+	setPalette(SalazarPalette,SalazarSwordKnight)
+	setCBSP(SalazarPalette,Salazar, 1, SwordKnight)
+
+// BazbaAxeKnight
+	setPalette(BazbaAxeArmorPalette,BazbaAxeKnight)
+	setCBSP(BazbaAxeArmorPalette,Bazba, 1, AxeKnight)
+
+// TrakArcher
+	setPalette(TrakArcherPalette,TrakArcher)
+	setCBSP(TrakArcherPalette,Trak, 1, Archer)
+
+// MilitiaSoldier
+	setPalette(MilitiaSoldierPalette,MilitiaSoldier)
+	setCBSP(MilitiaSoldierPalette,Militia, 1, Soldier)
+
+// MilitiaMercenary
+	setPalette(MilitiaMercenaryPalette,MilitiaMercenary)
+	setCBSP(MilitiaMercenaryPalette,Militia, 2, Mercenary)
+
+// AlistarDeserter
+	setPalette(AlistarDeserterPalette,AlistarDeserter)
+	setCBSP(AlistarDeserterPalette,Bandit2, 1, Deserter)
+
+// ImperialCavalier
+	setPalette(ImperialCavalierPalette,ImperialCavalier)
+	setCBSP(ImperialCavalierPalette,Imperial, 1, LanceCavalier)
+
+// AlistarMyrmidon
+	setPalette(AlistarMyrmidonPalette,AlistarMyrmidon)
+	setCBSP(AlistarMyrmidonPalette,Bandit2, 3, Myrmidon)

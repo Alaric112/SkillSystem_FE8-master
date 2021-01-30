@@ -91,6 +91,18 @@ SongTable(0x278,song0278,1)
 SongTable(0x27A,HardTime,1)
 #include "songs/HardTime.event"
 }
+{
+SongTable(0x27B,Battle,1)
+#include "songs/FE11 - Attack (Sme).event"
+}
+{
+SongTable(0x27C,EnemyBattle,1)
+#include "songs/FE11 - Defense (Sme).event"
+}
+{
+SongTable(0x27D,WithUs,1)
+#include "songs/FE9 - With Us (Sme).event"
+}
 //installation of ipatix's sound mixer. Essential if you want to use GS synths; also makes most music sound better by reducing background noise.
 
 PUSH

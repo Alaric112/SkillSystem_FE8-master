@@ -11,13 +11,13 @@
 #define DonovanMug 0x07
 #define PriscillaMug 0x08
 #define DianaMug 0x0A
-#define TrakMug 0x0B
+#define TrakMug 0x0F
 #define CalliopeMug 0x10
-#define StockeMug 0x0D
-#define FernandMug 0x0E
-#define KyleMug 0x0F
+#define StockeMug 0x14
+#define FernandMug 0x16
+#define KyleMug 0x18
 #define ZakariaMug 0x11
-#define SamMug 0x12
+#define SamMug 0x21
 #define CatherinaMug 0x22
 #define HarkenMug 0x23
 #define ManfredMug 0x25
@@ -31,12 +31,15 @@
 #define LukasMug 0xD2
 #define RathMug 0xD8
 #define ArthurMug 0xDC
-#define NikolaiMug 0x21 
+#define NikolaiMug 0xDE 
 #define SalazarMug 0xE0
+#define BazbaMug 0xE7
+#define LuniaMug 0xE5
 #define AlaricMug 0xCA
 
 // NPC
 #define MercenaryMug 0xD9
+#define SoldierBrownMug 0xE6
 
 // Boss
 #define GervasoMug 0xD5
@@ -45,6 +48,7 @@
 #define ZechielMug 0xDA
 #define ErucaMug 0x4A
 #define SlayderMug 0x42
+#define JaramMug 0xE4
 
 // Class Card
 

@@ -79,3 +79,9 @@
 #include "Event/MarshallLance Installer.event"
 #include "Event/MarshallBow Installer.event"
 #include "Event/MarshallUnarmed Installer.event"
+
+#include "Event/DeserterLance Installer.event"
+#include "Event/DeserterUnarmed Installer.event"
+
+#include "Event/F_ThiefSword Installer.event"
+#include "Event/F_ThiefUnarmed Installer.event"

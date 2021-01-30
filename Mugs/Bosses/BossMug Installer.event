@@ -22,3 +22,7 @@ setMugEntry(ZechielMug, ZechielMugData, 3, 5, 3, 3)
 CommanderMugData:
 #incext PortraitFormatter "Commander.png"
 setMugEntry(CommanderMug, CommanderMugData, 2, 5, 3, 3)
+
+JaramMugData:
+#incext PortraitFormatter "Jaram.png"
+setMugEntry(JaramMug, JaramMugData, 2, 5, 2, 3)

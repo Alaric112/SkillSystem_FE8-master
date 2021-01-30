@@ -127,10 +127,10 @@ Cyclops,0
 Elder Bael,0
 Journeyman (2),0
 Pupil (2),0
-Transporter,1
-Lance Knight,1
-Axe Knight,1
-Free Knight,1
+Axe Cavalier,1
+Sword Cavalier,1
+Axe Knight,4
+Sword Knight,4
 Fighter (F),1
 Battlemage,0
 Huntress,0
@@ -139,8 +139,8 @@ Warrior (F),0
 Halberdier,0
 Dread Fighter (F),0
 Sword Saint,0
-War Monk,0
-Maid,0
+Deserter,0
+Thief (F),0
 Dread Fighter,0
 Light Mage (F),0
 Arch Knight,1

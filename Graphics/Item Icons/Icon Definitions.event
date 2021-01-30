@@ -129,7 +129,7 @@
 #define BlossomIcon         0x80
 #define QuickBladeIcon      0x81
 #define ScissorAxeIcon      0x82
-#define AircaliburIcon      0x83
+#define CrimsonIcon         0x83
 #define MemberCardIcon 		0x84
 #define SilverCardIcon 		0x85
 #define WhiteGemIcon 		0x86
@@ -252,5 +252,5 @@
 #define ResireIcon          0xfb
 #define EarthstoneIcon      0xfc
 #define RedBeerIcon         0xfd
-#define TorchItemIcon       0xfe
+#define TorchItemIcon2      0xfe
 #define SkillScrollIcon     0xff
