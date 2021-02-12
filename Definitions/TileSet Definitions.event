@@ -11,3 +11,6 @@
 #define SnowCityObjectSet 0xDF
 #define SnowCityPalette 0xDE
 #define SnowCityTileConfig 0xDD
+#define SkyCityObjectSet 0xE1
+#define SkyCityPalette 0xE2
+#define SkyCityTileConfig 0xE3

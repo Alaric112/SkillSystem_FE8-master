@@ -52,6 +52,18 @@ ALIGN 4
 SnowCityTileConfigData:
 #incbin "Dmp/SnowCity_comp.dmp"
 
+ALIGN 4
+SkyCityObjectSetData:
+#incbin "Dmp/SkyCity.dmp"
+
+ALIGN 4
+SkyCityPaletteData:
+#incbin "Dmp/SkyCity.png_pal.dmp"
+
+ALIGN 4
+SkyCityTileConfigData:
+#incbin "Dmp/SkyCity_comp.dmp"
+
 /*
 EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
 EventPointerTable(CastlePaletteSewer,CastlePaletteSewerData)
@@ -79,3 +91,6 @@ EventPointerTable(SoryaNightPalette,SoryaNightPaletteData)
 EventPointerTable(SnowCityObjectSet,SnowCityObjectSetData)
 EventPointerTable(SnowCityPalette,SnowCityPaletteData)
 EventPointerTable(SnowCityTileConfig,SnowCityTileConfigData)
+EventPointerTable(SkyCityObjectSet,SkyCityObjectSetData)
+EventPointerTable(SkyCityPalette,SkyCityPaletteData)
+EventPointerTable(SkyCityTileConfig,SkyCityTileConfigData)
