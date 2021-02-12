@@ -1,192 +1,191 @@
 ALIGN 4
 SwordCavalierMoving:
-#incext Png2Dmp "Png/SwordCavalierMoving.png" --lz77
+#incbin"Dmp/SwordCavalierMoving.dmp"
 
 ALIGN 4
 SwordCavalierStanding:
-#incext Png2Dmp "Png/SwordCavalierStanding.png" --lz77
+#incbin "Dmp/SwordCavalierStanding.dmp"
 
 ALIGN 4
 AxeCavalierMoving:
-#incext Png2Dmp "Png/AxeCavalierMoving.png" --lz77
+#incbin "Dmp/AxeCavalierMoving.dmp"
 
 ALIGN 4
 AxeCavalierStanding:
-#incext Png2Dmp "Png/AxeCavalierStanding.png" --lz77
+#incbin "Dmp/AxeCavalierStanding.dmp"
 
 ALIGN 4
 LanceCavalierMoving:
-#incext Png2Dmp "Png/LanceCavalierMoving.png" --lz77
+#incbin "Dmp/LanceCavalierMoving.dmp"
 
 ALIGN 4
 LanceCavalierStanding:
-#incext Png2Dmp "Png/LanceCavalierStanding.png" --lz77
+#incbin "Dmp/LanceCavalierStanding.dmp"
 
 ALIGN 4
 BowCavalierMoving:
-#incext Png2Dmp "Png/BowCavalierMoving.png" --lz77
+#incbin "Dmp/BowCavalierMoving.dmp"
 
 ALIGN 4
 BowCavalierStanding:
-#incext Png2Dmp "Png/BowCavalierStanding.png" --lz77
+#incbin "Dmp/BowCavalierStanding.dmp"
 
 ALIGN 4
 GreatKnightMoving:
-#incext Png2Dmp "Png/GreatKnightMoving.png" --lz77
+#incbin "Dmp/GreatKnightMoving.dmp"
 
 ALIGN 4
 GreatKnightStanding:
-#incext Png2Dmp "Png/GreatKnightStanding.png" --lz77
+#incbin "Dmp/GreatKnightStanding.dmp"
 
 ALIGN 4
 AxeArmorMoving:
-#incext Png2Dmp "Png/AxeArmorMoving.png" --lz77
+#incbin "Dmp/AxeArmorMoving.dmp"
 
 ALIGN 4
 AxeArmorStanding:
-#incext Png2Dmp "Png/AxeArmorStanding.png" --lz77
+#incbin "Dmp/AxeArmorStanding.dmp"
 
 ALIGN 4
 LanceArmorMoving:
-#incext Png2Dmp "Png/LanceArmorMoving.png" --lz77
+#incbin "Dmp/LanceArmorMoving.dmp"
 
 ALIGN 4
 LanceArmorStanding:
-#incext Png2Dmp "Png/LanceArmorStanding.png" --lz77
+#incbin "Dmp/LanceArmorStanding.dmp"
 
 ALIGN 4
 SwordArmorMoving:
-#incext Png2Dmp "Png/SwordArmorMoving.png" --lz77
+#incbin "Dmp/SwordArmorMoving.dmp"
 
 ALIGN 4
 SwordArmorStanding:
-#incext Png2Dmp "Png/SwordArmorStanding.png" --lz77
+#incbin "Dmp/SwordArmorStanding.dmp"
 
 ALIGN 4
 PriestMoving:
-#incext Png2Dmp "Png/PriestMoving.png" --lz77
+#incbin "Dmp/PriestMoving.dmp"
 
 ALIGN 4
 PriestStanding:
-#incext Png2Dmp "Png/PriestStanding.png" --lz77
+#incbin "Dmp/PriestStanding.dmp"
 
 ALIGN 4
 ClericMoving:
-#incext Png2Dmp "Png/ClericMoving.png" --lz77
+#incbin "Dmp/ClericMoving.dmp"
 
 ALIGN 4
 ClericStanding:
-#incext Png2Dmp "Png/ClericStanding.png" --lz77
+#incbin "Dmp/ClericStanding.dmp"
 
 ALIGN 4
 BrigandMoving:
-#incext Png2Dmp "Png/BrigandMoving.png" --lz77
+#incbin "Dmp/BrigandMoving.dmp"
 
 ALIGN 4
 BrigandStanding:
-#incext Png2Dmp "Png/BrigandStanding.png" --lz77
+#incbin "Dmp/BrigandStanding.dmp"
 
 ALIGN 4
 SoldierMoving:
-#incext Png2Dmp "Png/SoldierMoving.png" --lz77
+#incbin "Dmp/SoldierMoving.dmp"
 
 ALIGN 4
 SoldierStanding:
-#incext Png2Dmp "Png/SoldierStanding.png" --lz77
+#incbin "Dmp/SoldierStanding.dmp"
 
 ALIGN 4
 LanceLordMoving:
-#incext Png2Dmp "Png/LordMovingF.png" --lz77
+#incbin "Dmp/LordMovingF.dmp"
 
 ALIGN 4
 LanceLordStanding:
-#incext Png2Dmp "Png/LordStandingF.png" --lz77
+#incbin "Dmp/LordStandingF.dmp"
 
 ALIGN 4
 ConvoyMoving:
-#incext Png2Dmp "Png/ConvoyMoving.png" --lz77
+#incbin "Dmp/ConvoyMoving.dmp"
 
 ALIGN 4
 ConvoyStanding:
-#incext Png2Dmp "Png/ConvoyStanding.png" --lz77
+#incbin "Dmp/ConvoyStanding.dmp"
 
 ALIGN 4
 HuntressMoving:
-#incext Png2Dmp "Png/HuntressMoving.png" --lz77
+#incbin "Dmp/HuntressMoving.dmp"
 
 ALIGN 4
 HuntressStanding:
-#incext Png2Dmp "Png/HuntressStanding.png" --lz77
+#incbin "Dmp/HuntressStanding.dmp"
 
 ALIGN 4
 PirateMovingF:
-#incext Png2Dmp "Png/PirateMovingF.png" --lz77
+#incbin "Dmp/PirateMovingF.dmp"
 
 ALIGN 4
 PirateStandingF:
-#incext Png2Dmp "Png/PirateStandingF.png" --lz77
+#incbin "Dmp/PirateStandingF.dmp"
 
 ALIGN 4
 BrawlerMoving:
-#incext Png2Dmp "Png/BrawlerMoving.png" --lz77
+#incbin "Dmp/BrawlerMoving.dmp"
 
 ALIGN 4
 BrawlerStanding:
-#incext Png2Dmp "Png/BrawlerStanding.png" --lz77
-
+#incbin "Dmp/BrawlerStanding.dmp"
 
 ALIGN 4
 DruidMovingF:
-#incext Png2Dmp "Png/DruidMovingF.png" --lz77
+#incbin "Dmp/DruidMovingF.dmp"
 
 ALIGN 4
 DruidStandingF:
-#incext Png2Dmp "Png/DruidStandingF.png" --lz77
+#incbin "Dmp/DruidStandingF.dmp"
 
 ALIGN 4
 AxeWyvernRiderMoving:
-#incext Png2Dmp "Png/AxeWyMoving.png" --lz77
+#incbin "Dmp/AxeWyMoving.dmp"
 
 ALIGN 4
 AxeWyvernRiderStanding:
-#incext Png2Dmp "Png/AxeWyStanding.png" --lz77
+#incbin "Dmp/AxeWyStanding.dmp"
 
 ALIGN 4
 MarshallMoving:
-#incext Png2Dmp "Png/MarshallMoving.png" --lz77
+#incbin "Dmp/MarshallMoving.dmp"
 
 ALIGN 4
 MarshallStanding:
-#incext Png2Dmp "Png/MarshallStanding.png" --lz77
+#incbin "Dmp/MarshallStanding.dmp"
 
 ALIGN 4
 ErucaMoving:
-#incext Png2Dmp "Png/ErucaMoving.png" --lz77
+#incbin "Dmp/ErucaMoving.dmp"
 
 ALIGN 4
 ErucaStanding:
-#incext Png2Dmp "Png/ErucaStanding.png" --lz77
+#incbin "Dmp/ErucaStanding.dmp"
 
 ALIGN 4
 MageLordMoving:
-#incext Png2Dmp "Png/MageLordMoving.png" --lz77
+#incbin "Dmp/MageLordMoving.dmp"
 
 ALIGN 4
 MageLordStanding:
-#incext Png2Dmp "Png/MageLordStanding.png" --lz77
+#incbin "Dmp/MageLordStanding.dmp"
 
 ALIGN 4
 DeserterMoving:
-#incext Png2Dmp "Png/DeserterMoving.png" --lz77
+#incbin "Dmp/DeserterMoving.dmp"
 
 ALIGN 4
 DeserterStanding:
-#incext Png2Dmp "Png/DeserterStanding.png" --lz77
+#incbin "Dmp/DeserterStanding.dmp"
 
 ALIGN 4
 ThiefMovingF:
-#incext Png2Dmp "Png/ThiefMovingF.png" --lz77
+#incbin "Dmp/ThiefMovingF.dmp"
 
 ALIGN 4
 ThiefStandingF:
-#incext Png2Dmp "Png/ThiefStandingF.png" --lz77
+#incbin "Dmp/ThiefStandingF.dmp"
