@@ -1,7 +1,7 @@
 ## DemonName
 Demon[X]
 
-##DemonDesc
+## DemonDesc
 A grotesque creature created by[NL]
 the flux of Eather and born in darkness.[X]
 
@@ -28,3 +28,10 @@ Mercenary[X]
 ## MercenaryDesc
 Mercenaries hired by[N]
 the senators of Alistar[X]
+
+## AlistarName
+Alistar[X]
+
+## AlistarDesc
+Soldiers of the great[N]
+republic of Alistar.[X]

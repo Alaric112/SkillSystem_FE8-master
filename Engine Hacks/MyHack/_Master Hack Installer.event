@@ -66,3 +66,5 @@
 #include "RW Cloud Fix/Cloud_Fix_EA.event"
 
 #include "HpBars/HpBars.event"
+
+#include "BossExp.event"

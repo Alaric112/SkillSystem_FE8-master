@@ -7,6 +7,10 @@ EmpireMinimug:
 #incbin "Dmp/Empire.dmp"
 
 ALIGN 4
+AlistarMinimug:
+#incbin "Dmp/Alistar.dmp"
+
+ALIGN 4
 BanditMinimugPalette:
 #incbin "Dmp/Bandit.png_pal.dmp"
 

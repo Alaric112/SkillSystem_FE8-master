@@ -56,6 +56,8 @@
 #define ImperialBoss 0x80
 #define Imperial2 0x81
 #define Imperial3 0x82
+#define Alistar 0x8e
+#define AlistarBoss 0x8f
 #define SalemNPC 0xD2
 
 

@@ -1,0 +1,38 @@
+EventPointerTable(CastleWaterTileAnimations,CastleAnimation)
+
+ALIGN 4
+CastleAnimation0:
+#incbin "Dmp/castle_anims.mapanime 1_000.dmp"
+ALIGN 4
+CastleAnimation1:
+#incbin "Dmp/castle_anims.mapanime 1_001.dmp"
+ALIGN 4
+CastleAnimation2:
+#incbin "Dmp/castle_anims.mapanime 1_002.dmp"
+ALIGN 4
+CastleAnimation3:
+#incbin "Dmp/castle_anims.mapanime 1_003.dmp"
+ALIGN 4
+CastleAnimation4:
+#incbin "Dmp/castle_anims.mapanime 1_004.dmp"
+ALIGN 4
+CastleAnimation5:
+#incbin "Dmp/castle_anims.mapanime 1_005.dmp"
+ALIGN 4
+CastleAnimation6:
+#incbin "Dmp/castle_anims.mapanime 1_006.dmp"
+ALIGN 4
+CastleAnimation7:
+#incbin "Dmp/castle_anims.mapanime 1_007.dmp"
+
+ALIGN 4
+CastleAnimation:
+TilesetAnimation(0x1C,0x400,CastleAnimation0)
+TilesetAnimation(0x1C,0x400,CastleAnimation1)
+TilesetAnimation(0x1C,0x400,CastleAnimation2)
+TilesetAnimation(0x1C,0x400,CastleAnimation3)
+TilesetAnimation(0x1C,0x400,CastleAnimation4)
+TilesetAnimation(0x1C,0x400,CastleAnimation5)
+TilesetAnimation(0x1C,0x400,CastleAnimation6)
+TilesetAnimation(0x1C,0x400,CastleAnimation7)
+WORD 0 0
