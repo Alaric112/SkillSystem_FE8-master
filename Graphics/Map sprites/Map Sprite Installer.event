@@ -189,3 +189,7 @@ ThiefMovingF:
 ALIGN 4
 ThiefStandingF:
 #incbin "Dmp/ThiefStandingF.dmp"
+
+ALIGN 4
+SigilMapSprite:
+#incbin "Dmp/Sigil.dmp"

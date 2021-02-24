@@ -26,3 +26,7 @@ setMugEntry(CommanderMug, CommanderMugData, 2, 5, 3, 3)
 JaramMugData:
 #incext PortraitFormatter "Jaram.png"
 setMugEntry(JaramMug, JaramMugData, 2, 5, 2, 3)
+
+MisteroMugData:
+#incext PortraitFormatter "Mistero.png"
+setMugEntry(MisteroMug, MisteroMugData, 3, 5, 3, 3)

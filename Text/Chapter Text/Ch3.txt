@@ -303,7 +303,7 @@ in the end, you can count on my sword![AN]
 Gadriel, heartfelt thanks[A][X]
 
 ## Text13Ch3
-[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0xC9][0x01][OpenMidLeft]
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadYala][OpenMidLeft]
 Princess, I don't know[N]
 fight[AN]
 but I will not let you go alone[N]
@@ -392,7 +392,7 @@ from those leaves[AN]
 wathc out![A][X]
 
 ## Text17Ch3
-[OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0xD2][0x01][OpenMidRight][CloseEyes][OpenFarLeft]
+[OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x04][0x01][OpenMidRight][LoadLukas][OpenMidRight][CloseEyes][OpenFarLeft]
 Who goes there![AN][OpenMidRight]
 Y-You are not demons...[AN]
 [OpenLeft]
@@ -523,7 +523,7 @@ I open a way among the demons[AN]
 Mylady stay behind me![A][X]
 
 ## TextEnd1Ch3
-[OpenFarLeft][LoadFace][0xD2][0x01][OpenLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x23][0x01][OpenFarRight][LoadFace][0x22][0x01][OpenLeft]
+[OpenFarLeft][LoadLukas][OpenLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x23][0x01][OpenFarRight][LoadFace][0x22][0x01][OpenLeft]
 We are out of danger...[AN]
 [OpenFarLeft]
 Those demons... I never faced[N]
@@ -643,7 +643,7 @@ get going[AN]
 I lead the way[A][X]
 
 ## TextEnd2Ch3
-[OpenMidLeft][LoadFace][0xD2][0x01][OpenMidRight][LoadFace][0x23][0x01][OpenMidRight]
+[OpenMidLeft][LoadLukas][OpenMidRight][LoadFace][0x23][0x01][OpenMidRight]
 Imperial, wait![AN]
 [OpenMidLeft]... ... ...[AN]
 [OpenMidRight]

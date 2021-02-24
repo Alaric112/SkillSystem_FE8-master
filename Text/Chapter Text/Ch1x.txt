@@ -254,7 +254,7 @@ hanks a lot! I wait for you[N]
 to the west road[A][X]
 
 ## TextTalk3part1Ch1x
-[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0xCE][0x01][OpenMidLeft]
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadColt][OpenMidLeft]
 Colt, I need the[N]
 your help[AN]
 I have to go on an expedition[N]
@@ -299,7 +299,7 @@ Thanks a lot! Colt[AN]
 What annoying girl....[A][X]
 
 ## TextTalk3part2Ch1x
-[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0xCE][0x01][OpenMidLeft]
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadColt][OpenMidLeft]
 Colt, I need the[N]
 your help[AN]
 I have to go on an expedition[N]
@@ -388,7 +388,7 @@ I just wanted to sleep[N]
 a little bit.....[A][X]
 
 ## TextTalk5Ch1x
-[OpenMidLeft][LoadFace][0xC9][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+[OpenMidLeft][LoadYala][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
 Princess! Princess![AN]
 [OpenMidRight]
 Yala, tell me[AN]

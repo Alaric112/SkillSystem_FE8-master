@@ -11,6 +11,10 @@
 #define DonovanMug 0x07
 #define PriscillaMug 0x08
 #define DianaMug 0x0A
+#define YalaMug 0x0B
+#define LukasMug 0x0C
+#define ColtMug 0x0D
+#define RosieMug 0x0E
 #define TrakMug 0x0F
 #define CalliopeMug 0x10
 #define StockeMug 0x14
@@ -23,12 +27,9 @@
 #define ManfredMug 0x25
 #define MinervaMug 0x17
 #define NashiraMug 0xC8
-#define YalaMug 0xC9
-#define RosieMug 0xCB
-#define ColtMug 0xCE
 #define LenaMug 0xCF
 #define BartMug 0xD1
-#define LukasMug 0xD2
+//#define LukasMug 0xD2
 #define RathMug 0xD8
 #define ArthurMug 0xDC
 #define NikolaiMug 0xDE 
@@ -45,9 +46,10 @@
 #define GervasoMug 0xD5
 #define DarioMug 0xD6
 #define CommanderMug 0xD7
-#define ZechielMug 0xDA
+#define ZechielMug 0x4E
 #define ErucaMug 0x4A
 #define SlayderMug 0x42
+#define MisteroMug 0x44
 #define JaramMug 0xE4
 
 // Class Card

@@ -56,6 +56,7 @@
 #define CavalierUnarmedAnim 0x36
 #define CavalierAxeAnim 0xCE
 #define CavalierHandAxeAnim 0xCF
+#define CavalierBowAnim 0xD7
 
 #define PriestStaffAnim 0x7F
 #define PriestUnarmedAnim 0x7E
@@ -91,8 +92,8 @@
 #define MercenaryHandAxeAnim 0xD6
 #define MercenaryUnarmedAnim 0x0C
 
-#define ScoutBowAnim 0xD7
-#define ScoutUnarmedAnim 0xD8
+//#define ScoutBowAnim 0xD7
+//#define ScoutUnarmedAnim 0xD8
 
 #define ErucaAxeAnim 0xD9
 #define ErucaHandAxeAnim 0xDA
@@ -177,8 +178,8 @@ EndAnim
 
 ALIGN 4
 ScoutAnims:
-BowAnim(ScoutBowAnim)
-UnarmedAnim(ScoutUnarmedAnim)
+BowAnim(CavalierBowAnim)
+UnarmedAnim(CavalierUnarmedAnim)
 EndAnim
 
 ALIGN 4

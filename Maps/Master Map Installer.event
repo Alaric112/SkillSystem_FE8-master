@@ -31,7 +31,8 @@
 #include "Ch5xx.event"
 }
 {
-#include "Ch6.event"
+//#include "Ch6.event"
+#include "Ch6.2.event"
 }
 {
 #include "Ch10.event"

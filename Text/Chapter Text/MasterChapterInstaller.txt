@@ -13,4 +13,6 @@
 
 #include "Ch4.txt"
 
+#include "Ch5.txt"
+
 #include "Ch8.txt"

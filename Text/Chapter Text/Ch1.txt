@@ -5,7 +5,7 @@ Defeat Boss[X]
 Ch. 1-1 Bandits[X]
 
 ## Text1Ch1
-[OpenMidLeft][LoadFace][0x05][0x01][OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0xC9][0x01][OpenMidLeft]
+[OpenMidLeft][LoadFace][0x05][0x01][OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadYala][OpenMidLeft]
 Good morning My lady[AN]
 did you rest well?[AN]
 [OpenRight]
@@ -116,7 +116,7 @@ understood?[AN]
 To perfection[A][X]
 
 ## Text4Ch1
-[OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x05][0x01][OpenMidRight][LoadFace][0xCE][0x01][OpenMidRight]
+[OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x05][0x01][OpenMidRight][LoadColt][OpenMidRight]
 Captain, I've been[N]
 scouting the area[AN]
 I must warn you, these are not[N]
@@ -333,7 +333,7 @@ I don't understand...those...[N]
 they are really people....[A][X]
 
 ## TextTalk4Ch1
-[OpenMidLeft][LoadFace][0xCE][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]
+[OpenMidLeft][LoadColt][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]
 Colt![AN]
 then this is your name![AN]
 I wanted to congratulate you![AN]

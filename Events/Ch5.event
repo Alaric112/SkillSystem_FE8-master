@@ -13,124 +13,25 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x0,Turn1Event,1)
-TurnEventPlayer(0x0,Turn2Event,2)
-TurnEventPlayer(0x0,Turn3Event,3)
-TurnEventPlayer(0x0,Turn5Event,5)
-TurnEventPlayer(0x0,Turn6Event,6,7)
-TurnEventPlayer(0x0,Turn9Event,9,11)
 
 	END_MAIN
-
-Turn1Event:
-FADI(16)
-CAMERA_CENTERED(Rath)
-FADU(16)
-CURSOR_FLASHING Rath
-STAL 30
-REMOVE_CURSORS
-Text(TextMid1Ch4)
-CHECK_ALIVE Lukas
-BEQ 0x1 0xC 0x0
-EVBIT_F 9
-LOAD2 1 Lukas1
-ENUN
-CAMERA_CENTERED Lukas 
-CURSOR_FLASHING Lukas
-STAL 30
-REMOVE_CURSORS
-Text(TextMid2Ch4)
-LABEL 0x1
-FADI(16)
-REMU Lukas
-DISA Manfred
-FADU(16)
-CAMERA [29,31]
-Text(TextMid3Ch4)
-CURSOR_FLASHING [30,29]
-CURSOR_FLASHING [30,30]
-CURSOR_FLASHING [30,31]
-CURSOR_FLASHING [30,32]
-CURSOR_FLASHING [29,32]
-STAL(120)
-REMOVE_CURSORS
-REMOVE_CURSORS
-REMOVE_CURSORS
-REMOVE_CURSORS
-REMOVE_CURSORS
-SpawnReinforcements(EnemyReinforce1)
-CAMERA Nausicaa
-CURSOR_FLASHING Nausicaa
-REMOVE_CURSORS
-NoFade
-ENDA
-
-Turn2Event:
-SpawnReinforcements(EnemyReinforce4)
-ENDA
-
-Turn3Event:
-SpawnReinforcements(EnemyReinforce2)
-ENUN
-SpawnReinforcements(EnemyReinforce3)
-ENUN
-ENDA
-
-Turn5Event:
-SpawnReinforcements(EnemyReinforce5)
-CAMERA Eruca
-CURSOR_FLASHING Eruca
-STAL 30
-REMOVE_CURSORS 
-Text(TextMid4Ch4)
-ENDA
-
-Turn6Event:
-SpawnReinforcements(EnemyReinforce6)
-ENDA
-
-Turn9Event:
-SpawnReinforcements(EnemyReinforce7)
-ENDA
 
 ALIGN 32
 CharacterBasedEvents:
-CharacterEvent(0xA,NausicaaTalkRath,Nausicaa,Rath)
 	END_MAIN
-
-NausicaaTalkRath:
-MUSC(0x30)
-Text(TextMid5Ch4)
-CUSA Rath
-ENDA
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-LOCA 0x0 Retreat [30,29] 0x13
-LOCA 0x0 Retreat [30,30] 0x13
-LOCA 0x0 Retreat [30,31] 0x13
-LOCA 0x0 Retreat [30,32] 0x13
-LOCA 0x0 Retreat [29,32] 0x13
-	Chest(WindSword,25,9)
-	Chest(RedGem,29,12)
-Village(0x1A,Village1,21,26)
+Chest(Dragonshield,28,6)
+Chest(Mend,26,7)
+Chest(KillerAxe,29,13)
+Chest(SteelShield,0,14)
+ChestMoney(2000,3,19)
+
 	END_MAIN
-
-Retreat:
-//EveryoneEscape(EscapeQuoteTable|IsPointer)
-EveryoneEscape(0)
-ENDA 
-
-Village1:
-
-SetBackground(0x1)
-Text(TextCasaCh4)
-GiveItem(Axereaver, 0xFFFF)
-EndConvo
-ENDA
 
 Dunno1:
 
@@ -164,20 +65,20 @@ Units1:
 Alleati1: 
 
 	UNIT Eruca ErucaLord 0x0 Level(5,NPC,0) [15,9] 0x0 0x0 0x0 0x0 [Tomahawk, Vulnerary] [0x3,0x0,0,0x20]
-	UNIT Imperial SwordArmor 0x0 Level(4,NPC,1) [11,9] 0x0 0x0 0x0 0x0 [SteelSword, SteelBow] [0,0,0,0x20]
+	UNIT Imperial SwordKnight 0x0 Level(4,NPC,1) [11,9] 0x0 0x0 0x0 0x0 [SteelSword, SteelBow] [0,0,0,0x20]
 	UNIT Imperial Soldier 0x0 Level(4,NPC,1) [11,10] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0x20]
 	UNIT Imperial Mercenary 0x0 Level(4,NPC,1) [11,15] 0x0 0x0 0x0 0x0 [LightBrand] [0,0,0,0x20]
-	UNIT Imperial AxeArmor 0x0 Level(4,NPC,1) [11,14] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,0x20]
-	UNIT Imperial LanceArmor 0x0 Level(4,NPC,1) [18,14] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0x20]
+	UNIT Imperial AxeKnight 0x0 Level(4,NPC,1) [11,14] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,0x20]
+	UNIT Imperial LanceKnight 0x0 Level(4,NPC,1) [18,14] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0x20]
 	UNIT Imperial Mage 0x0 Level(4,NPC,1) [18,10] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
     UNIT Imperial Soldier 0x0 Level(3,NPC,1) [18,19] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Imperial Priest 0x0 Level(3,NPC,1) [15,14] 0x0 0x0 0x0 0x0 [Physics] AttackInRangeAI
+	UNIT Imperial Priest 0x0 Level(3,NPC,1) [15,14] 0x0 0x0 0x0 0x0 [Physic] AttackInRangeAI
 
 	UNIT
 
 EnemyUnits:
 
-	UNIT Gervaso Warrior 0x0 Level(10,Enemy,1) [1,7] 0x0 0x0 0x0 0x0 [HandAxe, SteelLongbow] StaticAI
+	UNIT Gervaso Warrior 0x0 Level(10,Enemy,1) [1,7] 0x0 0x0 0x0 0x0 [HandAxe, SteelLongBow] StaticAI
 	UNIT Zakaria Mercenary 0x0 Level(8,Enemy,1) [5,28] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [2,9] 0x0 0x0 0x0 0x0 [Hatchet] WaitOneTurnAI
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [Swordreaver] WaitOneTurnAI
@@ -185,11 +86,11 @@ EnemyUnits:
 	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [5,10] 0x0 0x0 0x0 0x0 [IronLance, Vulnerary] [0,0,0,0]
 	UNIT Alistar Archer 0x0 Level(4,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [IronBow, SecretBook] AttackInRangeAI
 	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [6,14] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
-	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [1,14] 0x2 0x0 0x0 0x0 [IronSword, ChestKey] AttackInRangeAI
 	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [2,17] 0x2 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
 	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [28,8] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
-	UNIT Alistar Soldier 0x0 Level(4,Enemy,1) [25,9] 0x0 0x0 0x0 0x0 [javelin] AttackInRangeAI
-	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,11] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Alistar Soldier 0x0 Level(4,Enemy,1) [25,9] 0x0 0x0 0x0 0x0 [Javelin] AttackInRangeAI
+	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,11] 0x2 0x0 0x0 0x0 [SteelBow, ChestKey] AttackInRangeAI
 	UNIT Alistar Mage 0x0 Level(4,Enemy,1) [29,14] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [27,16] 0x2 0x0 0x0 0x0 [Fire, PureWater] AttackInRangeAI
 	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [28,18] 0x0 0x0 0x0 0x0 [Lightning, PureWater] AttackInRangeAI
@@ -197,8 +98,7 @@ EnemyUnits:
 	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [24,14] 0x0 0x0 0x0 0x0 [SteelAxe] [0,0,0,0]
 	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [24,18] 0x0 0x0 0x0 0x0 [Zanbato] [0,0,0,0]	
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [24,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Imperial AxeKnight 0x0 Level(5,Enemy,1) [18,22] 0x0 0x0 0x0 0x0 [SteelAxe] [0,3,0,0]
-	UNIT Imperial Priest 0x0 Level(5,Enemy,1) [25,24] 0x2 0x0 0x0 0x0 [Sleep, Restore] StaticAI
+	UNIT AlistarBoss Pirate 0x0 Level(12,Enemy,1) [27,6] 0x2 0x0 0x0 0x0 [Hatchet, ChestKey] [0,3,0,0]
 	 	
 	UNIT
 
@@ -257,7 +157,35 @@ EnemyReinforce7:
 	
 	UNIT
 
+CutScene1:
+	
+	UNIT Slayder WyvernLord 0x0 Level(4,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
+  	
+	UNIT
+
+CutScene2:
+	
+	UNIT ImperialBoss Summoner 0x0 Level(4,Enemy,1) [15,4] 0x0 0x0 0x1 REDA14R7 [Flux] [0,0,0,0]
+  	
+	UNIT
+
+CutScene3:
+	
+	UNIT Eruca ErucaLord 0x0 Level(1,Enemy,1) [8,13] 0x0 0x0 0x1 REDA12R8 [Flux] [0,0,0,0]
+	UNIT Zechiel WyvernLord 0x0 Level(1,Enemy,1) [8,14] 0x0 0x0 0x1 REDA13R8 [Flux] [0,0,0,0]
+  	
+	UNIT
+
+CutScene4:
+	
+	UNIT Nausicaa LanceLord 0x0 Level(1,Ally,1) [15,14] 0x0 0x0 0x1 REDA15R10 [Vulnerary] [0,0,0,0]
+  	
+	UNIT
+
 Traps1:
+
+    GreenSigil(14,14)
+	GreenSigil(15,14)
 	ENDTRAP
 	ALIGN 4
 
@@ -267,119 +195,87 @@ Traps2:
 
 BeginningScene:
 
-
-    LOAD1 0x1 EnemyUnits
+    MUSC(0x3E)
+	SetBackground(0x3D)
+	Text(Text1Ch5)
+	Text(Text2Ch5)
+	CHECK_ALIVE 0xD
+    BEQ 0x2 0xC 0x0
+	Text(ExtraText1Ch5)
+	LABEL 0x2
+	CHECK_ALIVE 0x9
+    BEQ 0x3 0xC 0x0
+	Text(ExtraText2Ch5)
+	LABEL 0x3
+	CHECK_ALIVE 0x8
+    BEQ 0x4 0xC 0x0
+	CHECK_ALIVE 0xC
+    BEQ 0x4 0xC 0x0	
+	Text(ExtraText3Ch5)
+	LABEL 0x4
+	FADI(16)
+	CLEAN
+	LOMA 0x7
+	TILECHANGE 0x0
+	LOAD1 0x1 CutScene1
+	ENUN
+	CAMERA_CENTERED(Slayder)
+	MUSC(0x2E)
+	FADU(16)
+	BROWNBOXTEXT (LocationText1Ch5) [8,8]
+	Text(Text3Ch5)
+	LOAD1 0x1 CutScene2
+	ENUN
+	Text(Text4Ch5)
+	LOAD1 0x1 CutScene3
+	ENUN
+	Text(Text5Ch5)
+	FADI(16)
+	REMOVEUNIT Eruca
+	REMOVEUNIT Zechiel
+	FADU(16)
+	Text(Text6Ch5)
+	FADI(16)
+	LOMA 0x8
+	TILECHANGE 0x7
+	CLEE 0x0
+	LOAD 0x1 Alleati1
+	ENUN
+	CAMERA_CENTERED(Eruca)
+	FADU(16)
+	MUSC(0x32)
+	LOAD1 0x1 CutScene4
+	ENUN
+	Text(Text7Ch5)
+	MUSC(0x26)
+	Text(Text8Ch5)
+	FADI(16)
+	REMU Gadriel
+	REMU Kairs
+	REMU Catherina
+	REMU Harken
+	REVEAL Lukas
+	TILEREVERSE 0x7	
+	LOAD1 0x1 EnemyUnits
 	ENUN
 	LOAD 0x1 Alleati1
 	ENUN
-	LOAD 0x0 Units1
-	ENUN
-	GotoPrepScreen
+	PREP
+	CHECK_ALIVE 0x3
+    BEQ 0x5 0xC 0x0
+	Text(Text9Ch5)
+	LABEL 0x5
+	CAMERA Gervaso
+    CURSOR_FLASHING Gervaso
+	STAL(30)
+	REMOVE_CURSORS
+	SetBackground(0x8)
+	Text(Text10Ch5)
+	CLEAN
 	NoFade
 	ENDA
 
 EndingScene:
-    MUSC(0x27A)
-	WEATHER 0x5
-	FADI(16)
-	CHECK_ALIVE Rath
-	BEQ 0x1 0xC 0x0
-	CUSA Rath
-	LABEL 0x1
-	CLEA 0x0
-	CLEN 0x0
-	CLEE 0x0
-	CAMERA[29,31]
-	LOAD1 1 CutScene12
-	ENUN
-	FADU(16)
-	CAMERA Nausicaa
-	CURSOR_FLASHING Nausicaa
-	STAL 30
-	REMOVE_CURSORS
-	Text(TextEnd1Ch4)
-	MOVE 60 Nausicaa [28, 30]
-	SOLOTEXTBOXSTART
-	                 SCOORD 0xB [185, 196]
-					 TEXTSHOW(TextEnd2Ch4)
-					 TEXTEND
-    REMA
-	LOAD1 1 CutScene13
-	ENUN
-	CAMERA Slayder
-	CURSOR_FLASHING Slayder
-	STAL 30
-	REMOVE_CURSORS
-	Text(TextEnd3Ch4)
-	SVAL s1 60
-	SET_HP Kairs
-	LOAD2 1 CutScene14
-	ENUN
-	StartBattle
-	SetScriptedBattle(88,16,8,77,8,0)		
-    MissedAttack(0,12)
-    NormalDamage(1,16)
-    MissedAttack(1,0)	
-	EndAttack
-	FIGHT Kairs Slayder SteelSword False
-	Text(TextEnd4Ch4)
-	Text(TextEnd5Ch4)
-	GLOWINGCROSS(Nausicaa)
-	STAL 60
-	EARTHQUAKE 0x1 0x1
-	MOVE 60 Slayder [25,31]
-	STAL 25
-	GLOWINGCROSS_END
-	EARTHQUAKE_END
-	Text(TextEnd6Ch4)
-	LOAD1 1 CutScene15
-	ENUN
-	Text(TextEnd7Ch4)
-	LOAD2 1 CutScene16
-	ENUN
-	Text(TextEnd8Ch4)
-	Text(TextEnd9Ch4)
-	CHECK_ALIVE Colt
-	BEQ 0x1000 0xC 0x0
-	Text(TextEnd10Ch4)
-	LABEL 0x1000
-	CHECK_ALIVE Rosie
-	BEQ 0x1001 0xC 0x0
-	CHECK_ALIVE Diana
-	BEQ 0x1001 0xC 0x0
-	Text(TextEnd11Ch4)
-	LABEL 0x1001
-	CHECK_ALIVE Yala
-	BEQ 0x1002 0xC 0x0
-	Text(TextEnd12Ch4)
-	LABEL 0x1002
-	CHECK_ALIVE Rath
-	BEQ 0x1003 0xC 0x0
-	Text(TextEnd13Ch4)
-	LABEL 0x1003
-	CHECK_ALIVE Gadriel
-	BEQ 0x1004 0xC 0x0
-	Text(TextEnd14Ch4)
-	LABEL 0x1004
-	Text(TextEnd15Ch4)
-	Text(TextEnd16Ch4)
-	FADI(16)
-	DISA Slayder
-	FADU(16)
-	Text(TextEnd17Ch4)
-	FAWI(16)
-	CLEA 0x0
-	CLEN 0x0
-	CLEE 0x0
-	MUSC (0x26D)
-	SetBackground(0x3B)
-	FAWU(16)
-	TUTORIALTEXTBOXSTART
-	                    CenterTutorialTextBox 
-	                    TEXTSHOW GrazieGiocatore  
-	                    TEXTEND
-	REMA
-	MNTS 0x0
-//	MNC2 0x7	
-//	NoFade
+
+	NoFade
 	ENDA

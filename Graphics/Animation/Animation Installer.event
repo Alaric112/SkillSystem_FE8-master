@@ -15,6 +15,7 @@
 #include "Event/CavalierSword Installer.event"
 #include "Event/CavalierAxe Installer.event"
 #include "Event/CavalierHandAxe Installer.event"
+#include "Event/CavalierBow Installer.event"
 #include "Event/CavalierUnarmed Installer.event"
 
 #include "Event/Priest Installer.event"
@@ -50,8 +51,8 @@
 #include "Event/PirateMHandAxe Installer.event"
 #include "Event/PirateMUnarmed Installer.event"
 
-#include "Event/ScoutBow Installer.event"
-#include "Event/ScoutUnarmed Installer.event"
+//#include "Event/ScoutBow Installer.event"
+//#include "Event/ScoutUnarmed Installer.event"
 
 #include "Event/Soldier Installer.event"
 #include "Event/SoldierUnarmed Installer.event"
