@@ -297,7 +297,7 @@ BeginningScene:
     
 	MUSC(0x03)
 	FADI(50)
-	SetBackground(0x38)
+	SetBackground(0x41)
 	FADU(20)
 	TUTORIALTEXTBOXSTART
 	                    CenterTutorialTextBox 

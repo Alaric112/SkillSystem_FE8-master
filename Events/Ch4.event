@@ -671,19 +671,26 @@ EndingScene:
 	DISA Slayder
 	FADU(16)
 	Text(TextEnd17Ch4)
-	FAWI(16)
+//	FAWI(16)                     //// DEMO END /////
+//	CLEA 0x0
+//	CLEN 0x0
+//	CLEE 0x0
+//	MUSC (0x26D)
+//	SetBackground(0x3B)
+//	FAWU(16)
+//	TUTORIALTEXTBOXSTART
+//	                    CenterTutorialTextBox 
+//	                    TEXTSHOW GrazieGiocatore  
+//	                    TEXTEND
+//	REMA      /////////////////////////////////////////////////////////////////
+	FAWI(120)
+	MUSC(0x4E)
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
-	MUSC (0x26D)
-	SetBackground(0x3B)
-	FAWU(16)
-	TUTORIALTEXTBOXSTART
-	                    CenterTutorialTextBox 
-	                    TEXTSHOW GrazieGiocatore  
-	                    TEXTEND
-	REMA
-	MNTS 0x0
-//	MNC2 0x7	
-//	NoFade
+	SetBackground(0x43)
+	FAWU(48)
+	Text(TextEnd18Ch4)
+	MNC2 0x7	
+	NoFade
 	ENDA

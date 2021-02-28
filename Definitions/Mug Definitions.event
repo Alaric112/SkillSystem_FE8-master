@@ -43,7 +43,7 @@
 #define SoldierBrownMug 0xE6
 
 // Boss
-#define GervasoMug 0xD5
+#define GervasoMug 0x43
 #define DarioMug 0xD6
 #define CommanderMug 0xD7
 #define ZechielMug 0x4E

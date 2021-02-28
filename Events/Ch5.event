@@ -13,8 +13,83 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-
+TurnEventPlayer(0,Turn2,2)
+TurnEventPlayer(0,Turn3,3)
+TurnEventPlayer(0,Turn4,4)
+TurnEventPlayer(0,Turn6,6)
+TurnEventPlayer(0,Turn8,8)
+TurnEventPlayer(3,Turn10,10)
+TurnEventEnemy(0,EnemyTurn3,3)
+TurnEventEnemy(0,EnemyTurn6,6)
 	END_MAIN
+
+Turn2:
+
+    SpawnReinforcements(EnemyReinforce1)
+    CAMERA Kushana
+    CURSOR_FLASHING Kushana
+	STAL(30)
+	REMOVE_CURSORS
+	Text(TextMid1Ch5)
+    NoFade
+    ENDA
+
+Turn3:
+
+    SpawnReinforcements(EnemyReinforce2)
+    NoFade
+    ENDA
+	
+Turn4:
+
+    SpawnReinforcements(EnemyReinforce3)
+    NoFade
+    ENDA	
+
+Turn6:
+
+    SpawnReinforcements(EnemyReinforce4)
+	ENUN
+	Text(TextMid2Ch5)
+	SpawnReinforcements(EnemyReinforce5)
+	Text(TextMid3Ch5)
+    NoFade
+    ENDA
+
+Turn8:
+
+    SpawnReinforcements(EnemyReinforce6)
+    CAMERA Gervaso
+    CURSOR_FLASHING Gervaso
+	STAL(30)
+	REMOVE_CURSORS
+	Text(TextMid5Ch5)
+    NoFade
+    ENDA
+
+EnemyTurn3:
+
+    LOAD1 0 AllyReinforce1
+	ENUN
+    NoFade
+    ENDA
+
+EnemyTurn6:
+
+    LOAD1 0 AllyReinforce2
+	ENUN
+    CAMERA Kushana
+    CURSOR_FLASHING Kushana
+	STAL(30)
+	REMOVE_CURSORS
+	Text(TextMid4Ch5)
+    NoFade
+    ENDA
+
+Turn10:
+
+    NoFade
+    ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -79,7 +154,7 @@ Alleati1:
 EnemyUnits:
 
 	UNIT Gervaso Warrior 0x0 Level(10,Enemy,1) [1,7] 0x0 0x0 0x0 0x0 [HandAxe, SteelLongBow] StaticAI
-	UNIT Zakaria Mercenary 0x0 Level(8,Enemy,1) [5,28] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
+	UNIT Zakaria Mercenary 0x0 Level(8,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [2,9] 0x0 0x0 0x0 0x0 [Hatchet] WaitOneTurnAI
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [Swordreaver] WaitOneTurnAI
 	UNIT Alistar Pirate 0x0 Level(6,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Swordreaver] [0,0,0,0]
@@ -98,62 +173,80 @@ EnemyUnits:
 	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [24,14] 0x0 0x0 0x0 0x0 [SteelAxe] [0,0,0,0]
 	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [24,18] 0x0 0x0 0x0 0x0 [Zanbato] [0,0,0,0]	
 	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [24,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [5,15] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
 	UNIT AlistarBoss Pirate 0x0 Level(12,Enemy,1) [27,6] 0x2 0x0 0x0 0x0 [Hatchet, ChestKey] [0,3,0,0]
 	 	
 	UNIT
 
 EnemyReinforce1: 
 
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [0,6] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Mage 0x0 Level(4,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [Fire] [0,0,0,0]
+	UNIT Alistar Myrmidon 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
+	UNIT Alistar Myrmidon 0x0 Level(4,Enemy,1) [29,19] 0x0 0x0 0x0 0x0 [Lancereaver] [0,0,0,0]
 	
 	UNIT
 
 EnemyReinforce2: 
 
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA24R6 [IronLance] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA23R6 [HandAxe] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [29,2] 0x0 0x0 0x1 REDA24R7 [PoisonAxe] [0,0,0,0]
-	
+	UNIT Alistar Monk 0x0 Level(4,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]
+	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [29,19] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]	
 	UNIT
 
 EnemyReinforce3: 
 	
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial Soldier 0x0 Level(4,Enemy,1) [4,0] 0x0 0x0 0x0 0x0 [HeavySpear] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [SteelAxe] [0,0,0,0]
+	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Fire] [0,0,0,0]
 
 	UNIT
 
 EnemyReinforce4: 
 	
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [Thunder] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]	
+	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [27,10] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]	
+	
 	UNIT
 
 EnemyReinforce5: 
 	
-	UNIT Eruca ErucaLord 0x0 Level(4,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [Tomahawk, HoplonGuard] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
-	
+	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
+	UNIT Alistar PegasusKnight 0x0 Level(5,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [Axereaver] [0,0,0,0]
+	UNIT Alistar PegasusKnight 0x0 Level(5,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Axereaver] [0,0,0,0]
+	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [28,0] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
+	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [29,1] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+
 	UNIT
 
 EnemyReinforce6:
 	
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,16] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]
+	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [27,10] 0x0 0x0 0x0 0x0 [SteelSword] [0,0,0,0]
+	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]
 	
 	UNIT
 
-EnemyReinforce7:
+AllyReinforce1:
 	
-	UNIT Imperial AxeWyvernRider 0x0 Level(4,Enemy,1) [0,22] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
-	UNIT Imperial WyvernLord 0x0 Level(4,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [0,15] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(4,Enemy,1) [19,32] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(6,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(6,NPC,1) [18,19] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	
+	UNIT
+
+AllyReinforce2:
+	
+	UNIT Imperial WyvernRider 0x0 Level(5,NPC,1) [12,19] 0x0 0x0 0x1 REDA12R14 [Javelin] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(6,NPC,1) [13,19] 0x0 0x0 0x1 REDA13R18 [IronLance] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(5,NPC,1) [16,19] 0x0 0x0 0x1 REDA16R18 [HandAxe] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(6,NPC,1) [17,19] 0x0 0x0 0x1 REDA17R14 [IronAxe] [0,0,0,0]
 	
 	UNIT
 
@@ -276,6 +369,26 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-
+    FADI(16)
+	MUSC(0x25)
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	FADU(16)
+	SetBackground(0x8)
+	Text(TextEnd1Ch5)
+    Text(TextEnd2Ch5)
+	FADI(16)
+	CLEAN 
+	SetBackground(0x3D)
+	FADU(16)
+	Text(TextEnd3Ch5)
+	FAWI(120)
+	MUSC(0x4E)
+	SetBackground(0x42)
+	FAWU(48)
+	Text(TextEnd4Ch5)
+	FAWI(120)
+	MNC2 0x8
 	NoFade
 	ENDA

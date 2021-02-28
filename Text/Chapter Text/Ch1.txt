@@ -69,7 +69,7 @@ I'm ready captain![AN]
 Perfect, then let's get going![A][X]
 
 ## Text3Ch1
-[OpenFarRight][LoadFace][0xD5][0x01][OpenRight][LoadFace][0xD6][0x01][OpenMidLeft][LoadFace][0x4D][0x01][OpenMidLeft]
+[OpenFarRight][LoadGervaso][OpenRight][LoadFace][0xD6][0x01][OpenMidLeft][LoadFace][0x4D][0x01][OpenMidLeft]
 Boss! Boss![AN]
 [OpenFarRight]
 What is happening?[AN]

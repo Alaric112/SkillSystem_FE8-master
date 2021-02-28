@@ -64,10 +64,10 @@ WorldMap 0x39,WorldMapImage|IsPointer,WorldMapTsa|IsPointer,WorldMapPalette|IsPo
 0x3e,CrushImage|IsPointer,CrushTsa|IsPointer,CrushPalette|IsPointer
 0x3f,SnowMountainImage|IsPointer,SnowMountainTsa|IsPointer,SnowMountainPalette|IsPointer
 0x40,SnowCityImage|IsPointer,SnowCityTsa|IsPointer,SnowCityImagePalette|IsPointer
-0x41,ProfeziaImage|IsPointer,ProfeziaTsa|IsPointer,ProfeziaImagePalette|IsPointer
-0x42,0x0,0x0,0x0
-0x43,0x0,0x0,0x0
-0x44,0x0,0x0,0x0
+New Profecy 0x41,ProfeziaImage|IsPointer,ProfeziaTsa|IsPointer,ProfeziaImagePalette|IsPointer
+Dream 0x42,DreamImage|IsPointer,DreamTsa|IsPointer,DreamImagePalette|IsPointer
+Vision 0x43,VisionImage|IsPointer,VisionTsa|IsPointer,VisionImagePalette|IsPointer
+FlowerRoom 0x44,FlowerRoomImage|IsPointer,FlowerRoomTsa|IsPointer,FlowerRoomImagePalette|IsPointer
 0x45,0x0,0x0,0x0
 0x46,0x0,0x0,0x0
 0x47,0x0,0x0,0x0

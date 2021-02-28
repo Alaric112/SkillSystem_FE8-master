@@ -128,7 +128,7 @@
 #define JadeAxeIcon         0x7f
 #define BlossomIcon         0x80
 #define QuickBladeIcon      0x81
-#define ScissorAxeIcon      0x82
+#define AetherGunIcon       0x82
 #define CrimsonIcon         0x83
 #define MemberCardIcon 		0x84
 #define SilverCardIcon 		0x85

@@ -72,6 +72,10 @@ SongTable(0x274,PokemonMysteryDungeonRescueTeam,1)
 #include "songs/Pokemon Mystery Dungeon Rescue Team - Friend Area Swamp.event"
 }
 {
+SongTable(0x273,FE16Prep,1)
+#include "songs/FE16Prep.event"
+}
+{
 SongTable(0x275,FE7InescapableFate,1)
 #include "songs/FE7 - Inescapable Fate.event"
 }
@@ -102,6 +106,10 @@ SongTable(0x27C,EnemyBattle,1)
 {
 SongTable(0x27D,WithUs,1)
 #include "songs/FE9 - With Us (Sme).event"
+}
+{
+SongTable(0x27E,RedWings,1)
+#include "songs/Final Fantasy 4 - Red Wings (RandomWizard).event"
 }
 //installation of ipatix's sound mixer. Essential if you want to use GS synths; also makes most music sound better by reducing background noise.
 

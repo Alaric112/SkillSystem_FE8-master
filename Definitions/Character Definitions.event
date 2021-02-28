@@ -47,7 +47,8 @@
 #define Gervaso 0x4e
 #define Bandit 0x65
 #define BanditBoss 0x66
-#define Eruca 0x6C
+#define Eruca 0x6C 
+#define Kushana 0x6C
 #define Slayder 0x6E
 #define Zechiel 0x58
 #define Bandit2 0x72

@@ -17,6 +17,7 @@
 #define SteelLongBow 0xC5
 #define LenaPendant 0xC6
 #define BlossomStaff 0xC7
+#define AetherGun 0xC8
 #define Crimson 0xC9
 #define SteelShield 0xD6
 #define IronDagger 0xD7

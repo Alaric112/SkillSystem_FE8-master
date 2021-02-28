@@ -121,3 +121,9 @@ Crimson Shot[X]
 
 ## CrimsonDesc
 +2 Def and Res[X]
+
+## AetherGunName ^
+Aether Gun[X]
+
+## AetherGunDesc ^
+A standard-class aether rifle[X]

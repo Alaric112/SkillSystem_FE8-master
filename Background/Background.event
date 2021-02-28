@@ -20,6 +20,11 @@ SetConvoBackground(0x40, SnowCityImage, SnowCityTsa, SnowCityImagePalette)
 
 SetConvoBackground(0x41, ProfeziaImage, ProfeziaTsa, ProfeziaImagePalette)
 
+SetConvoBackground(0x42, DreamImage, DreamTsa, DreamImagePalette)
+
+SetConvoBackground(0x43, VisionImage, VisionTsa, VisionImagePalette)
+
+SetConvoBackground(0x44, FlowerRoomImage, FlowerRoomTsa, FlowerRoomImagePalette)
 
 //1
 TitansImage:
@@ -130,3 +135,33 @@ ProfeziaTsa:
 
 ProfeziaImagePalette:
 #incbin "Code/Profezia3.bin"
+
+//12
+DreamImage:
+#incbin "Code/Dream1.bin"
+
+DreamTsa:
+#incbin "Code/Dream2.bin"
+
+DreamImagePalette:
+#incbin "Code/Dream3.bin"
+
+//13
+VisionImage:
+#incbin "Code/Vision1.bin"
+
+VisionTsa:
+#incbin "Code/Vision2.bin"
+
+VisionImagePalette:
+#incbin "Code/Vision3.bin"
+
+//13
+FlowerRoomImage:
+#incbin "Code/FlowerRoom1.bin"
+
+FlowerRoomTsa:
+#incbin "Code/FlowerRoom2.bin"
+
+FlowerRoomImagePalette:
+#incbin "Code/FlowerRoom3.bin"
