@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,Turn1,1)
 TurnEventPlayer(0,Turn2,2)
 TurnEventPlayer(0,Turn3,3)
 TurnEventPlayer(0,Turn4,4)
@@ -22,6 +23,23 @@ TurnEventPlayer(3,Turn10,10)
 TurnEventEnemy(0,EnemyTurn3,3)
 TurnEventEnemy(0,EnemyTurn6,6)
 	END_MAIN
+
+Turn1:
+
+    Text(TextMid6Ch5)
+	CAMERA_CENTERED Nausicaa
+	CURSOR_FLASHING [14,14]
+    CURSOR_FLASHING	[15,14]
+	STAL 45
+	REMOVE_CURSORS
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW TextMid7Ch5  
+	                    TEXTEND	
+	REMA	
+    NoFade
+    ENDA
+
 
 Turn2:
 

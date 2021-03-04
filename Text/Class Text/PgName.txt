@@ -87,7 +87,7 @@ but not his father[X]
 Harken[X]
 
 ## HarkenDesc
-A former gladiator of the wilds now he[N] 
+A former gladiator of the wilds now he[N]
 is the personal knight of lady Catherina[X]
 
 ## RathName
@@ -104,12 +104,19 @@ Manfred[X]
 A courageous captain in Granorg's army.[N]
 He's better known as Obsidian.[X]
 
-## GilliamName
-Gilliam[X]
+## MitoName
+Mito[X]
 
-## GilliamDesc
-Captain of the Soria guard faithful[N] 
+## MitoDesc
+Captain of the Soria guard faithful[N]
 and helpful towards its king[X]
+
+## AsbelName
+Asbel[X]
+
+## AsbelDesc
+Young prince of Pejite, skilled swordsman[N]
+who is forced to work for the republic[X]
 
 ## SalazarName
 Salazar[X]
@@ -197,10 +204,3 @@ Eruca[X]
 ## ErucaDesc
 Firstborn to the Imperial[N]
 throne of Granorg.[X]
-
-## JaramName
-Jaram[X]
-
-## JaramDesc
-An eccentric man, at the head[N]
-of some bandits of the frozen lands[X]

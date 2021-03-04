@@ -20,7 +20,7 @@
 #define StockeMug 0x14
 #define FernandMug 0x16
 #define KyleMug 0x18
-#define ZakariaMug 0x11
+#define AsbelMug 0x11
 #define SamMug 0x21
 #define CatherinaMug 0x22
 #define HarkenMug 0x23

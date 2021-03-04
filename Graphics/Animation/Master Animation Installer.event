@@ -38,6 +38,11 @@
 #define GladiatorHandAxeAnim 0x0F
 #define GladiatorUnarmedAnim 0x10
 
+#define WarriorAxeAnim 0x1C
+#define WarriorHandAxeAnim 0x1D
+#define WarriorBowAnim 0x1E
+#define WarriorUnarmedAnim 0x1F
+
 #define ArcherFBowAnim 0x28
 #define ArcherFUnarmedAnim 0x29
 

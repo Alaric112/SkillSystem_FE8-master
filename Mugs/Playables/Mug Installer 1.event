@@ -49,9 +49,9 @@ KyleMugData:
 #incext PortraitFormatter "Kyle.png"
 setMugEntry(KyleMug, KyleMugData, 3, 5, 3, 3)
 
-ZakariaMugData:
-#incext PortraitFormatter "Zakaria.png"
-setMugEntry(ZakariaMug, ZakariaMugData, 3, 5, 3, 3)
+AsbelMugData:
+#incext PortraitFormatter "Asbel.png"
+setMugEntry(AsbelMug, AsbelMugData, 3, 5, 3, 3)
 
 /*
 Salem_Mug:
