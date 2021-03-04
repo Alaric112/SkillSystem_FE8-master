@@ -26,142 +26,199 @@ SetConvoBackground(0x43, VisionImage, VisionTsa, VisionImagePalette)
 
 SetConvoBackground(0x44, FlowerRoomImage, FlowerRoomTsa, FlowerRoomImagePalette)
 
+SetConvoBackground(0x45, TetoImage, TetoTsa, TetoImagePalette)
+
 //1
+ALIGN 4
 TitansImage:
 #incbin "1.bin"
 
+ALIGN 4
 TitansTsa:
 #incbin "2.bin"
 
+ALIGN 4
 TitansPalette:
 #incbin "3.bin"
 
 //2
+ALIGN 4
 PareteImage:
 #incbin "Code/parete.bin"
 
+ALIGN 4
 PareteTsa:
 #incbin "Code/parete2.bin"
 
+ALIGN 4
 ParetePalette:
 #incbin "Code/parete3.bin"
 
 //3
+ALIGN 4
 WorldMapImage:
 #incbin "Code/WorldMap1.bin"
 
+ALIGN 4
 WorldMapTsa:
 #incbin "Code/WorldMap2.bin"
 
+ALIGN 4
 WorldMapPalette:
 #incbin "Code/WorldMap3.bin"
 
 //4
+ALIGN 4
 VentoImage:
 #incbin "Code/Vento1.bin"
 
+ALIGN 4
 VentoTsa:
 #incbin "Code/Vento2.bin"
 
+ALIGN 4
 VentoPalette:
 #incbin "Code/Vento3.bin"
 
 //5
+ALIGN 4
 WindImage:
 #incbin "Code/Wind1.bin"
 
+ALIGN 4
 WindTsa:
 #incbin "Code/Wind2.bin"
 
+ALIGN 4
 WindPalette:
 #incbin "Code/Wind3.bin"
 
 //6
+ALIGN 4
 NightRoomImage:
 #incbin "Code/NightRoom1.bin"
 
+ALIGN 4
 NightRoomTsa:
 #incbin "Code/NightRoom2.bin"
 
+ALIGN 4
 NightRoomPalette:
 #incbin "Code/NightRoom3.bin"
 
 //7
+ALIGN 4
 IntShipImage:
 #incbin "Code/IntShip1.bin"
 
+ALIGN 4
 IntShipTsa:
 #incbin "Code/IntShip2.bin"
 
+ALIGN 4
 IntShipPalette:
 #incbin "Code/IntShip3.bin"
 
 //8
+ALIGN 4
 CrushImage:
 #incbin "Code/Crush1.bin"
 
+ALIGN 4
 CrushTsa:
 #incbin "Code/Crush2.bin"
 
+ALIGN 4
 CrushPalette:
 #incbin "Code/Crush3.bin"
 
-//9 
+//9
+ALIGN 4
 SnowMountainImage:
 #incbin "Code/SnowMountain1.bin"
 
+ALIGN 4
 SnowMountainTsa:
 #incbin "Code/SnowMountain2.bin"
 
+ALIGN 4
 SnowMountainPalette:
 #incbin "Code/SnowMountain3.bin"
 
 //10
+ALIGN 4
 SnowCityImage:
 #incbin "Code/CitySnow1.bin"
 
+ALIGN 4
 SnowCityTsa:
 #incbin "Code/CitySnow2.bin"
 
+ALIGN 4
 SnowCityImagePalette:
 #incbin "Code/CitySnow3.bin"
 
 //11
+ALIGN 4
 ProfeziaImage:
 #incbin "Code/Profezia1.bin"
 
+ALIGN 4
 ProfeziaTsa:
 #incbin "Code/Profezia2.bin"
 
+ALIGN 4
 ProfeziaImagePalette:
 #incbin "Code/Profezia3.bin"
 
 //12
+ALIGN 4
 DreamImage:
 #incbin "Code/Dream1.bin"
 
+ALIGN 4
 DreamTsa:
 #incbin "Code/Dream2.bin"
 
+ALIGN 4
 DreamImagePalette:
 #incbin "Code/Dream3.bin"
 
 //13
+ALIGN 4
 VisionImage:
 #incbin "Code/Vision1.bin"
 
+ALIGN 4
 VisionTsa:
 #incbin "Code/Vision2.bin"
 
+ALIGN 4
 VisionImagePalette:
 #incbin "Code/Vision3.bin"
 
-//13
+//14
+ALIGN 4
 FlowerRoomImage:
 #incbin "Code/FlowerRoom1.bin"
 
+ALIGN 4
 FlowerRoomTsa:
 #incbin "Code/FlowerRoom2.bin"
 
+ALIGN 4
 FlowerRoomImagePalette:
 #incbin "Code/FlowerRoom3.bin"
+
+//15
+ALIGN 4
+TetoImage:
+#incbin "Code/Teto1.bin"
+
+ALIGN 4
+TetoTsa:
+#incbin "Code/Teto2.bin"
+
+ALIGN 4
+TetoImagePalette:
+#incbin "Code/Teto3.bin"
