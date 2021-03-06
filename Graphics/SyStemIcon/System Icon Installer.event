@@ -28,7 +28,6 @@ ORG 0x9F0E0
 POIN BattleIcon
 POP
 
-
 ALIGN 4
 HpBarIcon:
 #incbin "HpBarIcon.dmp"
@@ -37,5 +36,3 @@ PUSH
 ORG 0x50E88
 POIN HpBarIcon
 POP
-
-ALIGN 32

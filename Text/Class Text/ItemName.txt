@@ -127,3 +127,9 @@ Aether Gun[X]
 
 ## AetherGunDesc ^
 A standard-class aether rifle[X]
+
+## AngelRingName
+Angel Ring[X]
+
+## AngelRingDesc ^
+A ring from the ancient world, gives new life[X]

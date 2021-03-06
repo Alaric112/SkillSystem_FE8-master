@@ -1,0 +1,5 @@
+#define NausicaaLock 0x0D
+#define LukasLock 0x0E
+#define GadrielLock 0x0F
+#define PejiteLock 0x11
+#define ThiefLock 0x12

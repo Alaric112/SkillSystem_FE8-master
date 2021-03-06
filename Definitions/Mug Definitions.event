@@ -1,7 +1,7 @@
 //For use with PortraitFormatter
 //#define setMugEntry(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY) "PUSH; ORG PortraitsTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; WORD 0x00000000; BYTE mouthX mouthY eyeX eyeY; WORD 0x01; POP"
 //#define setMugEntry(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, eyeControl) "PUSH; ORG PortraitsTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; WORD 0x00000000; BYTE mouthX mouthY eyeX eyeY; WORD eyeControl; POP"
-//#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
 //#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
 
 #define BlankMug 0x01
@@ -10,6 +10,7 @@
 #define GadrielMug 0x06
 #define DonovanMug 0x07
 #define PriscillaMug 0x08
+#define TetoMug 0x09
 #define DianaMug 0x0A
 #define YalaMug 0x0B
 #define LukasMug 0x0C
@@ -20,6 +21,7 @@
 #define StockeMug 0x14
 #define FernandMug 0x16
 #define KyleMug 0x18
+#define ArthurMug 0x1A
 #define AsbelMug 0x11
 #define SamMug 0x21
 #define CatherinaMug 0x22
@@ -31,7 +33,6 @@
 #define BartMug 0xD1
 //#define LukasMug 0xD2
 #define RathMug 0xD8
-#define ArthurMug 0xDC
 #define NikolaiMug 0xDE 
 #define SalazarMug 0xE0
 #define BazbaMug 0xE7

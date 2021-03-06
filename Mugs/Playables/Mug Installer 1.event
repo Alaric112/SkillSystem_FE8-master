@@ -134,3 +134,7 @@ setMugEntry(BazbaMug, BazbaMugData, 2, 5, 2, 3)
 LuniaMugData:
 #incext PortraitFormatter "Lunia.png"
 setMugEntry(LuniaMug, LuniaMugData, 4, 6, 3, 4)
+
+TetoMugData:
+#incext PortraitFormatter "Teto.png"
+setMugEntryExtend(TetoMug, TetoMugData, 2, 5, 2, 5, 0, 4, 0, 0)

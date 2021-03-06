@@ -18,10 +18,36 @@ POP
 #define HardClassLock 3
 #define EndLockArray 0
 
-TestArray:
-BYTE HardClassLock
-BYTE EirikaLord
-BYTE Rogue
-BYTE EndLockArray
+#define SetWeaponLockArray(id,lockarray) "PUSH; ORG WeaponLockArrayPointerTable + (id * 0x4); POIN lockarray; POP"
+
+ALIGN 4
+NausicaaLockArray:
+BYTE HardCharLock Nausicaa 0x0
+
+SetWeaponLockArray(NausicaaLock,NausicaaLockArray)
+
+ALIGN 4
+LukasLockArray:
+BYTE HardCharLock Lukas 0x0
+
+SetWeaponLockArray(LukasLock,LukasLockArray)
+
+ALIGN 4
+GadrielLockArray:
+BYTE HardCharLock Gadriel 0x0
+
+SetWeaponLockArray(GadrielLock,GadrielLockArray)
+
+ALIGN 4
+PejiteLockArray:
+BYTE SoftCharLock Asbel Harken 0x0
+
+SetWeaponLockArray(PejiteLock,PejiteLockArray)
+
+ALIGN 4
+ThiefLockArray:
+BYTE HardClassLock Thief Thief_F Rogue Assassin  0x0
+
+SetWeaponLockArray(ThiefLock,ThiefLockArray)
 
 #endif // ADV_WEAPON_LOCKS

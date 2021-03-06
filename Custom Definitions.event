@@ -34,7 +34,7 @@
 
 #ifndef DebuffTable
   #define DebuffTable     0x0203F100
-  #define DebuffTableSize 0x00000900
+  #define DebuffTableSize 0x00000440
 #endif
 
 #define LunarBrace MoonBracelet
@@ -73,6 +73,8 @@
 #include "Definitions/PList Definitions.event"
 
 #include "Definitions/Spell Animation.event"
+
+#include "Definitions/WeaponLock Definitions.event"
 
 //#include "Definitions/StatBoost.event"
 

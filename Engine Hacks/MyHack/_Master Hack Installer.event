@@ -35,6 +35,8 @@
 
 #include "EscapeArrive/EscapeMenu/EA.txt"
 
+#include "Mug_exceed/EA.txt"
+
 #include "EscapeArrive/EVENTSCRIPT_SimpleEscape_20200305/ASM_SimpleEscape.event"
 
 #include "EVENTSCRIPT_give_exp 20191015/give_exp_Install.event"

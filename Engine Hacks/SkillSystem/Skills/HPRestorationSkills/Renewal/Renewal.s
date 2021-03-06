@@ -21,7 +21,7 @@ ldrb r1,[r1]
 cmp r0,#0
 beq GoBack
 
-add r5,#30
+add r5,#25
 
 GoBack:
 mov r0,r5
