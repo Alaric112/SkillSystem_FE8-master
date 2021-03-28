@@ -5,6 +5,8 @@
 		
 		#include "Support Definitions.event"
 		
+		#include "BaseConversations/BaseConvos.event"
+		
 		ALIGN 4
 		#inctext lyn "MasterSupportCalculations.elf" "Hooks.elf"
 		

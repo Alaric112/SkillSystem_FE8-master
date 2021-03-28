@@ -69,6 +69,6 @@
 
 #include "HpBars/HpBars.event"
 
-//#include "SupportRework/SupportRework.event"
+#include "SupportRework/SupportRework.event"
 
 #include "SmallASM.event"

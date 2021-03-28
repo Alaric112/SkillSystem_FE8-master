@@ -2,8 +2,19 @@
 ## BaseSupportSelectConvoText
 Select a conversation.[X]
 
+## BaseConvoSelectConvoText
+Select a conversation.[X]
+
 ## SupportIncreasedToText
 Support level increased to [X]
+
+## PrepScreenSupportDescText
+View conversations for[NL]
+this chapter.[X]
+
+## PrepScreenSupportErrorText
+There are no[NL]
+conversations to view.[X]
 
 ## BaseSupportTextID1
 [X]
@@ -20,4 +31,21 @@ Support level increased to [X]
 ## BaseSupportTextID7
 [X]
 ## BaseSupportTextID8
+[X]
+
+## BaseConvoTextID1
+[X]
+## BaseConvoTextID2
+[X]
+## BaseConvoTextID3
+[X]
+## BaseConvoTextID4
+[X]
+## BaseConvoTextID5
+[X]
+## BaseConvoTextID6
+[X]
+## BaseConvoTextID7
+[X]
+## BaseConvoTextID8
 [X]
