@@ -10,3 +10,5 @@
 #include "ExtraItemName.txt"
 
 #include "DeathQuote.txt"
+
+#include "SupportConvo.txt" 

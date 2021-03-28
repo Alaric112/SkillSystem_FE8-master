@@ -222,7 +222,7 @@ CutScene1:
 CutScene2:
 
     UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [10,12] 0x0 0x0 0x1 REDA12R13 [0] [0,0,0,0]
-	UNIT Gilliam General 0x0 Level(2,NPC,1) [16,15] 0x0 0x0 0x1 REDA13R13 [0] [0,0,0,0]
+	UNIT Gilliam Warrior 0x0 Level(2,NPC,1) [16,15] 0x0 0x0 0x1 REDA13R13 [0] [0,0,0,0]
     	
     UNIT
 

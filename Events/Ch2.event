@@ -258,7 +258,7 @@ Tutorial:
 
 Units1:
 
-    UNIT Salem General 0x0 Level(3,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+    UNIT Salem Warrior 0x0 Level(3,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
 	UNIT Diana Huntress 0x0 Level(2,Ally,0) [3,9] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
 	UNIT Colt Thief 0x0 Level(4,Ally,1) [0,11] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
 	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [4,11] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]

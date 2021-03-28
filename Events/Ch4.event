@@ -190,7 +190,7 @@ CutScene2:
 CutScene3: 
 
 	UNIT Mansel Marshall 0x0 Level(3,NPC,1) [12,7] 0x0 0x0 0x0 0x0 [WindSword] [0,0,0,0]
-	UNIT Gilliam General 0x0 Level(5,NPC,1) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] [0,0,0,0]
+	UNIT Gilliam Warrior 0x0 Level(5,NPC,1) [12,8] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] [0,0,0,0]
 	
 	UNIT
 
@@ -224,7 +224,7 @@ CutScene8:
 
 	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [2,0] 0x0 0x0 0x1 REDA4R3 [0] [0,0,0,0]
 	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [1,0] 0x0 0x0 0x1 REDA3R3 [SteelSword] [0,0,0,0]
-	UNIT Gilliam General 0x0 Level(5,NPC,0) [1,0] 0x0 0x0 0x1 REDA4R2 [ShortSpear, SteelShield] [0,0,0,0]
+	UNIT Gilliam Warrior 0x0 Level(5,NPC,0) [1,0] 0x0 0x0 0x1 REDA4R2 [ShortSpear, SteelShield] [0,0,0,0]
 	
 	UNIT
 
@@ -298,7 +298,7 @@ Alleati1:
 	UNIT Militia Fighter 0x0 Level(2,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,4,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,1) [13,19] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,1) [6,14] 0x0 0x0 0x0 0x0 [IronLance] [0,3,4,0]
-	UNIT Gilliam General 0x0 Level(5,NPC,0) [4,2] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] StaticAI
+	UNIT Gilliam Warrior 0x0 Level(5,NPC,0) [4,2] 0x0 0x0 0x0 0x0 [ShortSpear, SteelShield] StaticAI
     UNIT SalemNPC Sage 0x0 Level(3,NPC,0) [9,5] 0x0 0x0 0x0 0x0 [ArcWind, LeatherShield] [0xc,3,4,0]
 
 	UNIT

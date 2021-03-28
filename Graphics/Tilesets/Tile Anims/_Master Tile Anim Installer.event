@@ -1,3 +1,5 @@
 //#include "Cave/Cave Anim Installer.event"
 
 #include "Fort/FortAnimInstaller.event"
+
+#include "Updated Village Animations/VillageAnimInstaller.event"

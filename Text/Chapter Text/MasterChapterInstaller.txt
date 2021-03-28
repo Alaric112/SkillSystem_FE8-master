@@ -17,4 +17,6 @@
 
 #include "Ch6.txt"
 
+#include "Ch7.txt"
+
 #include "Ch8.txt"

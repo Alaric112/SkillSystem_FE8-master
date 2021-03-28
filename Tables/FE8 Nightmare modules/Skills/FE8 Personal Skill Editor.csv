@@ -6,7 +6,7 @@ Lukas,ChivalryID
 Gadriel,KnightAspirantID
 Donovan,LiveToServeID
 Vanessa,SpurSpdID
-Ross,ParagonID
+Teto,LoyaltyID
 Diana,AdeptID
 Colt,PassID
 Rosie,PuissanceID
@@ -73,7 +73,7 @@ Breguet (Ch 1),CounterMagicID
 Jaram (Ch 8),SlowBurnID
 Bazba (Ch 3),SwordbreakerID
 Entombed (Ch 4),0x0
-Saar (Ch 5),AxebreakerID
+Bongo  (Ch 5),SlowBurnID
 Novala (Ch 6),IgnisID
 Murray (Ch 7),LifeAndDeathID
 Tirado (Ch 8),SealDefID
@@ -160,12 +160,12 @@ Wraith (Axes),0x0
 0,0x0
 0,0x0
 0,0x0
+,0x0
+0,0x0
+Valter,0x0
 0,0x0
 0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
+Black Stone (?),EvilAuraID
 Mercenary (C9A),0x0
 Mercenary (C10A),0x0
 Merc Remnant (C13A),0x0

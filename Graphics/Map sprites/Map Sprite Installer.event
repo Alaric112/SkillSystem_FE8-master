@@ -193,3 +193,15 @@ ThiefStandingF:
 ALIGN 4
 SigilMapSprite:
 #incbin "Dmp/Sigil.dmp"
+
+ALIGN 4
+SquirrelFoxMoving:
+#incbin "Dmp/SquirrelFoxMoving.dmp"
+
+ALIGN 4
+SquirrelFoxStanding:
+#incbin "Dmp/SquirrelFoxStanding.dmp"
+
+ALIGN 4
+BlackStoneMapSprite:
+#incbin "Dmp/BlackStone.dmp"

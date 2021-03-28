@@ -195,7 +195,7 @@ mov   r1, #0x5A    @Move to the damage.
 ldrh    r3, [r5,r1]     @Load the damage.
 add    r3, #3    @Add 3 to the damage.
 strh    r3, [r5,r1]     @Store damage.
-mov   r1, #0x5A    @Move to the hit.
+mov   r1, #0x60    @Move to the hit.
 ldrh    r3, [r5,r1]     @Load the hit
 add    r3, #15    @Add 15 to the hit.
 strh    r3, [r5,r1]     @Store hit.

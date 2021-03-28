@@ -38,6 +38,12 @@
 #include "Ch7.event"
 }
 {
+#include "Ch8.event"
+}
+{
+#include "Ch9.event"
+}
+{
 #include "Ch10.event"
 }
 {

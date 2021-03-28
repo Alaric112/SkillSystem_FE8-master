@@ -1,7 +1,10 @@
 //Vanilla....
+#define PejiteBlade 0x5
+
 #define ArmorSlayer 0x0E
 #define HorseSlayer 0x1B
 #define LongBow 0x34
+#define Panacea 0x6F
 #define HoplonGuard 0x7C
 #define OsIgnis 0x78 // Nausicaa Weapon
 #define FieryFang 0xB1
@@ -19,6 +22,10 @@
 #define BlossomStaff 0xC7
 #define AetherGun 0xC8
 #define Crimson 0xC9
+#define AngelRing 0xCA
+#define CrystalSword 0xCB
+#define CrystalLance 0xCC
+#define CrystalAxe 0xCD
 #define SteelShield 0xD6
 #define IronDagger 0xD7
 #define SteelDagger 0xD8

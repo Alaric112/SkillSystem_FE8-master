@@ -87,7 +87,7 @@
 #include "Event/F_ThiefSword Installer.event"
 #include "Event/F_ThiefUnarmed Installer.event"
 
-#include "Event/AxeWarrior Installer.event"
-#include "Event/HandAxeWarrior Installer.event"
-#include "Event/BowWarrior Installer.event"
-#include "Event/UnarmedWarrior Installer.event"
+#include "Event/WarriorAxe Installer.event"
+#include "Event/WarriorHandAxe Installer.event"
+#include "Event/WarriorBow Installer.event"
+#include "Event/WarriorUnarmed Installer.event"

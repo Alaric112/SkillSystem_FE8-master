@@ -11,3 +11,5 @@
 //#include "Promotion Items/Promotion Item Editor.event"
 
 #include "Minimug/Minimug Table.event"
+
+#include "SupportTable.event"

@@ -23,6 +23,12 @@ POIN AuraSkillCheck
 WORD ForLadyID
 
 ALIGN 4
+EvilAura:
+#incbin "EvilAura/EvilAura.dmp"
+POIN AuraSkillCheck
+WORD EvilAuraID
+
+ALIGN 4
 Demoiselle:
 #incbin "Demoiselle/Demoiselle.dmp"
 POIN AuraSkillCheck

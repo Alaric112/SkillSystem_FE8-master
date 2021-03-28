@@ -30,3 +30,7 @@ setMugEntry(JaramMug, JaramMugData, 2, 5, 2, 3)
 MisteroMugData:
 #incext PortraitFormatter "Mistero.png"
 setMugEntry(MisteroMug, MisteroMugData, 3, 5, 3, 3)
+
+BongoMugData:
+#incext PortraitFormatter "Bongo.png"
+setMugEntry(BongoMug, BongoMugData, 3, 5, 3, 3)

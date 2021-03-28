@@ -111,3 +111,11 @@ ALIGN 4
 CivilClassCardPal:
 #incbin "Dmp/Civil.png_pal.dmp"
 setCardEntry(CivilClassCard, CivilClassCardData, CivilClassCardPal)
+
+ALIGN 4
+WoodBoxClassCardData:
+#incbin "Dmp/WoodBox.dmp"
+ALIGN 4
+WoodBoxClassCardPal:
+#incbin "Dmp/WoodBox.png_pal.dmp"
+setCardEntry(WoodBoxClassCard, WoodBoxClassCardData, WoodBoxClassCardPal)

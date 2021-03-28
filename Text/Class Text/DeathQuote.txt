@@ -134,3 +134,8 @@ fall now...[A]
 Glory...to the republic...[N]
 glory to Lady Catherine...[A]
 [OpenMidRight][CloseEyes][X]
+
+## ErucaDeathCh5
+[OpenMidRight][LoadKushana][OpenMidRight][CloseEyes]
+How? how could I fail[N]
+so miserably...[A][X]

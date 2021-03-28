@@ -118,6 +118,22 @@ Asbel[X]
 Young prince of Pejite, skilled swordsman[N]
 who is forced to work for the republic[X]
 
+## PriscillaName
+Priscilla[X]
+
+## PriscillaDesc
+a young woman from Laurentia, now[N]
+serving the pegasus knights of[N]
+Alistar, very impulsive and daring[X]
+
+## TetoName
+Teto[X]
+
+## TetoDesc
+An extremely reckless and courageous[N]
+little squirrel fox, extremely[N]
+protective of Nausica[aa][X]
+
 ## SalazarName
 Salazar[X]
 
@@ -199,7 +215,7 @@ Simple city guards[N]
 fighting for their homeland[X]
 
 ## ErucaName
-Eruca[X]
+Kushana[X]
 
 ## ErucaDesc
 Firstborn to the Imperial[N]

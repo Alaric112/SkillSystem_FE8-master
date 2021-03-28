@@ -133,3 +133,15 @@ Angel Ring[X]
 
 ## AngelRingDesc ^
 A ring from the ancient world, gives new life[X]
+
+## CrystalSwordName
+Crystal Sword[X]
+
+## CrystalWeaponDesc ^
+Increase the effectiveness of the weapons triangle[X]
+
+## CrystalLanceName
+Crystal Lance[X]
+
+## CrystalAxeName
+Crystal Axe[X]

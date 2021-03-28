@@ -13,8 +13,37 @@ Imperial[X]
 The army of the Granorg Empire, the[N]
 largest nation on the entire continent.[X]
 
+# 0x0358 PejiteBladeName ^
+Pejite Blade[X]
+
+# 0x0408 PejiteBladeDesc ^
+A pejite sword, +4 def when attacking[X]
+
 # 0x0441 ShortBowDesc
 Cannot crit[X]
 
 # 0x04EE LuckStatScreenInfo ^
 Luck[X]
+
+# 0x03e8 PanaceaName
+Panacea[X]
+
+# 0x0497 PanaceaDesc ^
+A miracle medicine that cures[N]
+any negative status[X]
+
+# 0x0248 BeranName
+Beran[X]
+
+# 0x02a2 BeranDesc
+A tribal chief of some Worm handlers[N]
+forced to work as mercenaries[N]
+in the pay of Slayder[X]
+
+# 0x0237 SlayderName
+Slayder[X]
+
+# 0x0292 SlayderDesc
+A general in the army of Granorg.[N]
+for some he is hailed as the[N]
+hero of the empire...[X]

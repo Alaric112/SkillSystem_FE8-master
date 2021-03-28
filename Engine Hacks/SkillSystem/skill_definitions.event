@@ -987,7 +987,7 @@
 
 //Shadowgift: Allows the user to use Dark Magic. (Uses highest Magic Rank)
 //By Leonarth
-#define ShadowgiftID 179
+#define ShadowgiftID 255
 
 //Lumina: Allows the user to use Light Magic. (Uses highest Magic Rank)
 //By Leonarth
@@ -1033,6 +1033,7 @@
 #define SavageMagicID 248
 #define WindStrikeID 249
 #define ForLadyID 52
+#define EvilAuraID 179
 
 //Display-Only Skills
 

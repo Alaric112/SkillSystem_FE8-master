@@ -28,9 +28,11 @@ ChapterDeathQuote(Lukas, Ch5x, 0x0, LukasDeathCh3)
 ChapterDeathQuote(Gilliam, 0x6, 0x0, GilliamDeath)
 ChapterDeathQuote(SalemNPC, 0x6, 0x0, SalemDeathNPC)
 
-// Ch5
+// Ch5 (New Destiny)
+ChapterDeathQuote(Eruca, 0x7, GameOverFlag, ErucaDeathCh5)
 
-// Ch6
+// Ch6 (Razor Edge)
+ChapterDeathQuote(Eruca, 0x8, GameOverFlag, ErucaDeathCh5)
 
 // Ch7
 

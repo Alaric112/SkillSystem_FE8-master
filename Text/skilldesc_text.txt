@@ -1253,3 +1253,7 @@ bonus: + 3Atk, +10 Hit and Crit and + 2AS[X]
 ## SD_ForLady  ^
 ForLady: Near an allied female unit,[N]
 the character gains +2 Atk and 15 Hit[X]
+
+## SD_EvilAura  ^
+EvilAura: Enemies within a range of four[N]
+suffer +4 damage and make -4 damage.[X]

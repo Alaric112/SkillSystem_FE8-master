@@ -603,3 +603,10 @@ To win the chapter you will need[N]
 to both defend the main bridge[AN]
 and have Kushana and[N]
 Nausica[aa] survive[A][X]
+
+## TextMid8Ch5
+[OpenMidRight][LoadKushana][OpenMidRight]
+No! the enemy troops have[N]
+overcome our defenses![AN]
+how could we fail against[N]
+these idiots...[A][X]

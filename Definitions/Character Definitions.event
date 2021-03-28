@@ -11,6 +11,7 @@
 #define Gadriel 0x04
 #define Donovan 0x05
 #define Priscilla 0x06
+#define Teto 0x07
 #define Diana 0x08
 #define Colt 0x09
 #define Rosie 0x0A
@@ -30,11 +31,13 @@
 #define Lunia 0x1C
 #define Manfred 0x1D
 #define Sam 0x1F
+#define Mito 0x24
 #define Bazba 0x25
 #define Salazar 0x2E
 
 //Enemy and NPC
 #define Jaram 0x47
+#define Bongo 0x4A
 #define Merchant 0x6f
 #define Demon 0xaa
 #define DemonBoss 0xab
@@ -54,6 +57,7 @@
 #define Zechiel 0x58
 #define Bandit2 0x72
 #define MercenaryBoss 0x75
+#define Assasin 0x7C
 #define Imperial 0x7F
 #define ImperialBoss 0x80
 #define Imperial2 0x81
@@ -61,7 +65,8 @@
 #define Alistar 0x8e
 #define AlistarBoss 0x8f
 #define SalemNPC 0xD2
-
+#define MitoNPC 0xC4
+#define BlackStone 0xA6
 
 // Palette 
 

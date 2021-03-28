@@ -1,0 +1,70 @@
+EventPointerTable(CastleWaterTileAnimations,CastleAnimation)
+
+ALIGN 4
+VillageAnimation0:
+#incbin "Dmp/Anim.mapanime 1_000.dmp"
+ALIGN 4
+VillageAnimation1:
+#incbin "Dmp/Anim.mapanime 1_001.dmp"
+ALIGN 4
+VillageAnimation2:
+#incbin "Dmp/Anim.mapanime 1_002.dmp"
+ALIGN 4
+VillageAnimation3:
+#incbin "Dmp/Anim.mapanime 1_003.dmp"
+ALIGN 4
+VillageAnimation4:
+#incbin "Dmp/Anim.mapanime 1_004.dmp"
+ALIGN 4
+VillageAnimation5:
+#incbin "Dmp/Anim.mapanime 1_005.dmp"
+ALIGN 4
+VillageAnimation6:
+#incbin "Dmp/Anim.mapanime 1_006.dmp"
+ALIGN 4
+VillageAnimation7:
+#incbin "Dmp/Anim.mapanime 1_007.dmp"
+ALIGN 4
+VillageAnimation8:
+#incbin "Dmp/Anim.mapanime 1_008.dmp"
+ALIGN 4
+VillageAnimation9:
+#incbin "Dmp/Anim.mapanime 1_009.dmp"
+ALIGN 4
+VillageAnimation10:
+#incbin "Dmp/Anim.mapanime 1_010.dmp"
+ALIGN 4
+VillageAnimation11:
+#incbin "Dmp/Anim.mapanime 1_011.dmp"
+ALIGN 4
+VillageAnimation12:
+#incbin "Dmp/Anim.mapanime 1_012.dmp"
+ALIGN 4
+VillageAnimation13:
+#incbin "Dmp/Anim.mapanime 1_013.dmp"
+ALIGN 4
+VillageAnimation14:
+#incbin "Dmp/Anim.mapanime 1_014.dmp"
+ALIGN 4
+VillageAnimation15:
+#incbin "Dmp/Anim.mapanime 1_015.dmp"
+
+ALIGN 4
+VillageAnimation:
+TilesetAnimation(0x12,0x400,VillageAnimation0)
+TilesetAnimation(0x12,0x400,VillageAnimation1)
+TilesetAnimation(0x12,0x400,VillageAnimation2)
+TilesetAnimation(0x12,0x400,VillageAnimation3)
+TilesetAnimation(0x12,0x400,VillageAnimation4)
+TilesetAnimation(0x12,0x400,VillageAnimation5)
+TilesetAnimation(0x12,0x400,VillageAnimation6)
+TilesetAnimation(0x12,0x400,VillageAnimation7)
+TilesetAnimation(0x12,0x400,VillageAnimation8)
+TilesetAnimation(0x12,0x400,VillageAnimation9)
+TilesetAnimation(0x12,0x400,VillageAnimation10)
+TilesetAnimation(0x12,0x400,VillageAnimation11)
+TilesetAnimation(0x12,0x400,VillageAnimation12)
+TilesetAnimation(0x12,0x400,VillageAnimation13)
+TilesetAnimation(0x12,0x400,VillageAnimation14)
+TilesetAnimation(0x12,0x400,VillageAnimation15)
+WORD 0 0

@@ -64,7 +64,6 @@ ALIGN 4
 SkyCityTileConfigData:
 #incbin "Dmp/SkyCity_comp.dmp"
 
-
 ALIGN 4
 CastleObjectSetData:
 #incbin "Dmp/Improved Castle Object_Palette 1.dmp"
@@ -89,6 +88,17 @@ ALIGN 4
 CastleTileConfigData:
 #incbin "Dmp/Castle Update Config_comp.dmp"
 
+ALIGN 4
+UpdateVillageObjectSetData:
+#incbin "Dmp/Updated Village Palette_Object.dmp"
+
+ALIGN 4
+UpdateVillagePaletteData:
+#incbin "Dmp/Updated Village Palette_Object.png_pal.dmp"
+
+ALIGN 4
+UpdateVillageTileConfigData:
+#incbin "Dmp/Updated Village config_comp.dmp"
 
 /*
 EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
@@ -126,3 +136,6 @@ EventPointerTable(CastlePalette2,Castle2PaletteData)
 EventPointerTable(CastlePalette3,Castle3PaletteData)
 EventPointerTable(CastlePalette4,Castle4PaletteData)
 EventPointerTable(CastleTileConfig,CastleTileConfigData)
+EventPointerTable(VillageObjectSet,UpdateVillageObjectSetData)
+EventPointerTable(VillagePalette,UpdateVillagePaletteData)
+EventPointerTable(VillageTileConfig,UpdateVillageTileConfigData)

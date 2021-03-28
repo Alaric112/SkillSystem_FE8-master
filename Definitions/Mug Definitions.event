@@ -41,9 +41,11 @@
 
 // NPC
 #define MercenaryMug 0xD9
+#define MercenaryGreenMug 0xDA
 #define SoldierBrownMug 0xE6
 
 // Boss
+#define BongoMug 0x32
 #define GervasoMug 0x43
 #define DarioMug 0xD6
 #define CommanderMug 0xD7
@@ -54,7 +56,6 @@
 #define JaramMug 0xE4
 
 // Class Card
-
 #define AxeArmorClassCard 0xAD
 #define AxeCavalierClassCard 0xAE
 #define AxeWyvernriderClassCard 0xAF
@@ -69,18 +70,4 @@
 #define SwordCavalierClassCard 0xB8
 #define ConvoyClassCard 0xB9
 #define CivilClassCard 0xBA
-
-/*
-#define MedicClassCard 0x10C
-#define FreeKnightClassCard 0x10D
-#define SwordSaintClassCard 0x10E
-#define TentClassCard 0x10F
-#define TransporterClassCard 0x110
-#define WarMonkClassCard 0x111
-#define WitchClassCard 0x112
-#define BarubaryClassCard 0x113
-#define EarthDragonClassCard 0x114
-#define DivineDragonClassCard 0x115
-#define MageDragonClassCard 0x116
-#define IceDragonClassCard 0x117
-*/
+#define WoodBoxClassCard 0xBB

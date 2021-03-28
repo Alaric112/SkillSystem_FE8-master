@@ -1,4 +1,4 @@
-EventPointerTable(Ch6Event, PointerList)
+EventPointerTable(Ch7Event, PointerList)
 
 PointerList:
 	POIN TurnBasedEvents
@@ -13,8 +13,47 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-
+    TurnEventPlayer(0x0,Turn2,2)
+    TurnEventPlayer(0x0,Turn3,3)
+	TurnEventPlayer(0x0,Turn5,5)
+    TurnEventPlayer(0x0,Turn7,7)
 	END_MAIN
+
+Turn2:
+CAMERA_CENTERED [22,18]
+LOAD1 0x2 AllyReinforce1
+LOAD1 0x1 AllyReinforce2
+ENUN
+CAMERA Catherina
+CURSOR_FLASHING(Catherina)
+STAL(45)
+REMOVE_CURSORS
+Text(MidText1Ch6)
+LOAD1 0x1 AllyReinforce3
+ENUN
+Text(MidText2Ch6)
+FADI(16)
+CAMERA_CENTERED(Beran)
+FADU(16)
+CAMERA Beran
+CURSOR_FLASHING(Beran)
+STAL(45)
+REMOVE_CURSORS
+Text(MidText3Ch6)
+NoFade
+ENDA
+
+Turn3:
+SpawnReinforcements(EnemyReinforce1)
+ENDA
+
+Turn5:
+SpawnReinforcements(EnemyReinforce2)
+ENDA
+
+Turn7:
+SpawnReinforcements(EnemyReinforce3)
+ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -26,7 +65,41 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 
+LOCA 0x0 Retreat [21,19] 0x13
+LOCA 0x0 Retreat [22,19] 0x13
+LOCA 0x0 Retreat [23,19] 0x13
+Village(0xB,Village1,1,17)
+
 	END_MAIN
+
+Village1:
+
+//SetBackground(0x2)
+//Text(TextVillage1Ch1)
+GiveItem(AngelRing, 0xFFFF)
+//EndConvo
+ENDA
+
+Retreat:
+
+CHECK_EVENTID 0x1F
+BEQ 0x9000 0xC 0x0
+EscapeUnit(0x0, Nausicaa)
+EscapeUnit(0x0, Kushana)
+GOTO 0x9001
+LABEL 0x9000
+CHECK_ACTIVEID Nausicaa
+BEQ 0x9003 0xC 0x0
+ENUT 0x1F
+EveryoneEscape(0x0)
+LABEL 0x9003
+CHECK_ACTIVEID Kushana
+BEQ 0x9002 0xC 0x0
+ENUT 0x1F
+EveryoneEscape(0x0)
+LABEL 0x9002
+LABEL 0x9001
+ENDA
 
 Dunno1:
 
@@ -57,6 +130,25 @@ Units1:
 
  UNIT
 
+Units2:
+	
+	UNIT Nausicaa 0x0 0x0 Level(3,Ally,0) [5,4] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+
+ UNIT
+
+Units3:
+	
+	UNIT Asbel Mercenary 0x0 Level(5,Ally,0) [3,4] 0x0 0x0 0x0 0x0 [PejiteBlade, IronSword Vulnerary, Vulnerary] [0,0,0,0]
+   	UNIT Kushana ErucaLord 0x0 Level(5,Ally,0) [4,3] 0x0 0x0 0x0 0x0 [Tomahawk] [0,0,0,0]
+
+ UNIT
+
+Units4:
+
+	UNIT Teto SquirrelFox1 0x0 Level(5,Ally,0) [4,3] 0x0 0x0 0x2 REDA3R4 [FieryFang] [0,0,0,0]
+
+ UNIT
+
 Alleati1: 
 
 	UNIT Eruca ErucaLord 0x0 Level(5,NPC,0) [15,9] 0x0 0x0 0x0 0x0 [Tomahawk, Vulnerary] [0x3,0x0,0,0x20]
@@ -73,100 +165,84 @@ Alleati1:
 
 EnemyUnits:
 
-	UNIT Gervaso Warrior 0x0 Level(10,Enemy,1) [1,7] 0x0 0x0 0x0 0x0 [HandAxe, SteelLongBow] StaticAI
-	UNIT Zakaria Mercenary 0x0 Level(8,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [2,9] 0x0 0x0 0x0 0x0 [Hatchet] WaitOneTurnAI
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [Swordreaver] WaitOneTurnAI
-	UNIT Alistar Pirate 0x0 Level(6,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Swordreaver] [0,0,0,0]
-	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [5,10] 0x0 0x0 0x0 0x0 [IronLance, Vulnerary] [0,0,0,0]
-	UNIT Alistar Archer 0x0 Level(4,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [IronBow, SecretBook] AttackInRangeAI
-	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [6,14] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
-	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [1,14] 0x2 0x0 0x0 0x0 [IronSword, ChestKey] AttackInRangeAI
-	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [2,17] 0x2 0x0 0x0 0x0 [SteelLance, Vulnerary] AttackInRangeAI
-	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [28,8] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
-	UNIT Alistar Soldier 0x0 Level(4,Enemy,1) [25,9] 0x0 0x0 0x0 0x0 [Javelin] AttackInRangeAI
-	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,11] 0x2 0x0 0x0 0x0 [SteelBow, ChestKey] AttackInRangeAI
-	UNIT Alistar Mage 0x0 Level(4,Enemy,1) [29,14] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [27,16] 0x2 0x0 0x0 0x0 [Fire, PureWater] AttackInRangeAI
-	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [28,18] 0x0 0x0 0x0 0x0 [Lightning, PureWater] AttackInRangeAI
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [24,13] 0x0 0x0 0x0 0x0 [Swordreaver] [0,0,0,0]	
-	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [24,14] 0x0 0x0 0x0 0x0 [SteelAxe] [0,0,0,0]
-	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [24,18] 0x0 0x0 0x0 0x0 [Zanbato] [0,0,0,0]	
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [24,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [5,15] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
-	UNIT AlistarBoss Pirate 0x0 Level(12,Enemy,1) [27,6] 0x2 0x0 0x0 0x0 [Hatchet, ChestKey] [0,3,0,0]
+	UNIT Beran Ranger 0x0 Level(2,Enemy,1) [27,7] 0x0 0x0 0x0 0x0 [SteelBow, PoisonBow] AttackInRangeAI
+	UNIT Assasin Thief 0x0 Level(4,Enemy,1) [22,10] 0x0 0x0 0x0 0x0 [IronDagger, LeatherShield] AttackInRangeAI
+	UNIT Assasin Mercenary 0x0 Level(5,Enemy,1) [24,14] 0x2 0x0 0x0 0x0 [Zanbato] AttackInRangeAI
+	UNIT Assasin SwordCavalier 0x0 Level(5,Enemy,1) [18,18] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] AttackInRangeAI
+	UNIT Assasin SwordCavalier 0x0 Level(5,Enemy,1) [26,9] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	UNIT Assasin LanceCavalier 0x0 Level(5,Enemy,1) [26,16] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Assasin LanceCavalier 0x0 Level(5,Enemy,1) [25,8] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Assasin Shaman 0x0 Level(6,Enemy,1) [21,16] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
+	UNIT Assasin Shaman 0x0 Level(6,Enemy,1) [22,15] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
+	UNIT Demon Revenant 0x0 Level(5,Enemy,1) [3,7] 0x0 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Demon Revenant 0x0 Level(5,Enemy,1) [7,5] 0x2 0x0 0x0 0x0 [PoisonClaw, Panacea] AttackInRangeAI
+	UNIT Demon Worg 0x0 Level(5,Enemy,1) [0,10] 0x0 0x0 0x0 0x0 [FieryFang] WaitOneTurnAI
+	UNIT Demon Tarvos 0x0 Level(7,Enemy,1) [0,14] 0x0 0x0 0x0 0x0 [PoisonAxe] AttackInRangeAI
+	UNIT Demon Tarvos 0x0 Level(6,Enemy,1) [3,14] 0x0 0x0 0x0 0x0 [PoisonAxe] AttackInRangeAI
+	UNIT Demon Tarvos 0x0 Level(7,Enemy,1) [4,17] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+	UNIT Demon Mogall 0x0 Level(6,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Demon Bael 0x0 Level(5,Enemy,0) [8,11] 0x0 0x0 0x0 0x0 [PoisonClaw] AttackInRangeAI
+	UNIT Demon Worg 0x0 Level(5,Enemy,1) [10,13] 0x0 0x0 0x0 0x0 [FieryFang] AttackInRangeAI
+	UNIT Demon BoneWalker_Bow 0x0 Level(5,Enemy,1) [10,16] 0x0 0x0 0x0 0x0 [SteelLongBow] AttackInRangeAI
+	UNIT Demon Bael 0x0 Level(5,Enemy,0) [8,19] 0x0 0x0 0x0 0x0 [FetidClaw] AttackInRangeAI
+	UNIT Demon BoneWalker_Bow 0x0 Level(5,Enemy,1) [10,7] 0x0 0x0 0x0 0x0 [PoisonBow] AttackInRangeAI
+	UNIT Demon BoneWalker 0x0 Level(5,Enemy,1) [11,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Demon BoneWalker 0x0 Level(6,Enemy,1) [13,6] 0x2 0x0 0x0 0x0 [SteelSword, Vulnerary] AttackInRangeAI
+	UNIT Demon BoneWalker 0x0 Level(6,Enemy,1) [14,9] 0x2 0x0 0x0 0x0 [KillingEdge] AttackInRangeAI
+	UNIT Demon Revenant 0x0 Level(5,Enemy,1) [13,17] 0x0 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Demon Revenant 0x0 Level(5,Enemy,1) [16,14] 0x0 0x0 0x0 0x0 [PoisonClaw] AttackInRangeAI
+	UNIT Demon Worg 0x0 Level(6,Enemy,1) [17,10] 0x0 0x0 0x0 0x0 [FieryFang] AttackInRangeAI
+	UNIT Demon BoneWalker_Bow 0x0 Level(6,Enemy,1) [18,11] 0x0 0x0 0x0 0x0 [LongBow] AttackInRangeAI
+	UNIT Demon BoneWalker_Bow 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [LongBow, PoisonBow] AttackInRangeAI
+	UNIT Demon Bael 0x0 Level(5,Enemy,0) [19,4] 0x0 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Demon Worg 0x0 Level(6,Enemy,1) [22,1] 0x0 0x0 0x0 0x0 [FieryFang] AttackInRangeAI
+	UNIT Demon BoneWalker 0x0 Level(6,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 	 	
 	UNIT
 
 EnemyReinforce1: 
 
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Mage 0x0 Level(4,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [Fire] [0,0,0,0]
-	UNIT Alistar Myrmidon 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]
-	UNIT Alistar Myrmidon 0x0 Level(4,Enemy,1) [29,19] 0x0 0x0 0x0 0x0 [Lancereaver] [0,0,0,0]
+	UNIT Demon Worg 0x0 Level(5,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
+	UNIT Demon Mogall 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Worg 0x0 Level(5,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
 	
 	UNIT
 
 EnemyReinforce2: 
 
-	UNIT Alistar Monk 0x0 Level(4,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]
-	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [29,19] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]	
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Demon Worg 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
+	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+		
 	UNIT
 
-EnemyReinforce3: 
+EnemyReinforce3:
 	
-	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [SteelAxe] [0,0,0,0]
-	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Fire] [0,0,0,0]
-
-	UNIT
-
-EnemyReinforce4: 
-	
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [HandAxe] [0,0,0,0]
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Mage 0x0 Level(5,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [Thunder] [0,0,0,0]
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]	
-	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [27,10] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]	
-	
-	UNIT
-
-EnemyReinforce5: 
-	
-	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
-	UNIT Alistar PegasusKnight 0x0 Level(5,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [Axereaver] [0,0,0,0]
-	UNIT Alistar PegasusKnight 0x0 Level(5,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Axereaver] [0,0,0,0]
-	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [28,0] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
-	UNIT Alistar PegasusKnight 0x0 Level(4,Enemy,1) [29,1] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
-
-	UNIT
-
-EnemyReinforce6:
-	
-	UNIT Alistar Pirate 0x0 Level(4,Enemy,1) [5,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Pirate 0x0 Level(5,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
-	UNIT Alistar Monk 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Lightning] [0,0,0,0]
-	UNIT Alistar Mercenary 0x0 Level(4,Enemy,1) [27,10] 0x0 0x0 0x0 0x0 [SteelSword] [0,0,0,0]
-	UNIT Alistar Soldier 0x0 Level(5,Enemy,1) [29,17] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Alistar Archer 0x0 Level(5,Enemy,1) [29,15] 0x0 0x0 0x0 0x0 [AetherGun] [0,0,0,0]
+	UNIT DemonBoss Cyclops 0x0 Level(5,Enemy,1) [0,0] 0x2 0x0 0x0 0x0 [Tomahawk, BlueGem] [0,0,0,0]
+	UNIT Demon Worg 0x0 Level(6,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
+	UNIT Demon Worg 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
+	UNIT Demon Gargoyle 0x0 Level(5,Enemy,1) [0,4] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
+	UNIT Demon Gargoyle 0x0 Level(5,Enemy,1) [4,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]	
 	
 	UNIT
 
 AllyReinforce1:
 	
-	UNIT Imperial Soldier 0x0 Level(6,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Imperial Soldier 0x0 Level(6,NPC,1) [18,19] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Catherina 0x0 0x0 Level(1,Ally,1) [11,19] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Harken 0x0 0x0 Level(1,Ally,1) [18,19] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
 	
 	UNIT
 
 AllyReinforce2:
 	
-	UNIT Imperial WyvernRider 0x0 Level(5,NPC,1) [12,19] 0x0 0x0 0x1 REDA12R14 [Javelin] [0,0,0,0]
-	UNIT Imperial WyvernRider 0x0 Level(6,NPC,1) [13,19] 0x0 0x0 0x1 REDA13R18 [IronLance] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(5,NPC,1) [16,19] 0x0 0x0 0x1 REDA16R18 [HandAxe] [0,0,0,0]
-	UNIT Imperial AxeWyvernRider 0x0 Level(6,NPC,1) [17,19] 0x0 0x0 0x1 REDA17R14 [IronAxe] [0,0,0,0]
+	UNIT Arthur Monk 0x0 Level(6,Ally,0) [23,19] 0x0 0x0 0x0 0x0 [Lightning, Shine, Vulnerary] [0,0,0,0]
+	
+	UNIT
+
+AllyReinforce3:
+	
+	UNIT Priscilla PegasusKnight 0x0 Level(4,Ally,1) [3,18] 0x0 0x0 0x1 REDA21R19 [HorseSlayer, IronLance, Panacea] [0,0,0,0]
 	
 	UNIT
 
@@ -184,21 +260,30 @@ CutScene2:
 
 CutScene3:
 	
-	UNIT Eruca ErucaLord 0x0 Level(1,Enemy,1) [8,13] 0x0 0x0 0x1 REDA12R8 [Flux] [0,0,0,0]
-	UNIT Zechiel WyvernLord 0x0 Level(1,Enemy,1) [8,14] 0x0 0x0 0x1 REDA13R8 [Flux] [0,0,0,0]
+	UNIT Eruca ErucaLord 0x0 Level(1,NPC,1) [5,3] 0x0 0x0 0x0 0x0 [Tomahawk] [0,0,0,0]
   	
 	UNIT
 
 CutScene4:
 	
-	UNIT Nausicaa LanceLord 0x0 Level(1,Ally,1) [15,14] 0x0 0x0 0x1 REDA15R10 [Vulnerary] [0,0,0,0]
-  	
+	UNIT Beran Ranger 0x0 Level(1,Enemy,1) [3,13] 0x0 0x0 0x1 REDA5R5 [SteelBow] [0,0,0,0]
+  	UNIT Imperial LanceCavalier 0x0 Level(6,Enemy,1) [3,13] 0x0 0x0 0x1 REDA4R6 [IronLance] [0,0,0,0]
+	UNIT Alistar LanceCavalier 0x0 Level(6,Enemy,1) [3,13] 0x0 0x0 0x1 REDA6R6 [IronLance] [0,0,0,0]
+	
+	UNIT
+
+CutScene5:
+	
+	UNIT Nausicaa LanceLord 0x0 Level(1,Ally,1) [3,0] 0x0 0x0 0x1 REDA4R4 [Vulnerary] [0,0,0,0]
+  	UNIT Asbel Mercenary 0x0 Level(5,Ally,1) [3,0] 0x0 0x0 0x1 REDA6R4 [IronSword] [0,0,0,0]
+	
 	UNIT
 
 Traps1:
 
-    GreenSigil(14,14)
-	GreenSigil(15,14)
+    GreenSigil(21,19)
+	GreenSigil(22,19)
+    GreenSigil(23,19)
 	ENDTRAP
 	ALIGN 4
 
@@ -208,107 +293,104 @@ Traps2:
 
 BeginningScene:
 
-    MUSC(0x3E)
-	SetBackground(0x3D)
-	Text(Text1Ch5)
-	Text(Text2Ch5)
-	CHECK_ALIVE 0xD
-    BEQ 0x2 0xC 0x0
-	Text(ExtraText1Ch5)
-	LABEL 0x2
-	CHECK_ALIVE 0x9
-    BEQ 0x3 0xC 0x0
-	Text(ExtraText2Ch5)
-	LABEL 0x3
-	CHECK_ALIVE 0x8
-    BEQ 0x4 0xC 0x0
-	CHECK_ALIVE 0xC
-    BEQ 0x4 0xC 0x0	
-	Text(ExtraText3Ch5)
-	LABEL 0x4
+    MUSC(0x26D)
+	SetBackground(0x23)
+	Text(Text1Ch6)
+	FADI(16)
+	SetBackground(0x45)
+	FADU(16)
+	CGTEXTSTART    
+						TEXTSHOW Text2Ch6  
+	                    TEXTEND
+	REMA
+	FADI(16)
+	SetBackground(0x23)
+	FADU(16)
+	Text(Text3Ch6)
 	FADI(16)
 	CLEAN
 	LOMA 0x7
-	TILECHANGE 0x0
+	MUSC(0x2E)	
 	LOAD1 0x1 CutScene1
 	ENUN
 	CAMERA_CENTERED(Slayder)
-	MUSC(0x2E)
 	FADU(16)
-	BROWNBOXTEXT (LocationText1Ch5) [8,8]
-	Text(Text3Ch5)
+	BROWNBOXTEXT (LocationText1Ch6) [8,8]
 	LOAD1 0x1 CutScene2
 	ENUN
-	Text(Text4Ch5)
+	SetBackground(0xE)
+	Text(Text4Ch6)
+	FADI(16)
+	CLEE 0x0
+	LOMA 0x8
+	MUSC 0x0
 	LOAD1 0x1 CutScene3
 	ENUN
-	Text(Text5Ch5)
-	FADI(16)
-	REMOVEUNIT Eruca
-	REMOVEUNIT Zechiel
 	FADU(16)
-	Text(Text6Ch5)
-	FADI(16)
-	LOMA 0x8
-	TILECHANGE 0x7
-	CLEE 0x0
-	LOAD 0x1 Alleati1
-	ENUN
-	CAMERA_CENTERED(Eruca)
-	FADU(16)
-	MUSC(0x32)
 	LOAD1 0x1 CutScene4
-	ENUN
-	Text(Text7Ch5)
-	MUSC(0x26)
-	Text(Text8Ch5)
+    ENUN
+    Text(Text5Ch6)
+    MUSC(0x25)
+	CUSE Beran
+	CUSE Imperial
+	CUSE Alistar
+	Text(Text6Ch6)
+ 	StartBattle
+    SetScriptedBattle(78,8,22,73,15,2)
+    CriticalHit(0,24)
+    MissedAttack(1,0)
+    EndAttack
+    FIGHT Beran Kushana SteelBow False
+	Text(Text7Ch6)
+	LOAD1 0x1 CutScene5
+    ENUN
+	Text(Text8Ch6)
 	FADI(16)
-	REMU Gadriel
-	REMU Kairs
-	REMU Catherina
-	REMU Harken
-	REVEAL Lukas
-	TILEREVERSE 0x7	
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+	LOAD1 0x2 Units2
+    ENUN
+	LOAD1 0x1 Units3
+    ENUN
+    SVAL 0x1 0x9
+    SET_HP Kushana
 	LOAD1 0x1 EnemyUnits
-	ENUN
-	LOAD 0x1 Alleati1
-	ENUN
-	PREP
-	CHECK_ALIVE 0x3
-    BEQ 0x5 0xC 0x0
-	Text(Text9Ch5)
-	LABEL 0x5
-	CAMERA Gervaso
-    CURSOR_FLASHING Gervaso
-	STAL(30)
+	CAMERA_CENTERED Nausicaa
+	CURSOR_FLASHING(Nausicaa)
+    STAL(30)
 	REMOVE_CURSORS
-	SetBackground(0x8)
-	Text(Text10Ch5)
-	CLEAN
+	Text(Text9Ch6)
+	REMU Lukas
+	REMU Diana
+	REMU Rosie
+	REMU Colt
+	REMU Yala
+	REMU Rath
+	REMU Calliope
+	LOAD1 0x1 Units4
+	ENUN
+	Text(Text10Ch6)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW MidText4Ch6  
+	                    TEXTEND	
+	REMA
 	NoFade
 	ENDA
 
 EndingScene:
     FADI(16)
-	MUSC(0x25)
-	CLEA 0x0
-	CLEN 0x0
-	CLEE 0x0
+	MUSC(0x32)
+	SetBackground(0x1D)	
 	FADU(16)
-	SetBackground(0x8)
-	Text(TextEnd1Ch5)
-    Text(TextEnd2Ch5)
+	Text(EndText1Ch6)
+    Text(EndText2Ch6)
 	FADI(16)
 	CLEAN 
-	SetBackground(0x3D)
+	SetBackground(0x0E)
 	FADU(16)
-	Text(TextEnd3Ch5)
-	FAWI(120)
-	MUSC(0x4E)
-	SetBackground(0x42)
-	FAWU(48)
-	Text(TextEnd4Ch5)
-	FAWI(120)
-	MNC2 0x8
+	Text(EndText3Ch6)
+	MNC2 0x9
 	NoFade
 	ENDA

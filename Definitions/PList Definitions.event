@@ -38,9 +38,9 @@
 #define Ch8TileChange 0x29
 #define Ch8Event 0x2A
 
-#define Ch9AMap 0x2B
-#define Ch9ATileChange 0x2C
-#define Ch9AEvent 0x2D
+#define Ch9AMap 0x2B          //
+#define Ch9ATileChange 0x2C   // Preso fino a qui
+#define Ch9AEvent 0x2D        // 
 
 #define Ch9BMap 0x69
 #define Ch9BTileChange 0x6A

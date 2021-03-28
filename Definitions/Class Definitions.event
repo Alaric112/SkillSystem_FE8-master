@@ -5,6 +5,12 @@
 #define LanceCavalier 0x5
 #define LanceKnight 0x9
 #define MageF 0x26
+#define SquirrelFox1 0x3D
+#define TetoClass1 0x3D
+#define BoneWalker 0x54
+#define BoneWalker_Bow 0x55 
+#define Worg 0x5B
+
 //#define Cleric 0x4A
 
 //Extra 
@@ -22,3 +28,4 @@
 #define ErucaLord 0x8B
 #define Deserter 0x8C
 #define Thief_F 0x8D
+#define BlackStoneClass 0x8E
