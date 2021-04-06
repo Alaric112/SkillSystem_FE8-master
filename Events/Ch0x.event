@@ -14,7 +14,15 @@ PointerList:
 
 TurnBasedEvents:
 
+    TurnEventPlayer(0x0,Turn1,1)
+
 	END_MAIN
+
+Turn1:
+
+    ASMC EnableFreeMovementASMC
+	NoFade
+    ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -193,7 +201,7 @@ LocationBasedEvents:
 	END_MAIN
 
 Ch0xAmroryEvent:
-    CLEAN
+//   CLEAN
     SVAL s2 Ch0xArmory|IsPointer
     SVAL 0x3 0x0
     ASMC MakeShopASMC
@@ -201,7 +209,7 @@ Ch0xAmroryEvent:
 	ENDA 
 
 Ch0xVendorEvent:
-    CLEAN
+//    CLEAN
     SVAL s2 Ch0xVendor|IsPointer
     SVAL 0x3 0x1
     ASMC MakeShopASMC
@@ -315,8 +323,7 @@ LenaDeploy:
 
 NPC1:
 
-	UNIT Calliope MageF 0x0 Level(3,NPC,0) [23,6] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
-	UNIT Gilliam Warrior 0x0 Level(4,NPC,0) [1,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronLance, SteelShield] [0,0,0,0]
+	UNIT Gilliam Warrior 0x0 Level(4,NPC,0) [1,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
 	UNIT Diana Huntress 0x0 Level(2,NPC,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
 	UNIT Colt Thief 0x0 Level(4,NPC,1) [2,15] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
 	UNIT Rosie PirateF 0x0 Level(3,NPC,0) [6,13] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
@@ -331,6 +338,7 @@ NPC1:
 	UNIT 0xF4 0x6F 0x0 Level(1,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [4,22] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0x70 0x6D 0x0 Level(1,NPC,1) [6,23] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT Calliope MageF 0x0 Level(3,NPC,0) [23,6] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
 	
     UNIT 
 
@@ -359,9 +367,11 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-
+   
 	MUSC(0x27)
-	LOMA(0x07)
+	LOMA(0x0C)
+//	REVEAL Nausicaa
+	SHOWUNIT Nausicaa
 	CAMERA [17,12] 	
 	LOAD1 1 Cutscene1
 	ENUN
@@ -379,12 +389,14 @@ BeginningScene:
 	Text(Text1Ch0x)
 	REMA
 	EndConvo
-	LOAD1 1 Cutscene3
+	LOAD1 2 Cutscene3
 	ENUN
 	SetBackground(0xE)
 	Text(Text2Ch0x)
 	REMA
     GiveGold(1500)
+//    SVAL s3 1500
+//    GIVEMONEY Nausicaa
 	FADI(16)
 	CLEAN
 	CLEA 0x0
@@ -407,15 +419,18 @@ BeginningScene:
 	DISA Nashira
 	LOAD1 1 NPC1
 	BadStatus(0x8, 0x2)
-	REMU(Kairs)
-	REMU(Gadriel)
+//	REMU(Kairs)
+//	REMU(Gadriel)
 	FADU(16)
 	TUTORIALTEXTBOXSTART
 	                    CenterTutorialTextBox 
 	                    TEXTSHOW Text5Ch0x  
 	                  	TEXTEND	
     REMA
-    ASMC EnableFreeMovementASMC	
+    SVAL s4 0x0
+	SVAL 0xD 0x0
+	GotoPrepScreen
+	NoFade
 	ENDA
 
 EndingScene:
@@ -425,8 +440,8 @@ EndingScene:
     CUSA 0x8
     CUSA 0x9
     CUSA 0xA
-	REVEAL 0x2
-    REVEAL 0x4
+//	REVEAL 0x2
+//  REVEAL 0x4
     REVEAL 0x9
 	CLEA 0x0
 	CLEE 0x0
@@ -445,9 +460,6 @@ EndingScene:
 	LOAD1 1 Yala1
 	ENUN
 	Text(Ch0xEndText2)
-	FADI(16)
     MNC2(0x02)	
-	NoFade
-	ENUT 0x1D
-//	ASMC DisableFreeMovementASMC	
+//	NoFade
 	ENDA

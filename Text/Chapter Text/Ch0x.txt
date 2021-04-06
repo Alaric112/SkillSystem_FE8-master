@@ -476,7 +476,7 @@ careful for tomorrow's mission[AN]
 O-Of course![A][X]
 
 ## Ch0xTalk4part1
-[OpenMidLeft][LoadFace][0xCE][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+[OpenMidLeft][LoadColt][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
 you, again? what do you want now?[AN]
 [OpenMidRight]
 You said people avoid[N] 
@@ -549,7 +549,7 @@ an old man at the inn...[AN]
 we might as well go there[A][X]
 
 ## Ch0xTalk4part2
-[OpenMidLeft][LoadFace][0xCE][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+[OpenMidLeft][LoadColt][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
 ... ... ...[AN]
 [OpenMidRight]
 Hi! you must be one of the[N]
@@ -607,14 +607,14 @@ he gave me, a reict of the[N]
 company a...bah I already said too much[A][X]
 
 ## Ch0xTalk5part1
-[OpenMidLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]
+[OpenMidLeft][LoadRosie][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]
 I found one[N]
 small flask[AN]
 [OpenMidLeft]Great![AN]
 now watch![A][X]
 
 ## Ch0xTalk5part2
-[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenFarLeft]
+[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadRosie][OpenMidRight][LoadFace][0x02][0x01][OpenFarLeft]
 *!!!*[AN]
 I feel a delicious aroma![AN]
 Rosie, what are you doing[N]
@@ -710,7 +710,7 @@ drunk all...[AN]
 I have no words[A][X]
 
 ## Ch0xTalk5part3
-[OpenMidLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+[OpenMidLeft][LoadRosie][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
 Hey! Hello![N]
 Princess Nausica[aa][AN]
 Captain Gilliam has us[N]
@@ -834,7 +834,7 @@ to do...[A][X]
 Princess, wait![A][X]
 
 ## Ch0xEndText2
-[OpenMidLeft][LoadFace][0xC9][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
+[OpenMidLeft][LoadYala][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]
 Princess! princess![AN]
 [OpenMidRight]
 Yala? why are you screaming?[AN]

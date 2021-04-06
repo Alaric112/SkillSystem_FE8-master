@@ -184,7 +184,7 @@ Tutorial:
 
 Units1:
 
-    UNIT Gilliam Warrior 0x0 Level(3,Ally,0) [4,12] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+    UNIT Gilliam Warrior 0x0 Level(4,Ally,0) [4,12] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
 	UNIT Diana Huntress 0x0 Level(2,Ally,0) [1,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
 	UNIT Colt Thief 0x0 Level(4,Ally,1) [4,11] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
 	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [4,14] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
@@ -197,7 +197,7 @@ Units1:
 
 Cutscene1:
 
-    UNIT Gilliam Warrior 0x0 Level(3,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+    UNIT Gilliam Warrior 0x0 Level(4,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
 	UNIT Diana Huntress 0x0 Level(2,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
 	UNIT Colt Thief 0x0 Level(4,Ally,1) [1,13] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
 	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [3,15] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
@@ -327,7 +327,6 @@ BeginningScene:
 
 EndingScene:
 
-
     MUSC 0x31
 	SetBackground(0x1B)
 	Text(TextEnd1Ch1)
@@ -357,10 +356,10 @@ EndingScene:
 	GiveItem(WindRing, Nausicaa)
 	LABEL 0x9004
 	FADI(16)
-	LoseItem(SteelShield)
-	SendAllTransporter(Gilliam)
+//	LoseItem(SteelShield)
+//	SendAllTransporter(Gilliam)
 	REMU Gilliam
-	DISA Gilliam
+//	DISA Gilliam
 	MNC2 0x3
 	NoFade
 	ENDA

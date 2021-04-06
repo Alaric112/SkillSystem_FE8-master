@@ -25,13 +25,15 @@ Turn1:
 	                    TEXTSHOW Text3Ch1x  
 	                  	TEXTEND	
     REMA
+/*	
     REMU Kairs
 	REMU Gadriel
 	REMU Diana
 	REMU Colt
 	REMU Rosie 
 	REMU Yala
-	LOAD1 2 NPC1
+*/	
+	LOAD1 0 NPC1
 	ENUN
     ASMC EnableFreeMovementASMC	
     ENDA
@@ -290,7 +292,7 @@ Traps2:
 BeginningScene:
     
 	MUSC 0x27
-	LOMA 0x07
+	LOMA 0x0C
 	CAMERA [17,12]
 	FADI(16)
 	FADU(16)
@@ -339,8 +341,8 @@ BeginningScene:
 	FADI(16)
 	CUSA Calliope
 	CUSA Salem
-	REMU Calliope
-	REMU Salem
+//	REMU Calliope
+//	REMU Salem
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
@@ -353,49 +355,53 @@ EndingScene:
 
     MUSC(0x270)
 	FADI(16)
+/*	
 	CUSA Calliope
 	CUSA Salem
 	CUSA Kairs
 	CUSA Gadriel
-	CUSA Diana
+	CUSA Diana	
 	CUSA Rosie
 	CUSA Colt 
 	CUSA Yala
+*/
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
+/*	
 	REVEAL Calliope
 	REVEAL Salem
+*/	
 	LOAD2 1 CutScene5
 	ENUN
 	CAMERA [25,6]
 	FADU(16)
 	CHECK_EVENTID 0x11
     BEQ 0x9000 0xC 0x0
-	LOAD1 2 CutScene6
+	LOAD2 1 CutScene6
 	ENUN
 	Text(TextTalk6Ch1x)
-	REVEAL Kairs
-	REVEAL Gadriel
+//	REVEAL Kairs
+//	REVEAL Gadriel
 	LABEL 0x9000
 	CHECK_EVENTID 0x23
     BEQ 0x9002 0xC 0x0
-	REVEAL Diana
-	REVEAL Rosie
+//	REVEAL Diana
+//	REVEAL Rosie
 	LABEL 0x9002
     CHECK_EVENTID 0xE
     BEQ 0x9003 0xC 0x0
-	REVEAL Yala
+//	REVEAL Yala
 	LABEL 0x9003
     CHECK_EVENTID 0x21
     BEQ 0x9004 0xC 0x0
-	REVEAL Colt
+//	REVEAL Colt
 	LABEL 0x9004
     FADI 16
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
-	LOMA 0x7
+	LOMA 0xC
 	CAMERA [6,6]
 	LOAD1 1 CutScene1
 	ENUN

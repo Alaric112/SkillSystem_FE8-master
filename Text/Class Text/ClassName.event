@@ -116,3 +116,26 @@ Squirrel Fox[X]
 small inhabitants of the demonic forests[N]
 and deserts of the south very distrustful[N]
 of humans, often called the little devils[X]
+
+## BalistaName
+Ballista[X]
+
+## BalistaDesc
+Powerful war-machine which can strike[N]
+from considerable distances[X]
+
+## HalbardierName
+Halberdier[X]
+
+## HalbardierDesc
+Professional soldier with have[N]
+master the technique with Lances[N]
+Equip: [Lance][X]
+
+## BerserkerName
+Berserker[X]
+
+## BerserkerDesc
+Great tribal warriors moving[N]
+between mountains and seas[N]
+Equip: [Axe][X]

@@ -81,7 +81,7 @@ GiveItem(AngelRing, 0xFFFF)
 ENDA
 
 Retreat:
-
+/*
 CHECK_EVENTID 0x1F
 BEQ 0x9000 0xC 0x0
 EscapeUnit(0x0, Nausicaa)
@@ -99,6 +99,7 @@ ENUT 0x1F
 EveryoneEscape(0x0)
 LABEL 0x9002
 LABEL 0x9001
+*/
 ENDA
 
 Dunno1:
@@ -309,7 +310,7 @@ BeginningScene:
 	Text(Text3Ch6)
 	FADI(16)
 	CLEAN
-	LOMA 0x7
+	LOMA 0xC
 	MUSC(0x2E)	
 	LOAD1 0x1 CutScene1
 	ENUN

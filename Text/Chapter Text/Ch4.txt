@@ -499,7 +499,7 @@ I'm ready to fight![AN]
 cost that cost![A][X]
 
 ## TextEnd11Ch4
-[OpenRight][LoadFace][0xCB][0x01][OpenFarRight][LoadFace][0x0A][0x01][OpenRight][OpenRight][ToggleSmile]
+[OpenRight][LoadRosie][OpenFarRight][LoadFace][0x0A][0x01][OpenRight][OpenRight][ToggleSmile]
 Ha ha looks like it will be[N]
 this is our end![AN]
 then we will bring them[N]

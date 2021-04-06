@@ -1,0 +1,16 @@
+#ifdef _FE8_
+
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+
+PUSH
+ORG $846E4
+jumpToHack(HackLocation)
+POP
+
+HackLocation:
+#incbin "new_haiku.dmp"
+
+#else
+    ERROR This version of Selection Quotes is for FE8!
+#endif

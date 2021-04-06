@@ -1,0 +1,367 @@
+EventPointerTable(Ch10AEvent, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+    TurnEventEnemy(0x0,Turn1,1)
+    TurnEventPlayer(0x0,Turn2,2)
+    TurnEventPlayer(0x0,Turn4,4)
+    TurnEventPlayer(0x0,Turn5,5)
+    TurnEventPlayer(0x0,Turn6,6)
+    TurnEventPlayer(0x0,Turn8,8)
+
+	END_MAIN
+
+Turn1:
+
+    MUSC(0x271)
+	CHECK_ALIVE Trak
+    BEQ 0x9000 0xC 0x0
+	CAMERA Trak
+    CURSOR_FLASHING Trak
+	STAL(30)
+	REMOVE_CURSORS
+	Text(Text6Ch8)
+    LABEL 0x9000
+    ENDA
+
+Turn2:
+
+	CHECK_ALIVE Jaram
+    BEQ 0x9000 0xC 0x0
+	CAMERA Jaram
+    CURSOR_FLASHING Jaram
+	STAL(30)
+	REMOVE_CURSORS
+	Text(Text7Ch8)
+	LOAD1 0x1 Rinforzi1
+    LABEL 0x9000
+    ENDA
+
+Turn4:
+
+    SpawnReinforcements(Rinforzi2)
+    ENDA
+
+Turn5:
+
+    SpawnReinforcements(Rinforzi3)
+    ENDA
+
+Turn6:
+
+    SpawnReinforcements(Rinforzi4)
+    ENDA
+
+Turn8:
+
+    MUSC(0x27D)
+    SpawnReinforcements(NPC3)
+	CAMERA(Bazba)
+	CURSOR_FLASHING Bazba
+	STAL(30)
+	REMOVE_CURSORS
+	Text(Text8Ch8)
+    ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(0xA, StockeTalkLunia, Stocke, Lunia)
+CharacterEventBothWays(0xB, DonovanTalkLunia, Donovan, Lunia)
+CharacterEventBothWays(0xC, StockeTalkTrak, Stocke, Trak)
+	END_MAIN
+
+StockeTalkLunia:
+
+MUSC(0x27D)
+//Text(TextTalk1Ch1)
+CUSA(Lunia)
+CUSA(Sam)
+ENDA
+
+DonovanTalkLunia:
+
+MUSC(0x27D)
+//Text(TextTalk1Ch1)
+CUSA(Lunia)
+CUSA(Sam)
+ENDA
+
+StockeTalkTrak:
+
+MUSC(0x27D)
+//Text(TextTalk1Ch1)
+EVBIT_F 2
+Text(Text2Convo3Ch8)
+SVAL 0x7 0x1
+BNE 0x9000 0xC 0x7
+CHECK_MONEY
+SVAL 0x7 0x3E8
+BLT 0x9002 0xC 0x7
+Text(Text3Convo3Ch8)
+SVAL 0x3 0x1F4
+GIVETOSLOT3
+CUSA(Trak)
+GOTO 0x9003
+LABEL 0x9002
+Text(Text4Convo3Ch8)
+LABEL 0x9003
+GOTO 0x9001
+LABEL 0x9000
+Text(Text5Convo3Ch8)
+LABEL 0x9001
+//Text(TextTalk1Ch1)
+ENDA
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+    DefeatAll(EndingScene)	
+	END_MAIN
+
+LocationBasedEvents:
+
+Village(0x13,Village1,13,1)
+Village(0x14,Village2,15,9)
+	Armory(Ch8Armory,19,2)
+	Vendor(Ch8Vendor,9,12)
+	END_MAIN
+
+Village1:
+
+//SetBackground(0x1)
+//Text(TextVillage1Ch1)
+GiveItem(Elixir, 0xFFFF)
+EndConvo
+ENDA
+
+Village2:
+
+//SetBackground(0x2)
+//Text(TextVillage2Ch1)
+GiveItem(Javelin, 0xFFFF)
+EndConvo
+ENDA
+
+Ch8Armory:
+	SHLI IronSword SteelSword IronLance SteelLance IronAxe SteelAxe IronBow SteelBow 
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch8Vendor:
+	SHLI Fire Thunder Wind Flux Heal Mend Vulnerary Torch 
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+
+    UNIT Stocke MageLord 0x0 Level(3,Ally,0) [0,14] 0x0 0x0 0x1 REDA3R12 [Crimson, Flux, Elixir] [0,0,0,0]
+	UNIT Salazar SwordKnight 0x0 Level(9,Ally,0) [0,14] 0x0 0x0 0x1 REDA4R13 [SteelSword, IronBow, Vulnerary] [0,0,0,0]
+	UNIT Fernand LanceCavalier 0x0 Level(3,Ally,1) [0,14] 0x0 0x0 0x1 REDA1R12 [IronLance, Vulnerary, PureWater] [0,0,0,0]
+	UNIT Kyle AxeCavalier 0x0 Level(3,Ally,0) [2,13] 0x0 0x0 0x1 REDA2R13 [Hatchet, SteelAxe] [0,0,0,0]
+
+	UNIT
+
+Units2:
+
+    UNIT Donovan Priest 0x0 Level(6,Ally,0) [4,10] 0x0 0x0 0x1 REDA4R12 [Mend, Vulnerary, PureWater] [0,0,0,0]
+
+	UNIT
+
+NPC1:
+
+    UNIT Sam Mage 0x0 Level(1,NPC,0) [7,0] 0x0 0x0 0x0 0x0 [Fire] [0,0x3,4,0x20]
+	UNIT Lunia Thief_F 0x0 Level(9,NPC,0) [7,0] 0x0 0x0 0x1 REDA7R1 [IronDagger, Vulnerary] [0,3,8,0x20]
+
+	UNIT
+
+NPC2:
+
+    UNIT Militia Soldier 0x0 Level(2,NPC,1) [3,0] 0x0 0x0 0x1 REDA7R2 [IronLance] [0xC,0x3,0xC,0x0]
+    UNIT Militia Soldier 0x0 Level(2,NPC,1) [4,0] 0x0 0x0 0x1 REDA5R1 [IronLance] [0xC,0x3,0xC,0x0]
+    UNIT Militia Mercenary 0x0 Level(3,NPC,1) [9,0] 0x0 0x0 0x1 REDA9R2 [IronSword, Vulnerary] [0xC,0x3,0xC,0x0]
+	
+	UNIT
+
+NPC3:
+
+    UNIT Bazba AxeKnight 0x0 Level(12,NPC,1) [0,14] 0x0 0x0 0x1 REDA2R12 [SteelAxe, SteelShield] [0x0,0x0,0x0,0x0]
+    UNIT Imperial SwordKnight 0x0 Level(8,NPC,1) [0,14] 0x0 0x0 0x1 REDA0R12 [SteelSword] [0x0,0x0,0x0,0x0]
+    UNIT Imperial SwordKnight 0x0 Level(8,NPC,1) [0,14] 0x0 0x0 0x1 REDA2R14 [SteelSword] [0x0,0x0,0x0,0x0]
+    UNIT Imperial LanceCavalier 0x0 Level(6,NPC,1) [0,14] 0x0 0x0 0x1 REDA1R13 [IronLance] [0x0,0x0,0x0,0x0]
+    UNIT Imperial LanceCavalier 0x0 Level(6,NPC,1) [0,14] 0x0 0x0 0x1 REDA0R14 [IronLance] [0x0,0x0,0x0,0x0]
+	
+	UNIT
+
+EnemyUnits:
+
+    UNIT Jaram Fighter 0x0 Level(9,Enemy,1) [21,9] 0x0 0x0 0x0 0x0 [HandAxe, Swordreaver, BodyRing] [0,3,0xc,0]
+	UNIT Trak Archer 0x0 Level(6,Enemy,0) [14,12] 0x0 0x0 0x0 0x0 [SteelBow, Vulnerary] [6,3,0,0]
+	UNIT Bandit2 Fighter 0x0 Level(3,Enemy,1) [11,13] 0x0 0x0 0x0 0x0 [IronAxe] [0,3,0xc,0]
+	UNIT Bandit2 Mercenary 0x0 Level(3,Enemy,1) [16,5] 0x0 0x0 0x0 0x0 [IronSword] [0,3,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [Javelin] [0,3,0xc,0]
+	UNIT Bandit2 Myrmidon 0x0 Level(3,Enemy,1) [11,6] 0x0 0x0 0x0 0x0 [IronSword] [0xc,3,0xc,0]
+	UNIT MercenaryBoss Fighter 0x0 Level(5,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [SteelAxe, Halberd] [0,3,0xc,0]	
+	UNIT Bandit2 Mercenary 0x0 Level(4,Enemy,1) [0,1] 0x0 0x2 0x0 0x0 [SteelSword] [0,0,0xc,0]
+	UNIT Bandit2 Mage 0x0 Level(3,Enemy,1) [14,10] 0x0 0x0 0x0 0x0 [Fire] [0,3,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(4,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [18,0] 0x0 0x0 0x0 0x0 [Javelin] [0,3,0xc,0]	
+	UNIT Bandit2 Mage 0x0 Level(3,Enemy,1) [21,4] 0x0 0x0 0x0 0x0 [Thunder] [0,3,0xc,0]
+	UNIT MercenaryBoss Mercenary 0x0 Level(3,Enemy,1) [10,8] 0x0 0x2 0x0 0x0 [IronSword, LeatherShield] [0,3,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [6,8] 0x0 0x0 0x0 0x0 [IronLance] [0xc,0,0xc,0]
+	UNIT Bandit2 Archer 0x0 Level(3,Enemy,1) [20,11] 0x0 0x0 0x0 0x0 [SteelBow, Vulnerary] [0,3,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [18,13] 0x0 0x0 0x0 0x0 [IronLance] [0,3,0xc,0]	
+	UNIT Bandit2 Archer 0x0 Level(3,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [LongBow, IronBow] [0,3,0xc,0]
+	UNIT Bandit2 Fighter 0x0 Level(3,Enemy,1) [14,4] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0xc,0]
+	UNIT Bandit2 Fighter 0x0 Level(4,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Hatchet, Swordreaver] [0,3,0xc,0]
+	UNIT Bandit2 Deserter 0x0 Level(4,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [Javelin, Vulnerary] [0,3,0xc,0]	
+	UNIT Bandit2 Myrmidon 0x0 Level(4,Enemy,1) [1,7] 0x0 0x0 0x0 0x0 [SteelSword] [0,0x12,0xc,0]
+	UNIT Bandit2 Myrmidon 0x0 Level(4,Enemy,1) [16,1] 0x0 0x0 0x0 0x0 [WindSword] [0,0x12,0xc,0]
+	UNIT Bandit2 Fighter 0x0 Level(3,Enemy,1) [7,10] 0x0 0x0 0x0 0x0 [IronAxe, Vulnerary] [0,3,0xc,0]
+	
+	UNIT
+
+Rinforzi1:
+
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [21,11] 0x0 0x0 0x0 0x0 [IronAxe] [0,4,0xc,0x0]
+	UNIT Bandit2 Myrmidon 0x0 Level(3,Enemy,1) [0,3] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0x0]	
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [21,5] 0x0 0x0 0x0 0x0 [Hatchet] [0,0,0x11,0x0]
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [SteelAxe] [0,4,0xc,0x0]
+	
+	UNIT
+
+Rinforzi2:
+
+	UNIT Bandit2 Mage 0x0 Level(4,Enemy,1) [19,14] 0x0 0x0 0x0 0x0 [Fire] [0,0,0xc,0x0]	
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0xc,0x0]
+	
+	UNIT
+
+Rinforzi3:
+
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [17,0] 0x0 0x0 0x0 0x0 [IronAxe] [0,4,0xc,0x0]	
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [21,14] 0x0 0x0 0x0 0x0 [Swordreaver] [0,4,0xc,0x0]
+	
+	UNIT
+
+Rinforzi4:
+
+	UNIT Bandit2 Brigand 0x0 Level(3,Enemy,1) [0,14] 0x0 0x0 0x1 REDA1R13 [IronAxe] [0,4,0xc,0x0]	
+	UNIT Bandit2 Mercenary 0x0 Level(3,Enemy,1) [0,14] 0x0 0x0 0x1 REDA0R12 [IronSword] [0,0,0xc,0x0]
+	UNIT Bandit2 Deserter 0x0 Level(3,Enemy,1) [0,14] 0x0 0x0 0x1 REDA2R14 [Javelin] [0,0,0xc,0x0]
+	
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+
+    FADI(16)
+	ChangeEdition(0x3)
+	REMU(Nausicaa)
+    MUSC(0x24)
+	CAMERA_CENTERED [2,18]
+	LOAD1 0 EnemyUnits
+	ENUN
+	SetBackground(0x3f)
+	FADU(16)
+	Text(Text1Ch8)
+	FADI(16)
+	CLEAN 
+	FADU(16)
+	LOAD1 1 Units1
+	ENUN
+	MUSC (0x25)
+	CAMERA_CENTERED [5,13]
+	CAMERA_CENTERED [19,12]
+	CAMERA_CENTERED [17,0]
+	CAMERA_CENTERED [1,3]
+    CAMERA (Stocke)
+    CURSOR_FLASHING(Stocke)
+    STAL(30)
+    REMOVE_CURSORS
+	Text(Text2Ch8)
+	LOAD1 1 Units2
+	ENUN
+    CAMERA (Donovan)
+    CURSOR_FLASHING(Donovan)
+    STAL(30)
+    REMOVE_CURSORS
+	MUSC (0x27D)
+	Text(Text3Ch8)
+	GiveGold(1500)	
+	CAMERA [3,13]
+	LOAD1 1 NPC1
+	ENUN
+	FADI(16)
+	MUSC(0x25)
+	FADU(16)
+	CAMERA (Lunia)
+    CURSOR_FLASHING(Lunia)
+    STAL(30)
+    REMOVE_CURSORS
+    Text(Text4Ch8)
+	LOAD1 1 NPC2
+	ENUN
+	Text(Text5Ch8)
+    FADI(16)
+	CAMERA(Stocke)
+	CURSOR_FLASHING(Stocke)
+	REMOVE_CURSORS
+	FADU(16)
+	ENDA
+
+EndingScene:
+
+    FADI(16)
+	CLEAN
+	CLEA 0x0
+	CLEN 0x0
+	CLEE 0x0
+    MUSC(0x31)
+	FADU(16)
+	SetBackground(0x40)
+	Text(TextEnd1Ch8)
+	EndConvo
+	SetBackground(0x3B)
+	TUTORIALTEXTBOXSTART
+	                    CenterTutorialTextBox 
+	                    TEXTSHOW GrazieDiCuoreAtutti  
+	                  	TEXTEND	
+    REMA
+	EndConvo
+	MNTS 0x0
+    NoFade	
+	ENDA

@@ -2,8 +2,8 @@
 
 #include eastdlib.event
 
-SetChapterData(9,SnowCityObjectSet,0,SnowCityPalette,SnowCityTileConfig,Ch8Map,Map,0,0,Ch8TileChange)
-EventPointerTable(Ch8TileChange, MapChanges)
+SetChapterData(11,SnowCityObjectSet,0,SnowCityPalette,SnowCityTileConfig,Ch10AMap,Map,0,0,Ch10ATileChange)
+EventPointerTable(Ch10ATileChange, MapChanges)
 Map:
 #incbin "Ch11_data.dmp"
 

@@ -141,3 +141,5 @@ Marshall,VillagerPaletteList|IsPointer
 ErucaLord,VillagerPaletteList|IsPointer
 Deserter,DeserterPaletteList|IsPointer
 Thief (F),Thief_fPaletteList|IsPointer
+Black Stone,EmptyPaletteList|IsPointer
+Balistician,EmptyPaletteList|IsPointer

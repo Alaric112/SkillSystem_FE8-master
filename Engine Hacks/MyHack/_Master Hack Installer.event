@@ -51,7 +51,7 @@
 
 #include "EVENTSCRIPT_ChangeEdition/Installer.event"
 
-#include "MoreShops/MoreShops.event"
+//#include "MoreShops/MoreShops.event"
 
 #include "FreeMovement/FreeMovement.event"
 
@@ -69,6 +69,10 @@
 
 #include "HpBars/HpBars.event"
 
-#include "SupportRework/SupportRework.event"
+// #include "SupportRework/SupportRework.event"
+
+#include "SupportReworkRework/SupportRework.event"
+
+#include "new_haiku/Installer.event"
 
 #include "SmallASM.event"

@@ -58,21 +58,6 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
-//////// MY ADD 
-
-  //ChangeChapterObjective (Zeta)
-  #include "MyHack/ChangeChapterObjective/Installer.event"
-  
-  //Fixes
-  #include "MyHack/_Master Hack Installer.event"
-  
-  //MultyTileMarker
-  #include "MyHack/Multitilemark/MultiTileMarker_Install.event"
-  
-  //ContinueBattleBGM 
-  #include "MyHack/ContinueBattleBGM_20200919/ContinueBattleBGM_install.event"
-  
-////////////////////////////////NORMAL SKILL THINGS  
 
   //HP Bars (and effective weapon warning)
   #include "QualityOfLife/HpBars_Cache/HpBars.event"
@@ -229,6 +214,23 @@ POP
   #include "Necessary/Popups.event"
   
   #include "Necessary/CalcLoops/CalcLoops.event"
+
+//////// MY ADD 
+
+  //ChangeChapterObjective (Zeta)
+  #include "MyHack/ChangeChapterObjective/Installer.event"
+  
+  //Fixes
+  #include "MyHack/_Master Hack Installer.event"
+  
+  //MultyTileMarker
+  #include "MyHack/Multitilemark/MultiTileMarker_Install.event"
+  
+  //ContinueBattleBGM 
+  #include "MyHack/ContinueBattleBGM_20200919/ContinueBattleBGM_install.event"
+  
+////////////////////////////////NORMAL SKILL THINGS  
+
 
   #ifdef STAIRS_ASM
     #ifndef USE_SAVE_EXPANSION

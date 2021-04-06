@@ -162,7 +162,7 @@ Watch out! a sandstorm[N]
 approaches![A][X]
 
 ## TextTalk1Ch2
-[OpenMidLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadColt][OpenMidLeft]
+[OpenMidLeft][LoadRosie][OpenMidRight][LoadColt][OpenMidLeft]
 Hey Colt![AN]
 [OpenMidRight]... ... ...[AN]
 [OpenMidLeft]

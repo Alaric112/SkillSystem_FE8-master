@@ -48,10 +48,11 @@
     ORG $889d0
       SHORT $e010 //Temporary r-text fix to prevent freezing
 
+/*
     ORG $889f2  
       SHORT $BD30
       BL(RText_Page4_ladder) //this has to be in bl range somewhere
-
+*/
     // Make all the arrows line up with the stats and stuff
 
     ORG $883C0
@@ -112,7 +113,7 @@
 		
 	#endif // ENABLE_PERSONAL_INFO
 
-    ORG $087184
+ /*   ORG $087184
 
       // This is Vanilla Stat Screen Page
       // This is now free (because unused) space
@@ -123,7 +124,7 @@
       // page 4 helptext hook
       #incbin "asm/rtext_page4.dmp"
       POIN RText_Page4
-
+*/
   POP
   
   ALIGN 4
@@ -176,7 +177,7 @@
   
   #ifdef ENABLE_PERSONAL_INFO
   
-      #include "pages/mss_page4_runa.lyn.event"
+  //    #include "pages/mss_page4_runa.lyn.event"
 	  
 	ALIGN 4
     PageNumberCheck:
@@ -185,7 +186,7 @@
   
   #else // ENABLE_PERSONAL_INFO
   
-      #include "pages/mss_page4.lyn.event"
+ //     #include "pages/mss_page4.lyn.event"
 	
     ALIGN 4
     TxtData0x0D4B:
@@ -276,8 +277,9 @@
   New_Palettes:
     #include "DisplayGrowthsOptions/NewPalette.event"
 
+//#include "SupportRText/Installer.event"	
 
-  #include "RText.event"
+#include "RText.event"
 
 #else // _FE8_
   ERROR Modular Stat Screen hack is for FE8

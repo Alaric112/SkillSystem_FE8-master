@@ -125,6 +125,13 @@
 #define F_ThiefSwordAnim 0xE5
 #define F_ThiefUnarmedAnim 0xE6
 
+#define HalbardierLanceAnim 0xE7
+#define HalbardierUnarmedAnim 0xE8
+
+#define BerserkerFAxeAnim 0xE9
+#define BerserkerFHandAxeAnim 0xEA
+#define BerserkerFUnarmedAnim 0xEB
+
 // prossimo punto disponibile è 0xE7
 // Animation Pointer:
 
@@ -220,6 +227,19 @@ ALIGN 4
 F_ThiefAnims:
 SwordAnim(F_ThiefSwordAnim)
 UnarmedAnim(F_ThiefUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HalbardierAnims:
+LanceAnim(HalbardierLanceAnim)
+UnarmedAnim(HalbardierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BerserkerFAnims:
+AxeAnim(BerserkerFAxeAnim)
+HandAxeAnim(BerserkerFHandAxeAnim)
+UnarmedAnim(BerserkerFUnarmedAnim)
 EndAnim
 
 //Bruh

@@ -27,13 +27,13 @@
 #define CatherinaMug 0x22
 #define HarkenMug 0x23
 #define ManfredMug 0x25
+#define NikolaiMug 0x2C
 #define MinervaMug 0x17
 #define NashiraMug 0xC8
 #define LenaMug 0xCF
 #define BartMug 0xD1
 //#define LukasMug 0xD2
 #define RathMug 0xD8
-#define NikolaiMug 0xDE 
 #define SalazarMug 0xE0
 #define BazbaMug 0xE7
 #define LuniaMug 0xE5
@@ -45,6 +45,7 @@
 #define SoldierBrownMug 0xE6
 
 // Boss
+#define ZekMug 0x31
 #define BongoMug 0x32
 #define GervasoMug 0x43
 #define DarioMug 0xD6
@@ -71,3 +72,4 @@
 #define ConvoyClassCard 0xB9
 #define CivilClassCard 0xBA
 #define WoodBoxClassCard 0xBB
+#define BalistaClassCard 0xBC

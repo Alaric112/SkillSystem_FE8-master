@@ -11,4 +11,6 @@
 
 #include "DeathQuote.txt"
 
-#include "SupportConvo.txt" 
+#include "SupportConvo.txt"
+
+#include "BattleQuotes.txt"

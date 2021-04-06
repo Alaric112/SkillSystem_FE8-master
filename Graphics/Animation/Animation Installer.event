@@ -91,3 +91,10 @@
 #include "Event/WarriorHandAxe Installer.event"
 #include "Event/WarriorBow Installer.event"
 #include "Event/WarriorUnarmed Installer.event"
+
+#include "Event/HalbardierLance Installer.event"
+#include "Event/HalbardierUnarmed Installer.event"
+
+#include "Event/BerserkerFAxe Installer.event"
+#include "Event/BerserkerFHandAxe Installer.event"
+#include "Event/BerserkerFUnarmed Installer.event"

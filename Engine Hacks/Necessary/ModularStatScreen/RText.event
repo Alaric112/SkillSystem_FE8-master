@@ -247,7 +247,7 @@ ST_Skill6:
     RMenu(ST_Dislikes,0,ST_Age,0,0xa6,0x58,HeightDesc)
 
 #else // ENABLE_PERSONAL_INFO
-
+/*
   RText_Page4:
 
   ST_Name4:
@@ -267,6 +267,10 @@ ST_Skill6:
 
   ST_Donate:
     RMenu(0,0,ST_Name4,0,0x86,0x48,DonateURL)
+
+*/
+
+#include "SupportRText/Installer.event"
 	
 #endif // ENABLE_PERSONAL_INFO
 

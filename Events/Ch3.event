@@ -86,7 +86,7 @@ LOCA 0x0 Retreat [3,20] 0x13
 
 Retreat:
 //EveryoneEscape(EscapeQuoteTable|IsPointer)
-EveryoneEscape(0)
+//EveryoneEscape(0)
 ENDA
 
 Dunno1:
@@ -304,7 +304,7 @@ BeginningScene:
 	FADI(16)
 	CLEAN
 	CLEA 0x0
-	LOMA 0x7
+	LOMA 0xC
 	LOAD1 1 CutScene2
 	ENUN
 	FADU(16)
@@ -353,7 +353,7 @@ BeginningScene:
 	EARTHQUAKE_END
 	Text(Text8Ch3)
 	FADI(16)
-	LOMA 0x7
+	LOMA 0xC
 	LOAD1 1 CutScene2
 	TILECHANGE 0x0
 	FADU(16)

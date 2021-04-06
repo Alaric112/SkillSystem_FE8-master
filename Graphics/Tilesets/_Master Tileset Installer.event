@@ -100,20 +100,6 @@ ALIGN 4
 UpdateVillageTileConfigData:
 #incbin "Dmp/Updated Village config_comp.dmp"
 
-/*
-EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
-EventPointerTable(CastlePaletteSewer,CastlePaletteSewerData)
-EventPointerTable(SnowObjectSet,SnowObjectSetData)
-EventPointerTable(SnowPalette,SnowPaletteData)
-EventPointerTable(SnowTileConfig,SnowTileConfigData)
-EventPointerTable(SnowPaletteNight,SnowPaletteNightData)
-EventPointerTable(CaveObjectSet,CaveObjectSetData)
-EventPointerTable(CavePalette,CavePaletteData)
-EventPointerTable(CaveTileConfig,CaveTileConfigData)
-EventPointerTable(FrontierObjectSet,FrontierObjectSetData)
-EventPointerTable(FrontierPalette,FrontierPaletteData)
-EventPointerTable(FrontierTileConfig,FrontierTileConfigData)
-*/
 EventPointerTable(SoryaTileConfig,SoryaTileConfigData)
 EventPointerTable(SoryaObjectSet,SoryaObjectSetData)
 EventPointerTable(SoryaPalette,SoryaPaletteData)

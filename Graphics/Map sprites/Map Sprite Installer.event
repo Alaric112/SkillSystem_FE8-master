@@ -205,3 +205,27 @@ SquirrelFoxStanding:
 ALIGN 4
 BlackStoneMapSprite:
 #incbin "Dmp/BlackStone.dmp"
+
+ALIGN 4
+BalisticianMoving:
+#incbin "Dmp/BalisticianMoving.dmp"
+
+ALIGN 4
+BalisticianStanding:
+#incbin "Dmp/BalisticianStanding.dmp"
+
+ALIGN 4
+HalbardierMoving:
+#incbin "Dmp/HalbardierMoving.dmp"
+
+ALIGN 4
+HalbardierStanding:
+#incbin "Dmp/HalbardierStanding.dmp"
+
+ALIGN 4
+BerserkerMovingF:
+#incbin "Dmp/BerMovingF.dmp"
+
+ALIGN 4
+BerserkerStandingF:
+#incbin "Dmp/BerStandingF.dmp"

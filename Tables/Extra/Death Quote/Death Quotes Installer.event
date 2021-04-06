@@ -1,5 +1,5 @@
-#define AlwaysDeathQuote(arg000,arg001,arg002) "BYTE arg000 0x0 0xff 0xff arg001 0x0 ;SHORT arg002 ;WORD 0x0 "
-#define ChapterDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001 arg002 0x0 ;SHORT arg003 ;WORD 0x0 "
+#define AlwaysDeathQuote(arg000,arg001,arg002, KillerUnit) "BYTE arg000 KillerUnit 0xff 0xff arg001 0x0 ;SHORT arg002 ;WORD 0x0 "
+#define ChapterDeathQuote(arg000,arg001,arg002,arg003, KillerUnit) "BYTE arg000 KillerUnit 0xff arg001 arg002 0x0 ;SHORT arg003 ;WORD 0x0 "
 #define EndDeathQuote "BYTE 0xff 0xff 0x0 0x0 0x0 0x0 ;SHORT 0x0 ;WORD 0x0 "
 #define DefeatBossFlag 0x2
 #define GameOverFlag 0x65
@@ -8,31 +8,31 @@ ALIGN 4
 DeathQuoteTable:
 
 // Prologue
-ChapterDeathQuote(Kairs,Prologue,GameOverFlag,KairsDeathPrologue)
-ChapterDeathQuote(Gadriel,Prologue,GameOverFlag,GadrielDeathPrologue)
-ChapterDeathQuote(0x6F,Prologue,GameOverFlag,MerchantDeathPrologue)
+ChapterDeathQuote(Kairs,Prologue,GameOverFlag,KairsDeathPrologue, 0x00)
+ChapterDeathQuote(Gadriel,Prologue,GameOverFlag,GadrielDeathPrologue, 0x00)
+ChapterDeathQuote(0x6F,Prologue,GameOverFlag,MerchantDeathPrologue, 0x00)
 
 // Ch1 (Bandits!)
-ChapterDeathQuote(Gilliam,Ch2,GameOverFlag,GilliamDeathCh1)
-ChapterDeathQuote(Dario,Ch2,DefeatBossFlag,DarioDeathCh1)
-ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue)
+ChapterDeathQuote(Gilliam,Ch2,GameOverFlag,GilliamDeathCh1, 0x00)
+ChapterDeathQuote(Dario,Ch2,DefeatBossFlag,DarioDeathCh1, 0x00)
+ChapterDeathQuote(Kairs,Ch2,GameOverFlag,KairsDeathPrologue, 0x00)
 
 // Ch2 (Expeditions)
-ChapterDeathQuote(Salem,Ch4,GameOverFlag,SalemDeath)
+ChapterDeathQuote(Salem,Ch4,GameOverFlag,SalemDeath, 0x00)
 
 // Ch3 (In the Darkness)
-ChapterDeathQuote(Harken, Ch5x, GameOverFlag, HarkenDeath)
-ChapterDeathQuote(Lukas, Ch5x, 0x0, LukasDeathCh3)
+ChapterDeathQuote(Harken, Ch5x, GameOverFlag, HarkenDeath, 0x00)
+ChapterDeathQuote(Lukas, Ch5x, 0x0, LukasDeathCh3, 0x00)
 
 // Ch4 (Flames of War)
-ChapterDeathQuote(Gilliam, 0x6, 0x0, GilliamDeath)
-ChapterDeathQuote(SalemNPC, 0x6, 0x0, SalemDeathNPC)
+ChapterDeathQuote(Gilliam, 0x6, 0x0, GilliamDeath, 0x00)
+ChapterDeathQuote(SalemNPC, 0x6, 0x0, SalemDeathNPC, 0x00)
 
 // Ch5 (New Destiny)
-ChapterDeathQuote(Eruca, 0x7, GameOverFlag, ErucaDeathCh5)
+ChapterDeathQuote(Eruca, 0x7, GameOverFlag, ErucaDeathCh5, 0x00)
 
 // Ch6 (Razor Edge)
-ChapterDeathQuote(Eruca, 0x8, GameOverFlag, ErucaDeathCh5)
+ChapterDeathQuote(Eruca, 0x8, GameOverFlag, ErucaDeathCh5, 0x00)
 
 // Ch7
 
@@ -53,21 +53,21 @@ ChapterDeathQuote(Eruca, 0x8, GameOverFlag, ErucaDeathCh5)
 // Ch15
 
 // Always
-AlwaysDeathQuote(Nausicaa,GameOverFlag,NausicaaDeath)
-AlwaysDeathQuote(Catherina,GameOverFlag, CatherinaDeath)
-AlwaysDeathQuote(Gadriel,0x0,GadrielDeath)
-AlwaysDeathQuote(Diana,0x0,DianaDeath)
-AlwaysDeathQuote(Colt,0x0,ColtDeath)
-AlwaysDeathQuote(Rosie,0x0,RosieDeath)
-AlwaysDeathQuote(Kairs,0x0,KairsDeath)
-AlwaysDeathQuote(Yala,0x0,YalaDeath)
-AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
-AlwaysDeathQuote(Harken, 0x0, HarkenDeath)
+AlwaysDeathQuote(Nausicaa,GameOverFlag,NausicaaDeath, 0x00)
+AlwaysDeathQuote(Catherina,GameOverFlag, CatherinaDeath, 0x00)
+AlwaysDeathQuote(Gadriel,0x0,GadrielDeath, 0x00)
+AlwaysDeathQuote(Diana,0x0,DianaDeath, 0x00)
+AlwaysDeathQuote(Colt,0x0,ColtDeath, 0x00)
+AlwaysDeathQuote(Rosie,0x0,RosieDeath, 0x00)
+AlwaysDeathQuote(Kairs,0x0,KairsDeath, 0x00)
+AlwaysDeathQuote(Yala,0x0,YalaDeath, 0x00)
+AlwaysDeathQuote(Calliope,0x0,CalliopeDeath, 0x00)
+AlwaysDeathQuote(Harken, 0x0, HarkenDeath, 0x00)
 
 
 
 EndDeathQuote
-
+// Repoint per estendere le quotes!
 PUSH
 ORG $8472C
 POIN DeathQuoteTable

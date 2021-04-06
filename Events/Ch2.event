@@ -235,9 +235,10 @@ Retreat:
 
     CHECK_EVENTID 0x08
 	BEQ 0x1 0xC 0x0
-    EscapeUnit(EscapeQuoteTable|IsPointer, Salem)
+//    EscapeUnit(EscapeQuoteTable|IsPointer, Salem)
     NoFade
 	LABEL 0x1
+	
 	ENDA
 	
 Dunno1:
@@ -351,7 +352,7 @@ BeginningScene:
 	SetBackground(0x1c)
 	Text(Text1Ch2)
 	FADI(16)
-	LOAD1 0x2 Units1
+	LOAD1 0 Units1
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	FADU(16)

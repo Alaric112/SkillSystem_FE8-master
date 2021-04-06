@@ -160,8 +160,12 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 House(0x11,Secret,14,12)
+
 LOCA 0x0 Retreat [14,17] 0x13
 LOCA 0x0 Retreat [14,18] 0x13
+
+Seize(13,10)
+
 /*
 Escape(0x3,Retreat,13,9)
 Escape(0x3,Retreat,14,18)
@@ -367,13 +371,14 @@ BeginningScene:
     ENDA
 
 EndingScene:
+//    ENUT(0x3)
     MUSC(0x31)
 	DISA Merchant
 	SetBackground(0x1d)
 	Text(PrologueEndText2)
 	Text(PrologueEndText1)
 	FADI(25)
-	SetBackground(0x39)
+	SetBackground(0x3A)
 	FADU(25)
 	Text(PrologueEndText3)
 	FADI(25)

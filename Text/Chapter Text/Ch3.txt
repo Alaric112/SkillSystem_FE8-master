@@ -313,7 +313,7 @@ Yala, I don't know how[N]
 to thank you[A][X]
 
 ## Text14Ch3
-[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenLeft]
+[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadRosie][OpenMidRight][LoadFace][0x02][0x01][OpenLeft]
 Hey girl, don't think to be[N]
 able to go without us![AN]
 you will need someone[N]

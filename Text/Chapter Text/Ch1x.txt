@@ -329,7 +329,7 @@ With permission, I have others[N]
 things to do[A][X]
 
 ## TextTalk4Ch1x
-[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadFace][0xCB][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenLeft]
+[OpenFarLeft][LoadFace][0x0A][0x01][OpenLeft][LoadRosie][OpenMidRight][LoadFace][0x02][0x01][OpenLeft]
 Oh, look who it is[N]
 came to greet us![AN]
 [OpenFarLeft]
