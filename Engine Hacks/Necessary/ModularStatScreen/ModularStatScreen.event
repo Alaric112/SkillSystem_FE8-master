@@ -33,8 +33,8 @@
     ORG $88690
       BYTE 4 //make 4 pages
 
-    ORG $88650
-      POIN NewPageNameGraphic
+/*    ORG $88650
+      POIN NewPageNameGraphic */
 
     ORG $87f38
       POIN NewPageNameLayout
@@ -177,7 +177,7 @@
   
 /*  #ifdef ENABLE_PERSONAL_INFO
   
-  //    #include "pages/mss_page4_runa.lyn.event"
+      #include "pages/mss_page4_runa.lyn.event"
 	  
 	ALIGN 4
     PageNumberCheck:
@@ -186,7 +186,7 @@
   
   #else // ENABLE_PERSONAL_INFO
   
- //     #include "pages/mss_page4.lyn.event"
+      #include "pages/mss_page4.lyn.event"
 	
     ALIGN 4
     TxtData0x0D4B:
@@ -197,12 +197,12 @@
   
   #endif // ENABLE_PERSONAL_INFO */
 
-  #include "pages/mss_leftstatscreen.lyn.event"
+//  #include "pages/mss_leftstatscreen.lyn.event"
 
-  ALIGN 4
+/*  ALIGN 4
   NewPageNameGraphic:
     //#incext Png2Dmp "asm/pagenamegraphic.png" --lz77
-    #incbin "asm/pagenamegraphic.dmp"
+    #incbin "asm/pagenamegraphic.dmp" */
 
   ALIGN 4
   NewPageNameLayout:

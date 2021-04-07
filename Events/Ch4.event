@@ -266,7 +266,7 @@ CutScene13:
 
 CutScene14: 
 
-	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [30,302] 0x0 0x0 0x1 REDA30R31 [SteelSword] [0,0,0,0]
+	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [30,30] 0x0 0x0 0x1 REDA30R31 [SteelSword] [0,0,0,0]
 	
 	UNIT
 
@@ -615,15 +615,15 @@ EndingScene:
 	STAL 30
 	REMOVE_CURSORS
 	Text(TextEnd3Ch4)
-	SVAL s1 60
-	SET_HP Kairs
+//	SVAL s1 28
+//	SET_HP Kairs
 	LOAD2 1 CutScene14
 	ENUN
 	StartBattle
-	SetScriptedBattle(88,16,8,77,8,0)		
+	SetScriptedBattle(77,8,8,88,16,0)		
     MissedAttack(0,12)
     NormalDamage(1,16)
-    MissedAttack(1,0)	
+    MissedAttack(1,0)
 	EndAttack
 	FIGHT Kairs Slayder SteelSword False
 	Text(TextEnd4Ch4)
