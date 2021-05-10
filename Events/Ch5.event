@@ -125,8 +125,8 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
-	CauseGameOverIfLordDies
 	AREA 0x0 GameOverEnemyInvasion [14, 14] [15, 14]
+	CauseGameOverIfLordDies
 	END_MAIN
 
 GameOverEnemyInvasion:
@@ -367,7 +367,7 @@ BeginningScene:
 	FADU(16)
 	Text(Text6Ch5)
 	FADI(16)
-	LOMA 0x8
+	LOMA 0x7
 	TILECHANGE 0x7
 	CLEE 0x0
 	LOAD 0x1 Alleati1
@@ -386,11 +386,16 @@ BeginningScene:
 	REMU Catherina
 	REMU Harken
 	REVEAL Lukas
+	CLEAN
+	CLEE 0x0
+	CLEA 0x0
+	CLEN 0x0
 	TILEREVERSE 0x7	
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	LOAD 0x1 Alleati1
 	ENUN
+	FADU(16)
 	GotoPrepScreen 
 	NoFade
 	ENDA

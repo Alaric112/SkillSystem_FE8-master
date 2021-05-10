@@ -5,4 +5,6 @@ SilentGiveItemASMC:
 
 #define SilentGiveItem(xcoord,ycoord,itemid) "SVAL 0xB Coords(xcoord,ycoord); BYTE 0x4B 0x0D 0x0 itemid ; POIN SilentGiveItemASMC|1"
 
+#define SilentGiveItem1(unitid, itemid) "SVAL 0x1 unitid; BYTE 0x41 0x0D 0x00 itemid ; POIN SilentGiveItemASMC|1"
+
 #define SilentGiveItemSupply(itemid) "BYTE 0x42 0x0D 0x00 itemid ; POIN SilentGiveItemASMC|1"

@@ -1,0 +1,24 @@
+#ifdef _FE8_
+
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+
+
+ALIGN 4
+change_ai_all:
+#incbin "change_ai_all.dmp" 
+
+#define ChangeAllEnemyAI(AI1, AI2, Unit, Class) "BYTE 0x40 0x05 0x01 0x00 AI1 AI2 0x00 0x00 0x40 0x0D Unit Class ; POIN change_ai_all|1;"
+
+#define ChangeAllNpcAI(AI1, AI2, Unit, Class) "BYTE 0x40 0x05 0x01 0x00 AI1 AI2 0x00 0x00 0x41 0x0D Unit Class ; POIN change_ai_all|1;"
+
+#else
+    ERROR This version of Selection Quotes is for FE8!
+#endif
+
+/*
+
+EVENTSCRIPT:3.en=40050100ZZWW0000400DXXYY{$L1:change_ai_all.dmp}	Change AI ​​of all enemy forces matching the condition to the contents of [ZZ:AI1:AI1][WW:AI2:AI2].[XX:UNIT:Unit(00=ANY)][YY:CLASS:class(00=ANY)]	{UNITPERSOLNAL}
+EVENTSCRIPT:4.en=40050100ZZWW0000410DXXYY{$L1:change_ai_all.dmp}	Changed the AI ​​of all ally who match the conditions to the contents of [ZZ:AI1:AI1][WW:AI2:AI2].[XX:UNIT:Unit(00=ANY)][YY:CLASS:class(00=ANY)]	{UNITPERSOLNAL}
+
+*/

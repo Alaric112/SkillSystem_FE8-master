@@ -363,6 +363,7 @@ BeginningScene:
 	CURSOR_FLASHING(Nausicaa)
     STAL(30)
 	REMOVE_CURSORS
+	SilentGiveItem1(Nausicaa, RedGem)
     SetBackground(0x23)
     Text(Text4)
     CLEAN

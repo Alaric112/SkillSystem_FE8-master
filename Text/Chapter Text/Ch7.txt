@@ -305,6 +305,14 @@ soldiers of the emperor?[AN]
 if you are, charge now! with[N]
 everything we have![A][X]
 
+## MidText9Ch7
+[OpenMidLeft][LoadBongo][OpenMidRight][LoadImperialSoldier][OpenMidRight]
+Captain! the Artillery is[N]
+ready to fire![AN]
+[OpenMidLeft]
+Well, don’t waste any more time![N]
+fire at will![A][X]
+
 ## EndText1Ch7
 [OpenRight][LoadGervaso][OpenFarRight][LoadAlistarWarrior][OpenRight]
 Looks like we’re here[N]
@@ -318,7 +326,7 @@ With pleasure Boss![A][X]
 [OpenMidLeft][LoadCatherina][OpenMidRight][LoadHarken][OpenMidLeft]
 Alistar’s Reinforcements![AN]
 Still no sign of Kushana...Harken we[N]
-must run towards to warn our troops[AN]
+must run towards to warn our troops[A][X]
 
 ## EndText3Ch7
 [OpenMidLeft][LoadBongo][OpenMidRight][LoadImperialBoss]

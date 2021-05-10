@@ -546,7 +546,7 @@ What a bunch of pathetics[N]
 rats! you will all die![A][X]
 
 ## TextEnd16Ch4
-[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadFace][0xDA][0x01][OpenFarLeft]
+[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadZechiel][OpenFarLeft]
 Turn down immediately[N]
 the weapons general Slayder[AN]
 you are not in command of[N]
@@ -570,7 +570,7 @@ okay, I'll leave it to[N]
 you these rats[A][OpenMidRight][ClearFace][X]
 
 ## TextEnd17Ch4
-[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadFace][0xDA][0x01][OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0x04][0x01][OpenFarLeft]
+[OpenFarLeft][LoadFace][0x4A][0x01][OpenLeft][LoadZechiel][OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0x04][0x01][OpenFarLeft]
 Nausica[aa]...you must be the[N]
 princess of these campaigns[AN]
 [OpenRight]
@@ -615,7 +615,7 @@ the end[AN][OpenRight]I...I..[AN]
 ... ... ...[A][X]
 
 ## TextEnd18Ch4
-[OpenMidRight][LoadNausicaa][OpenMidLeft]
+[OpenMidRight][LoadNausicaa][OpenMidRight]
 Where am I?[AN]
 suddenly a light enveloped me...[N]
 The city! the empire! my companions![AN]

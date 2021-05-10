@@ -1,5 +1,5 @@
 PUSH
-
+/*
 ORG $16410
 POIN ItemTable
 ORG $16440
@@ -126,12 +126,14 @@ ORG $177AC
 POIN ItemTable
 ORG $177C0
 POIN ItemTable
+*/
 ORG $17718
 POIN ItemTable
 ORG $1C1FB8
 POIN ItemTable
 ORG $1C20E0
 POIN ItemTable
+
 /*
 ORG $19458
 POIN ClassTable
@@ -142,6 +144,7 @@ POIN ClassTable
 ORG $17AB8
 POIN ClassTable
 */
+/*
 ORG $26730
 POIN StandingMapSpriteTable
 ORG $267B0
@@ -166,7 +169,8 @@ ORG $27F74
 POIN StandingMapSpriteTable
 ORG $28064
 POIN StandingMapSpriteTable
-
+*/
+/*
 ORG $79584
 POIN MovingMapSpriteTable
 ORG $79598
@@ -175,6 +179,7 @@ ORG $BAC2C
 POIN MovingMapSpriteTable
 ORG $BAC40
 POIN MovingMapSpriteTable
+*/
 
 ORG $59BD8
 POIN NewAnimTable

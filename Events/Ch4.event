@@ -272,9 +272,9 @@ CutScene14:
 
 CutScene15: 
 
-	UNIT Eruca ErucaLord 0x0 Level(3,Enemy,1) [25,24] 0x0 0x0 0x1 REDA29R31 [SilverLance] [0,0,0,0]
+	UNIT Eruca ErucaLord 0x0 Level(3,Enemy,1) [25,24] 0x0 0x0 0x1 REDA25R30 [Vulnerary] [0,0,0,0]
 	UNIT Zechiel 0x23 0x0 Level(4,Enemy,1) [19,26] 0x0 0x0 0x1 REDA24R30 [IronLance] [0,0,0,0]
-	UNIT Manfred WyvernRider 0x0 Level(4,Enemy,1) [25,24] 0x0 0x0 0x1 REDA26R29 [IronLance] [0,0,0,0]
+	UNIT Manfred GreatKnight 0x0 Level(4,Enemy,1) [25,24] 0x0 0x0 0x1 REDA26R29 [IronLance] [0,0,0,0]
 	
 	UNIT
 

@@ -13,46 +13,102 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+    TurnEventPlayer(0x0,Turn1Enemy,1)
+//	TurnEventEnemy(0x0,Turn1Player,1)
     TurnEventPlayer(0x0,Turn2,2)
-    TurnEventPlayer(0x0,Turn3,3)
-	TurnEventPlayer(0x0,Turn5,5)
+	TurnEventPlayer(0x4,Turn3,3)
+    TurnEventPlayer(0x0,Turn5,5)
     TurnEventPlayer(0x0,Turn7,7)
+    TurnEventPlayer(0x0,Turn9,9)
+    TurnEventPlayer(3,Turn10,10)
+	
 	END_MAIN
 
+/*
+Turn1Player:
+
+NoFade
+ENDA
+*/
+
+Turn1Enemy:
+CAMERA Bongo
+CURSOR_FLASHING(Bongo)
+STAL(45)
+REMOVE_CURSORS
+Text(MidText1Ch7)
+NoFade
+ENDA
+
 Turn2:
-CAMERA_CENTERED [22,18]
-LOAD1 0x2 AllyReinforce1
-LOAD1 0x1 AllyReinforce2
-ENUN
-CAMERA Catherina
-CURSOR_FLASHING(Catherina)
-STAL(45)
-REMOVE_CURSORS
-Text(MidText1Ch6)
-LOAD1 0x1 AllyReinforce3
-ENUN
-Text(MidText2Ch6)
 FADI(16)
-CAMERA_CENTERED(Beran)
+SpawnReinforcements(EnemyReinforce1)
 FADU(16)
-CAMERA Beran
-CURSOR_FLASHING(Beran)
+CAMERA Kairs
+CURSOR_FLASHING(Kairs)
 STAL(45)
 REMOVE_CURSORS
-Text(MidText3Ch6)
+Text(MidText2Ch7)
+CAMERA Kairs
+CURSOR_FLASHING(Bongo)
+STAL(30)
+REMOVE_CURSORS
+Text(MidText3Ch7)
 NoFade
 ENDA
 
 Turn3:
-SpawnReinforcements(EnemyReinforce1)
+MUSC 0x27B
+CAMERA [4,6]
+EVBIT_T 9
+LOAD2 0x1 AllyReinforce1
+ENUN
+CAMERA Nausicaa
+CURSOR_FLASHING(Nausicaa)
+STAL(45)
+REMOVE_CURSORS
+Text MidText4Ch7
+Text MidText5Ch7
+    CHECK_ALIVE Priscilla
+    BEQ 0x1 0xC 0x0
+	Text(MidText6Ch7)
+	LABEL 0x1
+	FADI(16)
+SHOWUNIT Nausicaa
+SHOWUNIT Priscilla
+SHOWUNIT Catherina
+SHOWUNIT Harken
+SHOWUNIT Teto
+SHOWUNIT Asbel
+SHOWUNIT Arthur
+FADU(16)
+SpawnReinforcements(EnemyReinforce2)
+    CHECK_ALIVE Bongo
+    BEQ 0x2 0xC 0x0
+	Text(MidText7Ch7)
+	LABEL 0x2
 ENDA
 
 Turn5:
-SpawnReinforcements(EnemyReinforce2)
+SpawnReinforcements(EnemyReinforce3)
+    CHECK_ALIVE Bongo
+    BEQ 0x2 0xC 0x0
+	Text(MidText9Ch7)
+	ChangeAllEnemyAI(0x00, 0x03, Imperial, BallistaClass)
+	LABEL 0x2
 ENDA
 
 Turn7:
-SpawnReinforcements(EnemyReinforce3)
+SpawnReinforcements(EnemyReinforce4)
+ENDA
+
+Turn9:
+SpawnReinforcements(EnemyReinforce5)
+ENDA
+
+Turn10:
+
+NoFade
 ENDA
 
 ALIGN 32
@@ -120,7 +176,7 @@ Tutorial:
 
 Units1:
 	
-	UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [16,2] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Kairs 0x0 0x0 Level(3,Ally,1) [16,2] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Diana 0x0 0x0 Level(3,Ally,1) [15,3] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Rosie 0x0 0x0 Level(2,Ally,1) [18,1] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 	UNIT Lukas 0x0 0x0 Level(4,Ally,1) [14,1] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
@@ -211,59 +267,80 @@ EnemyUnits:
 
 EnemyReinforce1: 
 
-	UNIT Demon Worg 0x0 Level(5,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
-	UNIT Demon Mogall 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
-	UNIT Demon Worg 0x0 Level(5,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
-	
+	UNIT Imperial BallistaClass 0x0 Level(7,Enemy,1) [6,11] 0x0 0x0 0x0 0x0 [Ballista, Ballista] [0x6,0x3,0x0,0x20]
+	UNIT Imperial BallistaClass 0x0 Level(7,Enemy,1) [11,13] 0x0 0x0 0x0 0x0 [Ballista, Ballista] [0x6,0x3,0x0,0x20]
+	UNIT Imperial BallistaClass 0x0 Level(7,Enemy,1) [16,18] 0x0 0x0 0x0 0x0 [Ballista, Ballista] [0x6,0x3,0x0,0x20]	
+	UNIT Imperial LanceCavalier 0x0 Level(6,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial SwordCavalier 0x0 Level(6,Enemy,1) [14,22] 0x0 0x0 0x0 0x0 [IronSword] [0,0,0,0]	
+	UNIT Imperial AxeWyvernRider 0x0 Level(6,Enemy,1) [0,14] 0x0 0x0 0x0 0x0 [IronAxe] WaitOneTurnAI
+	UNIT Imperial Mage 0x0 Level(7,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Fire] [0,0,0,0]
+		
 	UNIT
 
 EnemyReinforce2: 
 
-	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
-	UNIT Demon Worg 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
-	UNIT Demon Mogall 0x0 Level(5,Enemy,1) [3,0] 0x0 0x0 0x0 0x0 [EvilEye] [0,0,0,0]
+	UNIT Imperial Shaman 0x0 Level(7,Enemy,1) [0,18] 0x0 0x0 0x0 0x0 [Flux] [0,0,0,0]
+	UNIT Imperial Shaman 0x0 Level(7,Enemy,1) [0,20] 0x0 0x0 0x0 0x0 [Flux] [0,0,0,0]	
+	UNIT Imperial Soldier 0x0 Level(8,Enemy,1) [12,22] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial LanceKnight 0x0 Level(7,Enemy,1) [15,22] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
 		
 	UNIT
 
 EnemyReinforce3:
 	
-	UNIT DemonBoss Cyclops 0x0 Level(5,Enemy,1) [0,0] 0x2 0x0 0x0 0x0 [Tomahawk, BlueGem] [0,0,0,0]
-	UNIT Demon Worg 0x0 Level(6,Enemy,1) [0,1] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
-	UNIT Demon Worg 0x0 Level(6,Enemy,1) [1,0] 0x0 0x0 0x0 0x0 [FieryFang] [0,0,0,0]
-	UNIT Demon Gargoyle 0x0 Level(5,Enemy,1) [0,4] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
-	UNIT Demon Gargoyle 0x0 Level(5,Enemy,1) [4,0] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]	
+	UNIT Imperial AxeWyvernRider 0x0 Level(7,Enemy,1) [0,14] 0x2 0x0 0x0 0x0 [IronAxe] [0,0,0,0]
+	UNIT Imperial AxeWyvernRider 0x0 Level(7,Enemy,1) [17,22] 0x2 0x0 0x0 0x0 [PoisonAxe] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(7,Enemy,1) [1,21] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial WyvernRider 0x0 Level(7,Enemy,1) [23,17] 0x0 0x0 0x0 0x0 [SteelLance] [0,0,0,0]
 	
+	UNIT
+
+EnemyReinforce4: 
+
+	UNIT Imperial Mage 0x0 Level(7,Enemy,1) [0,19] 0x0 0x0 0x0 0x0 [Thunder] [0,0,0,0]
+	UNIT Imperial Mage 0x0 Level(6,Enemy,1) [4,22] 0x0 0x0 0x0 0x0 [Elfire] [0,0,0,0]	
+	UNIT Imperial AxeCavalier 0x0 Level(7,Enemy,1) [12,22] 0x0 0x0 0x0 0x0 [HandAxe, IronAxe] [0,0,0,0]
+	UNIT Imperial SwordCavalier 0x0 Level(8,Enemy,1) [15,22] 0x0 0x0 0x0 0x0 [SteelSword] [0,0,0,0]
+		
+	UNIT
+
+EnemyReinforce5: 
+
+	UNIT Imperial Shaman 0x0 Level(8,Enemy,1) [8,22] 0x0 0x0 0x0 0x0 [Flux] [0,0,0,0]
+	UNIT Imperial AxeCavalier 0x0 Level(7,Enemy,1) [2,22] 0x0 0x0 0x0 0x0 [IronAxe] [0,0,0,0]	
+
 	UNIT
 
 AllyReinforce1:
 	
-	UNIT Catherina 0x0 0x0 Level(1,Ally,1) [11,19] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
-	UNIT Harken 0x0 0x0 Level(1,Ally,1) [18,19] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
-	
-	UNIT
-
-AllyReinforce2:
-	
-	UNIT Arthur Monk 0x0 Level(6,Ally,0) [23,19] 0x0 0x0 0x0 0x0 [Lightning, Shine, Vulnerary] [0,0,0,0]
-	
-	UNIT
-
-AllyReinforce3:
-	
-	UNIT Priscilla PegasusKnight 0x0 Level(4,Ally,1) [3,18] 0x0 0x0 0x2 REDA21R19 [HorseSlayer, IronLance, Panacea] [0,0,0,0]
+	UNIT Nausicaa 0x0 0x0 Level(1,Ally,1) [0,0] 0x0 0x0 0x2 REDA2R1 [] [0,0,0,0]
+	UNIT Asbel 0x0 0x0 Level(1,Ally,1) [0,0] 0x0 0x0 0x2 REDA1R3 [] [0,0,0,0]
+	UNIT Teto 0x0 0x0 Level(1,Ally,1) [0,0] 0x0 0x0 0x2 REDA2R2 [] [0,0,0,0]
+	UNIT Priscilla 0x0 0x0 Level(1,Ally,1) [1,0] 0x0 0x0 0x2 REDA4R1 [] [0,0,0,0]
+	UNIT Arthur 0x0 0x0 Level(1,Ally,1) [0,0] 0x0 0x0 0x2 REDA0R2 [] [0,0,0,0]	
+	UNIT Catherina 0x0 0x0 Level(1,Ally,1) [1,0] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Harken 0x0 0x0 Level(1,Ally,1) [0,0] 0x0 0x0 0x2 REDA3R3 [] [0,0,0,0]
 	
 	UNIT
 
 CutScene1:
 	
-	UNIT Slayder WyvernLord 0x0 Level(4,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [Javelin] [0,0,0,0]
-  	
+	UNIT Gervaso Warrior 0x0 Level(4,NPC,1) [23,22] 0x0 0x0 0x1 REDA22R21 [IronAxe] [0,0,0,0]
+	UNIT Alistar Fighter 0x0 Level(4,NPC,1) [20,22] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Alistar Fighter 0x0 Level(4,NPC,1) [23,20] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Alistar Mercenary 0x0 Level(4,NPC,1) [23,21] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Alistar Mercenary 0x0 Level(4,NPC,1) [22,22] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+
 	UNIT
 
 CutScene2:
 	
-	UNIT ImperialBoss Summoner 0x0 Level(4,Enemy,1) [15,4] 0x0 0x0 0x1 REDA14R7 [Flux] [0,0,0,0]
-  	
+	UNIT Kushana KushanaLord 0x0 Level(4,Enemy,1) [5,22] 0x0 0x0 0x1 REDA5R21 [] [0,0,0,0]
+  	UNIT Manfred GreatKnight 0x0 Level(4,Enemy,1) [5,22] 0x0 0x0 0x1 REDA7R21 [] [0,0,0,0]
+  	UNIT Zechiel WyvernLord 0x0 Level(4,Enemy,1) [6,22] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+  	UNIT Imperial LanceCavalier 0x0 Level(4,Enemy,1) [3,22] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+  	UNIT Imperial LanceCavalier 0x0 Level(4,Enemy,1) [8,22] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	
 	UNIT
 
 CutScene3:
@@ -388,17 +465,53 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-    FADI(16)
-	MUSC(0x32)
-	SetBackground(0x1D)	
-	FADU(16)
-	Text(EndText1Ch6)
-    Text(EndText2Ch6)
+    
+	LOAD1 0x0 CutScene1
+	ENUN
+	Highlight(Gervaso, 45)
+	Text(EndText1Ch7)
+	FADI(8)
+	CAMERA Catherina
+	FADU(8)
+	Highlight(Catherina, 45)
+	Text(EndText2Ch7)
+	CHECK_ALIVE Bongo
+    BEQ 0x1 0xC 0x0
+	Highlight(Bongo, 45)
+	LABEL 0x1
+	SetBackground(0x1C)
+	Text(EndText3Ch7)
 	FADI(16)
-	CLEAN 
-	SetBackground(0x0E)
+	CLEAN
 	FADU(16)
-	Text(EndText3Ch6)
+	LOAD1 0x0 CutScene2
+	ENUN
+	Highlight(Kushana, 45)
+	Text(EndText4Ch7)
+	Highlight(Nausicaa, 45)
+	Text(EndText5Ch7)
+    FADI(8)
+	CAMERA Gervaso
+	SetBackground(0x1C)
+    FADU(8)
+	Text(EndText6Ch7)
+	FADI(8)
+	CLEAN
+	SetBackground(0x1B)
+	Text(EndText7Ch7)
+	Text(EndText8Ch7)
+	FADI(16)
+	CLEAN
+	SetBackground(0x1C)
+	FADU(16)
+	Text(EndText9Ch7)
+	Text(EndText10Ch7)
+	FADI(16)
+	CLEAN
+	KABOOM
+	SetBackground(0x02)
+	FADU(16)
+	Text(EndText11Ch7)
 	MNC2 0x9
 	NoFade
 	ENDA
