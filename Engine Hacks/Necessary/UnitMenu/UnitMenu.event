@@ -72,10 +72,10 @@ UnitMenuTable:
     MenuCommand(ArriveName, ArriveDesc, BlueText, ArriveCommandUsability, ArriveCommandEffect)
     MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)
   #endif // ESCAPE_ARIVE
-  #ifdef _7743_ESCAPE_MENU
+
     MenuCommand(EscapeName, EscapeDesc, BlueText, IsLoca0x13|IsPointer, RunEvent13) 
     MenuCommand(ArriveName, ArriveDesc, BlueText, IsLoca0x19|IsPointer, RunEvent19) 
-  #endif // _7743_ESCAPE_MENU
+ 
   #ifdef DRAGON_VEINS
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
   #endif // DRAGON_VEINS

@@ -20,7 +20,7 @@ TurnBasedEvents:
     TurnEventPlayer(0x0,Turn5,5)
     TurnEventPlayer(0x0,Turn7,7)
     TurnEventPlayer(0x0,Turn9,9)
-    TurnEventPlayer(3,Turn10,10)
+    TurnEventPlayer(3,Turn11,11)
 	
 	END_MAIN
 
@@ -106,7 +106,7 @@ Turn9:
 SpawnReinforcements(EnemyReinforce5)
 ENDA
 
-Turn10:
+Turn11:
 
 NoFade
 ENDA
@@ -512,6 +512,6 @@ EndingScene:
 	SetBackground(0x02)
 	FADU(16)
 	Text(EndText11Ch7)
-	MNC2 0x9
+	MNC2 0xA
 	NoFade
 	ENDA

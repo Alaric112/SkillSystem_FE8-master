@@ -1,4 +1,4 @@
-EventPointerTable(Ch9AEvent, PointerList)
+EventPointerTable(Ch8Event, PointerList)
 
 PointerList:
 	POIN TurnBasedEvents

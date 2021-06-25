@@ -37,9 +37,9 @@
 
 #include "Mug_exceed/EA.txt"
 
-#include "EVENTSCRIPT_change_ai_all/Installer.event"
-
 #include "EscapeArrive/EVENTSCRIPT_SimpleEscape_20200305/ASM_SimpleEscape.event"
+
+#include "EVENTSCRIPT_change_ai_all/Installer.event"
 
 #include "EVENTSCRIPT_give_exp 20191015/give_exp_Install.event"
 
