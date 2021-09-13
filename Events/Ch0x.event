@@ -20,7 +20,8 @@ TurnBasedEvents:
 
 Turn1:
 
-    ASMC EnableFreeMovementASMC
+ //   ASMC EnableFreeMovementASMC
+    EnableFreeMovement
 	NoFade
     ENDA
 
@@ -189,31 +190,35 @@ LenaEvent:
 LocationBasedEvents:
     
 	LOCA 3 [1,1] 0x11
-//	Armory(Ch0xArmory,15,23)
-//	Armory(Ch0xArmory,1,12)
-//	Vendor(Ch0xVendor,19,14)
+    Armory(Ch0xArmory,15,23)
+	Armory(Ch0xArmory,1,12)
+	Vendor(Ch0xVendor,19,14)
 	House(0,TaverEvent,12,18)
-	House(0,Ch0xAmroryEvent,15,23)
-    House(0,Ch0xAmroryEvent,1,12)
-    House(0,Ch0xVendorEvent,19,14)
+//	House(0,Ch0xAmroryEvent,15,23)
+//    House(0,Ch0xAmroryEvent,1,12)
+//    House(0,Ch0xVendorEvent,19,14)
 
 
 	END_MAIN
 
 Ch0xAmroryEvent:
+/*
 //   CLEAN
     SVAL s2 Ch0xArmory|IsPointer
     SVAL 0x3 0x0
     ASMC MakeShopASMC
 	NoFade
+*/	
 	ENDA 
 
 Ch0xVendorEvent:
+/*
 //    CLEAN
     SVAL s2 Ch0xVendor|IsPointer
     SVAL 0x3 0x1
     ASMC MakeShopASMC
 	NoFade
+*/	
 	ENDA 
 	
 TaverEvent:
@@ -434,7 +439,8 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-    
+     
+	DisableFreeMovement
     FADI 16
     CUSA 0xC4
     CUSA 0x8

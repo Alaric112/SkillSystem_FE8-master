@@ -193,7 +193,7 @@ that I am capable with the sword![AN]
 I learned from the best! or you want[N]
 say that with your age you have softened?[AN]
 [OpenRight]
-Gadriel stay by the side[N] 
+Gadriel stay by the side[N]
 of the caravan![AN]
 [OpenMidLeft]
 But I want to fight at[N]
@@ -217,8 +217,8 @@ here?[AN]
 moreover attacked by demons![AN]
 I have never seen demons in[N]
 this part of the forest![AN]
-it does not matter![AN] 
-I have to go to rescue them, they[N] 
+it doesn't matter![AN]
+I have to go to rescue them, they[N]
 are completely surrounded![A][X]
 
 ## FirstTalk
@@ -251,7 +251,7 @@ get out of the forest[A][X]
 
 ## Text5
 [OpenFarLeft][LoadNausicaa]
-That's the fastest way[N] 
+That's the fastest way[N]
 to get out of the forest[A][X]
 
 ## Text6

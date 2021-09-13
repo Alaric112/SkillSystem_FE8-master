@@ -24,16 +24,19 @@ PUSH
 	callHack_r5(PaletteLoadReworkPromoBranch)
 POP
 
+ALIGN 4
 PaletteLoadReworkPt1:
 #incbin "PaletteLoadReworkPart1.dmp"
 POIN PaletteAssociationTable
 POIN CharacterPaletteTable
 
+ALIGN 4
 PaletteLoadReworkPt2:
 #incbin "PaletteLoadReworkPart2.dmp"
 POIN PaletteAssociationTable
 POIN CharacterPaletteTable
 
+ALIGN 4
 PaletteLoadReworkPromoBranch:
 #incbin "PaletteLoadReworkPromoBranch.dmp"
 POIN PaletteAssociationTable

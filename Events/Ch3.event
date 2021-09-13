@@ -366,12 +366,15 @@ BeginningScene:
 	CLEA 0x0
 	CLEN 0x0
 	CLEE 0x0
-	LOMA 0x6
+	LOMA 0x6    // Cutscene Trailer
+	    EVBIT_F 2
 	    FOGVISION 0x0
+		WEATHER 0x0
 	FADU(16)
 	EVBIT_T 9
 	LOAD2 1 Cutscene6
 	EVBIT_F 9
+	CAMERA Nausicaa
 	Text(Text10Ch3)
 	MUSC 0x30
 	SOLOTEXTBOXSTART

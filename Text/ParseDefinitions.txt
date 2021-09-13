@@ -88,6 +88,8 @@
 [LoadCivilian2] = [LoadFace][0x5C][0x1]
 [LoadCivilian1F] = [LoadFace][0x62][0x1]
 [LoadImperialSoldier] = [LoadFace][0x6B][0x1]
+[LoadFImperialSoldier] = [LoadFace][0xDB][0x1]
+[LoadShamanPurple] = [LoadFace][0xDC][0x1]
 [LoadAlistarWarrior] = [LoadFace][0x6C][0x1]
 [LoadDario] = [LoadFace][0xD6][0x1]
 [LoadImperialBoss] = [LoadFace][0xD7][0x1]

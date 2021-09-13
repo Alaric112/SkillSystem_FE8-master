@@ -55,11 +55,15 @@
 
 //#include "MoreShops/MoreShops.event"
 
+/*      PROVO AD INSERIRE IL NUOVO FREE MOVEMENT
 #include "FreeMovement/FreeMovement.event"
 
 #include "FreeMovement/MakeShopASMC.lyn.event"
+*/
 
 #include "Battle Palette Rework/BattlePaletteReworkFE8.event"
+
+#include "cFreeMU/FreeMovement.event"
 
 #include "Staff/MasterInstaller.event"
 

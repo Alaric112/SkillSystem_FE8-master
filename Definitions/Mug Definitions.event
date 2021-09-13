@@ -43,6 +43,8 @@
 #define MercenaryMug 0xD9
 #define MercenaryGreenMug 0xDA
 #define SoldierBrownMug 0xE6
+#define F_SoldierMug 0xDB
+#define ShamanPurpleMug 0xDC
 
 // Boss
 #define ZekMug 0x31

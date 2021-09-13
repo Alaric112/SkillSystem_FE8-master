@@ -35,7 +35,8 @@ Turn1:
 */	
 	LOAD1 0 NPC1
 	ENUN
-    ASMC EnableFreeMovementASMC	
+//    ASMC EnableFreeMovementASMC	
+    EnableFreeMovement
     ENDA
 
 ALIGN 32
@@ -157,25 +158,29 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-	House(0,Ch1xAmroryEvent,15,23)
-    House(0,Ch1xAmroryEvent,1,12)
-    House(0,Ch1xVendorEvent,19,14)
+//	House(0,Ch1xAmroryEvent,15,23)
+//    House(0,Ch1xAmroryEvent,1,12)
+//    House(0,Ch1xVendorEvent,19,14)
 	END_MAIN
 
 Ch1xAmroryEvent:
+/*
     CLEAN
     SVAL s2 Ch1xArmory|IsPointer
     SVAL 0x3 0x0
     ASMC MakeShopASMC
 	NoFade
+*/	
 	ENDA 
 
 Ch1xVendorEvent:
+/*
     CLEAN
     SVAL s2 Ch1xVendor|IsPointer
     SVAL 0x3 0x1
     ASMC MakeShopASMC
 	NoFade
+*/	
 	ENDA 
 
 Ch1xArmory:
@@ -353,6 +358,7 @@ BeginningScene:
 
 EndingScene:
 
+    DisableFreeMovement
     MUSC(0x270)
 	FADI(16)
 /*	

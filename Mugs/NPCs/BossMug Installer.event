@@ -10,3 +10,11 @@ setMugEntry(MercenaryGreenMug, MercenaryGreenMugData, 3, 6, 3, 4)
 SoldierBrownMugData:
 #incext PortraitFormatter "SoldierBrown.png"
 setMugEntry(SoldierBrownMug, SoldierBrownMugData, 2, 5, 3, 3)
+
+F_SoldierMugData:
+#incext PortraitFormatter "F_soldier.png"
+setMugEntry(F_SoldierMug, F_SoldierMugData, 2, 5, 3, 3)
+
+ShamanPurpleMugData:
+#incext PortraitFormatter "ShamanPurple.png"
+setMugEntry(ShamanPurpleMug, ShamanPurpleMugData, 2, 5, 3, 3)
