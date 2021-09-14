@@ -5,6 +5,7 @@
 #define LanceCavalier 0x5
 #define LanceKnight 0x9
 #define MageF 0x26
+#define GoldKnight 0x36
 #define SquirrelFox1 0x3D
 #define TetoClass1 0x3D
 #define BoneWalker 0x54
@@ -34,3 +35,4 @@
 #define BallistaClass 0x8F
 #define Halbardier 0x90
 #define BerserkerF 0x91
+#define MarksWoman 0x92

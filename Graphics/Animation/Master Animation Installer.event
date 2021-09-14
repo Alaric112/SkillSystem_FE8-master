@@ -132,7 +132,15 @@
 #define BerserkerFHandAxeAnim 0xEA
 #define BerserkerFUnarmedAnim 0xEB
 
-// prossimo punto disponibile è 0xE7
+#define GoldKnightAxeAnim 0xEC
+#define GoldKnightHandAxeAnim 0xED
+#define GoldKnightLanceAnim 0xEE
+#define GoldKnightUnarmedAnim 0xEF
+
+#define MarksWomanBowAnim 0xF0
+#define MarksWomanUnarmedAnim 0xD8
+
+// prossimo punto disponibile è 0xF1
 // Animation Pointer:
 
 ALIGN 4
@@ -240,6 +248,20 @@ BerserkerFAnims:
 AxeAnim(BerserkerFAxeAnim)
 HandAxeAnim(BerserkerFHandAxeAnim)
 UnarmedAnim(BerserkerFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+GoldKnightAnims:
+LanceAnim(GoldKnightLanceAnim)
+AxeAnim(GoldKnightAxeAnim)
+HandAxeAnim(GoldKnightHandAxeAnim)
+UnarmedAnim(GoldKnightUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MarksWomanAnims:
+BowAnim(MarksWomanBowAnim)
+UnarmedAnim(MarksWomanUnarmedAnim)
 EndAnim
 
 //Bruh

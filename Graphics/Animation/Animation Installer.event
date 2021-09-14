@@ -98,3 +98,11 @@
 #include "Event/BerserkerFAxe Installer.event"
 #include "Event/BerserkerFHandAxe Installer.event"
 #include "Event/BerserkerFUnarmed Installer.event"
+
+#include "Event/GoldKnightAxe Installer.event"
+#include "Event/GoldKnightHandAxe Installer.event"
+#include "Event/GoldKnightLance Installer.event"
+#include "Event/GoldKnightUnarmed Installer.event"
+
+#include "Event/MarksWomanBow Installer.event"
+#include "Event/MarksWomanUnarmed Installer.event"

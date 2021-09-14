@@ -447,5 +447,15 @@ PaletteAssociationEntry(Lunia, LuniaThiefPalette)
 BYTE $00 $00 $00 $00 $00 $00 $00 $00
 ALIGN 4
 
+MarksWomanPaletteList:
+PaletteAssociationEntry(Diana, DianaMarksWomanPalette)
+BYTE $00 $00 $00 $00 $00 $00 $00 $00
+ALIGN 4
+
+GoldKnightPaletteList:
+PaletteAssociationEntry(Kyle, KyleGoldKnightPalette)
+BYTE $00 $00 $00 $00 $00 $00 $00 $00
+ALIGN 4
+
 BYTE $FF $FF $FF $FF $FF $FF $FF $FF
 ALIGN 4

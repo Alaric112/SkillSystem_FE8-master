@@ -36,7 +36,7 @@ Turn1:
 	LOAD1 0 NPC1
 	ENUN
 //    ASMC EnableFreeMovementASMC	
-    EnableFreeMovement
+//    EnableFreeMovement
     ENDA
 
 ALIGN 32
@@ -358,7 +358,7 @@ BeginningScene:
 
 EndingScene:
 
-    DisableFreeMovement
+//    DisableFreeMovement
     MUSC(0x270)
 	FADI(16)
 /*	

@@ -73,7 +73,10 @@
 
 // Palette 
 
+#define DianaMarksWomanPalette 0x22
+#define KyleGreatKnightPalette 0x2B
 #define SamMagePalette 0x30
+#define KyleGoldKnightPalette 0x3E
 #define DonovanPriestPalette 0x45
 #define LuniaThiefPalette 0x46
 #define FernandCavalierPalette 0x57

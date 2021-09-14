@@ -21,7 +21,7 @@ TurnBasedEvents:
 Turn1:
 
  //   ASMC EnableFreeMovementASMC
-    EnableFreeMovement
+ //   EnableFreeMovement
 	NoFade
     ENDA
 
@@ -440,7 +440,7 @@ BeginningScene:
 
 EndingScene:
      
-	DisableFreeMovement
+//	DisableFreeMovement
     FADI 16
     CUSA 0xC4
     CUSA 0x8

@@ -63,7 +63,7 @@
 
 #include "Battle Palette Rework/BattlePaletteReworkFE8.event"
 
-#include "cFreeMU/FreeMovement.event"
+//#include "cFreeMU/FreeMovement.event"
 
 #include "Staff/MasterInstaller.event"
 

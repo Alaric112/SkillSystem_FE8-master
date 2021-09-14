@@ -229,3 +229,11 @@ BerserkerMovingF:
 ALIGN 4
 BerserkerStandingF:
 #incbin "Dmp/BerStandingF.dmp"
+
+ALIGN 4
+GoldKnightMoving:
+#incbin "Dmp/GoldKnightMoving.dmp"
+
+ALIGN 4
+GoldKnightStanding:
+#incbin "Dmp/GoldKnightStanding.dmp"

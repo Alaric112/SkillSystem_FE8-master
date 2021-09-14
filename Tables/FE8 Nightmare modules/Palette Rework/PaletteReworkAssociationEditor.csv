@@ -53,7 +53,7 @@ Summoner (F),SummonerPaletteList|IsPointer
 Rogue,RoguePaletteList|IsPointer
 Gorgon Egg,GorgonPaletteList|IsPointer
 Great Knight,GKPaletteList|IsPointer
-Great Knight (F),GKPaletteList|IsPointer
+Gold Knight,GoldKnightPaletteList|IsPointer
 Recruit (2),EmptyPaletteList|IsPointer
 Journeyman (3),EmptyPaletteList|IsPointer
 Pupil (3),EmptyPaletteList|IsPointer
@@ -143,3 +143,6 @@ Deserter,DeserterPaletteList|IsPointer
 Thief (F),Thief_fPaletteList|IsPointer
 Black Stone,EmptyPaletteList|IsPointer
 Balistician,EmptyPaletteList|IsPointer
+Halbardier,EmptyPaletteList|IsPointer
+Berserker (F),EmptyPaletteList|IsPointer
+MarksWoman,MarksWomanPaletteList|IsPointer

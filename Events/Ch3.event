@@ -376,9 +376,10 @@ BeginningScene:
 	EVBIT_F 9
 	CAMERA Nausicaa
 	Text(Text10Ch3)
+	CAMERA_CENTERED Nausicaa
 	MUSC 0x30
 	SOLOTEXTBOXSTART
-	                 SCOORD 0xB [155, 76]
+	                 SCOORD 0xB [140, 76]
 					 TEXTSHOW(TextPopUP1Ch3)
 					 TEXTEND
     REMA

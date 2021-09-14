@@ -12,6 +12,14 @@
 	setPalette(KyleCavalierPalette,KyleCavalier)
 	setCBSP(KyleCavalierPalette,Kyle, 1, AxeCavalier)
 
+// KyleGreatKnight
+	setPalette(KyleGreatKnightPalette,KyleGreatKnight)
+	setCBSP(KyleGreatKnightPalette,Kyle, 3, GreatKnight)
+
+// KyleGoldKnight
+	setPalette(KyleGoldKnightPalette,KyleGoldKnight)
+	setCBSP(KyleGoldKnightPalette,Kyle, 3, GoldKnight)
+
 // SamMage
 	setPalette(SamMagePalette,SamMage)
 	setCBSP(SamMagePalette,Sam, 1, Mage)
@@ -39,6 +47,10 @@
 // DianaSniper
 	setPalette(0x53,DianaSniper)
 	setCBSP(0x53,Diana, 3, 0x1C)
+
+// DianaMarksWoman
+	setPalette(DianaMarksWomanPalette,DianaMarksWoman)
+	setCBSP(DianaMarksWomanPalette,Diana, 3, MarksWoman)
 
 // LukasSoldier
 	setPalette(0x6D,LukasSoldier)
@@ -151,3 +163,7 @@
 // AlistarMyrmidon
 	setPalette(AlistarMyrmidonPalette,AlistarMyrmidon)
 	setCBSP(AlistarMyrmidonPalette,Bandit2, 3, Myrmidon)
+
+// JaramFighterPalette
+	setPalette(JaramPalette,JaramFighterPalette)
+	setCBSP(JaramPalette,Jaram, 1, Fighter)
