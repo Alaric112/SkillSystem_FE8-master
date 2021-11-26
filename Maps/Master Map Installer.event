@@ -16,9 +16,9 @@
 #include "Ch1.1.event"
 }
 {
-//#include "Ch2.event"
+#include "Ch2.event"
 
-#include "cutscene1.event"
+//#include "cutscene1.event"
 
 }
 {

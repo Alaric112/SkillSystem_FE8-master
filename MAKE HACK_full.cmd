@@ -40,13 +40,19 @@ if /I not [%1]==[quick] (
   cd "%base_dir%Tables"
   echo: | ("%c2ea%" "%source_rom%")
 
+  echo:
+  echo Processing text
+
+  cd "%base_dir%Text"
+  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
+
   @echo:
   @echo Processing text
 
-  cd "%~dp0/Text"
-  rem echo: | ("text-process-classic.exe" "text_buildfile.txt" --parser-exe "ParseFile.exe")
+  @cd "%~dp0/Text"
+  @rem echo: | ("text-process-classic.exe" "text_buildfile.txt" --parser-exe "ParseFile.exe")
 
-  py "textprocess-classic-narrow.py" "text_buildfile.txt"  --parser-exe "ParseFile.exe"
+  @py "textprocess-classic-narrow.py" "text_buildfile.txt"  --parser-exe "ParseFile.exe"
 
 )
 

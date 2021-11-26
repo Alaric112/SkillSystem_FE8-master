@@ -20,3 +20,7 @@
 #include "Ch7.txt"
 
 #include "Ch7x.txt"
+
+#include "Ch8.txt"
+
+#include "Ch9.txt"

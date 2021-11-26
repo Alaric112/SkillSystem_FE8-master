@@ -27,6 +27,7 @@
 #define CatherinaMug 0x22
 #define HarkenMug 0x23
 #define ManfredMug 0x25
+#define TheodorosMug 0x52
 #define NikolaiMug 0x2C
 #define MinervaMug 0x17
 #define NashiraMug 0xC8
