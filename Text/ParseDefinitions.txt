@@ -53,6 +53,7 @@
 [LoadNausicaa] = [LoadFace][0x2][0x1]
 [LoadKairs] = [LoadFace][0x4][0x1]
 [LoadGilliam] = [LoadFace][0x5][0x1]
+[LoadMito] = [LoadFace][0x5][0x1]
 [LoadGadriel] = [LoadFace][0x6][0x1]
 [LoadDonovan] = [LoadFace][0x7][0x1]
 [LoadPriscilla] = [LoadFace][0x8][0x1]
