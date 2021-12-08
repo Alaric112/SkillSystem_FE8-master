@@ -69,7 +69,7 @@ Dream 0x42,DreamImage|IsPointer,DreamTsa|IsPointer,DreamImagePalette|IsPointer
 Vision 0x43,VisionImage|IsPointer,VisionTsa|IsPointer,VisionImagePalette|IsPointer
 FlowerRoom 0x44,FlowerRoomImage|IsPointer,FlowerRoomTsa|IsPointer,FlowerRoomImagePalette|IsPointer
 Teto 0x45,TetoImage|IsPointer,TetoTsa|IsPointer,TetoImagePalette|IsPointer
-0x46,0x0,0x0,0x0
+Lena Hand 0x46,LenaHandImage|IsPointer,LenaHandTsa|IsPointer,LenaHandImagePalette|IsPointer
 0x47,0x0,0x0,0x0
 0x48,0x0,0x0,0x0
 0x49,0x0,0x0,0x0

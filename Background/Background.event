@@ -28,6 +28,8 @@ SetConvoBackground(0x44, FlowerRoomImage, FlowerRoomTsa, FlowerRoomImagePalette)
 
 SetConvoBackground(0x45, TetoImage, TetoTsa, TetoImagePalette)
 
+SetConvoBackground(0x46, LenaHandImage, LenaHandTsa, LenaHandImagePalette)
+
 //1
 ALIGN 4
 TitansImage:
@@ -222,3 +224,16 @@ TetoTsa:
 ALIGN 4
 TetoImagePalette:
 #incbin "Code/Teto3.bin"
+
+//16
+ALIGN 4
+LenaHandImage:
+#incbin "Code/LenaHand1.dmp"
+
+ALIGN 4
+LenaHandTsa:
+#incbin "Code/LenaHand2.dmp"
+
+ALIGN 4
+LenaHandImagePalette:
+#incbin "Code/LenaHand3.dmp"
