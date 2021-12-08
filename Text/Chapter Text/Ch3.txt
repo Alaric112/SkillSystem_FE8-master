@@ -56,7 +56,7 @@ we have a mission to finish![AN]
 You're right, I have to[N]
 save my father...[AN]
 [OpenMidRight]
-in my case avoid a scolding[N]
+and in my case, avoid a scolding[N]
 from Salem...[A][X]
 
 ## Text3Ch3

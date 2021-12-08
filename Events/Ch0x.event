@@ -20,8 +20,12 @@ TurnBasedEvents:
 
 Turn1:
 
- //   ASMC EnableFreeMovementASMC
- //   EnableFreeMovement
+    ASMC EnableFreeMovementASMC
+    EnableFreeMovement
+	LOAD1 1 NPC1
+	BadStatus(Diana, 0x2)
+	ENUT 0x1D
+	BadStatus(Alistar, 0x2)
 	NoFade
     ENDA
 
@@ -34,6 +38,7 @@ CharacterEvent(0x00,NausicaaTalkColt,Nausicaa,Colt)
 CharacterEvent(0x0F,NausicaaTalkRosie,Nausicaa,Rosie)
 CharacterEvent(0x0B,NausicaaTalkMerchant,Nausicaa,Merchant)
 CharacterEvent(0x0A,NausicaaTalkOldMan,Nausicaa,OldMan)
+CharacterEvent(0x0,NausicaaTalk1,Nausicaa,Imperial)
 //CharacterEvent(0x0A,NausicaaTalkCalliope,Nausicaa,Calliope)
 
 
@@ -55,19 +60,13 @@ NausicaaTalkOldMan:
 
 NausicaaTalkMerchant:
     
-	CHECK_EVENTID 0x0B
-    BNE 0x9000 0xC 0x0
     Text(Ch0xTalk6)
 	GiveItem(0x5D, Nausicaa)
-	ENUT 0x0B
-	LABEL 0x9000
     NoFade
 	ENDA
 
 NausicaaTalkRosie:
     
-	CHECK_EVENTID 0xF
-    BNE 0x1000 0xC 0x0
     CHECK_EVENTID 0x12
     BEQ 0x9002 0xC 0x0
 	CHECK_ITEM_ALL(RedBeer)
@@ -85,7 +84,6 @@ NausicaaTalkRosie:
     ENUF(0x1D)
 	GOTO 0x9001
     LABEL 0x9000
-    MUSC 0x32
     LABEL 0x9001
     LABEL 0x9002
     CHECK_EVENTID 0x12
@@ -94,7 +92,6 @@ NausicaaTalkRosie:
 	ENUT(0x12)
 	LABEL 0x9003
 	MUSC 0x270
-	LABEL 0x1000
     NoFade
 	ENDA
 
@@ -111,6 +108,7 @@ NausicaaTalkColt:
 	FADI(16)
 	REMU(Colt)
 	ENUT 0xE
+	ENUF 0xA
 	GOTO 0x9001
     LABEL 0x9000
     LABEL 0x9002
@@ -150,35 +148,51 @@ NausicaaTalkGilliam:
    
 NausicaaTalkCalliope:
  
-    CHECK_EVENTID 0x0A
-    BNE 0x9000 0xC 0x0
 	Text(Ch0xTalk1)
 	ENUT 0xA1
-	ENUT 0x0A
-	LABEL 0x9000
     NoFade
-	ENDA
- 
+	ENDA 
 
+NausicaaTalk1:
+
+    Text(Ch0xFillerText1)
+	NoFade
+	ENDA
+    
 MiscBasedEvents:
 	CauseGameOverIfLordDies
-	AREA 0x9 LenaEvent [0, 5] [29, 10]
+	AREA 0x9 LenaEvent [8, 5] [9, 6]
 	END_MAIN
 	
 LenaEvent:
 
     EVBIT_MODIFY 0x3
-    LOAD1 0x1 LenaDeploy
-	ENUN
     SOLOTEXTBOXSTART
 	                 SCOORD 0xB [118, 73]
 					 TEXTSHOW(Text6Ch0x)
 					 TEXTEND
     REMA
+    LOAD1 0x1 LenaDeploy
+	ENUN
+/*	
 	MOVEONTO  120 Lena Nausicaa
 	ENUN
 	MOVE_1STEP 1 Lena 2
 	ENUN
+*/
+/*	
+    FADI(16)
+    GetUnitStatus(Nausicaa, 0x11)
+	SADD s2 sC 0x1
+	GetUnitStatus(Nausicaa, 0x10)
+	FADU(16)
+*/
+//	MOVE 120 Lena [sC, s2]
+    EVBIT_T 9
+	MOVE_NEXTTO 120 Lena Nausicaa	
+   // MOVENEXTTO 120 Lena Nausicaa
+	ENUN
+	EVBIT_F 9
 	SetBackground(0x02)	
 	Text(Text7Ch0x)
 	EndConvo
@@ -190,10 +204,10 @@ LenaEvent:
 LocationBasedEvents:
     
 	LOCA 3 [1,1] 0x11
-    Armory(Ch0xArmory,15,23)
-	Armory(Ch0xArmory,1,12)
-	Vendor(Ch0xVendor,19,14)
-	House(0,TaverEvent,12,18)
+    Armory(Ch0xArmory,15,22)
+	Armory(Ch0xArmory,1,11)
+	Vendor(Ch0xVendor,18,13)
+	House(0,TaverEvent,12,17)
 //	House(0,Ch0xAmroryEvent,15,23)
 //    House(0,Ch0xAmroryEvent,1,12)
 //    House(0,Ch0xVendorEvent,19,14)
@@ -316,34 +330,36 @@ Player:
 
 Cutscene4:
 
-	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [10,0] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
+	UNIT Nashira Druid_F 0x0 Level(1,NPC,1) [9,0] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
 
 	UNIT
 
 LenaDeploy:
 
-	UNIT Lena 0x6E 0x0 Level(1,NPC,1) [27, 6] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
+	UNIT Lena 0x6E 0x0 Level(1,NPC,1) [11, 11] 0x0 0x0 0x0 0x0 [] [0,0,0,0]
 
 	UNIT
 
 NPC1:
 
-	UNIT Gilliam Warrior 0x0 Level(4,NPC,0) [1,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
-	UNIT Diana Huntress 0x0 Level(2,NPC,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
-	UNIT Colt Thief 0x0 Level(4,NPC,1) [2,15] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
-	UNIT Rosie PirateF 0x0 Level(3,NPC,0) [6,13] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
-	UNIT Merchant Convoy 0x0 Level(1,NPC,0) [24,15] 0x0 0x0 0x0 0x0 [0xA0, 0xA0] [0,0,0,0]
-	UNIT Militia Soldier 0x0 Level(2,NPC,0) [20,5] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT Militia Soldier 0x0 Level(2,NPC,0) [2,4] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Gilliam Warrior 0x0 Level(4,NPC,0) [0,12] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,NPC,0) [3,11] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,NPC,1) [1,14] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,NPC,0) [5,11] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+	UNIT Merchant Convoy 0x0 Level(1,NPC,0) [18,15] 0x0 0x0 0x0 0x0 [0xA0, 0xA0] [0,0,0,0]
+	UNIT Alistar Soldier 0x0 Level(2,NPC,0) [19,3] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Militia Soldier 0x0 Level(2,NPC,0) [3,3] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,0) [6,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
 	UNIT Militia Soldier 0x0 Level(2,NPC,0) [7,27] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
-	UNIT 0xFC 0x71 0x0 Level(1,NPC,1) [22,14] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
-	UNIT 0xFC 0x70 0x0 Level(1,NPC,1) [26,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
-	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [23,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
-	UNIT 0xF4 0x6F 0x0 Level(1,NPC,1) [11,19] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x71 0x0 Level(1,NPC,1) [16,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x70 0x0 Level(1,NPC,1) [19,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [17,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
+	UNIT 0xF4 0x6F 0x0 Level(1,NPC,1) [8,20] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0xFC 0x6D 0x0 Level(1,NPC,1) [4,22] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
 	UNIT 0x70 0x6D 0x0 Level(1,NPC,1) [6,23] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]	
-	UNIT Calliope MageF 0x0 Level(3,NPC,0) [23,6] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Calliope MageF 0x0 Level(3,NPC,0) [22,5] 0x0 0x0 0x0 0x0 [Fire, PureWater] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(2,NPC,0) [23,12] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
+	UNIT Imperial Soldier 0x0 Level(2,NPC,0) [24,12] 0x0 0x0 0x0 0x0 [IronLance] [0,0,0,0]
 	
     UNIT 
 
@@ -422,8 +438,6 @@ BeginningScene:
 	Text(Text4Ch0x)
 	FADI(16)
 	DISA Nashira
-	LOAD1 1 NPC1
-	BadStatus(0x8, 0x2)
 //	REMU(Kairs)
 //	REMU(Gadriel)
 	FADU(16)
@@ -432,15 +446,15 @@ BeginningScene:
 	                    TEXTSHOW Text5Ch0x  
 	                  	TEXTEND	
     REMA
-    SVAL s4 0x0
-	SVAL 0xD 0x0
+//    SVAL s4 0x0
+//	SVAL 0xD 0x0
 	GotoPrepScreen
 	NoFade
 	ENDA
 
 EndingScene:
      
-//	DisableFreeMovement
+	DisableFreeMovement
     FADI 16
     CUSA 0xC4
     CUSA 0x8

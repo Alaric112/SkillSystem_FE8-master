@@ -197,19 +197,25 @@ Units1:
 
 Cutscene1:
 
-    UNIT Gilliam Warrior 0x0 Level(4,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
-	UNIT Diana Huntress 0x0 Level(2,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
-	UNIT Colt Thief 0x0 Level(4,Ally,1) [1,13] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
-	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [3,15] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
-	UNIT Nausicaa 0x0 0x0 Level(2,Ally,0) [9,9] 0x0 0x0 0x1 REDA4R14 [ShortBow, Vulnerary] [0,0,0,0]
-	UNIT Yala Cleric 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R13 [ShortBow, Vulnerary] [0,0,0,0]
+    UNIT Gilliam Warrior 0x0 Level(4,Ally,0) [0,12] 0x0 0x0 0x0 0x0 [SteelAxe, IronBow, Vulnerary] [0,0,0,0]
+	UNIT Diana Huntress 0x0 Level(2,Ally,0) [3,11] 0x0 0x0 0x0 0x0 [ShortBow, Vulnerary] [0,0,0,0]
+	UNIT Colt Thief 0x0 Level(4,Ally,1) [0,14] 0x0 0x0 0x0 0x0 [Silencer, IronDagger, Lockpick] [0,0,0,0]
+	UNIT Rosie PirateF 0x0 Level(3,Ally,0) [4,11] 0x0 0x0 0x0 0x0 [IronAxe, HandAxe] [0,0,0,0]
+
+	UNIT
+
+Cutscene1x:
+
+
+	UNIT Nausicaa 0x0 0x0 Level(2,Ally,0) [9,9] 0x0 0x0 0x1 REDA1R13 [] [0,0,0,0]
+	UNIT Yala Cleric 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA2R12 [] [0,0,0,0]
 
 	UNIT
 
 Cutscene2:
 
-    UNIT Kairs 0x0 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA4R13 [SteelSword] [0,0,0,0]
-	UNIT Gadriel 0x0 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA5R14 [IronSword] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,Ally,0) [8,8] 0x0 0x0 0x1 REDA3R12 [SteelSword] [0,0,0,0]
+	UNIT Gadriel 0x0 0x0 Level(2,Ally,0) [8,8] 0x0 0x0 0x1 REDA3R13 [IronSword] [0,0,0,0]
 
 	UNIT
 
@@ -280,12 +286,16 @@ Traps2:
 
 BeginningScene:
 
+    FADI(16)
     LOMA(0x1)
 	CAMERA [2,14]
 	MUSC(0x270)
 	EVBIT_T 9
 	LOAD1 1 Cutscene1
 	ENUN
+	FADU(60)
+	LOAD1 1 Cutscene1x
+	ENUN	
 	EVBIT_F 9
 	Text(Text1Ch1)
 	EndConvo

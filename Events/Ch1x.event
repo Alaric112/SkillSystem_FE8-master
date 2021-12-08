@@ -35,8 +35,8 @@ Turn1:
 */	
 	LOAD1 0 NPC1
 	ENUN
-//    ASMC EnableFreeMovementASMC	
-//    EnableFreeMovement
+    ASMC EnableFreeMovementASMC	
+    EnableFreeMovement
     ENDA
 
 ALIGN 32
@@ -158,6 +158,9 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+    Armory(Ch1xArmory,15,22)
+	Armory(Ch1xArmory,1,11)
+	Vendor(Ch1xVendor,18,13)
 //	House(0,Ch1xAmroryEvent,15,23)
 //    House(0,Ch1xAmroryEvent,1,12)
 //    House(0,Ch1xVendorEvent,19,14)
@@ -241,6 +244,7 @@ CutScene3:
 
 CutScene4:
 
+    UNIT Nausicaa 0x0 0x0 Level(3,Ally,1) [9,0] 0x0 0x0 0x1 REDA9R3 [0] [0,0,0,0]
     UNIT Salem Sage 0x0 Level(3,Ally,1) [8,10] 0x0 0x0 0x1 REDA8R4 [Wind, ArcWind, Heal] [0,0,0,0]
     UNIT Calliope Mage_F 0x0 Level(3,Ally,1) [9,10] 0x0 0x0 0x1 REDA9R4 [Fire, PureWater] [0,0,0,0]
 	
@@ -248,14 +252,14 @@ CutScene4:
 
 NPC1:
 
-    UNIT Diana 0x0 0x0 Level(3,Ally,1) [3,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Rosie 0x0 0x0 Level(3,Ally,1) [5,13] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-	UNIT Colt 0x0 0x0 Level(3,Ally,1) [1,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Yala 0x0 0x0 Level(3,Ally,1) [11,8] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Kairs 0x0 0x0 Level(3,Ally,1) [15,15] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [16,16] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Salem 0x0 0x0 Level(3,Ally,1) [24,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
-    UNIT Calliope 0x0 0x0 Level(3,Ally,1) [22,6] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Diana 0x0 0x0 Level(3,Ally,1) [3,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Rosie 0x0 0x0 Level(3,Ally,1) [5,11] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+	UNIT Colt 0x0 0x0 Level(3,Ally,1) [2,23] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Yala 0x0 0x0 Level(3,Ally,1) [14,1] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Kairs 0x0 0x0 Level(3,Ally,1) [27,25] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Gadriel 0x0 0x0 Level(3,Ally,1) [28,26] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Salem 0x0 0x0 Level(3,Ally,1) [21,5] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
+    UNIT Calliope 0x0 0x0 Level(3,Ally,1) [22,5] 0x0 0x0 0x0 0x0 [0] [0,0,0,0]
 
     UNIT
 
@@ -282,10 +286,6 @@ CutScene7:
 	
     UNIT
 
-EnemyUnits:
-
-	UNIT
-
 Traps1:
 	ENDTRAP
 	ALIGN 4
@@ -296,18 +296,15 @@ Traps2:
 
 BeginningScene:
     
+	FADI(16)
 	MUSC 0x27
 	LOMA 0x0C
 	CAMERA [17,12]
-	FADI(16)
-	FADU(16)
-	CAMERA [8,12]
+	CAMERA_CENTERED [12,13]
 	LOAD1 1 CutScene1
 	ENUN
 	FADU(16)
 	LOAD1 1 CutScene2
-	ENUN
-	LOAD1 0x1 EnemyUnits
 	ENUN
     MOVE_1STEP 30 Militia 0
 	ENUN
@@ -337,8 +334,8 @@ BeginningScene:
 */	
 	FADU(16)
 	MUSC(0x270)
-	LOAD1 1 CutScene3
-	ENUN	
+//	LOAD1 1 CutScene3
+//	ENUN	
 	LOAD1 1 CutScene4
 	ENUN
 	SetBackground(0xD)
@@ -358,9 +355,9 @@ BeginningScene:
 
 EndingScene:
 
-//    DisableFreeMovement
+    FADI(16)
+    DisableFreeMovement
     MUSC(0x270)
-	FADI(16)
 /*	
 	CUSA Calliope
 	CUSA Salem
@@ -382,6 +379,7 @@ EndingScene:
 	ENUN
 	CAMERA [25,6]
 	FADU(16)
+	BROWNBOXTEXT (ExtraText1Ch1x) [8,8]
 	CHECK_EVENTID 0x11
     BEQ 0x9000 0xC 0x0
 	LOAD2 1 CutScene6

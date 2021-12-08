@@ -43,7 +43,10 @@
 
 #include "EVENTSCRIPT_give_exp 20191015/give_exp_Install.event"
 
+// Just for compatibility
 #include "EVENTSCRIPT_COND_GetStatus/Installer.event"
+
+#include "SetStatus/SetStatusInstaller.event"
 
 #include "EVENTSCRIPT_change_bad_status/Installer.event"
 
@@ -63,7 +66,7 @@
 
 #include "Battle Palette Rework/BattlePaletteReworkFE8.event"
 
-//#include "cFreeMU/FreeMovement.event"
+#include "cFreeMU/FreeMovement.event"
 
 #include "Staff/MasterInstaller.event"
 

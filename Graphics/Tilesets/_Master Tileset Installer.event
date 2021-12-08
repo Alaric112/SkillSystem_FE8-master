@@ -14,7 +14,11 @@ SoryaObjectSetData:
 
 ALIGN 4
 SoryaPaletteData:
-#incbin "Dmp/SoryaPalette.dmp"
+#incbin "Dmp/Sorya.png_pal.dmp"
+
+ALIGN 4
+SoryaNightPaletteData:
+#incbin "Dmp/SoryaNight.png_pal.dmp"
 
 ALIGN 4
 SoryaTileConfigData:
@@ -35,10 +39,6 @@ DesertTileConfigData:
 ALIGN 4
 FieldsNightPaletteData:
 #incbin "Dmp/NightFieldsPalette.dmp"
-
-ALIGN 4
-SoryaNightPaletteData:
-#incbin "Dmp/SoryaNightPalette.dmp"
 
 ALIGN 4
 SnowCityObjectSetData:
